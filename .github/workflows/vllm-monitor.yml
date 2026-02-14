@@ -20,12 +20,12 @@ jobs:
           pip install requests jinja2
       - name: Run monitor
         run: |
-          cd ~/.claude/skills/vllm-version-monitor/agent
+          cd agent
           python monitor.py
       - name: Commit and push changes
         run: |
           git config user.name "GitHub Action"
           git config user.email "action@github.com"
-          git add ~/.claude/skills/vllm-version-monitor/reports/*.md
+          git add reports/*.md
           git commit -m "Update daily report"
           git push
