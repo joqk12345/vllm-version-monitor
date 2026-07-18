@@ -681,6 +681,7 @@ def _build_sdk_user_message(payload: dict[str, Any], date: str) -> str:
     verify_report = _read_text(VERIFY_REPORT_PATH)
     cost_log = _read_text(COST_LOG_PATH)
     state_json = _read_text(STATE_PATH) or "{}"
+    pipeline_log_block = f"```json\n{pipeline_log}\n```" if pipeline_log else "Not available — pipeline log was not created."
 
     message = f"""
 You are working in the skill directory: {SKILL_ROOT}
@@ -690,7 +691,7 @@ Write the report to: {SKILL_ROOT / "reports" / f"{date}.md"}
 ## Available Data
 
 ### Pipeline Log ({pipeline_log_path}) — PRIMARY SOURCE
-{f"```json\n{pipeline_log}\n```" if pipeline_log else "Not available — pipeline log was not created."}
+{pipeline_log_block}
 
 ### state.json
 ```json

@@ -117,7 +117,8 @@ def render_evolution_brief(project: dict[str, Any], releases: list[dict[str, Any
         events = events_by_tag[tag]
         best_event = max(events, key=lambda event: int(event.get("relevance_score", 0))) if events else None
         evidence = str(best_event["evidence_text"]) if best_event else str(release.get("name") or "Release notes 待复核")
-        lines.append(f"| {_date(release.get('published_at'))} | {_link(tag, release.get('html_url'))} | {evidence[:180].replace('|', '\\|')} |")
+        escaped_evidence = evidence[:180].replace("|", "\\|")
+        lines.append(f"| {_date(release.get('published_at'))} | {_link(tag, release.get('html_url'))} | {escaped_evidence} |")
     lines.extend(["", "## 04 技术选型启示", ""])
     observed = _theme(all_events)
     lines.append(f"- **适合重点评估的场景**：需要 {observed} 相关能力，且接受较快版本节奏的部署环境。")

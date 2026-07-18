@@ -89,7 +89,9 @@ def render_project_detail(
         first, latest = events[0], events[-1]
         first_text = f"{first['release_tag']}：{first['evidence_text'][:90]}"
         latest_text = f"{latest['release_tag']}：{latest['evidence_text'][:90]}"
-        lines.append(f"| {capability.name} | {first_text.replace('|', '\\|')} | {latest_text.replace('|', '\\|')} |")
+        escaped_first = first_text.replace("|", "\\|")
+        escaped_latest = latest_text.replace("|", "\\|")
+        lines.append(f"| {capability.name} | {escaped_first} | {escaped_latest} |")
 
     observed = [capability.name for capability in capabilities if any(event["capability_id"] == capability.id for event in all_events)]
     lines.extend(["", "## 自动化观察", ""])
