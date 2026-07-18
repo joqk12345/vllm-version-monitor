@@ -16,8 +16,10 @@ jobs:
       - run: python -m pip install -e '.[dev]'
       - run: pytest -q
       - run: release-report build --config config/vllm.yaml
-        env: {GITHUB_TOKEN: ${{ github.token }}}
+        env:
+          GITHUB_TOKEN: ${{ github.token }}
       - run: release-report build --config config/sglang.yaml
-        env: {GITHUB_TOKEN: ${{ github.token }}}
+        env:
+          GITHUB_TOKEN: ${{ github.token }}
       - uses: actions/upload-artifact@v4
         with: {name: release-intelligence-reports, path: output/}
