@@ -20,11 +20,23 @@ jobs:
         run: python -m compileall -q agent src
       - name: Run tests
         run: pytest -q
-      - run: release-report build --config config/vllm.yaml
+      - name: Create run identifier
+        id: run
+        run: echo "id=$(date -u +%Y-%m-%dT%H-%M-%SZ)" >> "$GITHUB_OUTPUT"
+      - run: release-report build --config config/vllm.yaml --run-id "${{ steps.run.outputs.id }}"
         env:
           GITHUB_TOKEN: ${{ github.token }}
-      - run: release-report build --config config/sglang.yaml
+      - run: release-report build --config config/sglang.yaml --run-id "${{ steps.run.outputs.id }}"
         env:
           GITHUB_TOKEN: ${{ github.token }}
+      - name: Validate timestamped outputs
+        run: |
+          test -f "output/vllm/runs/${{ steps.run.outputs.id }}/build_manifest.json"
+          test -f "output/sglang/runs/${{ steps.run.outputs.id }}/build_manifest.json"
+          test -f "output/vllm/runs/${{ steps.run.outputs.id }}/qa/verification.json"
+          test -f "output/sglang/runs/${{ steps.run.outputs.id }}/qa/verification.json"
       - uses: actions/upload-artifact@v4
-        with: {name: release-intelligence-reports, path: output/}
+        with:
+          name: release-intelligence-${{ steps.run.outputs.id }}
+          path: output/
+          retention-days: 365

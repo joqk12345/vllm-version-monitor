@@ -26,21 +26,25 @@ jobs:
         run: python -m compileall -q agent src
       - name: Test
         run: python -m pytest -q
+      - name: Create run identifier
+        id: run
+        run: echo "id=$(date -u +%Y-%m-%dT%H-%M-%SZ)" >> "$GITHUB_OUTPUT"
       - name: Build vLLM reports
         env:
           GITHUB_TOKEN: ${{ github.token }}
-        run: release-report build --config config/vllm.yaml
+        run: release-report build --config config/vllm.yaml --run-id "${{ steps.run.outputs.id }}"
       - name: Build SGLang reports
         env:
           GITHUB_TOKEN: ${{ github.token }}
-        run: release-report build --config config/sglang.yaml
+        run: release-report build --config config/sglang.yaml --run-id "${{ steps.run.outputs.id }}"
       - name: Validate manifests
         run: |
-          test -f output/vllm/build_manifest.json
-          test -f output/sglang/build_manifest.json
-          test -f output/vllm/qa/verification.json
-          test -f output/sglang/qa/verification.json
+          test -f "output/vllm/runs/${{ steps.run.outputs.id }}/build_manifest.json"
+          test -f "output/sglang/runs/${{ steps.run.outputs.id }}/build_manifest.json"
+          test -f "output/vllm/runs/${{ steps.run.outputs.id }}/qa/verification.json"
+          test -f "output/sglang/runs/${{ steps.run.outputs.id }}/qa/verification.json"
       - uses: actions/upload-artifact@v4
         with:
-          name: daily-release-intelligence-reports
+          name: daily-release-intelligence-${{ steps.run.outputs.id }}
           path: output/
+          retention-days: 365

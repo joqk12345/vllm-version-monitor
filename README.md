@@ -92,6 +92,14 @@ output/
 
 `build_manifest.json` 记录项目、cutoff、数据来源模式、最新 stable 版本、所有主要 artifact 的大小和 SHA-256。`qa/verification.json` 记录 PDF 页数、页面尺寸、必需文本检查、渲染页和哈希。
 
+需要保留同一机器上的多个构建时，传入 UTC 时间戳或任意安全 run identifier：
+
+```bash
+release-report build --config config/vllm.yaml --run-id 2026-07-18T11-30-00Z
+```
+
+产物将写入 `output/vllm/runs/2026-07-18T11-30-00Z/`。每日 GitHub Actions 自动生成该标识，并将完整 artifact 保留 365 天。
+
 ## 验证与测试
 
 ```bash

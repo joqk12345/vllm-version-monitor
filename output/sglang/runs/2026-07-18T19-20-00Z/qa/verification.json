@@ -1,0 +1,30 @@
+{
+  "passed": true,
+  "reports": {
+    "SGLang_Project_Analysis_Version_Feature_Timeline.pdf": {
+      "pdfinfo": "Title:           SGLang Project Analysis: Version and Feature Timeline\nSubject:         (unspecified)\nKeywords:        \nAuthor:          release-report\nCreator:         (unspecified)\nProducer:        ReportLab PDF Library - (opensource)\nCreationDate:    Sat Jul 18 19:29:48 2026 CST\nModDate:         Sat Jul 18 19:29:48 2026 CST\nCustom Metadata: no\nMetadata Stream: no\nTagged:          no\nUserProperties:  no\nSuspects:        no\nForm:            none\nJavaScript:      no\nPages:           5\nEncrypted:       no\nPage size:       595.276 x 841.89 pts (A4)\nPage rot:        0\nFile size:       26914 bytes\nOptimized:       no\nPDF version:     1.4\n",
+      "page_count": 5,
+      "size": 26914,
+      "sha256": "2b3323d07f586b9e2c368514ce6ebca85d3a62abcc6704ac9a1a0f83e90c9e81",
+      "missing_terms": [],
+      "rendered_pages": [
+        "SGLang_Project_Analysis_Version_Feature_Timeline-1.png",
+        "SGLang_Project_Analysis_Version_Feature_Timeline-2.png",
+        "SGLang_Project_Analysis_Version_Feature_Timeline-3.png",
+        "SGLang_Project_Analysis_Version_Feature_Timeline-4.png",
+        "SGLang_Project_Analysis_Version_Feature_Timeline-5.png"
+      ]
+    },
+    "SGLang_Evolution_Brief.pdf": {
+      "pdfinfo": "Title:           SGLang Evolution Brief\nSubject:         (unspecified)\nKeywords:        \nAuthor:          release-report\nCreator:         (unspecified)\nProducer:        ReportLab PDF Library - (opensource)\nCreationDate:    Sat Jul 18 19:29:48 2026 CST\nModDate:         Sat Jul 18 19:29:48 2026 CST\nCustom Metadata: no\nMetadata Stream: no\nTagged:          no\nUserProperties:  no\nSuspects:        no\nForm:            none\nJavaScript:      no\nPages:           2\nEncrypted:       no\nPage size:       841.89 x 595.276 pts (A4)\nPage rot:        0\nFile size:       4709 bytes\nOptimized:       no\nPDF version:     1.4\n",
+      "page_count": 2,
+      "size": 4709,
+      "sha256": "3c2de46641e61545704bae0791e1e3a071a922149a0df49a3bd296a159610dcf",
+      "missing_terms": [],
+      "rendered_pages": [
+        "SGLang_Evolution_Brief-1.png",
+        "SGLang_Evolution_Brief-2.png"
+      ]
+    }
+  }
+}
