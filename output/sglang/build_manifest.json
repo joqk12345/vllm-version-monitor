@@ -1,0 +1,29 @@
+{
+  "schema_version": 1,
+  "project": "sgl-project/sglang",
+  "cutoff": "2026-07-18",
+  "source_mode": "cache",
+  "latest_stable": "v0.5.15",
+  "artifacts": [
+    {
+      "path": "json/sglang_releases_normalized.json",
+      "bytes": 2870845,
+      "sha256": "1dca5a3bf25769f95ee7afdf34bc51a7a71eb69d12300e1b6302820a52d7397a"
+    },
+    {
+      "path": "json/sglang_milestones.json",
+      "bytes": 2765177,
+      "sha256": "29bd422fd6286b836cdace84b833504296553d859b99e84e42b2d53a02cc59bf"
+    },
+    {
+      "path": "pdf/SGLang_Project_Analysis_Version_Feature_Timeline.pdf",
+      "bytes": 26914,
+      "sha256": "b6c7dfac1ba452ca248b0408f07552a0a55e201879754818df10e93382ca894f"
+    },
+    {
+      "path": "pdf/SGLang_Evolution_Brief.pdf",
+      "bytes": 4709,
+      "sha256": "c91c9806d4edad8676625981fbc0be0d78c8d8bc2e08e7b57c245a70a5a3e0a3"
+    }
+  ]
+}

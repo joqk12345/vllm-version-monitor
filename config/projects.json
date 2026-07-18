@@ -1,0 +1,22 @@
+{
+  "projects": [
+    {
+      "id": "vllm",
+      "name": "vLLM",
+      "github_repo": "vllm-project/vllm",
+      "pypi_package": "vllm"
+    },
+    {
+      "id": "sglang",
+      "name": "SGLang",
+      "github_repo": "sgl-project/sglang",
+      "pypi_package": "sglang"
+    },
+    {
+      "id": "tensorrt_llm",
+      "name": "TensorRT-LLM",
+      "github_repo": "NVIDIA/TensorRT-LLM",
+      "pypi_package": "tensorrt-llm"
+    }
+  ]
+}

@@ -1,29 +1,32 @@
 ---
-name: vllm-version-monitor
-version: 0.1.0
-description: 定期检测 vLLM 项目的版本变化、代码提交和热门 Issues/PR，并生成每日报告。
+name: inference-framework-monitor
+version: 0.2.0
+description: 追踪 vLLM、SGLang、TensorRT-LLM 的版本、发布和开发活动，为能力对比建立历史数据。
 author: Your Name
-tags: [vllm, version-monitoring, daily-report]
+tags: [vllm, sglang, tensorrt-llm, version-monitoring]
 
 # 技能执行
 ---
 
 ## 功能说明
 
-该技能用于自动检测 vLLM 项目的以下信息：
+该技能以 `config/projects.json` 为配置源，自动检测多个推理框架的以下信息：
 
-- **PyPI 版本变化**：检测 pip install vllm 的版本更新
-- **GitHub 发布**：检测 GitHub Releases 页面的版本
-- **代码提交**：检测每日 Commit 变化
+- **PyPI 版本变化**：检测配置中声明的包版本
+- **GitHub 发布**：检测每个项目的 GitHub Releases
+- **代码提交**：按本地时区检测每日 Commit 变化
 - **热门 Issues**：检测热门 Issues 和 PR 的更新情况
+- **历史基线**：SQLite 保存本地完整快照；`agent/state.json` 保存 CI 可携带的比较游标
+- **能力矩阵**：基于 `config/capabilities.json` 从 release note 提取带原始证据链接的 Feature 事件
+
+本地高频运行时建议设置 `GITHUB_TOKEN`，避免 GitHub 匿名 API 限流；GitHub Actions 已自动传入 `github.token`。
 
 ## 使用方法
 
 ### 1. 手动运行
 
 ```bash
-cd ~/.claude/skills/vllm-version-monitor/agent
-python monitor.py
+python3 agent/monitor.py
 ```
 
 ### 2. 使用 GitHub Actions
@@ -31,7 +34,7 @@ python monitor.py
 在你的仓库中创建 `.github/workflows/vllm-monitor.yml` 文件：
 
 ```yaml
-name: vLLM Version Monitor
+name: Inference Framework Monitor
 
 on:
   schedule:
@@ -49,39 +52,38 @@ jobs:
       - name: Install dependencies
         run: |
           python -m pip install --upgrade pip
-          pip install requests jinja2
+          pip install -r requirements.txt
       - name: Run monitor
         run: |
-          cd ~/.claude/skills/vllm-version-monitor/agent
-          python monitor.py
+          python3 agent/monitor.py
       - name: Commit and push changes
         run: |
           git config user.name "GitHub Action"
           git config user.email "action@github.com"
-          git add ~/.claude/skills/vllm-version-monitor/reports/*.md
-          git commit -m "Update daily report"
+          git add reports agent/state.json README.md CHANGELOG.md
+          git diff --cached --quiet && exit 0
+          git commit -m "chore: update framework monitor report"
           git push
 ```
 
 ## 报告位置
 
-报告存储在 `~/.claude/skills/vllm-version-monitor/reports/` 目录下，文件名格式为 `YYYY-MM-DD.md`。
+报告存储在 `reports/`，文件名格式为 `YYYY-MM-DD.md`。本地历史存储在 `data/monitor.db`，CI 比较游标存储在 `agent/state.json`。
 
 ## 更新技能
 
 ```bash
-cd ~/.claude/skills/vllm-version-monitor
+cd vllm-version-monitor
 git pull
 ```
 
 ## 技术依赖
 
-- Python 3.8+
+- Python 3.10+
 - requests：用于发送 HTTP 请求
-- jinja2：用于渲染报告模板
 
 可以使用以下命令安装依赖：
 
 ```bash
-pip install requests jinja2
+python3 -m pip install -r requirements.txt
 ```

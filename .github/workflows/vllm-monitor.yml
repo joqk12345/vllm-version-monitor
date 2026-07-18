@@ -1,4 +1,4 @@
-name: vLLM Version Monitor
+name: Daily Release Intelligence Reports
 
 on:
   schedule:
@@ -6,8 +6,10 @@ on:
   workflow_dispatch:  # 允许手动触发
 
 jobs:
-  monitor:
+  reports:
     runs-on: ubuntu-latest
+    permissions:
+      contents: read
     steps:
       - uses: actions/checkout@v4
       - name: Set up Python
@@ -17,15 +19,26 @@ jobs:
       - name: Install dependencies
         run: |
           python -m pip install --upgrade pip
-          pip install requests jinja2
-      - name: Run monitor
+          python -m pip install -e '.[dev]'
+          sudo apt-get update
+          sudo apt-get install -y poppler-utils
+      - name: Test
+        run: python -m pytest -q
+      - name: Build vLLM reports
+        env:
+          GITHUB_TOKEN: ${{ github.token }}
+        run: release-report build --config config/vllm.yaml
+      - name: Build SGLang reports
+        env:
+          GITHUB_TOKEN: ${{ github.token }}
+        run: release-report build --config config/sglang.yaml
+      - name: Validate manifests
         run: |
-          cd agent
-          python monitor.py
-      - name: Commit and push changes
-        run: |
-          git config user.name "GitHub Action"
-          git config user.email "action@github.com"
-          git add reports/*.md
-          git commit -m "Update daily report"
-          git push
+          test -f output/vllm/build_manifest.json
+          test -f output/sglang/build_manifest.json
+          test -f output/vllm/qa/verification.json
+          test -f output/sglang/qa/verification.json
+      - uses: actions/upload-artifact@v4
+        with:
+          name: daily-release-intelligence-reports
+          path: output/

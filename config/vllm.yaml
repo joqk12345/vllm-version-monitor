@@ -1,0 +1,66 @@
+project:
+  owner: vllm-project
+  repository: vllm
+  display_name: vLLM
+  language: en
+  timezone: UTC
+  cutoff: 2026-07-18
+  titles:
+    detailed: "vLLM Project Analysis: Version and Feature Timeline"
+    brief: vLLM Evolution Brief
+  output:
+    directory: output/vllm
+    detailed_pdf: vLLM_Project_Analysis_Version_Feature_Timeline.pdf
+    brief_pdf: vLLM_Evolution_Brief.pdf
+  docs:
+    home: https://docs.vllm.ai/
+    architecture: https://docs.vllm.ai/en/latest/design/arch_overview/
+    optimization: https://docs.vllm.ai/en/stable/configuration/optimization/
+    parallelism: https://docs.vllm.ai/en/stable/serving/parallelism_scaling/
+    disaggregated_prefill: https://docs.vllm.ai/en/latest/features/disagg_prefill/
+    hybrid_kv_cache: https://docs.vllm.ai/en/stable/design/hybrid_kv_cache_manager/
+    expert_parallel: https://docs.vllm.ai/en/latest/serving/expert_parallel_deployment/
+  architecture_summary: "API server(s) → Engine Core per data-parallel rank → scheduler and KV-cache subsystem → GPU worker process per GPU → Model Runner V2 and execution backends."
+release_rules:
+  stable_pattern: '^v?\d+\.\d+\.\d+$'
+  post_pattern: '\.post\d+$'
+  patch_pattern: '(patch|hotfix)'
+  rc_pattern: '(rc|alpha|beta|preview)'
+feature_taxonomy:
+  engine_model_runner: [model runner, pagedattention, runner v2, engine]
+  scheduling_batching: [scheduler, batching, chunked prefill, async scheduling]
+  kv_cache_memory: [kv cache, prefix cache, kv offload, hybrid cache, memory]
+  execution_kernels: [torch.compile, cuda graph, piecewise, kernel, flashattention]
+  speculative_decoding: [speculative, eagle, draft model]
+  parallelism_distributed: [tensor parallel, data parallel, expert parallel, disaggregated, prefill, decode, context parallel, pipeline parallel]
+  model_modalities: [multimodal, vision, audio, speech, moe, mamba, deepseek]
+  api_protocol: [openai, api, grpc, structured output, json, frontend]
+  quantization: [quantization, fp8, fp4, int8, int4, nvfp4]
+  hardware_platform: [cuda, rocm, cpu, tpu, blackwell, neuron, xpu]
+  observability_operations: [metrics, logging, tracing, deployment, docker, prometheus]
+  correctness_stability: [fix, bug, regression, deprecated, removed, default]
+stage_overrides:
+  - name: Foundation
+    start: 0.1.0
+    end: 0.3.999
+    summary: paged KV management, continuous batching, early quantization, Multi-LoRA, prefix caching, and FP8 KV cache.
+  - name: Production engine
+    start: 0.4.0
+    end: 0.6.999
+    summary: automatic prefix caching, chunked prefill, multimodal serving, multi-step scheduling, and asynchronous output.
+  - name: V1 transition
+    start: 0.7.0
+    end: 0.10.999
+    summary: V1 alpha/default, torch.compile, DeepSeek MLA/EP/DP, Blackwell, and disaggregated prefill.
+  - name: V1-only scaling
+    start: 0.11.0
+    end: 0.13.999
+    summary: V0 removal, CUDA graphs, CPU KV offload, Model Runner V2 preview, DBO, and disaggregation.
+  - name: Async and heterogeneous execution
+    start: 0.14.0
+    end: 0.20.999
+    summary: async scheduling, MRv2 maturation, FA4, hybrid cache, realtime/gRPC APIs, elastic EP, and vLLM IR.
+  - name: MRv2 platform
+    start: 0.21.0
+    end: 0.25.999
+    summary: MRv2 defaults, Rust frontend, multi-tier KV, DeepEP v2, universal speculative decoding, and legacy PagedAttention implementation removal.

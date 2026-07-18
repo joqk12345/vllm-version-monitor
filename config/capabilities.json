@@ -1,0 +1,39 @@
+{
+  "capabilities": [
+    {
+      "id": "model_support",
+      "name": "模型能力",
+      "keywords": ["multimodal", "vision", "audio", "moe", "mixture of experts", "reasoning", "long context"]
+    },
+    {
+      "id": "hardware_backends",
+      "name": "硬件与后端",
+      "keywords": ["cuda", "rocm", "cpu", "tpu", "neuron", "tensorrt", "blackwell"]
+    },
+    {
+      "id": "serving_api",
+      "name": "推理服务 API",
+      "keywords": ["openai", "tool calling", "function calling", "structured output", "json schema", "api server"]
+    },
+    {
+      "id": "scheduling_parallelism",
+      "name": "调度与并行",
+      "keywords": ["scheduler", "batching", "disaggregated", "prefill", "decode", "tensor parallel", "data parallel", "expert parallel", "pipeline parallel"]
+    },
+    {
+      "id": "quantization",
+      "name": "量化与 KV Cache",
+      "keywords": ["quantization", "quantized", "fp8", "fp4", "int4", "int8", "kv cache", "awq", "gptq"]
+    },
+    {
+      "id": "performance",
+      "name": "性能与资源效率",
+      "keywords": ["performance", "throughput", "latency", "memory", "speedup", "optimization", "cuda graph"]
+    },
+    {
+      "id": "reliability",
+      "name": "稳定性与可观测性",
+      "keywords": ["fix", "bug", "regression", "reliability", "observability", "metrics", "tracing", "security"]
+    }
+  ]
+}

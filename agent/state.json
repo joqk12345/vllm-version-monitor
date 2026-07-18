@@ -1,0 +1,48 @@
+{
+  "last_run_date": "2026-07-18",
+  "last_collected_at": "2026-07-18T17:33:45.314815+08:00",
+  "timezone": "CST",
+  "last_commit_window": {
+    "local_date": "2026-07-18",
+    "local_start": "2026-07-18T00:00:00+08:00",
+    "local_end": "2026-07-18T23:59:59+08:00",
+    "since_utc": "2026-07-17T16:00:00Z",
+    "until_utc": "2026-07-18T15:59:59Z"
+  },
+  "projects": {
+    "vllm": {
+      "pypi_version": "0.25.1",
+      "github_release_version": "v0.25.1",
+      "tracked_issues": [
+        41834,
+        38476,
+        45470,
+        31941,
+        39481
+      ],
+      "last_errors": []
+    },
+    "sglang": {
+      "pypi_version": "0.5.15.post1",
+      "github_release_version": "v0.5.15.post1",
+      "tracked_issues": [
+        19152,
+        26340,
+        25341,
+        19957,
+        29799
+      ],
+      "last_errors": []
+    },
+    "tensorrt_llm": {
+      "pypi_version": "1.2.1",
+      "github_release_version": "v1.2.1",
+      "tracked_issues": [],
+      "last_errors": [
+        "GitHub release catalog NVIDIA/TensorRT-LLM: 403 Client Error: rate limit exceeded for url: https://api.github.com/repos/NVIDIA/TensorRT-LLM/releases?per_page=100&page=1",
+        "GitHub commits NVIDIA/TensorRT-LLM: 403 Client Error: rate limit exceeded for url: https://api.github.com/repos/NVIDIA/TensorRT-LLM/commits?since=2026-07-17T16%3A00%3A00Z&until=2026-07-18T15%3A59%3A59Z&per_page=100",
+        "GitHub issues NVIDIA/TensorRT-LLM: 403 Client Error: rate limit exceeded for url: https://api.github.com/repos/NVIDIA/TensorRT-LLM/issues?sort=comments&direction=desc&state=open&per_page=5"
+      ]
+    }
+  }
+}

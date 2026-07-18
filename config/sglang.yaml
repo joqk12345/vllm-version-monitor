@@ -1,0 +1,41 @@
+project:
+  owner: sgl-project
+  repository: sglang
+  display_name: SGLang
+  language: en
+  timezone: UTC
+  cutoff: 2026-07-18
+  titles:
+    detailed: "SGLang Project Analysis: Version and Feature Timeline"
+    brief: "SGLang Evolution Brief"
+  output:
+    directory: output/sglang
+    detailed_pdf: SGLang_Project_Analysis_Version_Feature_Timeline.pdf
+    brief_pdf: SGLang_Evolution_Brief.pdf
+  docs:
+    home: https://docs.sglang.ai/
+  architecture_summary: "This report does not infer a current SGLang process topology from release notes alone; consult the configured official documentation for the current architecture."
+release_rules:
+  stable_pattern: '^v?\d+\.\d+\.\d+$'
+  post_pattern: '\.post\d+$'
+  patch_pattern: '(patch|hotfix)'
+  rc_pattern: '(rc|alpha|beta|preview)'
+feature_taxonomy:
+  engine_model_runner: [runtime, engine, radix cache, model runner]
+  scheduling_batching: [scheduler, chunked prefill, overlap, batching, cuda graph]
+  kv_cache_memory: [kv cache, prefix cache, hicache, hisparse, radix]
+  execution_kernels: [flashinfer, flashattention, deepgemm, kernel, torch.compile]
+  speculative_decoding: [speculative, eagle, mtp, spec]
+  parallelism_distributed: [tensor parallel, data parallel, expert parallel, deep ep, deep ep, disaggregation, prefill, decode, pipeline parallel, context parallel]
+  model_modalities: [multimodal, vision, diffusion, mamba, gdn, moe, deepseek]
+  api_protocol: [openai, api, function calling, structured output, json, gateway]
+  quantization: [quantization, fp8, fp4, int8, int4, nvfp4]
+  hardware_platform: [cuda, rocm, cpu, xpu, blackwell, mlx]
+  observability_operations: [metrics, logging, tracing, gateway, deployment]
+  correctness_stability: [fix, bug, regression, deprecated, removed, default]
+stage_overrides:
+  - {name: Runtime foundation, start: 0.1.0, end: 0.1.999, summary: OpenAI-compatible serving, structured output, Radix Cache, multimodal support, and early DP/TP/CUDA Graph paths.}
+  - {name: High-performance engine, start: 0.2.0, end: 0.3.999, summary: Chunked Prefill, DeepSeek MLA, torch.compile, Overlap Scheduler, and XGrammar.}
+  - {name: DeepSeek and distributed serving, start: 0.4.0, end: 0.4.999, summary: DeepSeek V3/R1 optimization, MTP, DeepGEMM, DeepEP, and prefill/decode disaggregation.}
+  - {name: Platform and hybrid models, start: 0.5.0, end: 0.5.9, summary: HiCache, FA4, hybrid-model cache paths, diffusion, Gateway, and pipeline parallelism.}
+  - {name: Production architectures, start: 0.5.10, end: 0.5.999, summary: Elastic EP, HiSparse, Spec V2, DeepSeek V4, and piecewise or breakable CUDA Graph paths.}

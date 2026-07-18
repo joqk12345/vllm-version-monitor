@@ -1,0 +1,33 @@
+{
+  "passed": true,
+  "reports": {
+    "vLLM_Project_Analysis_Version_Feature_Timeline.pdf": {
+      "pdfinfo": "Title:           vLLM Project Analysis: Version and Feature Timeline\nSubject:         (unspecified)\nKeywords:        \nAuthor:          release-report\nCreator:         (unspecified)\nProducer:        ReportLab PDF Library - (opensource)\nCreationDate:    Sat Jul 18 18:57:00 2026 CST\nModDate:         Sat Jul 18 18:57:00 2026 CST\nCustom Metadata: no\nMetadata Stream: no\nTagged:          no\nUserProperties:  no\nSuspects:        no\nForm:            none\nJavaScript:      no\nPages:           8\nEncrypted:       no\nPage size:       595.276 x 841.89 pts (A4)\nPage rot:        0\nFile size:       55686 bytes\nOptimized:       no\nPDF version:     1.4\n",
+      "page_count": 8,
+      "size": 55686,
+      "sha256": "1206a09fd6a8eb1f4831f9dc5882aeb322f29f54fde90d87086017ff31c7c960",
+      "missing_terms": [],
+      "rendered_pages": [
+        "vLLM_Project_Analysis_Version_Feature_Timeline-1.png",
+        "vLLM_Project_Analysis_Version_Feature_Timeline-2.png",
+        "vLLM_Project_Analysis_Version_Feature_Timeline-3.png",
+        "vLLM_Project_Analysis_Version_Feature_Timeline-4.png",
+        "vLLM_Project_Analysis_Version_Feature_Timeline-5.png",
+        "vLLM_Project_Analysis_Version_Feature_Timeline-6.png",
+        "vLLM_Project_Analysis_Version_Feature_Timeline-7.png",
+        "vLLM_Project_Analysis_Version_Feature_Timeline-8.png"
+      ]
+    },
+    "vLLM_Evolution_Brief.pdf": {
+      "pdfinfo": "Title:           vLLM Evolution Brief\nSubject:         (unspecified)\nKeywords:        \nAuthor:          release-report\nCreator:         (unspecified)\nProducer:        ReportLab PDF Library - (opensource)\nCreationDate:    Sat Jul 18 18:57:00 2026 CST\nModDate:         Sat Jul 18 18:57:00 2026 CST\nCustom Metadata: no\nMetadata Stream: no\nTagged:          no\nUserProperties:  no\nSuspects:        no\nForm:            none\nJavaScript:      no\nPages:           2\nEncrypted:       no\nPage size:       841.89 x 595.276 pts (A4)\nPage rot:        0\nFile size:       5100 bytes\nOptimized:       no\nPDF version:     1.4\n",
+      "page_count": 2,
+      "size": 5100,
+      "sha256": "384767dae5a7fa93137c06feee01bdc78416a28bab2f2bf2e56c6d290b57628f",
+      "missing_terms": [],
+      "rendered_pages": [
+        "vLLM_Evolution_Brief-1.png",
+        "vLLM_Evolution_Brief-2.png"
+      ]
+    }
+  }
+}
