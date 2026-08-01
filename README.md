@@ -123,6 +123,13 @@ release-report verify --config config/sglang.yaml --cutoff 2026-07-18 --offline
 
 当报告使用的官方 GitHub Releases 证据字段发生变化时，工作流会使用 `github-actions[bot]` 将 `data/raw/` 与 `output/<project>/` 的 canonical 报告提交回当前分支。缓存只保留报告实际消费的 release 字段，忽略下载次数等高频变化的 asset 元数据；没有上游证据变化时不会提交，避免仅由 cutoff、PDF 生成时间或下载计数造成每日二进制 churn。工作流不会创建 GitHub Release。
 
+每日执行结果分为两类：
+
+- **证据有变化：** 更新原始缓存和 canonical JSON/PDF/QA/manifest，由机器人提交到当前分支，同时上传本次 artifact；
+- **证据无变化：** 完成构建与验证后仅上传 artifact，并输出 `Official release payloads are unchanged; skipping repository update.`，不产生空提交。
+
+仓库内当前发布状态以 [`output/vllm/build_manifest.json`](output/vllm/build_manifest.json) 和 [`output/sglang/build_manifest.json`](output/sglang/build_manifest.json) 为准；Actions 的成功状态只表示管线执行完成，不能替代 manifest 中的版本与 cutoff。
+
 工作流传入 GitHub 内置 `GITHUB_TOKEN`；本地高频运行建议设置同名变量。
 
 ## 添加新项目
