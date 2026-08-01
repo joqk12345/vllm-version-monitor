@@ -98,7 +98,7 @@ output/
 release-report build --config config/vllm.yaml --run-id 2026-07-18T11-30-00Z
 ```
 
-产物将写入 `output/vllm/runs/2026-07-18T11-30-00Z/`。每日 GitHub Actions 自动生成该标识，并将完整 artifact 保留 365 天。
+产物将写入 `output/vllm/runs/2026-07-18T11-30-00Z/`。该参数用于本地或临时的多版本归档；每日 GitHub Actions 的 artifact 名称自带 UTC 时间戳。
 
 ## 验证与测试
 
@@ -119,7 +119,9 @@ release-report verify --config config/sglang.yaml --cutoff 2026-07-18 --offline
 
 ## GitHub Actions
 
-[`.github/workflows/vllm-monitor.yml`](.github/workflows/vllm-monitor.yml) 是每日工作流：安装依赖和 Poppler、运行测试、构建 vLLM 与 SGLang、验证 manifest，并上传 `output/` artifact。默认只读仓库内容，**不会自动推送提交或创建 Release**。
+[`.github/workflows/vllm-monitor.yml`](.github/workflows/vllm-monitor.yml) 是每日工作流：安装依赖和 Poppler、运行测试，以当天 UTC 日期为 cutoff 构建 vLLM 与 SGLang canonical 报告，验证 manifest，并上传带时间戳的 `output/` artifact（保留 90 天）。
+
+当官方 GitHub Releases payload 发生变化时，工作流会使用 `github-actions[bot]` 将 `data/raw/` 与 `output/<project>/` 的 canonical 报告提交回当前分支。没有上游变化时不会提交，避免仅由 cutoff 或 PDF 生成时间造成每日二进制 churn。工作流不会创建 GitHub Release。
 
 工作流传入 GitHub 内置 `GITHUB_TOKEN`；本地高频运行建议设置同名变量。
 

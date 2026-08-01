@@ -5,13 +5,19 @@ on:
     - cron: "0 0 * * *"  # 每天 UTC 时间 0 点运行
   workflow_dispatch:  # 允许手动触发
 
+concurrency:
+  group: daily-release-intelligence-${{ github.ref }}
+  cancel-in-progress: false
+
 jobs:
   reports:
     runs-on: ubuntu-latest
     permissions:
-      contents: read
+      contents: write
     steps:
       - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
       - name: Set up Python
         uses: actions/setup-python@v5
         with:
@@ -28,23 +34,39 @@ jobs:
         run: python -m pytest -q
       - name: Create run identifier
         id: run
-        run: echo "id=$(date -u +%Y-%m-%dT%H-%M-%SZ)" >> "$GITHUB_OUTPUT"
+        run: |
+          echo "id=$(date -u +%Y-%m-%dT%H-%M-%SZ)" >> "$GITHUB_OUTPUT"
+          echo "cutoff=$(date -u +%F)" >> "$GITHUB_OUTPUT"
       - name: Build vLLM reports
         env:
           GITHUB_TOKEN: ${{ github.token }}
-        run: release-report build --config config/vllm.yaml --run-id "${{ steps.run.outputs.id }}"
+        run: release-report build --config config/vllm.yaml --cutoff "${{ steps.run.outputs.cutoff }}"
       - name: Build SGLang reports
         env:
           GITHUB_TOKEN: ${{ github.token }}
-        run: release-report build --config config/sglang.yaml --run-id "${{ steps.run.outputs.id }}"
+        run: release-report build --config config/sglang.yaml --cutoff "${{ steps.run.outputs.cutoff }}"
       - name: Validate manifests
         run: |
-          test -f "output/vllm/runs/${{ steps.run.outputs.id }}/build_manifest.json"
-          test -f "output/sglang/runs/${{ steps.run.outputs.id }}/build_manifest.json"
-          test -f "output/vllm/runs/${{ steps.run.outputs.id }}/qa/verification.json"
-          test -f "output/sglang/runs/${{ steps.run.outputs.id }}/qa/verification.json"
+          test -f output/vllm/build_manifest.json
+          test -f output/sglang/build_manifest.json
+          test -f output/vllm/qa/verification.json
+          test -f output/sglang/qa/verification.json
+      - name: Commit refreshed reports
+        run: |
+          if git diff --quiet -- data/raw; then
+            echo "Official release payloads are unchanged; skipping repository update."
+            exit 0
+          fi
+
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data/raw
+          git add output/vllm/build_manifest.json output/vllm/json output/vllm/pdf output/vllm/qa
+          git add output/sglang/build_manifest.json output/sglang/json output/sglang/pdf output/sglang/qa
+          git commit -m "chore(reports): refresh release intelligence through ${{ steps.run.outputs.cutoff }}"
+          git push origin "HEAD:${GITHUB_REF_NAME}"
       - uses: actions/upload-artifact@v4
         with:
           name: daily-release-intelligence-${{ steps.run.outputs.id }}
           path: output/
-          retention-days: 365
+          retention-days: 90
