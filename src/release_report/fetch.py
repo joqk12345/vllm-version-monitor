@@ -17,6 +17,32 @@ class FetchError(RuntimeError):
     pass
 
 
+_RELEASE_EVIDENCE_FIELDS = (
+    "tag_name",
+    "published_at",
+    "created_at",
+    "draft",
+    "prerelease",
+    "html_url",
+    "body",
+)
+
+
+def canonical_release_evidence(items: list[Any]) -> list[dict[str, Any]]:
+    """Keep only release fields consumed by the report pipeline.
+
+    GitHub release responses include volatile asset download counters. Those
+    counters change throughout the day even when the release evidence used by
+    this project is identical, so persisting the full response creates false
+    report updates.
+    """
+    return [
+        {key: item.get(key) for key in _RELEASE_EVIDENCE_FIELDS}
+        for item in items
+        if isinstance(item, dict)
+    ]
+
+
 def _atomic_json(path: Path, data: dict[str, Any]) -> None:
     path.parent.mkdir(parents=True, exist_ok=True)
     with NamedTemporaryFile("w", encoding="utf-8", dir=path.parent, delete=False) as handle:
@@ -71,10 +97,15 @@ def fetch_releases(config: Config, offline: bool = False) -> dict[str, Any]:
             raise FetchError("GitHub releases response was not a list")
         releases.extend(page_data)
         if len(page_data) < 100:
+            evidence = canonical_release_evidence(releases)
+            prior_evidence = canonical_release_evidence(prior.get("releases", []))
+            if prior and evidence == prior_evidence:
+                prior["source_mode"] = "cache"
+                return prior
             retrieved_at = datetime.now(timezone.utc).isoformat()
             payload = {
                 "metadata": {"source_url": url, "retrieved_at": retrieved_at, "etag": response.headers.get("ETag"), "last_modified": response.headers.get("Last-Modified")},
-                "releases": releases,
+                "releases": evidence,
                 "source_mode": "live",
             }
             _atomic_json(path, payload)

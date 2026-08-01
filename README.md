@@ -121,7 +121,7 @@ release-report verify --config config/sglang.yaml --cutoff 2026-07-18 --offline
 
 [`.github/workflows/vllm-monitor.yml`](.github/workflows/vllm-monitor.yml) 是每日工作流：安装依赖和 Poppler、运行测试，以当天 UTC 日期为 cutoff 构建 vLLM 与 SGLang canonical 报告，验证 manifest，并上传带时间戳的 `output/` artifact（保留 90 天）。
 
-当官方 GitHub Releases payload 发生变化时，工作流会使用 `github-actions[bot]` 将 `data/raw/` 与 `output/<project>/` 的 canonical 报告提交回当前分支。没有上游变化时不会提交，避免仅由 cutoff 或 PDF 生成时间造成每日二进制 churn。工作流不会创建 GitHub Release。
+当报告使用的官方 GitHub Releases 证据字段发生变化时，工作流会使用 `github-actions[bot]` 将 `data/raw/` 与 `output/<project>/` 的 canonical 报告提交回当前分支。缓存只保留报告实际消费的 release 字段，忽略下载次数等高频变化的 asset 元数据；没有上游证据变化时不会提交，避免仅由 cutoff、PDF 生成时间或下载计数造成每日二进制 churn。工作流不会创建 GitHub Release。
 
 工作流传入 GitHub 内置 `GITHUB_TOKEN`；本地高频运行建议设置同名变量。
 
