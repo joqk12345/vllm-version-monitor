@@ -8,7 +8,7 @@
     {
       "path": "json/sglang_releases_normalized.json",
       "bytes": 2970592,
-      "sha256": "b3c922b3dea231e99b43814459dfc93c04f05f0086f0ca971ea539851574e84a"
+      "sha256": "6ca9608fffd6fc9094a4507c8d9613b4678d7a3002e5000025036351243a0053"
     },
     {
       "path": "json/sglang_milestones.json",
@@ -18,12 +18,12 @@
     {
       "path": "pdf/SGLang_Project_Analysis_Version_Feature_Timeline.pdf",
       "bytes": 27916,
-      "sha256": "bf796c436213659a535c90257317926b93964940319e5d5ba20bd1225b8fb781"
+      "sha256": "c4b2c9b5f8f9266ff8ce78594136b59c02f13b065540c64b5754c79304a69b1d"
     },
     {
       "path": "pdf/SGLang_Evolution_Brief.pdf",
       "bytes": 4699,
-      "sha256": "9e4145f7827bf4f3e1be88324c12e940a88ca4c49302ce945ce6e7d41867564c"
+      "sha256": "7783785332d648f85642de313fd69626618e91416533cf54b2249d925dddfc3c"
     }
   ]
 }

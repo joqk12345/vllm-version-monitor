@@ -1,8 +1,8 @@
 {
   "metadata": {
     "source_url": "https://api.github.com/repos/vllm-project/vllm/releases",
-    "retrieved_at": "2026-08-01T22:58:54.789856+00:00",
-    "etag": "W/\"4ef988b41fd715d40a6e912330d7995fef06e0d24e974b5fe82dbf902886e834\"",
+    "retrieved_at": "2026-08-01T23:00:25.009049+00:00",
+    "etag": "W/\"55690488eb502ca67617310d9274f264022c8d2a2a48c0ca999c78d1aa42d495\"",
     "last_modified": null
   },
   "releases": [
@@ -1107,7 +1107,7 @@
           "state": "uploaded",
           "size": 472109373,
           "digest": "sha256:e85edf971a25582993ef3bfd26b0d6ebf498d5ca4ae4944fa8824a734b81ac58",
-          "download_count": 54199,
+          "download_count": 54215,
           "created_at": "2026-06-30T01:16:50Z",
           "updated_at": "2026-06-30T01:17:18Z",
           "browser_download_url": "https://github.com/vllm-project/vllm/releases/download/v0.24.0/vllm-0.24.0%2Bcu129-cp38-abi3-manylinux_2_28_aarch64.whl"
@@ -1143,7 +1143,7 @@
           "state": "uploaded",
           "size": 504590984,
           "digest": "sha256:597949743f2a00c0539d9e2ff0f67b32c608a378e973f99e7529fd6fa9445f70",
-          "download_count": 69010,
+          "download_count": 69026,
           "created_at": "2026-06-30T01:16:50Z",
           "updated_at": "2026-06-30T01:17:17Z",
           "browser_download_url": "https://github.com/vllm-project/vllm/releases/download/v0.24.0/vllm-0.24.0%2Bcu129-cp38-abi3-manylinux_2_28_x86_64.whl"
@@ -1451,7 +1451,7 @@
           "state": "uploaded",
           "size": 500028428,
           "digest": "sha256:8bc2203995d061e6b988916b71b9dee8a5970f5fdc5f37d4445a877a2fab2cc1",
-          "download_count": 65881,
+          "download_count": 65891,
           "created_at": "2026-06-13T09:15:41Z",
           "updated_at": "2026-06-13T09:16:34Z",
           "browser_download_url": "https://github.com/vllm-project/vllm/releases/download/v0.23.0/vllm-0.23.0%2Bcu129-cp38-abi3-manylinux_2_28_x86_64.whl"
@@ -8788,7 +8788,7 @@
           "state": "uploaded",
           "size": 386575356,
           "digest": "sha256:8ca37559d82b43b5e8c8248d2e4a1ecb51d6d4e5d517491d656df6491ed93dab",
-          "download_count": 588,
+          "download_count": 591,
           "created_at": "2025-07-25T00:21:16Z",
           "updated_at": "2025-07-25T00:21:33Z",
           "browser_download_url": "https://github.com/vllm-project/vllm/releases/download/v0.10.0/vllm-0.10.0-cp38-abi3-manylinux1_x86_64.whl"

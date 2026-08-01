@@ -8,7 +8,7 @@
     {
       "path": "json/vllm_releases_normalized.json",
       "bytes": 4594113,
-      "sha256": "1479877313333d63bb09d3fccf5176277223476eae662a51dde7bfa1fb546600"
+      "sha256": "bfc99dd41cb479e7b2c3f78fe002e0a93937b25e30c752656f70eac850b9e801"
     },
     {
       "path": "json/vllm_milestones.json",
@@ -18,12 +18,12 @@
     {
       "path": "pdf/vLLM_Project_Analysis_Version_Feature_Timeline.pdf",
       "bytes": 56770,
-      "sha256": "37f7a850e2e00c8b338638d68224655d0b782240917275fd8b1d3bdbebb1335e"
+      "sha256": "a0bbebd66a96775c5f4488e0c60850473f80a5ece04d659f310d2e23b80c94da"
     },
     {
       "path": "pdf/vLLM_Evolution_Brief.pdf",
       "bytes": 5102,
-      "sha256": "3a980b96336f8aa33d3d6a4bded297d8f36f82bf1a2932638ae4a64a1e6fe4c9"
+      "sha256": "a702dcff090914d5c055350d725ae1c5a07884a7f030c2b63e7560cbd3ec1700"
     }
   ]
 }
