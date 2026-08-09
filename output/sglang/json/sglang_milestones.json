@@ -59426,6 +59426,12 @@
     },
     {
       "tag": "v0.5.17",
+      "category": "scheduling_batching",
+      "snippet": "Initial Support for Rust Frontend: Initially supporting rust frontend, which migrates  front-half (everything from network ingress up to the point a tokenized request is handed to the GPU scheduler) from Python to a multi-threaded Rust implementation. https://",
+      "source_url": "https://github.com/sgl-project/sglang/releases/tag/v0.5.17"
+    },
+    {
+      "tag": "v0.5.17",
       "category": "execution_kernels",
       "snippet": "DCP communication backends and q-replicate (Helix): The DeepSeek-MLA decode context-parallel path gains pluggable comm backends. a2a exchanges packed attention output plus fp32 LSE in a single NCCL collective per layer, with fp8 KV carried as uint8 byte transp",
       "source_url": "https://github.com/sgl-project/sglang/releases/tag/v0.5.17"
