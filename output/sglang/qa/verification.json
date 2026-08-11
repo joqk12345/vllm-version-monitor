@@ -2,10 +2,10 @@
   "passed": true,
   "reports": {
     "SGLang_Project_Analysis_Version_Feature_Timeline.pdf": {
-      "pdfinfo": "Title:           SGLang Project Analysis: Version and Feature Timeline\nSubject:         (unspecified)\nKeywords:        \nAuthor:          release-report\nCreator:         (unspecified)\nProducer:        ReportLab PDF Library - (opensource)\nCreationDate:    Sun Aug  9 01:14:13 2026 UTC\nModDate:         Sun Aug  9 01:14:13 2026 UTC\nCustom Metadata: no\nMetadata Stream: no\nTagged:          no\nUserProperties:  no\nSuspects:        no\nForm:            none\nJavaScript:      no\nPages:           5\nEncrypted:       no\nPage size:       595.276 x 841.89 pts (A4)\nPage rot:        0\nFile size:       28437 bytes\nOptimized:       no\nPDF version:     1.4\n",
+      "pdfinfo": "Title:           SGLang Project Analysis: Version and Feature Timeline\nSubject:         (unspecified)\nKeywords:        \nAuthor:          release-report\nCreator:         (unspecified)\nProducer:        ReportLab PDF Library - (opensource)\nCreationDate:    Tue Aug 11 01:14:49 2026 UTC\nModDate:         Tue Aug 11 01:14:49 2026 UTC\nCustom Metadata: no\nMetadata Stream: no\nTagged:          no\nUserProperties:  no\nSuspects:        no\nForm:            none\nJavaScript:      no\nPages:           5\nEncrypted:       no\nPage size:       595.276 x 841.89 pts (A4)\nPage rot:        0\nFile size:       28440 bytes\nOptimized:       no\nPDF version:     1.4\n",
       "page_count": 5,
-      "size": 28437,
-      "sha256": "e837f9fbd109afa2f8434c2d458f3133adfed7d3eed9771f95ba0c3ea27fb1ef",
+      "size": 28440,
+      "sha256": "7db012b8680cc4937c98c02c98abb50e383a7989e2cffc0c91947e46ebb7627d",
       "missing_terms": [],
       "rendered_pages": [
         "SGLang_Project_Analysis_Version_Feature_Timeline-1.png",
@@ -16,10 +16,10 @@
       ]
     },
     "SGLang_Evolution_Brief.pdf": {
-      "pdfinfo": "Title:           SGLang Evolution Brief\nSubject:         (unspecified)\nKeywords:        \nAuthor:          release-report\nCreator:         (unspecified)\nProducer:        ReportLab PDF Library - (opensource)\nCreationDate:    Sun Aug  9 01:14:13 2026 UTC\nModDate:         Sun Aug  9 01:14:13 2026 UTC\nCustom Metadata: no\nMetadata Stream: no\nTagged:          no\nUserProperties:  no\nSuspects:        no\nForm:            none\nJavaScript:      no\nPages:           2\nEncrypted:       no\nPage size:       841.89 x 595.276 pts (A4)\nPage rot:        0\nFile size:       4707 bytes\nOptimized:       no\nPDF version:     1.4\n",
+      "pdfinfo": "Title:           SGLang Evolution Brief\nSubject:         (unspecified)\nKeywords:        \nAuthor:          release-report\nCreator:         (unspecified)\nProducer:        ReportLab PDF Library - (opensource)\nCreationDate:    Tue Aug 11 01:14:49 2026 UTC\nModDate:         Tue Aug 11 01:14:49 2026 UTC\nCustom Metadata: no\nMetadata Stream: no\nTagged:          no\nUserProperties:  no\nSuspects:        no\nForm:            none\nJavaScript:      no\nPages:           2\nEncrypted:       no\nPage size:       841.89 x 595.276 pts (A4)\nPage rot:        0\nFile size:       4704 bytes\nOptimized:       no\nPDF version:     1.4\n",
       "page_count": 2,
-      "size": 4707,
-      "sha256": "3b5374356aa49b1045714cdaae5d255823f38a441a19335be57804a6c50e4497",
+      "size": 4704,
+      "sha256": "107a490620d4f1531ea6c427379b780d72f8dfdfb648e10688c4f2a291299191",
       "missing_terms": [],
       "rendered_pages": [
         "SGLang_Evolution_Brief-1.png",

@@ -76862,6 +76862,582 @@
       "category": "correctness_stability",
       "snippet": "Models removed: TeleChat (47989), Persimmon and Fuyu (48096).",
       "source_url": "https://github.com/vllm-project/vllm/releases/tag/v0.26.0"
+    },
+    {
+      "tag": "v0.27.0",
+      "category": "model_modalities",
+      "snippet": "More new models: Qwen3.5 text-only dense and MoE models (50210) with EVS video token pruning (48912), K-EXAONE-2.0-750B-A37B (50524), VaultGemma via the Transformers modeling backend (49803), and jina-embeddings-v5-text-nano (50688).",
+      "source_url": "https://github.com/vllm-project/vllm/releases/tag/v0.27.0"
+    },
+    {
+      "tag": "v0.27.0",
+      "category": "hardware_platform",
+      "snippet": "PyTorch 2.13.0 upgrade along with torchvision 0.28.0 and Triton 3.7.1 (48155) \u2014 this is a breaking environment change; XPU (48677) and CPU (50412) followed to torch 2.13 as well.",
+      "source_url": "https://github.com/vllm-project/vllm/releases/tag/v0.27.0"
+    },
+    {
+      "tag": "v0.27.0",
+      "category": "kv_cache_memory",
+      "snippet": "FlashAttention 4 integration deepens on SM100: FP8 KV cache support (42569) and headdim-256 support (42669), backed by a new JIT warmup infrastructure (47451) and runner-owned Triton kernel warmup (49903) that remove first-request compilation stalls.",
+      "source_url": "https://github.com/vllm-project/vllm/releases/tag/v0.27.0"
+    },
+    {
+      "tag": "v0.27.0",
+      "category": "execution_kernels",
+      "snippet": "FlashAttention 4 integration deepens on SM100: FP8 KV cache support (42569) and headdim-256 support (42669), backed by a new JIT warmup infrastructure (47451) and runner-owned Triton kernel warmup (49903) that remove first-request compilation stalls.",
+      "source_url": "https://github.com/vllm-project/vllm/releases/tag/v0.27.0"
+    },
+    {
+      "tag": "v0.27.0",
+      "category": "quantization",
+      "snippet": "FlashAttention 4 integration deepens on SM100: FP8 KV cache support (42569) and headdim-256 support (42669), backed by a new JIT warmup infrastructure (47451) and runner-owned Triton kernel warmup (49903) that remove first-request compilation stalls.",
+      "source_url": "https://github.com/vllm-project/vllm/releases/tag/v0.27.0"
+    },
+    {
+      "tag": "v0.27.0",
+      "category": "kv_cache_memory",
+      "snippet": "DeepSeek-V4 performance push: sequence parallelism (46789), ~2x kernel improvement by skipping empty c128 launches (48957), 3.4% E2E TTFT from skipping unneeded topk/router (49486), 3.9% E2E TTFT from workspace reuse (49236), 1.88x kernel from removing a redun",
+      "source_url": "https://github.com/vllm-project/vllm/releases/tag/v0.27.0"
+    },
+    {
+      "tag": "v0.27.0",
+      "category": "execution_kernels",
+      "snippet": "DeepSeek-V4 performance push: sequence parallelism (46789), ~2x kernel improvement by skipping empty c128 launches (48957), 3.4% E2E TTFT from skipping unneeded topk/router (49486), 3.9% E2E TTFT from workspace reuse (49236), 1.88x kernel from removing a redun",
+      "source_url": "https://github.com/vllm-project/vllm/releases/tag/v0.27.0"
+    },
+    {
+      "tag": "v0.27.0",
+      "category": "model_modalities",
+      "snippet": "DeepSeek-V4 performance push: sequence parallelism (46789), ~2x kernel improvement by skipping empty c128 launches (48957), 3.4% E2E TTFT from skipping unneeded topk/router (49486), 3.9% E2E TTFT from workspace reuse (49236), 1.88x kernel from removing a redun",
+      "source_url": "https://github.com/vllm-project/vllm/releases/tag/v0.27.0"
+    },
+    {
+      "tag": "v0.27.0",
+      "category": "engine_model_runner",
+      "snippet": "Model Runner V2 expands to non-generative workloads: encoder-only attention (49331), sequence pooling for embedding/classification (48791), encoder token classification (50293) and token embedding (50574), BGE-M3 pooling (50661), multimodal on CPU (50073), a m",
+      "source_url": "https://github.com/vllm-project/vllm/releases/tag/v0.27.0"
+    },
+    {
+      "tag": "v0.27.0",
+      "category": "model_modalities",
+      "snippet": "Model Runner V2 expands to non-generative workloads: encoder-only attention (49331), sequence pooling for embedding/classification (48791), encoder token classification (50293) and token embedding (50574), BGE-M3 pooling (50661), multimodal on CPU (50073), a m",
+      "source_url": "https://github.com/vllm-project/vllm/releases/tag/v0.27.0"
+    },
+    {
+      "tag": "v0.27.0",
+      "category": "hardware_platform",
+      "snippet": "Model Runner V2 expands to non-generative workloads: encoder-only attention (49331), sequence pooling for embedding/classification (48791), encoder token classification (50293) and token embedding (50574), BGE-M3 pooling (50661), multimodal on CPU (50073), a m",
+      "source_url": "https://github.com/vllm-project/vllm/releases/tag/v0.27.0"
+    },
+    {
+      "tag": "v0.27.0",
+      "category": "parallelism_distributed",
+      "snippet": "Disaggregation for hybrid models: NIXL P/D for hybrid MLA+SSM models (49762), heterogeneous P/D block sizes for hybrid models (49612), and MoRIIO heterogeneous TP<->DP prefill/decode read routing (46116).",
+      "source_url": "https://github.com/vllm-project/vllm/releases/tag/v0.27.0"
+    },
+    {
+      "tag": "v0.27.0",
+      "category": "engine_model_runner",
+      "snippet": "Rust frontend grows a gRPC control plane: engine-aware health reporting (48992), abort control (49255), server and model discovery (49491), KV event source discovery (50033), plus vllm-bench integrated into the vllm CLI (48930).",
+      "source_url": "https://github.com/vllm-project/vllm/releases/tag/v0.27.0"
+    },
+    {
+      "tag": "v0.27.0",
+      "category": "api_protocol",
+      "snippet": "Rust frontend grows a gRPC control plane: engine-aware health reporting (48992), abort control (49255), server and model discovery (49491), KV event source discovery (50033), plus vllm-bench integrated into the vllm CLI (48930).",
+      "source_url": "https://github.com/vllm-project/vllm/releases/tag/v0.27.0"
+    },
+    {
+      "tag": "v0.27.0",
+      "category": "hardware_platform",
+      "snippet": "Early next-gen hardware enablement: sm107 target for NVIDIA Rubin (49387) with NVLink all-reduce paths on SM107 (49647), and ROCm gfx1250 architecture enabled (46516).",
+      "source_url": "https://github.com/vllm-project/vllm/releases/tag/v0.27.0"
+    },
+    {
+      "tag": "v0.27.0",
+      "category": "api_protocol",
+      "snippet": "Kimi K3: new model (50000) with model files and kernels (50089), Python frontend (50093), Rust frontend (50104), AttnRes kernels (50090), DeepGEMM support (50458), DSpark AR fusion (50242), and optional shared-expert sharding (50656).",
+      "source_url": "https://github.com/vllm-project/vllm/releases/tag/v0.27.0"
+    },
+    {
+      "tag": "v0.27.0",
+      "category": "model_modalities",
+      "snippet": "New models: Qwen3.5 text-only dense and MoE (50210), K-EXAONE-2.0-750B-A37B (50524), VaultGemma via Transformers backend (49803), jina-embeddings-v5-text-nano with EuroBERT encoder backbone (50688).",
+      "source_url": "https://github.com/vllm-project/vllm/releases/tag/v0.27.0"
+    },
+    {
+      "tag": "v0.27.0",
+      "category": "quantization",
+      "snippet": "Inkling: llm-compressor NVFP4 weights (49258) and compressed-tensors dynamic FP8 (48876).",
+      "source_url": "https://github.com/vllm-project/vllm/releases/tag/v0.27.0"
+    },
+    {
+      "tag": "v0.27.0",
+      "category": "execution_kernels",
+      "snippet": "Multimodal: VidCom2 video token pruning (47750), EVS for Qwen3.5 (48912), ViT CUDA graph for Gemma-4 (46837), Cosmos3 FP8 ModelOpt/Diffusers remapping (48952), MiniMax-M3 MSA speculative decode verification (50032) and default video processor (50305), DeepSeek",
+      "source_url": "https://github.com/vllm-project/vllm/releases/tag/v0.27.0"
+    },
+    {
+      "tag": "v0.27.0",
+      "category": "speculative_decoding",
+      "snippet": "Multimodal: VidCom2 video token pruning (47750), EVS for Qwen3.5 (48912), ViT CUDA graph for Gemma-4 (46837), Cosmos3 FP8 ModelOpt/Diffusers remapping (48952), MiniMax-M3 MSA speculative decode verification (50032) and default video processor (50305), DeepSeek",
+      "source_url": "https://github.com/vllm-project/vllm/releases/tag/v0.27.0"
+    },
+    {
+      "tag": "v0.27.0",
+      "category": "parallelism_distributed",
+      "snippet": "Multimodal: VidCom2 video token pruning (47750), EVS for Qwen3.5 (48912), ViT CUDA graph for Gemma-4 (46837), Cosmos3 FP8 ModelOpt/Diffusers remapping (48952), MiniMax-M3 MSA speculative decode verification (50032) and default video processor (50305), DeepSeek",
+      "source_url": "https://github.com/vllm-project/vllm/releases/tag/v0.27.0"
+    },
+    {
+      "tag": "v0.27.0",
+      "category": "model_modalities",
+      "snippet": "Multimodal: VidCom2 video token pruning (47750), EVS for Qwen3.5 (48912), ViT CUDA graph for Gemma-4 (46837), Cosmos3 FP8 ModelOpt/Diffusers remapping (48952), MiniMax-M3 MSA speculative decode verification (50032) and default video processor (50305), DeepSeek",
+      "source_url": "https://github.com/vllm-project/vllm/releases/tag/v0.27.0"
+    },
+    {
+      "tag": "v0.27.0",
+      "category": "quantization",
+      "snippet": "Multimodal: VidCom2 video token pruning (47750), EVS for Qwen3.5 (48912), ViT CUDA graph for Gemma-4 (46837), Cosmos3 FP8 ModelOpt/Diffusers remapping (48952), MiniMax-M3 MSA speculative decode verification (50032) and default video processor (50305), DeepSeek",
+      "source_url": "https://github.com/vllm-project/vllm/releases/tag/v0.27.0"
+    },
+    {
+      "tag": "v0.27.0",
+      "category": "hardware_platform",
+      "snippet": "Multimodal: VidCom2 video token pruning (47750), EVS for Qwen3.5 (48912), ViT CUDA graph for Gemma-4 (46837), Cosmos3 FP8 ModelOpt/Diffusers remapping (48952), MiniMax-M3 MSA speculative decode verification (50032) and default video processor (50305), DeepSeek",
+      "source_url": "https://github.com/vllm-project/vllm/releases/tag/v0.27.0"
+    },
+    {
+      "tag": "v0.27.0",
+      "category": "correctness_stability",
+      "snippet": "Multimodal: VidCom2 video token pruning (47750), EVS for Qwen3.5 (48912), ViT CUDA graph for Gemma-4 (46837), Cosmos3 FP8 ModelOpt/Diffusers remapping (48952), MiniMax-M3 MSA speculative decode verification (50032) and default video processor (50305), DeepSeek",
+      "source_url": "https://github.com/vllm-project/vllm/releases/tag/v0.27.0"
+    },
+    {
+      "tag": "v0.27.0",
+      "category": "model_modalities",
+      "snippet": "Transformers modeling backend: audio model support (39330), improved fx tracer (49957), fused residual-add + RMSNorm compilation pass (48757), and fixes for MLA padding + grouped topk routing (49982), MQA with TP (49987), and Qwen3-VL M-RoPE (49292).",
+      "source_url": "https://github.com/vllm-project/vllm/releases/tag/v0.27.0"
+    },
+    {
+      "tag": "v0.27.0",
+      "category": "kv_cache_memory",
+      "snippet": "Attention: FlashAttention 4 SM100 FP8 KV cache (42569) and headdim-256 (42669); query replication for MLA decode under DCP for DeepSeek-V2/R1 and Kimi-K2.5 (45964); masked MHA for sparse MLA prefills (48770); skip sparse indexer scoring for short dense prefill",
+      "source_url": "https://github.com/vllm-project/vllm/releases/tag/v0.27.0"
+    },
+    {
+      "tag": "v0.27.0",
+      "category": "execution_kernels",
+      "snippet": "Attention: FlashAttention 4 SM100 FP8 KV cache (42569) and headdim-256 (42669); query replication for MLA decode under DCP for DeepSeek-V2/R1 and Kimi-K2.5 (45964); masked MHA for sparse MLA prefills (48770); skip sparse indexer scoring for short dense prefill",
+      "source_url": "https://github.com/vllm-project/vllm/releases/tag/v0.27.0"
+    },
+    {
+      "tag": "v0.27.0",
+      "category": "parallelism_distributed",
+      "snippet": "Attention: FlashAttention 4 SM100 FP8 KV cache (42569) and headdim-256 (42669); query replication for MLA decode under DCP for DeepSeek-V2/R1 and Kimi-K2.5 (45964); masked MHA for sparse MLA prefills (48770); skip sparse indexer scoring for short dense prefill",
+      "source_url": "https://github.com/vllm-project/vllm/releases/tag/v0.27.0"
+    },
+    {
+      "tag": "v0.27.0",
+      "category": "model_modalities",
+      "snippet": "Attention: FlashAttention 4 SM100 FP8 KV cache (42569) and headdim-256 (42669); query replication for MLA decode under DCP for DeepSeek-V2/R1 and Kimi-K2.5 (45964); masked MHA for sparse MLA prefills (48770); skip sparse indexer scoring for short dense prefill",
+      "source_url": "https://github.com/vllm-project/vllm/releases/tag/v0.27.0"
+    },
+    {
+      "tag": "v0.27.0",
+      "category": "quantization",
+      "snippet": "Attention: FlashAttention 4 SM100 FP8 KV cache (42569) and headdim-256 (42669); query replication for MLA decode under DCP for DeepSeek-V2/R1 and Kimi-K2.5 (45964); masked MHA for sparse MLA prefills (48770); skip sparse indexer scoring for short dense prefill",
+      "source_url": "https://github.com/vllm-project/vllm/releases/tag/v0.27.0"
+    },
+    {
+      "tag": "v0.27.0",
+      "category": "hardware_platform",
+      "snippet": "Attention: FlashAttention 4 SM100 FP8 KV cache (42569) and headdim-256 (42669); query replication for MLA decode under DCP for DeepSeek-V2/R1 and Kimi-K2.5 (45964); masked MHA for sparse MLA prefills (48770); skip sparse indexer scoring for short dense prefill",
+      "source_url": "https://github.com/vllm-project/vllm/releases/tag/v0.27.0"
+    },
+    {
+      "tag": "v0.27.0",
+      "category": "engine_model_runner",
+      "snippet": "Model Runner V2: encoder-only attention (49331), sequence pooling for embedding and classification (48791), encoder token classification (50293), encoder token embedding (50574), BGE-M3 pooling (50661), multimodal on CPU (50073), multi-layer MTP speculator (48",
+      "source_url": "https://github.com/vllm-project/vllm/releases/tag/v0.27.0"
+    },
+    {
+      "tag": "v0.27.0",
+      "category": "model_modalities",
+      "snippet": "Model Runner V2: encoder-only attention (49331), sequence pooling for embedding and classification (48791), encoder token classification (50293), encoder token embedding (50574), BGE-M3 pooling (50661), multimodal on CPU (50073), multi-layer MTP speculator (48",
+      "source_url": "https://github.com/vllm-project/vllm/releases/tag/v0.27.0"
+    },
+    {
+      "tag": "v0.27.0",
+      "category": "hardware_platform",
+      "snippet": "Model Runner V2: encoder-only attention (49331), sequence pooling for embedding and classification (48791), encoder token classification (50293), encoder token embedding (50574), BGE-M3 pooling (50661), multimodal on CPU (50073), multi-layer MTP speculator (48",
+      "source_url": "https://github.com/vllm-project/vllm/releases/tag/v0.27.0"
+    },
+    {
+      "tag": "v0.27.0",
+      "category": "hardware_platform",
+      "snippet": "KV offloading: generic P2P secondary tier with peer lookup/serving (48021), per-request tier filtering with TierFilter/TierMatcher (48123), self-describing KV events with TieringOffloadingSpec (48679), pluggable eviction policies via CachePolicyFactory (49114)",
+      "source_url": "https://github.com/vllm-project/vllm/releases/tag/v0.27.0"
+    },
+    {
+      "tag": "v0.27.0",
+      "category": "parallelism_distributed",
+      "snippet": "Mamba/hybrid: ReplaySSM caching for faster Mamba2 standard decode (48018), fused align-mode DS-conv state migration with numacceptedtokens > 1 (49291), FlashInfer Mamba SSU algorithm selection (50157), fixed /wakeup crash on hybrid models (41602).",
+      "source_url": "https://github.com/vllm-project/vllm/releases/tag/v0.27.0"
+    },
+    {
+      "tag": "v0.27.0",
+      "category": "model_modalities",
+      "snippet": "Mamba/hybrid: ReplaySSM caching for faster Mamba2 standard decode (48018), fused align-mode DS-conv state migration with numacceptedtokens > 1 (49291), FlashInfer Mamba SSU algorithm selection (50157), fixed /wakeup crash on hybrid models (41602).",
+      "source_url": "https://github.com/vllm-project/vllm/releases/tag/v0.27.0"
+    },
+    {
+      "tag": "v0.27.0",
+      "category": "parallelism_distributed",
+      "snippet": "Spec decode: DSpark Markov head replicated across TP ranks (49731), samplefromanchor loaded from speculators config (48639), earliest-completing stop string selected (49391).",
+      "source_url": "https://github.com/vllm-project/vllm/releases/tag/v0.27.0"
+    },
+    {
+      "tag": "v0.27.0",
+      "category": "parallelism_distributed",
+      "snippet": "Structured outputs: grammar advanced across the reasoning boundary with spec decode (44993).",
+      "source_url": "https://github.com/vllm-project/vllm/releases/tag/v0.27.0"
+    },
+    {
+      "tag": "v0.27.0",
+      "category": "model_modalities",
+      "snippet": "Preprocessing performance: derender CPU work offloaded to the renderer thread pool (49396), raw-prompt preprocessing off the event loop in AsyncLLM (49608), multimodal preprocessing isolated on its own executor (49524), MM embeds loading deferred off the event",
+      "source_url": "https://github.com/vllm-project/vllm/releases/tag/v0.27.0"
+    },
+    {
+      "tag": "v0.27.0",
+      "category": "hardware_platform",
+      "snippet": "Preprocessing performance: derender CPU work offloaded to the renderer thread pool (49396), raw-prompt preprocessing off the event loop in AsyncLLM (49608), multimodal preprocessing isolated on its own executor (49524), MM embeds loading deferred off the event",
+      "source_url": "https://github.com/vllm-project/vllm/releases/tag/v0.27.0"
+    },
+    {
+      "tag": "v0.27.0",
+      "category": "execution_kernels",
+      "snippet": "RL: weight version tagging for RL rollouts (49040), stateful trainer-send IPC (48981), vLLM config set during weight reload (45989), router replay output from the FlashInfer monolithic MoE kernel (44214).",
+      "source_url": "https://github.com/vllm-project/vllm/releases/tag/v0.27.0"
+    },
+    {
+      "tag": "v0.27.0",
+      "category": "model_modalities",
+      "snippet": "RL: weight version tagging for RL rollouts (49040), stateful trainer-send IPC (48981), vLLM config set during weight reload (45989), router replay output from the FlashInfer monolithic MoE kernel (44214).",
+      "source_url": "https://github.com/vllm-project/vllm/releases/tag/v0.27.0"
+    },
+    {
+      "tag": "v0.27.0",
+      "category": "kv_cache_memory",
+      "snippet": "Memory & robustness: CuMem slept-L1 fragmentation accounting (49208), cgroup memory limits respected on all platforms (49966), fail fast when /dev/shm is too small (48879), zero-copy tensor pickling in shmbroadcast (48442), LRU hash-split skipped in freeblocks",
+      "source_url": "https://github.com/vllm-project/vllm/releases/tag/v0.27.0"
+    },
+    {
+      "tag": "v0.27.0",
+      "category": "execution_kernels",
+      "snippet": "Memory & robustness: CuMem slept-L1 fragmentation accounting (49208), cgroup memory limits respected on all platforms (49966), fail fast when /dev/shm is too small (48879), zero-copy tensor pickling in shmbroadcast (48442), LRU hash-split skipped in freeblocks",
+      "source_url": "https://github.com/vllm-project/vllm/releases/tag/v0.27.0"
+    },
+    {
+      "tag": "v0.27.0",
+      "category": "kv_cache_memory",
+      "snippet": "DeepSeek-V4: sequence parallelism (46789), ~2x kernel skipping empty c128 launches (48957), 3.4% E2E TTFT skipping topk/router in decode (49486), 3.9% E2E TTFT workspace reuse (49236), 1.88x kernel removing a redundant full kernel (50298), adaptive topk width ",
+      "source_url": "https://github.com/vllm-project/vllm/releases/tag/v0.27.0"
+    },
+    {
+      "tag": "v0.27.0",
+      "category": "execution_kernels",
+      "snippet": "DeepSeek-V4: sequence parallelism (46789), ~2x kernel skipping empty c128 launches (48957), 3.4% E2E TTFT skipping topk/router in decode (49486), 3.9% E2E TTFT workspace reuse (49236), 1.88x kernel removing a redundant full kernel (50298), adaptive topk width ",
+      "source_url": "https://github.com/vllm-project/vllm/releases/tag/v0.27.0"
+    },
+    {
+      "tag": "v0.27.0",
+      "category": "parallelism_distributed",
+      "snippet": "DeepSeek-V4: sequence parallelism (46789), ~2x kernel skipping empty c128 launches (48957), 3.4% E2E TTFT skipping topk/router in decode (49486), 3.9% E2E TTFT workspace reuse (49236), 1.88x kernel removing a redundant full kernel (50298), adaptive topk width ",
+      "source_url": "https://github.com/vllm-project/vllm/releases/tag/v0.27.0"
+    },
+    {
+      "tag": "v0.27.0",
+      "category": "model_modalities",
+      "snippet": "DeepSeek-V4: sequence parallelism (46789), ~2x kernel skipping empty c128 launches (48957), 3.4% E2E TTFT skipping topk/router in decode (49486), 3.9% E2E TTFT workspace reuse (49236), 1.88x kernel removing a redundant full kernel (50298), adaptive topk width ",
+      "source_url": "https://github.com/vllm-project/vllm/releases/tag/v0.27.0"
+    },
+    {
+      "tag": "v0.27.0",
+      "category": "correctness_stability",
+      "snippet": "DeepSeek-V4: sequence parallelism (46789), ~2x kernel skipping empty c128 launches (48957), 3.4% E2E TTFT skipping topk/router in decode (49486), 3.9% E2E TTFT workspace reuse (49236), 1.88x kernel removing a redundant full kernel (50298), adaptive topk width ",
+      "source_url": "https://github.com/vllm-project/vllm/releases/tag/v0.27.0"
+    },
+    {
+      "tag": "v0.27.0",
+      "category": "execution_kernels",
+      "snippet": "Kernels: RMSNorm uncontiguous support with 1.2\u20133.1x kernel improvement (49750), MoE reducescatter regression fix restoring 5% E2E throughput (48763), non-grouped bias-less topk routing dispatched to the fused path (49618), tuned LL BF16 router GEMM (48774) wit",
+      "source_url": "https://github.com/vllm-project/vllm/releases/tag/v0.27.0"
+    },
+    {
+      "tag": "v0.27.0",
+      "category": "model_modalities",
+      "snippet": "Kernels: RMSNorm uncontiguous support with 1.2\u20133.1x kernel improvement (49750), MoE reducescatter regression fix restoring 5% E2E throughput (48763), non-grouped bias-less topk routing dispatched to the fused path (49618), tuned LL BF16 router GEMM (48774) wit",
+      "source_url": "https://github.com/vllm-project/vllm/releases/tag/v0.27.0"
+    },
+    {
+      "tag": "v0.27.0",
+      "category": "quantization",
+      "snippet": "Kernels: RMSNorm uncontiguous support with 1.2\u20133.1x kernel improvement (49750), MoE reducescatter regression fix restoring 5% E2E throughput (48763), non-grouped bias-less topk routing dispatched to the fused path (49618), tuned LL BF16 router GEMM (48774) wit",
+      "source_url": "https://github.com/vllm-project/vllm/releases/tag/v0.27.0"
+    },
+    {
+      "tag": "v0.27.0",
+      "category": "correctness_stability",
+      "snippet": "Kernels: RMSNorm uncontiguous support with 1.2\u20133.1x kernel improvement (49750), MoE reducescatter regression fix restoring 5% E2E throughput (48763), non-grouped bias-less topk routing dispatched to the fused path (49618), tuned LL BF16 router GEMM (48774) wit",
+      "source_url": "https://github.com/vllm-project/vllm/releases/tag/v0.27.0"
+    },
+    {
+      "tag": "v0.27.0",
+      "category": "execution_kernels",
+      "snippet": "NVIDIA next-gen: sm107 for Rubin (49387), NVLink all-reduce paths on SM107 (49647), fixed CUDA arch detection producing kernel-less builds on SM121 (49904).",
+      "source_url": "https://github.com/vllm-project/vllm/releases/tag/v0.27.0"
+    },
+    {
+      "tag": "v0.27.0",
+      "category": "hardware_platform",
+      "snippet": "NVIDIA next-gen: sm107 for Rubin (49387), NVLink all-reduce paths on SM107 (49647), fixed CUDA arch detection producing kernel-less builds on SM121 (49904).",
+      "source_url": "https://github.com/vllm-project/vllm/releases/tag/v0.27.0"
+    },
+    {
+      "tag": "v0.27.0",
+      "category": "kv_cache_memory",
+      "snippet": "ROCm: gfx1250 architecture enabled (46516), AITER FP8 ViT encoder attention (49937), fused shared expert for Quark DeepSeek-V4 checkpoints (48044), Quark GLM-5.2 checkpoint inference fixes (48886), DSv3.2 per-decode FillFunctor launches eliminated in the spars",
+      "source_url": "https://github.com/vllm-project/vllm/releases/tag/v0.27.0"
+    },
+    {
+      "tag": "v0.27.0",
+      "category": "parallelism_distributed",
+      "snippet": "ROCm: gfx1250 architecture enabled (46516), AITER FP8 ViT encoder attention (49937), fused shared expert for Quark DeepSeek-V4 checkpoints (48044), Quark GLM-5.2 checkpoint inference fixes (48886), DSv3.2 per-decode FillFunctor launches eliminated in the spars",
+      "source_url": "https://github.com/vllm-project/vllm/releases/tag/v0.27.0"
+    },
+    {
+      "tag": "v0.27.0",
+      "category": "model_modalities",
+      "snippet": "ROCm: gfx1250 architecture enabled (46516), AITER FP8 ViT encoder attention (49937), fused shared expert for Quark DeepSeek-V4 checkpoints (48044), Quark GLM-5.2 checkpoint inference fixes (48886), DSv3.2 per-decode FillFunctor launches eliminated in the spars",
+      "source_url": "https://github.com/vllm-project/vllm/releases/tag/v0.27.0"
+    },
+    {
+      "tag": "v0.27.0",
+      "category": "quantization",
+      "snippet": "ROCm: gfx1250 architecture enabled (46516), AITER FP8 ViT encoder attention (49937), fused shared expert for Quark DeepSeek-V4 checkpoints (48044), Quark GLM-5.2 checkpoint inference fixes (48886), DSv3.2 per-decode FillFunctor launches eliminated in the spars",
+      "source_url": "https://github.com/vllm-project/vllm/releases/tag/v0.27.0"
+    },
+    {
+      "tag": "v0.27.0",
+      "category": "hardware_platform",
+      "snippet": "ROCm: gfx1250 architecture enabled (46516), AITER FP8 ViT encoder attention (49937), fused shared expert for Quark DeepSeek-V4 checkpoints (48044), Quark GLM-5.2 checkpoint inference fixes (48886), DSv3.2 per-decode FillFunctor launches eliminated in the spars",
+      "source_url": "https://github.com/vllm-project/vllm/releases/tag/v0.27.0"
+    },
+    {
+      "tag": "v0.27.0",
+      "category": "correctness_stability",
+      "snippet": "ROCm: gfx1250 architecture enabled (46516), AITER FP8 ViT encoder attention (49937), fused shared expert for Quark DeepSeek-V4 checkpoints (48044), Quark GLM-5.2 checkpoint inference fixes (48886), DSv3.2 per-decode FillFunctor launches eliminated in the spars",
+      "source_url": "https://github.com/vllm-project/vllm/releases/tag/v0.27.0"
+    },
+    {
+      "tag": "v0.27.0",
+      "category": "execution_kernels",
+      "snippet": "XPU: QK Norm + RoPE fusion pass (49394), FP8 oproj with fp8bmm and load-time scale transpose (48334), DeepSeek-V4 fuseindexq SYCL kernel path (45991), TD operand loads for batched MoE GEMM (46340), RMSNorm kernels unified with vllmc (46981).",
+      "source_url": "https://github.com/vllm-project/vllm/releases/tag/v0.27.0"
+    },
+    {
+      "tag": "v0.27.0",
+      "category": "model_modalities",
+      "snippet": "XPU: QK Norm + RoPE fusion pass (49394), FP8 oproj with fp8bmm and load-time scale transpose (48334), DeepSeek-V4 fuseindexq SYCL kernel path (45991), TD operand loads for batched MoE GEMM (46340), RMSNorm kernels unified with vllmc (46981).",
+      "source_url": "https://github.com/vllm-project/vllm/releases/tag/v0.27.0"
+    },
+    {
+      "tag": "v0.27.0",
+      "category": "quantization",
+      "snippet": "XPU: QK Norm + RoPE fusion pass (49394), FP8 oproj with fp8bmm and load-time scale transpose (48334), DeepSeek-V4 fuseindexq SYCL kernel path (45991), TD operand loads for batched MoE GEMM (46340), RMSNorm kernels unified with vllmc (46981).",
+      "source_url": "https://github.com/vllm-project/vllm/releases/tag/v0.27.0"
+    },
+    {
+      "tag": "v0.27.0",
+      "category": "hardware_platform",
+      "snippet": "XPU: QK Norm + RoPE fusion pass (49394), FP8 oproj with fp8bmm and load-time scale transpose (48334), DeepSeek-V4 fuseindexq SYCL kernel path (45991), TD operand loads for batched MoE GEMM (46340), RMSNorm kernels unified with vllmc (46981).",
+      "source_url": "https://github.com/vllm-project/vllm/releases/tag/v0.27.0"
+    },
+    {
+      "tag": "v0.27.0",
+      "category": "execution_kernels",
+      "snippet": "CPU: INT8 fused MoE kernel for Arm CPUs (48637), s390x inference optimization with oneDNN INT8 GEMM (50219), GDN conv path optimized for speculative decoding (48577), granite-4 enabled (47641), FASTEXP for Power (49571), CPU kernels bumped to the latest versio",
+      "source_url": "https://github.com/vllm-project/vllm/releases/tag/v0.27.0"
+    },
+    {
+      "tag": "v0.27.0",
+      "category": "speculative_decoding",
+      "snippet": "CPU: INT8 fused MoE kernel for Arm CPUs (48637), s390x inference optimization with oneDNN INT8 GEMM (50219), GDN conv path optimized for speculative decoding (48577), granite-4 enabled (47641), FASTEXP for Power (49571), CPU kernels bumped to the latest versio",
+      "source_url": "https://github.com/vllm-project/vllm/releases/tag/v0.27.0"
+    },
+    {
+      "tag": "v0.27.0",
+      "category": "model_modalities",
+      "snippet": "CPU: INT8 fused MoE kernel for Arm CPUs (48637), s390x inference optimization with oneDNN INT8 GEMM (50219), GDN conv path optimized for speculative decoding (48577), granite-4 enabled (47641), FASTEXP for Power (49571), CPU kernels bumped to the latest versio",
+      "source_url": "https://github.com/vllm-project/vllm/releases/tag/v0.27.0"
+    },
+    {
+      "tag": "v0.27.0",
+      "category": "quantization",
+      "snippet": "CPU: INT8 fused MoE kernel for Arm CPUs (48637), s390x inference optimization with oneDNN INT8 GEMM (50219), GDN conv path optimized for speculative decoding (48577), granite-4 enabled (47641), FASTEXP for Power (49571), CPU kernels bumped to the latest versio",
+      "source_url": "https://github.com/vllm-project/vllm/releases/tag/v0.27.0"
+    },
+    {
+      "tag": "v0.27.0",
+      "category": "hardware_platform",
+      "snippet": "CPU: INT8 fused MoE kernel for Arm CPUs (48637), s390x inference optimization with oneDNN INT8 GEMM (50219), GDN conv path optimized for speculative decoding (48577), granite-4 enabled (47641), FASTEXP for Power (49571), CPU kernels bumped to the latest versio",
+      "source_url": "https://github.com/vllm-project/vllm/releases/tag/v0.27.0"
+    },
+    {
+      "tag": "v0.27.0",
+      "category": "correctness_stability",
+      "snippet": "Elastic EP: async preparation (47288) and non-contiguous weight transfer fix (50641).",
+      "source_url": "https://github.com/vllm-project/vllm/releases/tag/v0.27.0"
+    },
+    {
+      "tag": "v0.27.0",
+      "category": "parallelism_distributed",
+      "snippet": "P/D disaggregation: NIXL P/D for hybrid MLA+SSM models (49762), NIXL heterogeneous P/D block sizes for hybrid models (49612), MoRIIO heterogeneous TP<->DP prefill/decode read routing (46116), optional lookup disable on PD decode (50498), prefill token ids reus",
+      "source_url": "https://github.com/vllm-project/vllm/releases/tag/v0.27.0"
+    },
+    {
+      "tag": "v0.27.0",
+      "category": "model_modalities",
+      "snippet": "Fixes: P/D preemption race (50297), KV lease deadlines rebased onto the worker clock (50326), NIXL hybrid MLA+mamba heterogeneous TP (49297), internal LB load-balancing (49204).",
+      "source_url": "https://github.com/vllm-project/vllm/releases/tag/v0.27.0"
+    },
+    {
+      "tag": "v0.27.0",
+      "category": "quantization",
+      "snippet": "Quantization",
+      "source_url": "https://github.com/vllm-project/vllm/releases/tag/v0.27.0"
+    },
+    {
+      "tag": "v0.27.0",
+      "category": "model_modalities",
+      "snippet": "New capabilities: FP4 Qutlass integration for compressed-tensors (43229), CuTeDSL MoE for ReLU2 NVFP4 (49580), MXFP8 linear support in INC (47514), AutoRound W4A16 MoE and MXFP4 linear/MoE on XPU (47124), KV quant mode for TurboQuant (50533), ModelOpt FP8 emul",
+      "source_url": "https://github.com/vllm-project/vllm/releases/tag/v0.27.0"
+    },
+    {
+      "tag": "v0.27.0",
+      "category": "quantization",
+      "snippet": "New capabilities: FP4 Qutlass integration for compressed-tensors (43229), CuTeDSL MoE for ReLU2 NVFP4 (49580), MXFP8 linear support in INC (47514), AutoRound W4A16 MoE and MXFP4 linear/MoE on XPU (47124), KV quant mode for TurboQuant (50533), ModelOpt FP8 emul",
+      "source_url": "https://github.com/vllm-project/vllm/releases/tag/v0.27.0"
+    },
+    {
+      "tag": "v0.27.0",
+      "category": "hardware_platform",
+      "snippet": "New capabilities: FP4 Qutlass integration for compressed-tensors (43229), CuTeDSL MoE for ReLU2 NVFP4 (49580), MXFP8 linear support in INC (47514), AutoRound W4A16 MoE and MXFP4 linear/MoE on XPU (47124), KV quant mode for TurboQuant (50533), ModelOpt FP8 emul",
+      "source_url": "https://github.com/vllm-project/vllm/releases/tag/v0.27.0"
+    },
+    {
+      "tag": "v0.27.0",
+      "category": "model_modalities",
+      "snippet": "Checkpoints: compressed-tensors support for DeepSeek-V4 (41276) and Kimi-K3 (50500); findmatchedtarget prioritizes fused-name matches (49483).",
+      "source_url": "https://github.com/vllm-project/vllm/releases/tag/v0.27.0"
+    },
+    {
+      "tag": "v0.27.0",
+      "category": "execution_kernels",
+      "snippet": "MoE refactor: FusedMoE renamed to FusedMoEFactory (44941), MoeWNA16 migrated to the MK oracle scheme (44120), Quark w8a8-int8 (46765) and MXFP4 aiter/emulation backends (49348, 48949) moved to kernel abstractions, CT WNA16 Marlin/MoE methods merged (44570), Qu",
+      "source_url": "https://github.com/vllm-project/vllm/releases/tag/v0.27.0"
+    },
+    {
+      "tag": "v0.27.0",
+      "category": "model_modalities",
+      "snippet": "MoE refactor: FusedMoE renamed to FusedMoEFactory (44941), MoeWNA16 migrated to the MK oracle scheme (44120), Quark w8a8-int8 (46765) and MXFP4 aiter/emulation backends (49348, 48949) moved to kernel abstractions, CT WNA16 Marlin/MoE methods merged (44570), Qu",
+      "source_url": "https://github.com/vllm-project/vllm/releases/tag/v0.27.0"
+    },
+    {
+      "tag": "v0.27.0",
+      "category": "quantization",
+      "snippet": "MoE refactor: FusedMoE renamed to FusedMoEFactory (44941), MoeWNA16 migrated to the MK oracle scheme (44120), Quark w8a8-int8 (46765) and MXFP4 aiter/emulation backends (49348, 48949) moved to kernel abstractions, CT WNA16 Marlin/MoE methods merged (44570), Qu",
+      "source_url": "https://github.com/vllm-project/vllm/releases/tag/v0.27.0"
+    },
+    {
+      "tag": "v0.27.0",
+      "category": "api_protocol",
+      "snippet": "API & Frontend",
+      "source_url": "https://github.com/vllm-project/vllm/releases/tag/v0.27.0"
+    },
+    {
+      "tag": "v0.27.0",
+      "category": "engine_model_runner",
+      "snippet": "Rust frontend: gRPC control plane with engine-aware health reporting (48992), abort control RPC (49255), server and model discovery (49491), and KV event source discovery (50033); vllm-bench integrated into vllm-rs and the vllm CLI (48930) with opt-in Rust del",
+      "source_url": "https://github.com/vllm-project/vllm/releases/tag/v0.27.0"
+    },
+    {
+      "tag": "v0.27.0",
+      "category": "model_modalities",
+      "snippet": "Rust frontend: gRPC control plane with engine-aware health reporting (48992), abort control RPC (49255), server and model discovery (49491), and KV event source discovery (50033); vllm-bench integrated into vllm-rs and the vllm CLI (48930) with opt-in Rust del",
+      "source_url": "https://github.com/vllm-project/vllm/releases/tag/v0.27.0"
+    },
+    {
+      "tag": "v0.27.0",
+      "category": "api_protocol",
+      "snippet": "Rust frontend: gRPC control plane with engine-aware health reporting (48992), abort control RPC (49255), server and model discovery (49491), and KV event source discovery (50033); vllm-bench integrated into vllm-rs and the vllm CLI (48930) with opt-in Rust del",
+      "source_url": "https://github.com/vllm-project/vllm/releases/tag/v0.27.0"
+    },
+    {
+      "tag": "v0.27.0",
+      "category": "engine_model_runner",
+      "snippet": "APIs: Cohere chat v2 API support (47189), cachesalt in the Anthropic Messages API (49498), strict tool calling and constrained decoding for GPT-OSS Harmony (45560), unified engine-based Mistral parser for reasoning and tool calls (48947), streaminterval expose",
+      "source_url": "https://github.com/vllm-project/vllm/releases/tag/v0.27.0"
+    },
+    {
+      "tag": "v0.27.0",
+      "category": "model_modalities",
+      "snippet": "APIs: Cohere chat v2 API support (47189), cachesalt in the Anthropic Messages API (49498), strict tool calling and constrained decoding for GPT-OSS Harmony (45560), unified engine-based Mistral parser for reasoning and tool calls (48947), streaminterval expose",
+      "source_url": "https://github.com/vllm-project/vllm/releases/tag/v0.27.0"
+    },
+    {
+      "tag": "v0.27.0",
+      "category": "api_protocol",
+      "snippet": "APIs: Cohere chat v2 API support (47189), cachesalt in the Anthropic Messages API (49498), strict tool calling and constrained decoding for GPT-OSS Harmony (45560), unified engine-based Mistral parser for reasoning and tool calls (48947), streaminterval expose",
+      "source_url": "https://github.com/vllm-project/vllm/releases/tag/v0.27.0"
+    },
+    {
+      "tag": "v0.27.0",
+      "category": "model_modalities",
+      "snippet": "Multimodal: mm hash algorithm selection via CLI (49686), configurable PyNvVideoCodec decoder concurrency (49753), RFC 2397 parameters accepted in base64 data URLs (48973).",
+      "source_url": "https://github.com/vllm-project/vllm/releases/tag/v0.27.0"
+    },
+    {
+      "tag": "v0.27.0",
+      "category": "hardware_platform",
+      "snippet": "PyTorch 2.13.0, torchvision 0.28.0, Triton 3.7.1 (48155); torch 2.13 for XPU (48677) and CPU (50412).",
+      "source_url": "https://github.com/vllm-project/vllm/releases/tag/v0.27.0"
+    },
+    {
+      "tag": "v0.27.0",
+      "category": "api_protocol",
+      "snippet": "Transformers 5.14.1 (49223), FlashInfer 0.6.15 (48914) then 0.6.16.post3 (50892), AITER 0.1.16.post5 (48683) then 0.1.19 (49361), NCCL 2.30.7 enabling DeepEPv2 in the vllm/vllm-openai image (45321), tpu-inference v0.25.0 (49431) then v0.26.0 (50522), Helion 1.",
+      "source_url": "https://github.com/vllm-project/vllm/releases/tag/v0.27.0"
+    },
+    {
+      "tag": "v0.27.0",
+      "category": "hardware_platform",
+      "snippet": "Transformers 5.14.1 (49223), FlashInfer 0.6.15 (48914) then 0.6.16.post3 (50892), AITER 0.1.16.post5 (48683) then 0.1.19 (49361), NCCL 2.30.7 enabling DeepEPv2 in the vllm/vllm-openai image (45321), tpu-inference v0.25.0 (49431) then v0.26.0 (50522), Helion 1.",
+      "source_url": "https://github.com/vllm-project/vllm/releases/tag/v0.27.0"
+    },
+    {
+      "tag": "v0.27.0",
+      "category": "correctness_stability",
+      "snippet": "Models removed: Plamo2 (49729), Ouro (49786).",
+      "source_url": "https://github.com/vllm-project/vllm/releases/tag/v0.27.0"
+    },
+    {
+      "tag": "v0.27.0",
+      "category": "correctness_stability",
+      "snippet": "Removed the no-longer-supported maxnumpartialprefills and maxlongpartialprefills arguments (49244).",
+      "source_url": "https://github.com/vllm-project/vllm/releases/tag/v0.27.0"
     }
   ]
 }
