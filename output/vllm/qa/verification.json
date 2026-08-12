@@ -2,10 +2,10 @@
   "passed": true,
   "reports": {
     "vLLM_Project_Analysis_Version_Feature_Timeline.pdf": {
-      "pdfinfo": "Title:           vLLM Project Analysis: Version and Feature Timeline\nSubject:         (unspecified)\nKeywords:        \nAuthor:          release-report\nCreator:         (unspecified)\nProducer:        ReportLab PDF Library - (opensource)\nCreationDate:    Tue Aug 11 01:14:39 2026 UTC\nModDate:         Tue Aug 11 01:14:39 2026 UTC\nCustom Metadata: no\nMetadata Stream: no\nTagged:          no\nUserProperties:  no\nSuspects:        no\nForm:            none\nJavaScript:      no\nPages:           9\nEncrypted:       no\nPage size:       595.276 x 841.89 pts (A4)\nPage rot:        0\nFile size:       57474 bytes\nOptimized:       no\nPDF version:     1.4\n",
+      "pdfinfo": "Title:           vLLM Project Analysis: Version and Feature Timeline\nSubject:         (unspecified)\nKeywords:        \nAuthor:          release-report\nCreator:         (unspecified)\nProducer:        ReportLab PDF Library - (opensource)\nCreationDate:    Wed Aug 12 01:22:46 2026 UTC\nModDate:         Wed Aug 12 01:22:46 2026 UTC\nCustom Metadata: no\nMetadata Stream: no\nTagged:          no\nUserProperties:  no\nSuspects:        no\nForm:            none\nJavaScript:      no\nPages:           9\nEncrypted:       no\nPage size:       595.276 x 841.89 pts (A4)\nPage rot:        0\nFile size:       57775 bytes\nOptimized:       no\nPDF version:     1.4\n",
       "page_count": 9,
-      "size": 57474,
-      "sha256": "58ea2fc704c5550148912dd79ff4a8d6c97ba05fb8e3e4d5bd4ae8ac1d07fc1d",
+      "size": 57775,
+      "sha256": "b4add782f522ca8c975ef1365431574229df66eae325997ba7ea222e9e62353b",
       "missing_terms": [],
       "rendered_pages": [
         "vLLM_Project_Analysis_Version_Feature_Timeline-1.png",
@@ -20,10 +20,10 @@
       ]
     },
     "vLLM_Evolution_Brief.pdf": {
-      "pdfinfo": "Title:           vLLM Evolution Brief\nSubject:         (unspecified)\nKeywords:        \nAuthor:          release-report\nCreator:         (unspecified)\nProducer:        ReportLab PDF Library - (opensource)\nCreationDate:    Tue Aug 11 01:14:39 2026 UTC\nModDate:         Tue Aug 11 01:14:39 2026 UTC\nCustom Metadata: no\nMetadata Stream: no\nTagged:          no\nUserProperties:  no\nSuspects:        no\nForm:            none\nJavaScript:      no\nPages:           2\nEncrypted:       no\nPage size:       841.89 x 595.276 pts (A4)\nPage rot:        0\nFile size:       5099 bytes\nOptimized:       no\nPDF version:     1.4\n",
+      "pdfinfo": "Title:           vLLM Evolution Brief\nSubject:         (unspecified)\nKeywords:        \nAuthor:          release-report\nCreator:         (unspecified)\nProducer:        ReportLab PDF Library - (opensource)\nCreationDate:    Wed Aug 12 01:22:47 2026 UTC\nModDate:         Wed Aug 12 01:22:47 2026 UTC\nCustom Metadata: no\nMetadata Stream: no\nTagged:          no\nUserProperties:  no\nSuspects:        no\nForm:            none\nJavaScript:      no\nPages:           2\nEncrypted:       no\nPage size:       841.89 x 595.276 pts (A4)\nPage rot:        0\nFile size:       5095 bytes\nOptimized:       no\nPDF version:     1.4\n",
       "page_count": 2,
-      "size": 5099,
-      "sha256": "e3fa06c3d94d522a205128d84fda94e23a19d0a1f489f415f200dbfcdd5c2176",
+      "size": 5095,
+      "sha256": "0bddd4d4564eb11ec616e5627d4c5b10a73846592033c7f4028403850e23dfa7",
       "missing_terms": [],
       "rendered_pages": [
         "vLLM_Evolution_Brief-1.png",

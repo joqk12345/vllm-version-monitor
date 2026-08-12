@@ -59427,7 +59427,7 @@
     {
       "tag": "v0.5.17",
       "category": "scheduling_batching",
-      "snippet": "Initial Support for Rust Frontend: Initially supporting rust frontend, which migrates  front-half (everything from network ingress up to the point a tokenized request is handed to the GPU scheduler) from Python to a multi-threaded Rust implementation. https://",
+      "snippet": "Initial support for the Rust frontend: Migrates the front half of the server, everything from network ingress up to the point a tokenized request is handed to the GPU scheduler, from Python to a multi-threaded Rust implementation ([29799](https://github.com/sg",
       "source_url": "https://github.com/sgl-project/sglang/releases/tag/v0.5.17"
     },
     {
@@ -59494,6 +59494,36 @@
       "tag": "v0.5.17",
       "category": "quantization",
       "snippet": "SM90 FP8 MegaMoE for DeepSeek-V4: Adds the DeepGEMM MegaMoE A2A path on SM90 for DeepSeek-V4-Flash/Pro FP8, including the pre-dispatch JIT kernel and FP8 expert weight preparation. Guarded behind SGLANGOPTUSEDEEPGEMMMEGAMOE=1 ([29016](https://github.com/sgl-pr",
+      "source_url": "https://github.com/sgl-project/sglang/releases/tag/v0.5.17"
+    },
+    {
+      "tag": "v0.5.17",
+      "category": "model_modalities",
+      "snippet": "Faster large-MoE model loading: Oversized or non-contiguous CPU weight views were driving pathological H2D transfers, with DeepSeek-V4-Pro TP8 spending 27 to 32 minutes in H2D on some ranks. Copying those views into contiguous storage before H2D cuts full mode",
+      "source_url": "https://github.com/sgl-project/sglang/releases/tag/v0.5.17"
+    },
+    {
+      "tag": "v0.5.17",
+      "category": "hardware_platform",
+      "snippet": "Faster large-MoE model loading: Oversized or non-contiguous CPU weight views were driving pathological H2D transfers, with DeepSeek-V4-Pro TP8 spending 27 to 32 minutes in H2D on some ranks. Copying those views into contiguous storage before H2D cuts full mode",
+      "source_url": "https://github.com/sgl-project/sglang/releases/tag/v0.5.17"
+    },
+    {
+      "tag": "v0.5.17",
+      "category": "correctness_stability",
+      "snippet": "Faster large-MoE model loading: Oversized or non-contiguous CPU weight views were driving pathological H2D transfers, with DeepSeek-V4-Pro TP8 spending 27 to 32 minutes in H2D on some ranks. Copying those views into contiguous storage before H2D cuts full mode",
+      "source_url": "https://github.com/sgl-project/sglang/releases/tag/v0.5.17"
+    },
+    {
+      "tag": "v0.5.17",
+      "category": "model_modalities",
+      "snippet": "Lower DeepSeek-V4 memory on AMD: Removing unnecessary expert padding drops MI355X FP4 MoE model weights from 159.07 GB to 112.36 GB, and bringing the HIP compress-state pool into the memorysaver KVCACHE region lets colocated RL reclaim it, cutting the measured",
+      "source_url": "https://github.com/sgl-project/sglang/releases/tag/v0.5.17"
+    },
+    {
+      "tag": "v0.5.17",
+      "category": "quantization",
+      "snippet": "Lower DeepSeek-V4 memory on AMD: Removing unnecessary expert padding drops MI355X FP4 MoE model weights from 159.07 GB to 112.36 GB, and bringing the HIP compress-state pool into the memorysaver KVCACHE region lets colocated RL reclaim it, cutting the measured",
       "source_url": "https://github.com/sgl-project/sglang/releases/tag/v0.5.17"
     },
     {
