@@ -73,7 +73,8 @@
         "v0.5.15",
         "v0.5.15.post1",
         "v0.5.16",
-        "v0.5.17"
+        "v0.5.17",
+        "v0.5.18"
       ]
     }
   ],
@@ -62291,6 +62292,2364 @@
       "category": "execution_kernels",
       "snippet": "The SM120 DeepGEMM release-pipeline test is temporarily skipped: [32193](https://github.com/sgl-project/sglang/pull/32193)",
       "source_url": "https://github.com/sgl-project/sglang/releases/tag/v0.5.17"
+    },
+    {
+      "tag": "v0.5.18",
+      "category": "model_modalities",
+      "snippet": "| Muse Glimmer | Autoregressive (Multimodal) | [34262](https://github.com/sgl-project/sglang/pull/34262) | [link](https://docs.sglang.io/cookbook/autoregressive/Meta/MuseGlimmer) |",
+      "source_url": "https://github.com/sgl-project/sglang/releases/tag/v0.5.18"
+    },
+    {
+      "tag": "v0.5.18",
+      "category": "model_modalities",
+      "snippet": "| SANA-Video | Diffusion | [32921](https://github.com/sgl-project/sglang/pull/32921) | [link](https://docs.sglang.io/cookbook/diffusion/SANA-Video/SANA-Video) |",
+      "source_url": "https://github.com/sgl-project/sglang/releases/tag/v0.5.18"
+    },
+    {
+      "tag": "v0.5.18",
+      "category": "model_modalities",
+      "snippet": "| LingBot-Video-MoE | Diffusion | [32341](https://github.com/sgl-project/sglang/pull/32341) | [link](https://docs.sglang.io/cookbook/diffusion/LingBot-Video/LingBot-Video-MoE) |",
+      "source_url": "https://github.com/sgl-project/sglang/releases/tag/v0.5.18"
+    },
+    {
+      "tag": "v0.5.18",
+      "category": "model_modalities",
+      "snippet": "| LTX-2.5 | Diffusion | [34471](https://github.com/sgl-project/sglang/pull/34471) | [link](https://docs.sglang.io/cookbook/diffusion/LTX/LTX2.5) |",
+      "source_url": "https://github.com/sgl-project/sglang/releases/tag/v0.5.18"
+    },
+    {
+      "tag": "v0.5.18",
+      "category": "model_modalities",
+      "snippet": "| Cosmos3 Edge & Distilled | Diffusion | [31590](https://github.com/sgl-project/sglang/pull/31590) | [link](https://docs.sglang.io/cookbook/diffusion/Cosmos/Cosmos3) |",
+      "source_url": "https://github.com/sgl-project/sglang/releases/tag/v0.5.18"
+    },
+    {
+      "tag": "v0.5.18",
+      "category": "model_modalities",
+      "snippet": "| LongCat-Image | Diffusion | [23274](https://github.com/sgl-project/sglang/pull/23274) | |",
+      "source_url": "https://github.com/sgl-project/sglang/releases/tag/v0.5.18"
+    },
+    {
+      "tag": "v0.5.18",
+      "category": "model_modalities",
+      "snippet": "Plus cookbook recipes for the [Qwen3.8 family](https://docs.sglang.io/cookbook/autoregressive/Qwen/Qwen3.8), [Ling-3.0](https://docs.sglang.io/cookbook/autoregressive/InclusionAI/Ling-3.0-flash), [Nemotron 3.5 Lightning](https://docs.sglang.io/cookbook/autoreg",
+      "source_url": "https://github.com/sgl-project/sglang/releases/tag/v0.5.18"
+    },
+    {
+      "tag": "v0.5.18",
+      "category": "scheduling_batching",
+      "snippet": "Overlapped checkpoint staging at startup: Checkpoint pages now stage from storage while CUDA graphs capture. Qwen3-32B on H100 starts 8.6-11.7% faster than serial with prefetch, and 2.38x faster (35.6s vs 84.8s) than the plain default. Opt in with --startup-we",
+      "source_url": "https://github.com/sgl-project/sglang/releases/tag/v0.5.18"
+    },
+    {
+      "tag": "v0.5.18",
+      "category": "hardware_platform",
+      "snippet": "Overlapped checkpoint staging at startup: Checkpoint pages now stage from storage while CUDA graphs capture. Qwen3-32B on H100 starts 8.6-11.7% faster than serial with prefetch, and 2.38x faster (35.6s vs 84.8s) than the plain default. Opt in with --startup-we",
+      "source_url": "https://github.com/sgl-project/sglang/releases/tag/v0.5.18"
+    },
+    {
+      "tag": "v0.5.18",
+      "category": "correctness_stability",
+      "snippet": "Overlapped checkpoint staging at startup: Checkpoint pages now stage from storage while CUDA graphs capture. Qwen3-32B on H100 starts 8.6-11.7% faster than serial with prefetch, and 2.38x faster (35.6s vs 84.8s) than the plain default. Opt in with --startup-we",
+      "source_url": "https://github.com/sgl-project/sglang/releases/tag/v0.5.18"
+    },
+    {
+      "tag": "v0.5.18",
+      "category": "parallelism_distributed",
+      "snippet": "TP LMHead with All-to-All: The TP LMHead's allgather + scatter becomes a single all-to-all for pure-DP dp-attention. On DeepSeek-V4-Pro B200 decode, LMHead time drops 320us to 169us and TPOT improves 36.97ms to 35.67ms ([32313](https://github.com/sgl-project/s",
+      "source_url": "https://github.com/sgl-project/sglang/releases/tag/v0.5.18"
+    },
+    {
+      "tag": "v0.5.18",
+      "category": "model_modalities",
+      "snippet": "TP LMHead with All-to-All: The TP LMHead's allgather + scatter becomes a single all-to-all for pure-DP dp-attention. On DeepSeek-V4-Pro B200 decode, LMHead time drops 320us to 169us and TPOT improves 36.97ms to 35.67ms ([32313](https://github.com/sgl-project/s",
+      "source_url": "https://github.com/sgl-project/sglang/releases/tag/v0.5.18"
+    },
+    {
+      "tag": "v0.5.18",
+      "category": "execution_kernels",
+      "snippet": "FlashInfer MNNVL for pure allreduce: Non-fused allreduce sites now reuse the FlashInfer MNNVL workspace instead of falling back to NCCL. DeepSeek-V4-Flash TP4 decode on Blackwell gains up to +6.9% at small batches. Auto-enabled for DeepSeek-V3/V3.2/V4; elsewhe",
+      "source_url": "https://github.com/sgl-project/sglang/releases/tag/v0.5.18"
+    },
+    {
+      "tag": "v0.5.18",
+      "category": "parallelism_distributed",
+      "snippet": "FlashInfer MNNVL for pure allreduce: Non-fused allreduce sites now reuse the FlashInfer MNNVL workspace instead of falling back to NCCL. DeepSeek-V4-Flash TP4 decode on Blackwell gains up to +6.9% at small batches. Auto-enabled for DeepSeek-V3/V3.2/V4; elsewhe",
+      "source_url": "https://github.com/sgl-project/sglang/releases/tag/v0.5.18"
+    },
+    {
+      "tag": "v0.5.18",
+      "category": "model_modalities",
+      "snippet": "FlashInfer MNNVL for pure allreduce: Non-fused allreduce sites now reuse the FlashInfer MNNVL workspace instead of falling back to NCCL. DeepSeek-V4-Flash TP4 decode on Blackwell gains up to +6.9% at small batches. Auto-enabled for DeepSeek-V3/V3.2/V4; elsewhe",
+      "source_url": "https://github.com/sgl-project/sglang/releases/tag/v0.5.18"
+    },
+    {
+      "tag": "v0.5.18",
+      "category": "hardware_platform",
+      "snippet": "FlashInfer MNNVL for pure allreduce: Non-fused allreduce sites now reuse the FlashInfer MNNVL workspace instead of falling back to NCCL. DeepSeek-V4-Flash TP4 decode on Blackwell gains up to +6.9% at small batches. Auto-enabled for DeepSeek-V3/V3.2/V4; elsewhe",
+      "source_url": "https://github.com/sgl-project/sglang/releases/tag/v0.5.18"
+    },
+    {
+      "tag": "v0.5.18",
+      "category": "execution_kernels",
+      "snippet": "One compiled-kernel cache directory: Triton, FlashInfer, Inductor, DeepGEMM, and CUDA driver caches all move under SGLANGCACHEDIR. The first launch after upgrading recompiles once; see Breaking Changes ([32434](https://github.com/sgl-project/sglang/pull/32434)",
+      "source_url": "https://github.com/sgl-project/sglang/releases/tag/v0.5.18"
+    },
+    {
+      "tag": "v0.5.18",
+      "category": "hardware_platform",
+      "snippet": "One compiled-kernel cache directory: Triton, FlashInfer, Inductor, DeepGEMM, and CUDA driver caches all move under SGLANGCACHEDIR. The first launch after upgrading recompiles once; see Breaking Changes ([32434](https://github.com/sgl-project/sglang/pull/32434)",
+      "source_url": "https://github.com/sgl-project/sglang/releases/tag/v0.5.18"
+    },
+    {
+      "tag": "v0.5.18",
+      "category": "execution_kernels",
+      "snippet": "Dependencies: torch 2.13.0 with triton 3.7.1 ([28836](https://github.com/sgl-project/sglang/pull/28836)), flashinfer 0.6.17 ([33997](https://github.com/sgl-project/sglang/pull/33997)), CuTeDSL 4.6.2, fixing an FA4 startup regression on Blackwell ([34372](https",
+      "source_url": "https://github.com/sgl-project/sglang/releases/tag/v0.5.18"
+    },
+    {
+      "tag": "v0.5.18",
+      "category": "hardware_platform",
+      "snippet": "Dependencies: torch 2.13.0 with triton 3.7.1 ([28836](https://github.com/sgl-project/sglang/pull/28836)), flashinfer 0.6.17 ([33997](https://github.com/sgl-project/sglang/pull/33997)), CuTeDSL 4.6.2, fixing an FA4 startup regression on Blackwell ([34372](https",
+      "source_url": "https://github.com/sgl-project/sglang/releases/tag/v0.5.18"
+    },
+    {
+      "tag": "v0.5.18",
+      "category": "correctness_stability",
+      "snippet": "Dependencies: torch 2.13.0 with triton 3.7.1 ([28836](https://github.com/sgl-project/sglang/pull/28836)), flashinfer 0.6.17 ([33997](https://github.com/sgl-project/sglang/pull/33997)), CuTeDSL 4.6.2, fixing an FA4 startup regression on Blackwell ([34372](https",
+      "source_url": "https://github.com/sgl-project/sglang/releases/tag/v0.5.18"
+    },
+    {
+      "tag": "v0.5.18",
+      "category": "model_modalities",
+      "snippet": "[mm] rust-server: native multimodal processing for Qwen VL (integrate sglang-mm, e2e): [32365](https://github.com/sgl-project/sglang/pull/32365)",
+      "source_url": "https://github.com/sgl-project/sglang/releases/tag/v0.5.18"
+    },
+    {
+      "tag": "v0.5.18",
+      "category": "parallelism_distributed",
+      "snippet": "move the PD bootstrap registry under apiserver::disaggregation: [33895](https://github.com/sgl-project/sglang/pull/33895)",
+      "source_url": "https://github.com/sgl-project/sglang/releases/tag/v0.5.18"
+    },
+    {
+      "tag": "v0.5.18",
+      "category": "speculative_decoding",
+      "snippet": "Speculative Decoding",
+      "source_url": "https://github.com/sgl-project/sglang/releases/tag/v0.5.18"
+    },
+    {
+      "tag": "v0.5.18",
+      "category": "speculative_decoding",
+      "snippet": "[spec decoding] support inkling dspark: [31847](https://github.com/sgl-project/sglang/pull/31847)",
+      "source_url": "https://github.com/sgl-project/sglang/releases/tag/v0.5.18"
+    },
+    {
+      "tag": "v0.5.18",
+      "category": "speculative_decoding",
+      "snippet": "[Spec] Support logprobs with DSpark speculative decoding: [34696](https://github.com/sgl-project/sglang/pull/34696)",
+      "source_url": "https://github.com/sgl-project/sglang/releases/tag/v0.5.18"
+    },
+    {
+      "tag": "v0.5.18",
+      "category": "speculative_decoding",
+      "snippet": "[Spec] Support output logprobs with DSpark: [34478](https://github.com/sgl-project/sglang/pull/34478)",
+      "source_url": "https://github.com/sgl-project/sglang/releases/tag/v0.5.18"
+    },
+    {
+      "tag": "v0.5.18",
+      "category": "speculative_decoding",
+      "snippet": "[Spec] Support logprobs with DFlash: [33459](https://github.com/sgl-project/sglang/pull/33459)",
+      "source_url": "https://github.com/sgl-project/sglang/releases/tag/v0.5.18"
+    },
+    {
+      "tag": "v0.5.18",
+      "category": "speculative_decoding",
+      "snippet": "[Spec] Wire DFLASH aux-hidden capture into the Qwen3.5 text-only wrapper: [34771](https://github.com/sgl-project/sglang/pull/34771)",
+      "source_url": "https://github.com/sgl-project/sglang/releases/tag/v0.5.18"
+    },
+    {
+      "tag": "v0.5.18",
+      "category": "kv_cache_memory",
+      "snippet": "[Spec] Support mamba-radix-cache-strategy extrabufferlazy with DFLASH: [34763](https://github.com/sgl-project/sglang/pull/34763)",
+      "source_url": "https://github.com/sgl-project/sglang/releases/tag/v0.5.18"
+    },
+    {
+      "tag": "v0.5.18",
+      "category": "speculative_decoding",
+      "snippet": "[Spec] Support mamba-radix-cache-strategy extrabufferlazy with DFLASH: [34763](https://github.com/sgl-project/sglang/pull/34763)",
+      "source_url": "https://github.com/sgl-project/sglang/releases/tag/v0.5.18"
+    },
+    {
+      "tag": "v0.5.18",
+      "category": "model_modalities",
+      "snippet": "[Spec] Support mamba-radix-cache-strategy extrabufferlazy with DFLASH: [34763](https://github.com/sgl-project/sglang/pull/34763)",
+      "source_url": "https://github.com/sgl-project/sglang/releases/tag/v0.5.18"
+    },
+    {
+      "tag": "v0.5.18",
+      "category": "speculative_decoding",
+      "snippet": "[Spec] Support MegaMoE for DSpark under dp attention: [34844](https://github.com/sgl-project/sglang/pull/34844)",
+      "source_url": "https://github.com/sgl-project/sglang/releases/tag/v0.5.18"
+    },
+    {
+      "tag": "v0.5.18",
+      "category": "speculative_decoding",
+      "snippet": "[unified memory] Support DSPARK speculative decoding + fix two NaN root causes (page hand-out zeroing, CuTe int32 slot-stride wrap): [33974](https://github.com/sgl-project/sglang/pull/33974)",
+      "source_url": "https://github.com/sgl-project/sglang/releases/tag/v0.5.18"
+    },
+    {
+      "tag": "v0.5.18",
+      "category": "correctness_stability",
+      "snippet": "[unified memory] Support DSPARK speculative decoding + fix two NaN root causes (page hand-out zeroing, CuTe int32 slot-stride wrap): [33974](https://github.com/sgl-project/sglang/pull/33974)",
+      "source_url": "https://github.com/sgl-project/sglang/releases/tag/v0.5.18"
+    },
+    {
+      "tag": "v0.5.18",
+      "category": "execution_kernels",
+      "snippet": "[GDN] Honor configured linear-attn verify backend in the kernel dispatcher: [34592](https://github.com/sgl-project/sglang/pull/34592)",
+      "source_url": "https://github.com/sgl-project/sglang/releases/tag/v0.5.18"
+    },
+    {
+      "tag": "v0.5.18",
+      "category": "model_modalities",
+      "snippet": "[GDN] Honor configured linear-attn verify backend in the kernel dispatcher: [34592](https://github.com/sgl-project/sglang/pull/34592)",
+      "source_url": "https://github.com/sgl-project/sglang/releases/tag/v0.5.18"
+    },
+    {
+      "tag": "v0.5.18",
+      "category": "speculative_decoding",
+      "snippet": "[Spec] Relay ngram accept tokens through the FutureMap: [35198](https://github.com/sgl-project/sglang/pull/35198)",
+      "source_url": "https://github.com/sgl-project/sglang/releases/tag/v0.5.18"
+    },
+    {
+      "tag": "v0.5.18",
+      "category": "speculative_decoding",
+      "snippet": "[Spec] Reduce host-side overhead in ngram draft prep: [35207](https://github.com/sgl-project/sglang/pull/35207)",
+      "source_url": "https://github.com/sgl-project/sglang/releases/tag/v0.5.18"
+    },
+    {
+      "tag": "v0.5.18",
+      "category": "speculative_decoding",
+      "snippet": "[Spec] Point multi-layer eagle's last shared-read runner at the draft runner: [35057](https://github.com/sgl-project/sglang/pull/35057)",
+      "source_url": "https://github.com/sgl-project/sglang/releases/tag/v0.5.18"
+    },
+    {
+      "tag": "v0.5.18",
+      "category": "correctness_stability",
+      "snippet": "Fix DFlash sliding attention causality defaults: [34524](https://github.com/sgl-project/sglang/pull/34524)",
+      "source_url": "https://github.com/sgl-project/sglang/releases/tag/v0.5.18"
+    },
+    {
+      "tag": "v0.5.18",
+      "category": "speculative_decoding",
+      "snippet": "[Spec] Budget the DFLASH draft KV pool from its own attention geometry: [34234](https://github.com/sgl-project/sglang/pull/34234)",
+      "source_url": "https://github.com/sgl-project/sglang/releases/tag/v0.5.18"
+    },
+    {
+      "tag": "v0.5.18",
+      "category": "correctness_stability",
+      "snippet": "fix(dflash): account for DCP in draft KV pool sizing: [33912](https://github.com/sgl-project/sglang/pull/33912)",
+      "source_url": "https://github.com/sgl-project/sglang/releases/tag/v0.5.18"
+    },
+    {
+      "tag": "v0.5.18",
+      "category": "speculative_decoding",
+      "snippet": "[DSV4] Fix silent KV corruption when speculative draft tokens > 4: [34189](https://github.com/sgl-project/sglang/pull/34189)",
+      "source_url": "https://github.com/sgl-project/sglang/releases/tag/v0.5.18"
+    },
+    {
+      "tag": "v0.5.18",
+      "category": "correctness_stability",
+      "snippet": "[DSV4] Fix silent KV corruption when speculative draft tokens > 4: [34189](https://github.com/sgl-project/sglang/pull/34189)",
+      "source_url": "https://github.com/sgl-project/sglang/releases/tag/v0.5.18"
+    },
+    {
+      "tag": "v0.5.18",
+      "category": "speculative_decoding",
+      "snippet": "[Fix] Speculative decoding crashes with DP-Attention: [33892](https://github.com/sgl-project/sglang/pull/33892)",
+      "source_url": "https://github.com/sgl-project/sglang/releases/tag/v0.5.18"
+    },
+    {
+      "tag": "v0.5.18",
+      "category": "correctness_stability",
+      "snippet": "[Fix] Speculative decoding crashes with DP-Attention: [33892](https://github.com/sgl-project/sglang/pull/33892)",
+      "source_url": "https://github.com/sgl-project/sglang/releases/tag/v0.5.18"
+    },
+    {
+      "tag": "v0.5.18",
+      "category": "speculative_decoding",
+      "snippet": "[bugfix] Stop/EOS inside a spec accept run beats the maxnewtokens finish: [33758](https://github.com/sgl-project/sglang/pull/33758)",
+      "source_url": "https://github.com/sgl-project/sglang/releases/tag/v0.5.18"
+    },
+    {
+      "tag": "v0.5.18",
+      "category": "parallelism_distributed",
+      "snippet": "[DSpark] Fix EP1 decode performance regression: [34759](https://github.com/sgl-project/sglang/pull/34759)",
+      "source_url": "https://github.com/sgl-project/sglang/releases/tag/v0.5.18"
+    },
+    {
+      "tag": "v0.5.18",
+      "category": "correctness_stability",
+      "snippet": "[DSpark] Fix EP1 decode performance regression: [34759](https://github.com/sgl-project/sglang/pull/34759)",
+      "source_url": "https://github.com/sgl-project/sglang/releases/tag/v0.5.18"
+    },
+    {
+      "tag": "v0.5.18",
+      "category": "scheduling_batching",
+      "snippet": "[Fix: RL] Snapshot async state-capture outputs before overlap: [34319](https://github.com/sgl-project/sglang/pull/34319)",
+      "source_url": "https://github.com/sgl-project/sglang/releases/tag/v0.5.18"
+    },
+    {
+      "tag": "v0.5.18",
+      "category": "correctness_stability",
+      "snippet": "[Fix: RL] Snapshot async state-capture outputs before overlap: [34319](https://github.com/sgl-project/sglang/pull/34319)",
+      "source_url": "https://github.com/sgl-project/sglang/releases/tag/v0.5.18"
+    },
+    {
+      "tag": "v0.5.18",
+      "category": "scheduling_batching",
+      "snippet": "Piecewise & Breakable CUDA Graph",
+      "source_url": "https://github.com/sgl-project/sglang/releases/tag/v0.5.18"
+    },
+    {
+      "tag": "v0.5.18",
+      "category": "hardware_platform",
+      "snippet": "Piecewise & Breakable CUDA Graph",
+      "source_url": "https://github.com/sgl-project/sglang/releases/tag/v0.5.18"
+    },
+    {
+      "tag": "v0.5.18",
+      "category": "scheduling_batching",
+      "snippet": "[BCG][6/N] Allow prefill breakable CUDA graph for the Kimi archs: [34245](https://github.com/sgl-project/sglang/pull/34245)",
+      "source_url": "https://github.com/sgl-project/sglang/releases/tag/v0.5.18"
+    },
+    {
+      "tag": "v0.5.18",
+      "category": "parallelism_distributed",
+      "snippet": "[BCG][6/N] Allow prefill breakable CUDA graph for the Kimi archs: [34245](https://github.com/sgl-project/sglang/pull/34245)",
+      "source_url": "https://github.com/sgl-project/sglang/releases/tag/v0.5.18"
+    },
+    {
+      "tag": "v0.5.18",
+      "category": "hardware_platform",
+      "snippet": "[BCG][6/N] Allow prefill breakable CUDA graph for the Kimi archs: [34245](https://github.com/sgl-project/sglang/pull/34245)",
+      "source_url": "https://github.com/sgl-project/sglang/releases/tag/v0.5.18"
+    },
+    {
+      "tag": "v0.5.18",
+      "category": "scheduling_batching",
+      "snippet": "fix: always capture default prefill CUDA graph: [33352](https://github.com/sgl-project/sglang/pull/33352)",
+      "source_url": "https://github.com/sgl-project/sglang/releases/tag/v0.5.18"
+    },
+    {
+      "tag": "v0.5.18",
+      "category": "parallelism_distributed",
+      "snippet": "fix: always capture default prefill CUDA graph: [33352](https://github.com/sgl-project/sglang/pull/33352)",
+      "source_url": "https://github.com/sgl-project/sglang/releases/tag/v0.5.18"
+    },
+    {
+      "tag": "v0.5.18",
+      "category": "hardware_platform",
+      "snippet": "fix: always capture default prefill CUDA graph: [33352](https://github.com/sgl-project/sglang/pull/33352)",
+      "source_url": "https://github.com/sgl-project/sglang/releases/tag/v0.5.18"
+    },
+    {
+      "tag": "v0.5.18",
+      "category": "correctness_stability",
+      "snippet": "fix: always capture default prefill CUDA graph: [33352](https://github.com/sgl-project/sglang/pull/33352)",
+      "source_url": "https://github.com/sgl-project/sglang/releases/tag/v0.5.18"
+    },
+    {
+      "tag": "v0.5.18",
+      "category": "scheduling_batching",
+      "snippet": "Fix padded positions in breakable CUDA Graph attention: [33253](https://github.com/sgl-project/sglang/pull/33253)",
+      "source_url": "https://github.com/sgl-project/sglang/releases/tag/v0.5.18"
+    },
+    {
+      "tag": "v0.5.18",
+      "category": "hardware_platform",
+      "snippet": "Fix padded positions in breakable CUDA Graph attention: [33253](https://github.com/sgl-project/sglang/pull/33253)",
+      "source_url": "https://github.com/sgl-project/sglang/releases/tag/v0.5.18"
+    },
+    {
+      "tag": "v0.5.18",
+      "category": "correctness_stability",
+      "snippet": "Fix padded positions in breakable CUDA Graph attention: [33253](https://github.com/sgl-project/sglang/pull/33253)",
+      "source_url": "https://github.com/sgl-project/sglang/releases/tag/v0.5.18"
+    },
+    {
+      "tag": "v0.5.18",
+      "category": "parallelism_distributed",
+      "snippet": "fix: avoid piecewise prefill graph for trtllmmla: [32785](https://github.com/sgl-project/sglang/pull/32785)",
+      "source_url": "https://github.com/sgl-project/sglang/releases/tag/v0.5.18"
+    },
+    {
+      "tag": "v0.5.18",
+      "category": "correctness_stability",
+      "snippet": "fix: avoid piecewise prefill graph for trtllmmla: [32785](https://github.com/sgl-project/sglang/pull/32785)",
+      "source_url": "https://github.com/sgl-project/sglang/releases/tag/v0.5.18"
+    },
+    {
+      "tag": "v0.5.18",
+      "category": "scheduling_batching",
+      "snippet": "Reenable breakable CUDA graph for NemotronH: [34538](https://github.com/sgl-project/sglang/pull/34538)",
+      "source_url": "https://github.com/sgl-project/sglang/releases/tag/v0.5.18"
+    },
+    {
+      "tag": "v0.5.18",
+      "category": "hardware_platform",
+      "snippet": "Reenable breakable CUDA graph for NemotronH: [34538](https://github.com/sgl-project/sglang/pull/34538)",
+      "source_url": "https://github.com/sgl-project/sglang/releases/tag/v0.5.18"
+    },
+    {
+      "tag": "v0.5.18",
+      "category": "parallelism_distributed",
+      "snippet": "Fix prefill CP graph overflow with larger bucket search: [33906](https://github.com/sgl-project/sglang/pull/33906)",
+      "source_url": "https://github.com/sgl-project/sglang/releases/tag/v0.5.18"
+    },
+    {
+      "tag": "v0.5.18",
+      "category": "correctness_stability",
+      "snippet": "Fix prefill CP graph overflow with larger bucket search: [33906](https://github.com/sgl-project/sglang/pull/33906)",
+      "source_url": "https://github.com/sgl-project/sglang/releases/tag/v0.5.18"
+    },
+    {
+      "tag": "v0.5.18",
+      "category": "parallelism_distributed",
+      "snippet": "Fix stale track rows corrupting conv checkpoints under the prefill graph: [34184](https://github.com/sgl-project/sglang/pull/34184)",
+      "source_url": "https://github.com/sgl-project/sglang/releases/tag/v0.5.18"
+    },
+    {
+      "tag": "v0.5.18",
+      "category": "correctness_stability",
+      "snippet": "Fix stale track rows corrupting conv checkpoints under the prefill graph: [34184](https://github.com/sgl-project/sglang/pull/34184)",
+      "source_url": "https://github.com/sgl-project/sglang/releases/tag/v0.5.18"
+    },
+    {
+      "tag": "v0.5.18",
+      "category": "correctness_stability",
+      "snippet": "Fix sconv track refresh on graph capture: [35042](https://github.com/sgl-project/sglang/pull/35042)",
+      "source_url": "https://github.com/sgl-project/sglang/releases/tag/v0.5.18"
+    },
+    {
+      "tag": "v0.5.18",
+      "category": "parallelism_distributed",
+      "snippet": "Increase post-capture decode memory reserve: [34996](https://github.com/sgl-project/sglang/pull/34996)",
+      "source_url": "https://github.com/sgl-project/sglang/releases/tag/v0.5.18"
+    },
+    {
+      "tag": "v0.5.18",
+      "category": "correctness_stability",
+      "snippet": "fix: support FA4 backend for GLM4.7-flash: [33436](https://github.com/sgl-project/sglang/pull/33436)",
+      "source_url": "https://github.com/sgl-project/sglang/releases/tag/v0.5.18"
+    },
+    {
+      "tag": "v0.5.18",
+      "category": "execution_kernels",
+      "snippet": "feat: Add flashinfer mHC fusion for DSV4: [33616](https://github.com/sgl-project/sglang/pull/33616)",
+      "source_url": "https://github.com/sgl-project/sglang/releases/tag/v0.5.18"
+    },
+    {
+      "tag": "v0.5.18",
+      "category": "correctness_stability",
+      "snippet": "[DSV4] Turn on mhc post pre fusion by default: [35214](https://github.com/sgl-project/sglang/pull/35214)",
+      "source_url": "https://github.com/sgl-project/sglang/releases/tag/v0.5.18"
+    },
+    {
+      "tag": "v0.5.18",
+      "category": "correctness_stability",
+      "snippet": "[SM12x] Default the fused MHC post+pre path on: [34019](https://github.com/sgl-project/sglang/pull/34019)",
+      "source_url": "https://github.com/sgl-project/sglang/releases/tag/v0.5.18"
+    },
+    {
+      "tag": "v0.5.18",
+      "category": "scheduling_batching",
+      "snippet": "[trtllmmha] perf: Stop allocating per-layer scratch inside the decode CUDA graph: [33063](https://github.com/sgl-project/sglang/pull/33063)",
+      "source_url": "https://github.com/sgl-project/sglang/releases/tag/v0.5.18"
+    },
+    {
+      "tag": "v0.5.18",
+      "category": "parallelism_distributed",
+      "snippet": "[trtllmmha] perf: Stop allocating per-layer scratch inside the decode CUDA graph: [33063](https://github.com/sgl-project/sglang/pull/33063)",
+      "source_url": "https://github.com/sgl-project/sglang/releases/tag/v0.5.18"
+    },
+    {
+      "tag": "v0.5.18",
+      "category": "hardware_platform",
+      "snippet": "[trtllmmha] perf: Stop allocating per-layer scratch inside the decode CUDA graph: [33063](https://github.com/sgl-project/sglang/pull/33063)",
+      "source_url": "https://github.com/sgl-project/sglang/releases/tag/v0.5.18"
+    },
+    {
+      "tag": "v0.5.18",
+      "category": "execution_kernels",
+      "snippet": "Select DeepGEMM standard layouts by memory budget: [33474](https://github.com/sgl-project/sglang/pull/33474)",
+      "source_url": "https://github.com/sgl-project/sglang/releases/tag/v0.5.18"
+    },
+    {
+      "tag": "v0.5.18",
+      "category": "execution_kernels",
+      "snippet": "add flashinfer cute-dsl backend for mxfp8 gemm: [34042](https://github.com/sgl-project/sglang/pull/34042)",
+      "source_url": "https://github.com/sgl-project/sglang/releases/tag/v0.5.18"
+    },
+    {
+      "tag": "v0.5.18",
+      "category": "execution_kernels",
+      "snippet": "[BugFix] Fix race in c128 prefill plan kernel on ragged extend: [32467](https://github.com/sgl-project/sglang/pull/32467)",
+      "source_url": "https://github.com/sgl-project/sglang/releases/tag/v0.5.18"
+    },
+    {
+      "tag": "v0.5.18",
+      "category": "parallelism_distributed",
+      "snippet": "[BugFix] Fix race in c128 prefill plan kernel on ragged extend: [32467](https://github.com/sgl-project/sglang/pull/32467)",
+      "source_url": "https://github.com/sgl-project/sglang/releases/tag/v0.5.18"
+    },
+    {
+      "tag": "v0.5.18",
+      "category": "correctness_stability",
+      "snippet": "[BugFix] Fix race in c128 prefill plan kernel on ragged extend: [32467](https://github.com/sgl-project/sglang/pull/32467)",
+      "source_url": "https://github.com/sgl-project/sglang/releases/tag/v0.5.18"
+    },
+    {
+      "tag": "v0.5.18",
+      "category": "execution_kernels",
+      "snippet": "[JIT Kernel][DSv4] Optimize epilogue of c128: [26671](https://github.com/sgl-project/sglang/pull/26671)",
+      "source_url": "https://github.com/sgl-project/sglang/releases/tag/v0.5.18"
+    },
+    {
+      "tag": "v0.5.18",
+      "category": "execution_kernels",
+      "snippet": "fix(dsa): use FlashInfer fused top-k for packed PAGED rows: [33006](https://github.com/sgl-project/sglang/pull/33006)",
+      "source_url": "https://github.com/sgl-project/sglang/releases/tag/v0.5.18"
+    },
+    {
+      "tag": "v0.5.18",
+      "category": "correctness_stability",
+      "snippet": "fix(dsa): use FlashInfer fused top-k for packed PAGED rows: [33006](https://github.com/sgl-project/sglang/pull/33006)",
+      "source_url": "https://github.com/sgl-project/sglang/releases/tag/v0.5.18"
+    },
+    {
+      "tag": "v0.5.18",
+      "category": "hardware_platform",
+      "snippet": "[DSA] Fix top-k v2 dropping non-primary ranks' output on CUDA 13.1+ (root cause for 33835): [34167](https://github.com/sgl-project/sglang/pull/34167)",
+      "source_url": "https://github.com/sgl-project/sglang/releases/tag/v0.5.18"
+    },
+    {
+      "tag": "v0.5.18",
+      "category": "correctness_stability",
+      "snippet": "[DSA] Fix top-k v2 dropping non-primary ranks' output on CUDA 13.1+ (root cause for 33835): [34167](https://github.com/sgl-project/sglang/pull/34167)",
+      "source_url": "https://github.com/sgl-project/sglang/releases/tag/v0.5.18"
+    },
+    {
+      "tag": "v0.5.18",
+      "category": "kv_cache_memory",
+      "snippet": "[DSA] Skip indexer KV cache for skip-topk layers: [30531](https://github.com/sgl-project/sglang/pull/30531)",
+      "source_url": "https://github.com/sgl-project/sglang/releases/tag/v0.5.18"
+    },
+    {
+      "tag": "v0.5.18",
+      "category": "correctness_stability",
+      "snippet": "[Fix] Restore layer-level DSV4 RoPE policy: [34788](https://github.com/sgl-project/sglang/pull/34788)",
+      "source_url": "https://github.com/sgl-project/sglang/releases/tag/v0.5.18"
+    },
+    {
+      "tag": "v0.5.18",
+      "category": "correctness_stability",
+      "snippet": "Fix paswaprefilllens off-by-one in FlashAttentionBackend: [33379](https://github.com/sgl-project/sglang/pull/33379)",
+      "source_url": "https://github.com/sgl-project/sglang/releases/tag/v0.5.18"
+    },
+    {
+      "tag": "v0.5.18",
+      "category": "model_modalities",
+      "snippet": "MoE & Expert Parallelism",
+      "source_url": "https://github.com/sgl-project/sglang/releases/tag/v0.5.18"
+    },
+    {
+      "tag": "v0.5.18",
+      "category": "model_modalities",
+      "snippet": "[MoE] Fuse swiglu moe up gemm epilogue: [32944](https://github.com/sgl-project/sglang/pull/32944)",
+      "source_url": "https://github.com/sgl-project/sglang/releases/tag/v0.5.18"
+    },
+    {
+      "tag": "v0.5.18",
+      "category": "model_modalities",
+      "snippet": "Enable MoE deferred finalize by default and drop its expertweights dtype workaround: [33618](https://github.com/sgl-project/sglang/pull/33618)",
+      "source_url": "https://github.com/sgl-project/sglang/releases/tag/v0.5.18"
+    },
+    {
+      "tag": "v0.5.18",
+      "category": "correctness_stability",
+      "snippet": "Enable MoE deferred finalize by default and drop its expertweights dtype workaround: [33618](https://github.com/sgl-project/sglang/pull/33618)",
+      "source_url": "https://github.com/sgl-project/sglang/releases/tag/v0.5.18"
+    },
+    {
+      "tag": "v0.5.18",
+      "category": "execution_kernels",
+      "snippet": "[kernel] add triton moe TMA up support: [33559](https://github.com/sgl-project/sglang/pull/33559)",
+      "source_url": "https://github.com/sgl-project/sglang/releases/tag/v0.5.18"
+    },
+    {
+      "tag": "v0.5.18",
+      "category": "model_modalities",
+      "snippet": "[kernel] add triton moe TMA up support: [33559](https://github.com/sgl-project/sglang/pull/33559)",
+      "source_url": "https://github.com/sgl-project/sglang/releases/tag/v0.5.18"
+    },
+    {
+      "tag": "v0.5.18",
+      "category": "model_modalities",
+      "snippet": "[MoE] Single-launch moealign for tiny batches with many experts: [32395](https://github.com/sgl-project/sglang/pull/32395)",
+      "source_url": "https://github.com/sgl-project/sglang/releases/tag/v0.5.18"
+    },
+    {
+      "tag": "v0.5.18",
+      "category": "scheduling_batching",
+      "snippet": "[MiniMax-M3] Overlap shared and routed experts: [34542](https://github.com/sgl-project/sglang/pull/34542)",
+      "source_url": "https://github.com/sgl-project/sglang/releases/tag/v0.5.18"
+    },
+    {
+      "tag": "v0.5.18",
+      "category": "model_modalities",
+      "snippet": "[MoE] Route every trtllm-gen MoE call site through one PDL guard: [34789](https://github.com/sgl-project/sglang/pull/34789)",
+      "source_url": "https://github.com/sgl-project/sglang/releases/tag/v0.5.18"
+    },
+    {
+      "tag": "v0.5.18",
+      "category": "correctness_stability",
+      "snippet": "fix(qwen3): support DeepEP-class backends and early EPLB state: [34810](https://github.com/sgl-project/sglang/pull/34810)",
+      "source_url": "https://github.com/sgl-project/sglang/releases/tag/v0.5.18"
+    },
+    {
+      "tag": "v0.5.18",
+      "category": "correctness_stability",
+      "snippet": "Fix the router GEMM inaccuracy when using frontw in Kimi-K3: [33764](https://github.com/sgl-project/sglang/pull/33764)",
+      "source_url": "https://github.com/sgl-project/sglang/releases/tag/v0.5.18"
+    },
+    {
+      "tag": "v0.5.18",
+      "category": "model_modalities",
+      "snippet": "Fix Qwen3-MoE producing garbage with the mori a2a backend: [34006](https://github.com/sgl-project/sglang/pull/34006)",
+      "source_url": "https://github.com/sgl-project/sglang/releases/tag/v0.5.18"
+    },
+    {
+      "tag": "v0.5.18",
+      "category": "correctness_stability",
+      "snippet": "Fix Qwen3-MoE producing garbage with the mori a2a backend: [34006](https://github.com/sgl-project/sglang/pull/34006)",
+      "source_url": "https://github.com/sgl-project/sglang/releases/tag/v0.5.18"
+    },
+    {
+      "tag": "v0.5.18",
+      "category": "correctness_stability",
+      "snippet": "[Fix][Qwen]: fused shared-expert detection PP-safe protection: [34447](https://github.com/sgl-project/sglang/pull/34447)",
+      "source_url": "https://github.com/sgl-project/sglang/releases/tag/v0.5.18"
+    },
+    {
+      "tag": "v0.5.18",
+      "category": "execution_kernels",
+      "snippet": "[FlashInfer v0.6.16] Support FlashInfer CuTe DSL NVFP4 MoE quantization: [28354](https://github.com/sgl-project/sglang/pull/28354)",
+      "source_url": "https://github.com/sgl-project/sglang/releases/tag/v0.5.18"
+    },
+    {
+      "tag": "v0.5.18",
+      "category": "model_modalities",
+      "snippet": "[FlashInfer v0.6.16] Support FlashInfer CuTe DSL NVFP4 MoE quantization: [28354](https://github.com/sgl-project/sglang/pull/28354)",
+      "source_url": "https://github.com/sgl-project/sglang/releases/tag/v0.5.18"
+    },
+    {
+      "tag": "v0.5.18",
+      "category": "quantization",
+      "snippet": "[FlashInfer v0.6.16] Support FlashInfer CuTe DSL NVFP4 MoE quantization: [28354](https://github.com/sgl-project/sglang/pull/28354)",
+      "source_url": "https://github.com/sgl-project/sglang/releases/tag/v0.5.18"
+    },
+    {
+      "tag": "v0.5.18",
+      "category": "correctness_stability",
+      "snippet": "[Fix] Correct W4AFP8 DeepEP scaling and mode-specific dtypes: [33669](https://github.com/sgl-project/sglang/pull/33669)",
+      "source_url": "https://github.com/sgl-project/sglang/releases/tag/v0.5.18"
+    },
+    {
+      "tag": "v0.5.18",
+      "category": "execution_kernels",
+      "snippet": "[Fix] Support 128-aligned hidden sizes in the W4AFP8 DeepEP low-latency requant kernel: [35593](https://github.com/sgl-project/sglang/pull/35593)",
+      "source_url": "https://github.com/sgl-project/sglang/releases/tag/v0.5.18"
+    },
+    {
+      "tag": "v0.5.18",
+      "category": "correctness_stability",
+      "snippet": "[Fix] Support 128-aligned hidden sizes in the W4AFP8 DeepEP low-latency requant kernel: [35593](https://github.com/sgl-project/sglang/pull/35593)",
+      "source_url": "https://github.com/sgl-project/sglang/releases/tag/v0.5.18"
+    },
+    {
+      "tag": "v0.5.18",
+      "category": "model_modalities",
+      "snippet": "perf: add H200 Triton MoE configs for E256 N512: [34150](https://github.com/sgl-project/sglang/pull/34150)",
+      "source_url": "https://github.com/sgl-project/sglang/releases/tag/v0.5.18"
+    },
+    {
+      "tag": "v0.5.18",
+      "category": "quantization",
+      "snippet": "Quantization",
+      "source_url": "https://github.com/sgl-project/sglang/releases/tag/v0.5.18"
+    },
+    {
+      "tag": "v0.5.18",
+      "category": "model_modalities",
+      "snippet": "[ModelOpt FP4] Support online MoE weight quantization: [33115](https://github.com/sgl-project/sglang/pull/33115)",
+      "source_url": "https://github.com/sgl-project/sglang/releases/tag/v0.5.18"
+    },
+    {
+      "tag": "v0.5.18",
+      "category": "quantization",
+      "snippet": "[ModelOpt FP4] Support online MoE weight quantization: [33115](https://github.com/sgl-project/sglang/pull/33115)",
+      "source_url": "https://github.com/sgl-project/sglang/releases/tag/v0.5.18"
+    },
+    {
+      "tag": "v0.5.18",
+      "category": "quantization",
+      "snippet": "[Feature] Support NVFP4 token embedding in ModelOpt mixed-precision checkpoints: [34222](https://github.com/sgl-project/sglang/pull/34222)",
+      "source_url": "https://github.com/sgl-project/sglang/releases/tag/v0.5.18"
+    },
+    {
+      "tag": "v0.5.18",
+      "category": "execution_kernels",
+      "snippet": "[MXFP8] Use FlashInfer CUTLASS for dense GEMM on SM120, delete Triton path: [33208](https://github.com/sgl-project/sglang/pull/33208)",
+      "source_url": "https://github.com/sgl-project/sglang/releases/tag/v0.5.18"
+    },
+    {
+      "tag": "v0.5.18",
+      "category": "execution_kernels",
+      "snippet": "[Quantization] Route per-tensor FP8 checkpoints to FlashInfer on SM90: [33148](https://github.com/sgl-project/sglang/pull/33148)",
+      "source_url": "https://github.com/sgl-project/sglang/releases/tag/v0.5.18"
+    },
+    {
+      "tag": "v0.5.18",
+      "category": "quantization",
+      "snippet": "[Quantization] Route per-tensor FP8 checkpoints to FlashInfer on SM90: [33148](https://github.com/sgl-project/sglang/pull/33148)",
+      "source_url": "https://github.com/sgl-project/sglang/releases/tag/v0.5.18"
+    },
+    {
+      "tag": "v0.5.18",
+      "category": "quantization",
+      "snippet": "Pin online NVFP4 4over6 quantization settings: [33621](https://github.com/sgl-project/sglang/pull/33621)",
+      "source_url": "https://github.com/sgl-project/sglang/releases/tag/v0.5.18"
+    },
+    {
+      "tag": "v0.5.18",
+      "category": "quantization",
+      "snippet": "[Fix] Support Kimi-K3 ModelOpt mixed NVFP4/FP8 checkpoint: [35077](https://github.com/sgl-project/sglang/pull/35077)",
+      "source_url": "https://github.com/sgl-project/sglang/releases/tag/v0.5.18"
+    },
+    {
+      "tag": "v0.5.18",
+      "category": "correctness_stability",
+      "snippet": "[Fix] Support Kimi-K3 ModelOpt mixed NVFP4/FP8 checkpoint: [35077](https://github.com/sgl-project/sglang/pull/35077)",
+      "source_url": "https://github.com/sgl-project/sglang/releases/tag/v0.5.18"
+    },
+    {
+      "tag": "v0.5.18",
+      "category": "quantization",
+      "snippet": "[Quantization] Fix GPTQ scheme attachment broken by LinearBase.scheme default: [34962](https://github.com/sgl-project/sglang/pull/34962)",
+      "source_url": "https://github.com/sgl-project/sglang/releases/tag/v0.5.18"
+    },
+    {
+      "tag": "v0.5.18",
+      "category": "correctness_stability",
+      "snippet": "[Quantization] Fix GPTQ scheme attachment broken by LinearBase.scheme default: [34962](https://github.com/sgl-project/sglang/pull/34962)",
+      "source_url": "https://github.com/sgl-project/sglang/releases/tag/v0.5.18"
+    },
+    {
+      "tag": "v0.5.18",
+      "category": "quantization",
+      "snippet": "[quantization] Add tuned Triton tile configs for channelwise FP8 GEMM\u2026: [34331](https://github.com/sgl-project/sglang/pull/34331)",
+      "source_url": "https://github.com/sgl-project/sglang/releases/tag/v0.5.18"
+    },
+    {
+      "tag": "v0.5.18",
+      "category": "quantization",
+      "snippet": "[Fix] Correct dense FP8 Marlin bias ordering: [35020](https://github.com/sgl-project/sglang/pull/35020)",
+      "source_url": "https://github.com/sgl-project/sglang/releases/tag/v0.5.18"
+    },
+    {
+      "tag": "v0.5.18",
+      "category": "correctness_stability",
+      "snippet": "[Fix] Correct dense FP8 Marlin bias ordering: [35020](https://github.com/sgl-project/sglang/pull/35020)",
+      "source_url": "https://github.com/sgl-project/sglang/releases/tag/v0.5.18"
+    },
+    {
+      "tag": "v0.5.18",
+      "category": "parallelism_distributed",
+      "snippet": "Parallelism & Disaggregation",
+      "source_url": "https://github.com/sgl-project/sglang/releases/tag/v0.5.18"
+    },
+    {
+      "tag": "v0.5.18",
+      "category": "execution_kernels",
+      "snippet": "[NVIDIA] Add flashinfer MNNVL backend for allreduce only: [30700](https://github.com/sgl-project/sglang/pull/30700) \u2b50",
+      "source_url": "https://github.com/sgl-project/sglang/releases/tag/v0.5.18"
+    },
+    {
+      "tag": "v0.5.18",
+      "category": "parallelism_distributed",
+      "snippet": "fix: preserve GQA head mapping in Triton DCP prefill: [34161](https://github.com/sgl-project/sglang/pull/34161)",
+      "source_url": "https://github.com/sgl-project/sglang/releases/tag/v0.5.18"
+    },
+    {
+      "tag": "v0.5.18",
+      "category": "correctness_stability",
+      "snippet": "fix: preserve GQA head mapping in Triton DCP prefill: [34161](https://github.com/sgl-project/sglang/pull/34161)",
+      "source_url": "https://github.com/sgl-project/sglang/releases/tag/v0.5.18"
+    },
+    {
+      "tag": "v0.5.18",
+      "category": "correctness_stability",
+      "snippet": "Fix DCP KV head mapping for GQA models: [32858](https://github.com/sgl-project/sglang/pull/32858)",
+      "source_url": "https://github.com/sgl-project/sglang/releases/tag/v0.5.18"
+    },
+    {
+      "tag": "v0.5.18",
+      "category": "execution_kernels",
+      "snippet": "[DCP] Share one pack kernel between both a2a backends: [34651](https://github.com/sgl-project/sglang/pull/34651)",
+      "source_url": "https://github.com/sgl-project/sglang/releases/tag/v0.5.18"
+    },
+    {
+      "tag": "v0.5.18",
+      "category": "parallelism_distributed",
+      "snippet": "[DCP] Drop the prefill index-selection syncs by taking each rank's rows by stride: [35084](https://github.com/sgl-project/sglang/pull/35084)",
+      "source_url": "https://github.com/sgl-project/sglang/releases/tag/v0.5.18"
+    },
+    {
+      "tag": "v0.5.18",
+      "category": "correctness_stability",
+      "snippet": "[Fix] DCP: advertise the logical KV-event block size: [35298](https://github.com/sgl-project/sglang/pull/35298)",
+      "source_url": "https://github.com/sgl-project/sglang/releases/tag/v0.5.18"
+    },
+    {
+      "tag": "v0.5.18",
+      "category": "model_modalities",
+      "snippet": "Fix DeepSeek-V4/DeepSeek-V4-Pro DP-attention gather semantics: [31700](https://github.com/sgl-project/sglang/pull/31700)",
+      "source_url": "https://github.com/sgl-project/sglang/releases/tag/v0.5.18"
+    },
+    {
+      "tag": "v0.5.18",
+      "category": "correctness_stability",
+      "snippet": "Fix DeepSeek-V4/DeepSeek-V4-Pro DP-attention gather semantics: [31700](https://github.com/sgl-project/sglang/pull/31700)",
+      "source_url": "https://github.com/sgl-project/sglang/releases/tag/v0.5.18"
+    },
+    {
+      "tag": "v0.5.18",
+      "category": "scheduling_batching",
+      "snippet": "[perf] Collapse the DP attention scheduler sync to a single D2H copy: [34338](https://github.com/sgl-project/sglang/pull/34338)",
+      "source_url": "https://github.com/sgl-project/sglang/releases/tag/v0.5.18"
+    },
+    {
+      "tag": "v0.5.18",
+      "category": "correctness_stability",
+      "snippet": "Fix world-size-one aliasing in MLP batch sync: [34997](https://github.com/sgl-project/sglang/pull/34997)",
+      "source_url": "https://github.com/sgl-project/sglang/releases/tag/v0.5.18"
+    },
+    {
+      "tag": "v0.5.18",
+      "category": "parallelism_distributed",
+      "snippet": "[PD] Add the missing Prefill bootstrap timeout for NIXL: [34692](https://github.com/sgl-project/sglang/pull/34692)",
+      "source_url": "https://github.com/sgl-project/sglang/releases/tag/v0.5.18"
+    },
+    {
+      "tag": "v0.5.18",
+      "category": "parallelism_distributed",
+      "snippet": "[PD] Support pipeline-parallel prefill with Mooncake staging buffer: [33807](https://github.com/sgl-project/sglang/pull/33807)",
+      "source_url": "https://github.com/sgl-project/sglang/releases/tag/v0.5.18"
+    },
+    {
+      "tag": "v0.5.18",
+      "category": "parallelism_distributed",
+      "snippet": "[PD] Support --enable-unified-memory with PD disaggregation (kimi-linear MLA hybrid-Mamba): [33362](https://github.com/sgl-project/sglang/pull/33362)",
+      "source_url": "https://github.com/sgl-project/sglang/releases/tag/v0.5.18"
+    },
+    {
+      "tag": "v0.5.18",
+      "category": "model_modalities",
+      "snippet": "[PD] Support --enable-unified-memory with PD disaggregation (kimi-linear MLA hybrid-Mamba): [33362](https://github.com/sgl-project/sglang/pull/33362)",
+      "source_url": "https://github.com/sgl-project/sglang/releases/tag/v0.5.18"
+    },
+    {
+      "tag": "v0.5.18",
+      "category": "speculative_decoding",
+      "snippet": "[PD] Skip speculative verify scratch on prefill servers (saves numdrafttokens x mamba pool per rank): [34191](https://github.com/sgl-project/sglang/pull/34191)",
+      "source_url": "https://github.com/sgl-project/sglang/releases/tag/v0.5.18"
+    },
+    {
+      "tag": "v0.5.18",
+      "category": "parallelism_distributed",
+      "snippet": "[PD] Skip speculative verify scratch on prefill servers (saves numdrafttokens x mamba pool per rank): [34191](https://github.com/sgl-project/sglang/pull/34191)",
+      "source_url": "https://github.com/sgl-project/sglang/releases/tag/v0.5.18"
+    },
+    {
+      "tag": "v0.5.18",
+      "category": "model_modalities",
+      "snippet": "[PD] Skip speculative verify scratch on prefill servers (saves numdrafttokens x mamba pool per rank): [34191](https://github.com/sgl-project/sglang/pull/34191)",
+      "source_url": "https://github.com/sgl-project/sglang/releases/tag/v0.5.18"
+    },
+    {
+      "tag": "v0.5.18",
+      "category": "engine_model_runner",
+      "snippet": "Scheduler & Runtime",
+      "source_url": "https://github.com/sgl-project/sglang/releases/tag/v0.5.18"
+    },
+    {
+      "tag": "v0.5.18",
+      "category": "scheduling_batching",
+      "snippet": "Scheduler & Runtime",
+      "source_url": "https://github.com/sgl-project/sglang/releases/tag/v0.5.18"
+    },
+    {
+      "tag": "v0.5.18",
+      "category": "scheduling_batching",
+      "snippet": "[Model Loading] Overlap checkpoint staging with CUDA graph capture during startup: [32017](https://github.com/sgl-project/sglang/pull/32017) \u2b50",
+      "source_url": "https://github.com/sgl-project/sglang/releases/tag/v0.5.18"
+    },
+    {
+      "tag": "v0.5.18",
+      "category": "hardware_platform",
+      "snippet": "[Model Loading] Overlap checkpoint staging with CUDA graph capture during startup: [32017](https://github.com/sgl-project/sglang/pull/32017) \u2b50",
+      "source_url": "https://github.com/sgl-project/sglang/releases/tag/v0.5.18"
+    },
+    {
+      "tag": "v0.5.18",
+      "category": "execution_kernels",
+      "snippet": "[core] Consolidate compiled-kernel caches under SGLANGCACHEDIR: [32434](https://github.com/sgl-project/sglang/pull/32434) \u2b50",
+      "source_url": "https://github.com/sgl-project/sglang/releases/tag/v0.5.18"
+    },
+    {
+      "tag": "v0.5.18",
+      "category": "engine_model_runner",
+      "snippet": "[Engine] Freeze GC after server warmup: [34999](https://github.com/sgl-project/sglang/pull/34999)",
+      "source_url": "https://github.com/sgl-project/sglang/releases/tag/v0.5.18"
+    },
+    {
+      "tag": "v0.5.18",
+      "category": "kv_cache_memory",
+      "snippet": "feat: add cache salt support to KV cache events: [30827](https://github.com/sgl-project/sglang/pull/30827)",
+      "source_url": "https://github.com/sgl-project/sglang/releases/tag/v0.5.18"
+    },
+    {
+      "tag": "v0.5.18",
+      "category": "scheduling_batching",
+      "snippet": "[Scheduler] Honor explicit min-free-slots thresholds: [33403](https://github.com/sgl-project/sglang/pull/33403)",
+      "source_url": "https://github.com/sgl-project/sglang/releases/tag/v0.5.18"
+    },
+    {
+      "tag": "v0.5.18",
+      "category": "scheduling_batching",
+      "snippet": "[Scheduler] Gate SWA eviction on accumulated tokens: [33404](https://github.com/sgl-project/sglang/pull/33404)",
+      "source_url": "https://github.com/sgl-project/sglang/releases/tag/v0.5.18"
+    },
+    {
+      "tag": "v0.5.18",
+      "category": "scheduling_batching",
+      "snippet": "[Scheduler] Fix to restrict the SWA chunk-cap escape hatch to true head-of-line livelock: [32700](https://github.com/sgl-project/sglang/pull/32700)",
+      "source_url": "https://github.com/sgl-project/sglang/releases/tag/v0.5.18"
+    },
+    {
+      "tag": "v0.5.18",
+      "category": "correctness_stability",
+      "snippet": "[Scheduler] Fix to restrict the SWA chunk-cap escape hatch to true head-of-line livelock: [32700](https://github.com/sgl-project/sglang/pull/32700)",
+      "source_url": "https://github.com/sgl-project/sglang/releases/tag/v0.5.18"
+    },
+    {
+      "tag": "v0.5.18",
+      "category": "scheduling_batching",
+      "snippet": "[srt] Batch scheduler cache frees: [33475](https://github.com/sgl-project/sglang/pull/33475)",
+      "source_url": "https://github.com/sgl-project/sglang/releases/tag/v0.5.18"
+    },
+    {
+      "tag": "v0.5.18",
+      "category": "scheduling_batching",
+      "snippet": "fix(scheduler): track max prefill batch size over recent real admissions: [34284](https://github.com/sgl-project/sglang/pull/34284)",
+      "source_url": "https://github.com/sgl-project/sglang/releases/tag/v0.5.18"
+    },
+    {
+      "tag": "v0.5.18",
+      "category": "parallelism_distributed",
+      "snippet": "fix(scheduler): track max prefill batch size over recent real admissions: [34284](https://github.com/sgl-project/sglang/pull/34284)",
+      "source_url": "https://github.com/sgl-project/sglang/releases/tag/v0.5.18"
+    },
+    {
+      "tag": "v0.5.18",
+      "category": "correctness_stability",
+      "snippet": "fix(scheduler): track max prefill batch size over recent real admissions: [34284](https://github.com/sgl-project/sglang/pull/34284)",
+      "source_url": "https://github.com/sgl-project/sglang/releases/tag/v0.5.18"
+    },
+    {
+      "tag": "v0.5.18",
+      "category": "parallelism_distributed",
+      "snippet": "fix tpot by adjusting the sliding max-prefill-size window size: [34856](https://github.com/sgl-project/sglang/pull/34856)",
+      "source_url": "https://github.com/sgl-project/sglang/releases/tag/v0.5.18"
+    },
+    {
+      "tag": "v0.5.18",
+      "category": "correctness_stability",
+      "snippet": "fix tpot by adjusting the sliding max-prefill-size window size: [34856](https://github.com/sgl-project/sglang/pull/34856)",
+      "source_url": "https://github.com/sgl-project/sglang/releases/tag/v0.5.18"
+    },
+    {
+      "tag": "v0.5.18",
+      "category": "scheduling_batching",
+      "snippet": "fix: route scheduler aborts to multi-tokenizer workers: [33940](https://github.com/sgl-project/sglang/pull/33940)",
+      "source_url": "https://github.com/sgl-project/sglang/releases/tag/v0.5.18"
+    },
+    {
+      "tag": "v0.5.18",
+      "category": "correctness_stability",
+      "snippet": "fix: route scheduler aborts to multi-tokenizer workers: [33940](https://github.com/sgl-project/sglang/pull/33940)",
+      "source_url": "https://github.com/sgl-project/sglang/releases/tag/v0.5.18"
+    },
+    {
+      "tag": "v0.5.18",
+      "category": "observability_operations",
+      "snippet": "[tracing] sglang tracing v2: support exporting tracing data asynchronously: [30023](https://github.com/sgl-project/sglang/pull/30023)",
+      "source_url": "https://github.com/sgl-project/sglang/releases/tag/v0.5.18"
+    },
+    {
+      "tag": "v0.5.18",
+      "category": "scheduling_batching",
+      "snippet": "Profiling Enhancements [1/3]: cuda graph profile traces: [24370](https://github.com/sgl-project/sglang/pull/24370)",
+      "source_url": "https://github.com/sgl-project/sglang/releases/tag/v0.5.18"
+    },
+    {
+      "tag": "v0.5.18",
+      "category": "hardware_platform",
+      "snippet": "Profiling Enhancements [1/3]: cuda graph profile traces: [24370](https://github.com/sgl-project/sglang/pull/24370)",
+      "source_url": "https://github.com/sgl-project/sglang/releases/tag/v0.5.18"
+    },
+    {
+      "tag": "v0.5.18",
+      "category": "parallelism_distributed",
+      "snippet": "[metrics] Fix prefill FLOPs estimate to count prefix and per-request causal pairs: [34316](https://github.com/sgl-project/sglang/pull/34316)",
+      "source_url": "https://github.com/sgl-project/sglang/releases/tag/v0.5.18"
+    },
+    {
+      "tag": "v0.5.18",
+      "category": "observability_operations",
+      "snippet": "[metrics] Fix prefill FLOPs estimate to count prefix and per-request causal pairs: [34316](https://github.com/sgl-project/sglang/pull/34316)",
+      "source_url": "https://github.com/sgl-project/sglang/releases/tag/v0.5.18"
+    },
+    {
+      "tag": "v0.5.18",
+      "category": "correctness_stability",
+      "snippet": "[metrics] Fix prefill FLOPs estimate to count prefix and per-request causal pairs: [34316](https://github.com/sgl-project/sglang/pull/34316)",
+      "source_url": "https://github.com/sgl-project/sglang/releases/tag/v0.5.18"
+    },
+    {
+      "tag": "v0.5.18",
+      "category": "correctness_stability",
+      "snippet": "Fix default dtype restoration after model loader errors: [34440](https://github.com/sgl-project/sglang/pull/34440)",
+      "source_url": "https://github.com/sgl-project/sglang/releases/tag/v0.5.18"
+    },
+    {
+      "tag": "v0.5.18",
+      "category": "correctness_stability",
+      "snippet": "fix: honor explicit model loader classes: [34880](https://github.com/sgl-project/sglang/pull/34880)",
+      "source_url": "https://github.com/sgl-project/sglang/releases/tag/v0.5.18"
+    },
+    {
+      "tag": "v0.5.18",
+      "category": "correctness_stability",
+      "snippet": "fix: make automatic NUMA binding configurable: [30394](https://github.com/sgl-project/sglang/pull/30394)",
+      "source_url": "https://github.com/sgl-project/sglang/releases/tag/v0.5.18"
+    },
+    {
+      "tag": "v0.5.18",
+      "category": "correctness_stability",
+      "snippet": "Fix deterministic inference for Inkling: [33417](https://github.com/sgl-project/sglang/pull/33417)",
+      "source_url": "https://github.com/sgl-project/sglang/releases/tag/v0.5.18"
+    },
+    {
+      "tag": "v0.5.18",
+      "category": "correctness_stability",
+      "snippet": "Fix deterministic inference all-reduce for tp>1: [34159](https://github.com/sgl-project/sglang/pull/34159)",
+      "source_url": "https://github.com/sgl-project/sglang/releases/tag/v0.5.18"
+    },
+    {
+      "tag": "v0.5.18",
+      "category": "correctness_stability",
+      "snippet": "Fix NaN logits from deterministic Triton extend on the unified memory pool: [33517](https://github.com/sgl-project/sglang/pull/33517)",
+      "source_url": "https://github.com/sgl-project/sglang/releases/tag/v0.5.18"
+    },
+    {
+      "tag": "v0.5.18",
+      "category": "speculative_decoding",
+      "snippet": "Add bit-exact class for MTP: [35143](https://github.com/sgl-project/sglang/pull/35143)",
+      "source_url": "https://github.com/sgl-project/sglang/releases/tag/v0.5.18"
+    },
+    {
+      "tag": "v0.5.18",
+      "category": "engine_model_runner",
+      "snippet": "Add bit-exact unified radix cache KL test for hybrid SWA + mamba: [34607](https://github.com/sgl-project/sglang/pull/34607)",
+      "source_url": "https://github.com/sgl-project/sglang/releases/tag/v0.5.18"
+    },
+    {
+      "tag": "v0.5.18",
+      "category": "kv_cache_memory",
+      "snippet": "Add bit-exact unified radix cache KL test for hybrid SWA + mamba: [34607](https://github.com/sgl-project/sglang/pull/34607)",
+      "source_url": "https://github.com/sgl-project/sglang/releases/tag/v0.5.18"
+    },
+    {
+      "tag": "v0.5.18",
+      "category": "model_modalities",
+      "snippet": "Add bit-exact unified radix cache KL test for hybrid SWA + mamba: [34607](https://github.com/sgl-project/sglang/pull/34607)",
+      "source_url": "https://github.com/sgl-project/sglang/releases/tag/v0.5.18"
+    },
+    {
+      "tag": "v0.5.18",
+      "category": "kv_cache_memory",
+      "snippet": "Add bit-exact hicache logprob-consistency test: [34356](https://github.com/sgl-project/sglang/pull/34356)",
+      "source_url": "https://github.com/sgl-project/sglang/releases/tag/v0.5.18"
+    },
+    {
+      "tag": "v0.5.18",
+      "category": "engine_model_runner",
+      "snippet": "HiCache & Radix Cache",
+      "source_url": "https://github.com/sgl-project/sglang/releases/tag/v0.5.18"
+    },
+    {
+      "tag": "v0.5.18",
+      "category": "kv_cache_memory",
+      "snippet": "HiCache & Radix Cache",
+      "source_url": "https://github.com/sgl-project/sglang/releases/tag/v0.5.18"
+    },
+    {
+      "tag": "v0.5.18",
+      "category": "kv_cache_memory",
+      "snippet": "[HiCache] Support packed and sidecar draft caches for MTP/EAGLE/DSpark: [30393](https://github.com/sgl-project/sglang/pull/30393)",
+      "source_url": "https://github.com/sgl-project/sglang/releases/tag/v0.5.18"
+    },
+    {
+      "tag": "v0.5.18",
+      "category": "speculative_decoding",
+      "snippet": "[HiCache] Support packed and sidecar draft caches for MTP/EAGLE/DSpark: [30393](https://github.com/sgl-project/sglang/pull/30393)",
+      "source_url": "https://github.com/sgl-project/sglang/releases/tag/v0.5.18"
+    },
+    {
+      "tag": "v0.5.18",
+      "category": "engine_model_runner",
+      "snippet": "[Hicache][2/2]Support Mamba branching in Unified Radix Cache with HiCache: [33639](https://github.com/sgl-project/sglang/pull/33639)",
+      "source_url": "https://github.com/sgl-project/sglang/releases/tag/v0.5.18"
+    },
+    {
+      "tag": "v0.5.18",
+      "category": "kv_cache_memory",
+      "snippet": "[Hicache][2/2]Support Mamba branching in Unified Radix Cache with HiCache: [33639](https://github.com/sgl-project/sglang/pull/33639)",
+      "source_url": "https://github.com/sgl-project/sglang/releases/tag/v0.5.18"
+    },
+    {
+      "tag": "v0.5.18",
+      "category": "model_modalities",
+      "snippet": "[Hicache][2/2]Support Mamba branching in Unified Radix Cache with HiCache: [33639](https://github.com/sgl-project/sglang/pull/33639)",
+      "source_url": "https://github.com/sgl-project/sglang/releases/tag/v0.5.18"
+    },
+    {
+      "tag": "v0.5.18",
+      "category": "kv_cache_memory",
+      "snippet": "[HiCache] Support DCP with DSpark: [35221](https://github.com/sgl-project/sglang/pull/35221)",
+      "source_url": "https://github.com/sgl-project/sglang/releases/tag/v0.5.18"
+    },
+    {
+      "tag": "v0.5.18",
+      "category": "correctness_stability",
+      "snippet": "Enable unified cache out-of-window slot freeing by default: [34653](https://github.com/sgl-project/sglang/pull/34653)",
+      "source_url": "https://github.com/sgl-project/sglang/releases/tag/v0.5.18"
+    },
+    {
+      "tag": "v0.5.18",
+      "category": "speculative_decoding",
+      "snippet": "Skip oow slot freeing under eagle: [34823](https://github.com/sgl-project/sglang/pull/34823)",
+      "source_url": "https://github.com/sgl-project/sglang/releases/tag/v0.5.18"
+    },
+    {
+      "tag": "v0.5.18",
+      "category": "kv_cache_memory",
+      "snippet": "[HiCache] writeback: reclaim duplicated host copy first under host pressure: [33777](https://github.com/sgl-project/sglang/pull/33777)",
+      "source_url": "https://github.com/sgl-project/sglang/releases/tag/v0.5.18"
+    },
+    {
+      "tag": "v0.5.18",
+      "category": "kv_cache_memory",
+      "snippet": "[HiCache] Optimize LogicalHostPool free-list release: [33998](https://github.com/sgl-project/sglang/pull/33998)",
+      "source_url": "https://github.com/sgl-project/sglang/releases/tag/v0.5.18"
+    },
+    {
+      "tag": "v0.5.18",
+      "category": "kv_cache_memory",
+      "snippet": "refactor(hicache): flatten L2 transfer execution: [34793](https://github.com/sgl-project/sglang/pull/34793)",
+      "source_url": "https://github.com/sgl-project/sglang/releases/tag/v0.5.18"
+    },
+    {
+      "tag": "v0.5.18",
+      "category": "kv_cache_memory",
+      "snippet": "[PD] Preserve decode KV across retraction in HiCache: [34801](https://github.com/sgl-project/sglang/pull/34801)",
+      "source_url": "https://github.com/sgl-project/sglang/releases/tag/v0.5.18"
+    },
+    {
+      "tag": "v0.5.18",
+      "category": "parallelism_distributed",
+      "snippet": "[PD] Preserve decode KV across retraction in HiCache: [34801](https://github.com/sgl-project/sglang/pull/34801)",
+      "source_url": "https://github.com/sgl-project/sglang/releases/tag/v0.5.18"
+    },
+    {
+      "tag": "v0.5.18",
+      "category": "kv_cache_memory",
+      "snippet": "fix(hicache/umbp): support DeepSeek-V4 hybrid HostPoolGroup (multi-po\u2026: [30762](https://github.com/sgl-project/sglang/pull/30762)",
+      "source_url": "https://github.com/sgl-project/sglang/releases/tag/v0.5.18"
+    },
+    {
+      "tag": "v0.5.18",
+      "category": "model_modalities",
+      "snippet": "fix(hicache/umbp): support DeepSeek-V4 hybrid HostPoolGroup (multi-po\u2026: [30762](https://github.com/sgl-project/sglang/pull/30762)",
+      "source_url": "https://github.com/sgl-project/sglang/releases/tag/v0.5.18"
+    },
+    {
+      "tag": "v0.5.18",
+      "category": "correctness_stability",
+      "snippet": "fix(hicache/umbp): support DeepSeek-V4 hybrid HostPoolGroup (multi-po\u2026: [30762](https://github.com/sgl-project/sglang/pull/30762)",
+      "source_url": "https://github.com/sgl-project/sglang/releases/tag/v0.5.18"
+    },
+    {
+      "tag": "v0.5.18",
+      "category": "engine_model_runner",
+      "snippet": "[Unified Radix Cache] Complete the tree-core interface boundary: [33580](https://github.com/sgl-project/sglang/pull/33580)",
+      "source_url": "https://github.com/sgl-project/sglang/releases/tag/v0.5.18"
+    },
+    {
+      "tag": "v0.5.18",
+      "category": "kv_cache_memory",
+      "snippet": "[Unified Radix Cache] Complete the tree-core interface boundary: [33580](https://github.com/sgl-project/sglang/pull/33580)",
+      "source_url": "https://github.com/sgl-project/sglang/releases/tag/v0.5.18"
+    },
+    {
+      "tag": "v0.5.18",
+      "category": "kv_cache_memory",
+      "snippet": "[Fix] Snapshot req.prefixindices when the prefix cache is disabled: [34644](https://github.com/sgl-project/sglang/pull/34644)",
+      "source_url": "https://github.com/sgl-project/sglang/releases/tag/v0.5.18"
+    },
+    {
+      "tag": "v0.5.18",
+      "category": "correctness_stability",
+      "snippet": "[Fix] Snapshot req.prefixindices when the prefix cache is disabled: [34644](https://github.com/sgl-project/sglang/pull/34644)",
+      "source_url": "https://github.com/sgl-project/sglang/releases/tag/v0.5.18"
+    },
+    {
+      "tag": "v0.5.18",
+      "category": "correctness_stability",
+      "snippet": "Fix swa eviction frontier for bigram keys: [34870](https://github.com/sgl-project/sglang/pull/34870)",
+      "source_url": "https://github.com/sgl-project/sglang/releases/tag/v0.5.18"
+    },
+    {
+      "tag": "v0.5.18",
+      "category": "model_modalities",
+      "snippet": "Fix mamba checkpoint depth under dcp: [34808](https://github.com/sgl-project/sglang/pull/34808)",
+      "source_url": "https://github.com/sgl-project/sglang/releases/tag/v0.5.18"
+    },
+    {
+      "tag": "v0.5.18",
+      "category": "correctness_stability",
+      "snippet": "Fix mamba checkpoint depth under dcp: [34808](https://github.com/sgl-project/sglang/pull/34808)",
+      "source_url": "https://github.com/sgl-project/sglang/releases/tag/v0.5.18"
+    },
+    {
+      "tag": "v0.5.18",
+      "category": "kv_cache_memory",
+      "snippet": "HiSparse: shared-index (IndexShare) plan-then-IO swap-in prefetch: [34329](https://github.com/sgl-project/sglang/pull/34329)",
+      "source_url": "https://github.com/sgl-project/sglang/releases/tag/v0.5.18"
+    },
+    {
+      "tag": "v0.5.18",
+      "category": "kv_cache_memory",
+      "snippet": "Observability enhancement for HiCache: [32388](https://github.com/sgl-project/sglang/pull/32388)",
+      "source_url": "https://github.com/sgl-project/sglang/releases/tag/v0.5.18"
+    },
+    {
+      "tag": "v0.5.18",
+      "category": "model_modalities",
+      "snippet": "[VLM] split multimodal scheduling from mmutils: [32415](https://github.com/sgl-project/sglang/pull/32415)",
+      "source_url": "https://github.com/sgl-project/sglang/releases/tag/v0.5.18"
+    },
+    {
+      "tag": "v0.5.18",
+      "category": "model_modalities",
+      "snippet": "Add CUDA VMM multimodal feature transport: [33899](https://github.com/sgl-project/sglang/pull/33899)",
+      "source_url": "https://github.com/sgl-project/sglang/releases/tag/v0.5.18"
+    },
+    {
+      "tag": "v0.5.18",
+      "category": "hardware_platform",
+      "snippet": "Add CUDA VMM multimodal feature transport: [33899](https://github.com/sgl-project/sglang/pull/33899)",
+      "source_url": "https://github.com/sgl-project/sglang/releases/tag/v0.5.18"
+    },
+    {
+      "tag": "v0.5.18",
+      "category": "hardware_platform",
+      "snippet": "feat(vlm): auto-select cuda vmm on multi-node mnnvl: [33936](https://github.com/sgl-project/sglang/pull/33936)",
+      "source_url": "https://github.com/sgl-project/sglang/releases/tag/v0.5.18"
+    },
+    {
+      "tag": "v0.5.18",
+      "category": "hardware_platform",
+      "snippet": "Fix CUDA 13.0 VMM handle type compatibility: [34431](https://github.com/sgl-project/sglang/pull/34431)",
+      "source_url": "https://github.com/sgl-project/sglang/releases/tag/v0.5.18"
+    },
+    {
+      "tag": "v0.5.18",
+      "category": "correctness_stability",
+      "snippet": "Fix CUDA 13.0 VMM handle type compatibility: [34431](https://github.com/sgl-project/sglang/pull/34431)",
+      "source_url": "https://github.com/sgl-project/sglang/releases/tag/v0.5.18"
+    },
+    {
+      "tag": "v0.5.18",
+      "category": "model_modalities",
+      "snippet": "Gate multimodal feature transport by model capability: [33653](https://github.com/sgl-project/sglang/pull/33653)",
+      "source_url": "https://github.com/sgl-project/sglang/releases/tag/v0.5.18"
+    },
+    {
+      "tag": "v0.5.18",
+      "category": "engine_model_runner",
+      "snippet": "Reserve multimodal runtime allocations and keep padded inputs aligned: [34141](https://github.com/sgl-project/sglang/pull/34141)",
+      "source_url": "https://github.com/sgl-project/sglang/releases/tag/v0.5.18"
+    },
+    {
+      "tag": "v0.5.18",
+      "category": "model_modalities",
+      "snippet": "Reserve multimodal runtime allocations and keep padded inputs aligned: [34141](https://github.com/sgl-project/sglang/pull/34141)",
+      "source_url": "https://github.com/sgl-project/sglang/releases/tag/v0.5.18"
+    },
+    {
+      "tag": "v0.5.18",
+      "category": "model_modalities",
+      "snippet": "[VLM] Avoid synchronizing multimodal placeholder counts: [34995](https://github.com/sgl-project/sglang/pull/34995)",
+      "source_url": "https://github.com/sgl-project/sglang/releases/tag/v0.5.18"
+    },
+    {
+      "tag": "v0.5.18",
+      "category": "model_modalities",
+      "snippet": "fix(vlm): stream-order cuda-ipc feature pool lifecycle and streamline multimodal transport module: [33949](https://github.com/sgl-project/sglang/pull/33949)",
+      "source_url": "https://github.com/sgl-project/sglang/releases/tag/v0.5.18"
+    },
+    {
+      "tag": "v0.5.18",
+      "category": "hardware_platform",
+      "snippet": "fix(vlm): stream-order cuda-ipc feature pool lifecycle and streamline multimodal transport module: [33949](https://github.com/sgl-project/sglang/pull/33949)",
+      "source_url": "https://github.com/sgl-project/sglang/releases/tag/v0.5.18"
+    },
+    {
+      "tag": "v0.5.18",
+      "category": "correctness_stability",
+      "snippet": "fix(vlm): stream-order cuda-ipc feature pool lifecycle and streamline multimodal transport module: [33949](https://github.com/sgl-project/sglang/pull/33949)",
+      "source_url": "https://github.com/sgl-project/sglang/releases/tag/v0.5.18"
+    },
+    {
+      "tag": "v0.5.18",
+      "category": "model_modalities",
+      "snippet": "[EPD] feat: pipeline owner-only multimodal preprocessing: [34206](https://github.com/sgl-project/sglang/pull/34206)",
+      "source_url": "https://github.com/sgl-project/sglang/releases/tag/v0.5.18"
+    },
+    {
+      "tag": "v0.5.18",
+      "category": "model_modalities",
+      "snippet": "[FEAT] Decouple multimodal global cache from Mooncake: [30392](https://github.com/sgl-project/sglang/pull/30392)",
+      "source_url": "https://github.com/sgl-project/sglang/releases/tag/v0.5.18"
+    },
+    {
+      "tag": "v0.5.18",
+      "category": "model_modalities",
+      "snippet": "[Kimi K3] optimize: preprocess cpu-transport images on the vision owner: [33921](https://github.com/sgl-project/sglang/pull/33921)",
+      "source_url": "https://github.com/sgl-project/sglang/releases/tag/v0.5.18"
+    },
+    {
+      "tag": "v0.5.18",
+      "category": "hardware_platform",
+      "snippet": "[Kimi K3] optimize: preprocess cpu-transport images on the vision owner: [33921](https://github.com/sgl-project/sglang/pull/33921)",
+      "source_url": "https://github.com/sgl-project/sglang/releases/tag/v0.5.18"
+    },
+    {
+      "tag": "v0.5.18",
+      "category": "correctness_stability",
+      "snippet": "fix(vlm): preserve Kimi-K3 GPU JPEG accuracy: [34163](https://github.com/sgl-project/sglang/pull/34163)",
+      "source_url": "https://github.com/sgl-project/sglang/releases/tag/v0.5.18"
+    },
+    {
+      "tag": "v0.5.18",
+      "category": "correctness_stability",
+      "snippet": "[Fix] Carry the backend on Kimi-K3 deferred preprocessing configs: [34766](https://github.com/sgl-project/sglang/pull/34766)",
+      "source_url": "https://github.com/sgl-project/sglang/releases/tag/v0.5.18"
+    },
+    {
+      "tag": "v0.5.18",
+      "category": "correctness_stability",
+      "snippet": "Fix Whisper transcription for audio over 30 seconds: [33604](https://github.com/sgl-project/sglang/pull/33604)",
+      "source_url": "https://github.com/sgl-project/sglang/releases/tag/v0.5.18"
+    },
+    {
+      "tag": "v0.5.18",
+      "category": "correctness_stability",
+      "snippet": "fix: preserve priority for batched embedding requests: [32977](https://github.com/sgl-project/sglang/pull/32977)",
+      "source_url": "https://github.com/sgl-project/sglang/releases/tag/v0.5.18"
+    },
+    {
+      "tag": "v0.5.18",
+      "category": "correctness_stability",
+      "snippet": "fix(muse-glimmer): parse required/named tool calls natively: [34781](https://github.com/sgl-project/sglang/pull/34781)",
+      "source_url": "https://github.com/sgl-project/sglang/releases/tag/v0.5.18"
+    },
+    {
+      "tag": "v0.5.18",
+      "category": "correctness_stability",
+      "snippet": "[Fix] Work around xgrammar 0.2.1 negative integer minimum in Kimi-K3 structural tags: [34778](https://github.com/sgl-project/sglang/pull/34778)",
+      "source_url": "https://github.com/sgl-project/sglang/releases/tag/v0.5.18"
+    },
+    {
+      "tag": "v0.5.18",
+      "category": "model_modalities",
+      "snippet": "[Fix] Make DeepSeek-V4 reasoning and tool-call streaming parsing chunk-invariant: [34458](https://github.com/sgl-project/sglang/pull/34458)",
+      "source_url": "https://github.com/sgl-project/sglang/releases/tag/v0.5.18"
+    },
+    {
+      "tag": "v0.5.18",
+      "category": "correctness_stability",
+      "snippet": "[Fix] Make DeepSeek-V4 reasoning and tool-call streaming parsing chunk-invariant: [34458](https://github.com/sgl-project/sglang/pull/34458)",
+      "source_url": "https://github.com/sgl-project/sglang/releases/tag/v0.5.18"
+    },
+    {
+      "tag": "v0.5.18",
+      "category": "api_protocol",
+      "snippet": "[Fix] Require JSON booleans for responseformat jsonschema.strict: [34777](https://github.com/sgl-project/sglang/pull/34777)",
+      "source_url": "https://github.com/sgl-project/sglang/releases/tag/v0.5.18"
+    },
+    {
+      "tag": "v0.5.18",
+      "category": "correctness_stability",
+      "snippet": "[Fix] Require JSON booleans for responseformat jsonschema.strict: [34777](https://github.com/sgl-project/sglang/pull/34777)",
+      "source_url": "https://github.com/sgl-project/sglang/releases/tag/v0.5.18"
+    },
+    {
+      "tag": "v0.5.18",
+      "category": "parallelism_distributed",
+      "snippet": "Support model-defined prefill input embedding width: [35002](https://github.com/sgl-project/sglang/pull/35002)",
+      "source_url": "https://github.com/sgl-project/sglang/releases/tag/v0.5.18"
+    },
+    {
+      "tag": "v0.5.18",
+      "category": "correctness_stability",
+      "snippet": "Fix rope config compatibility and VL/transformers-fallback weight loading: [31575](https://github.com/sgl-project/sglang/pull/31575)",
+      "source_url": "https://github.com/sgl-project/sglang/releases/tag/v0.5.18"
+    },
+    {
+      "tag": "v0.5.18",
+      "category": "correctness_stability",
+      "snippet": "[Laguna] fix YaRN mscale double-application in rope config: [33558](https://github.com/sgl-project/sglang/pull/33558)",
+      "source_url": "https://github.com/sgl-project/sglang/releases/tag/v0.5.18"
+    },
+    {
+      "tag": "v0.5.18",
+      "category": "model_modalities",
+      "snippet": "fix(minimax): use routed TRT-LLM for NVFP4 MoE auto on SM100: [32229](https://github.com/sgl-project/sglang/pull/32229)",
+      "source_url": "https://github.com/sgl-project/sglang/releases/tag/v0.5.18"
+    },
+    {
+      "tag": "v0.5.18",
+      "category": "quantization",
+      "snippet": "fix(minimax): use routed TRT-LLM for NVFP4 MoE auto on SM100: [32229](https://github.com/sgl-project/sglang/pull/32229)",
+      "source_url": "https://github.com/sgl-project/sglang/releases/tag/v0.5.18"
+    },
+    {
+      "tag": "v0.5.18",
+      "category": "correctness_stability",
+      "snippet": "fix(minimax): use routed TRT-LLM for NVFP4 MoE auto on SM100: [32229](https://github.com/sgl-project/sglang/pull/32229)",
+      "source_url": "https://github.com/sgl-project/sglang/releases/tag/v0.5.18"
+    },
+    {
+      "tag": "v0.5.18",
+      "category": "model_modalities",
+      "snippet": "fix(glm5.2): restrict MoE weights to local PP layers: [33793](https://github.com/sgl-project/sglang/pull/33793)",
+      "source_url": "https://github.com/sgl-project/sglang/releases/tag/v0.5.18"
+    },
+    {
+      "tag": "v0.5.18",
+      "category": "correctness_stability",
+      "snippet": "fix(glm5.2): restrict MoE weights to local PP layers: [33793](https://github.com/sgl-project/sglang/pull/33793)",
+      "source_url": "https://github.com/sgl-project/sglang/releases/tag/v0.5.18"
+    },
+    {
+      "tag": "v0.5.18",
+      "category": "kv_cache_memory",
+      "snippet": "[Fix] Fix Qwen3.5 MTP startup with HiCache: [34560](https://github.com/sgl-project/sglang/pull/34560)",
+      "source_url": "https://github.com/sgl-project/sglang/releases/tag/v0.5.18"
+    },
+    {
+      "tag": "v0.5.18",
+      "category": "speculative_decoding",
+      "snippet": "[Fix] Fix Qwen3.5 MTP startup with HiCache: [34560](https://github.com/sgl-project/sglang/pull/34560)",
+      "source_url": "https://github.com/sgl-project/sglang/releases/tag/v0.5.18"
+    },
+    {
+      "tag": "v0.5.18",
+      "category": "correctness_stability",
+      "snippet": "[Fix] Fix Qwen3.5 MTP startup with HiCache: [34560](https://github.com/sgl-project/sglang/pull/34560)",
+      "source_url": "https://github.com/sgl-project/sglang/releases/tag/v0.5.18"
+    },
+    {
+      "tag": "v0.5.18",
+      "category": "scheduling_batching",
+      "snippet": "Fix DeepSeek-OCR batching crash on variable local-crop counts: [33214](https://github.com/sgl-project/sglang/pull/33214)",
+      "source_url": "https://github.com/sgl-project/sglang/releases/tag/v0.5.18"
+    },
+    {
+      "tag": "v0.5.18",
+      "category": "model_modalities",
+      "snippet": "Fix DeepSeek-OCR batching crash on variable local-crop counts: [33214](https://github.com/sgl-project/sglang/pull/33214)",
+      "source_url": "https://github.com/sgl-project/sglang/releases/tag/v0.5.18"
+    },
+    {
+      "tag": "v0.5.18",
+      "category": "correctness_stability",
+      "snippet": "Fix DeepSeek-OCR batching crash on variable local-crop counts: [33214](https://github.com/sgl-project/sglang/pull/33214)",
+      "source_url": "https://github.com/sgl-project/sglang/releases/tag/v0.5.18"
+    },
+    {
+      "tag": "v0.5.18",
+      "category": "execution_kernels",
+      "snippet": "Kernel Library",
+      "source_url": "https://github.com/sgl-project/sglang/releases/tag/v0.5.18"
+    },
+    {
+      "tag": "v0.5.18",
+      "category": "execution_kernels",
+      "snippet": "[kernel] Content-addressed JIT build cache, generated from our own ninja: [34274](https://github.com/sgl-project/sglang/pull/34274)",
+      "source_url": "https://github.com/sgl-project/sglang/releases/tag/v0.5.18"
+    },
+    {
+      "tag": "v0.5.18",
+      "category": "execution_kernels",
+      "snippet": "[JIT Kernel] Migrate per-token FP8 quantization from AOT to JIT: [34257](https://github.com/sgl-project/sglang/pull/34257)",
+      "source_url": "https://github.com/sgl-project/sglang/releases/tag/v0.5.18"
+    },
+    {
+      "tag": "v0.5.18",
+      "category": "quantization",
+      "snippet": "[JIT Kernel] Migrate per-token FP8 quantization from AOT to JIT: [34257](https://github.com/sgl-project/sglang/pull/34257)",
+      "source_url": "https://github.com/sgl-project/sglang/releases/tag/v0.5.18"
+    },
+    {
+      "tag": "v0.5.18",
+      "category": "execution_kernels",
+      "snippet": "[JIT Kernel] Migrate moetopksoftmax from AOT to JIT: [34509](https://github.com/sgl-project/sglang/pull/34509)",
+      "source_url": "https://github.com/sgl-project/sglang/releases/tag/v0.5.18"
+    },
+    {
+      "tag": "v0.5.18",
+      "category": "execution_kernels",
+      "snippet": "[JIT Kernel] Migrate causalconv1dfwd and causalconv1dupdate from AOT to JIT: [35031](https://github.com/sgl-project/sglang/pull/35031)",
+      "source_url": "https://github.com/sgl-project/sglang/releases/tag/v0.5.18"
+    },
+    {
+      "tag": "v0.5.18",
+      "category": "execution_kernels",
+      "snippet": "[Kernel] Unify BaseFusedOp and MultiPlatformOp dispatch: [33205](https://github.com/sgl-project/sglang/pull/33205)",
+      "source_url": "https://github.com/sgl-project/sglang/releases/tag/v0.5.18"
+    },
+    {
+      "tag": "v0.5.18",
+      "category": "execution_kernels",
+      "snippet": "[Kernel] Enable Helion backend for Kimi Delta-Attention: [32593](https://github.com/sgl-project/sglang/pull/32593)",
+      "source_url": "https://github.com/sgl-project/sglang/releases/tag/v0.5.18"
+    },
+    {
+      "tag": "v0.5.18",
+      "category": "execution_kernels",
+      "snippet": "[Kernel] cutedslbf16gemm: trailing cluster barrier for 2-CTA TGV kernel exit (32907): [32954](https://github.com/sgl-project/sglang/pull/32954)",
+      "source_url": "https://github.com/sgl-project/sglang/releases/tag/v0.5.18"
+    },
+    {
+      "tag": "v0.5.18",
+      "category": "scheduling_batching",
+      "snippet": "config: the runner and scheduler read resolved config from the bags: [34095](https://github.com/sgl-project/sglang/pull/34095)",
+      "source_url": "https://github.com/sgl-project/sglang/releases/tag/v0.5.18"
+    },
+    {
+      "tag": "v0.5.18",
+      "category": "scheduling_batching",
+      "snippet": "config: make ServerArgs read-only with a single audited mutation entry: continues in this release across the runner, scheduler, spec, and DCP surfaces ([33925](https://github.com/sgl-project/sglang/pull/33925), [34133](https://github.com/sgl-project/sglang/pul",
+      "source_url": "https://github.com/sgl-project/sglang/releases/tag/v0.5.18"
+    },
+    {
+      "tag": "v0.5.18",
+      "category": "speculative_decoding",
+      "snippet": "config: make ServerArgs read-only with a single audited mutation entry: continues in this release across the runner, scheduler, spec, and DCP surfaces ([33925](https://github.com/sgl-project/sglang/pull/33925), [34133](https://github.com/sgl-project/sglang/pul",
+      "source_url": "https://github.com/sgl-project/sglang/releases/tag/v0.5.18"
+    },
+    {
+      "tag": "v0.5.18",
+      "category": "model_modalities",
+      "snippet": "SGLang-Diffusion",
+      "source_url": "https://github.com/sgl-project/sglang/releases/tag/v0.5.18"
+    },
+    {
+      "tag": "v0.5.18",
+      "category": "model_modalities",
+      "snippet": "[diffusion] feat: data-parallel serving (--dp-size): [33725](https://github.com/sgl-project/sglang/pull/33725)",
+      "source_url": "https://github.com/sgl-project/sglang/releases/tag/v0.5.18"
+    },
+    {
+      "tag": "v0.5.18",
+      "category": "model_modalities",
+      "snippet": "[diffusion] feat: cross-node sequence parallelism (Ulysses x Ring): [33327](https://github.com/sgl-project/sglang/pull/33327)",
+      "source_url": "https://github.com/sgl-project/sglang/releases/tag/v0.5.18"
+    },
+    {
+      "tag": "v0.5.18",
+      "category": "model_modalities",
+      "snippet": "[diffusion] feat: support K/V-gather style sequence parallel (CP-like) attention: [32667](https://github.com/sgl-project/sglang/pull/32667)",
+      "source_url": "https://github.com/sgl-project/sglang/releases/tag/v0.5.18"
+    },
+    {
+      "tag": "v0.5.18",
+      "category": "model_modalities",
+      "snippet": "[diffusion] feat: support sol-attn sparse attention backend for h3: [33702](https://github.com/sgl-project/sglang/pull/33702)",
+      "source_url": "https://github.com/sgl-project/sglang/releases/tag/v0.5.18"
+    },
+    {
+      "tag": "v0.5.18",
+      "category": "model_modalities",
+      "snippet": "[diffusion] feat: add SageAttention packed varlen path for minimax-h3: [33703](https://github.com/sgl-project/sglang/pull/33703)",
+      "source_url": "https://github.com/sgl-project/sglang/releases/tag/v0.5.18"
+    },
+    {
+      "tag": "v0.5.18",
+      "category": "correctness_stability",
+      "snippet": "fix: make Cache-DiT actually cache on MiniMax-H3: [33827](https://github.com/sgl-project/sglang/pull/33827)",
+      "source_url": "https://github.com/sgl-project/sglang/releases/tag/v0.5.18"
+    },
+    {
+      "tag": "v0.5.18",
+      "category": "model_modalities",
+      "snippet": "[diffusion] feat: load quantized H3 text encoder checkpoints: [34986](https://github.com/sgl-project/sglang/pull/34986)",
+      "source_url": "https://github.com/sgl-project/sglang/releases/tag/v0.5.18"
+    },
+    {
+      "tag": "v0.5.18",
+      "category": "model_modalities",
+      "snippet": "[diffusion] feat: support native and peft minimax h3 loras: [34359](https://github.com/sgl-project/sglang/pull/34359)",
+      "source_url": "https://github.com/sgl-project/sglang/releases/tag/v0.5.18"
+    },
+    {
+      "tag": "v0.5.18",
+      "category": "model_modalities",
+      "snippet": "[diffusion] Per-section LoRA adapters on fused linear layers: [34933](https://github.com/sgl-project/sglang/pull/34933)",
+      "source_url": "https://github.com/sgl-project/sglang/releases/tag/v0.5.18"
+    },
+    {
+      "tag": "v0.5.18",
+      "category": "model_modalities",
+      "snippet": "[diffusion] feat: support quant-videogen prq kv-cache quantization (memory-saving) for causal-dit: [32581](https://github.com/sgl-project/sglang/pull/32581)",
+      "source_url": "https://github.com/sgl-project/sglang/releases/tag/v0.5.18"
+    },
+    {
+      "tag": "v0.5.18",
+      "category": "quantization",
+      "snippet": "[diffusion] feat: support quant-videogen prq kv-cache quantization (memory-saving) for causal-dit: [32581](https://github.com/sgl-project/sglang/pull/32581)",
+      "source_url": "https://github.com/sgl-project/sglang/releases/tag/v0.5.18"
+    },
+    {
+      "tag": "v0.5.18",
+      "category": "scheduling_batching",
+      "snippet": "[diffusion] Enable breakable CUDA graph for LTX-2 (H200 two-stage e2e 10.75 s -> 6.90 s, 1.56x): [33885](https://github.com/sgl-project/sglang/pull/33885)",
+      "source_url": "https://github.com/sgl-project/sglang/releases/tag/v0.5.18"
+    },
+    {
+      "tag": "v0.5.18",
+      "category": "model_modalities",
+      "snippet": "[diffusion] Enable breakable CUDA graph for LTX-2 (H200 two-stage e2e 10.75 s -> 6.90 s, 1.56x): [33885](https://github.com/sgl-project/sglang/pull/33885)",
+      "source_url": "https://github.com/sgl-project/sglang/releases/tag/v0.5.18"
+    },
+    {
+      "tag": "v0.5.18",
+      "category": "hardware_platform",
+      "snippet": "[diffusion] Enable breakable CUDA graph for LTX-2 (H200 two-stage e2e 10.75 s -> 6.90 s, 1.56x): [33885](https://github.com/sgl-project/sglang/pull/33885)",
+      "source_url": "https://github.com/sgl-project/sglang/releases/tag/v0.5.18"
+    },
+    {
+      "tag": "v0.5.18",
+      "category": "scheduling_batching",
+      "snippet": "[diffusion] Enable breakable CUDA graph for SANA (H200 1024px e2e -26%, bit-exact): [33989](https://github.com/sgl-project/sglang/pull/33989)",
+      "source_url": "https://github.com/sgl-project/sglang/releases/tag/v0.5.18"
+    },
+    {
+      "tag": "v0.5.18",
+      "category": "model_modalities",
+      "snippet": "[diffusion] Enable breakable CUDA graph for SANA (H200 1024px e2e -26%, bit-exact): [33989](https://github.com/sgl-project/sglang/pull/33989)",
+      "source_url": "https://github.com/sgl-project/sglang/releases/tag/v0.5.18"
+    },
+    {
+      "tag": "v0.5.18",
+      "category": "hardware_platform",
+      "snippet": "[diffusion] Enable breakable CUDA graph for SANA (H200 1024px e2e -26%, bit-exact): [33989](https://github.com/sgl-project/sglang/pull/33989)",
+      "source_url": "https://github.com/sgl-project/sglang/releases/tag/v0.5.18"
+    },
+    {
+      "tag": "v0.5.18",
+      "category": "model_modalities",
+      "snippet": "[diffusion] Enable breakable CUDA graphs for LTX-2.3: [34929](https://github.com/sgl-project/sglang/pull/34929)",
+      "source_url": "https://github.com/sgl-project/sglang/releases/tag/v0.5.18"
+    },
+    {
+      "tag": "v0.5.18",
+      "category": "hardware_platform",
+      "snippet": "[diffusion] Enable breakable CUDA graphs for LTX-2.3: [34929](https://github.com/sgl-project/sglang/pull/34929)",
+      "source_url": "https://github.com/sgl-project/sglang/releases/tag/v0.5.18"
+    },
+    {
+      "tag": "v0.5.18",
+      "category": "model_modalities",
+      "snippet": "[diffusion] Z-Image single-GPU BCG: fix the replay crash and make output bit-exact vs eager (34183): [34210](https://github.com/sgl-project/sglang/pull/34210)",
+      "source_url": "https://github.com/sgl-project/sglang/releases/tag/v0.5.18"
+    },
+    {
+      "tag": "v0.5.18",
+      "category": "correctness_stability",
+      "snippet": "[diffusion] Z-Image single-GPU BCG: fix the replay crash and make output bit-exact vs eager (34183): [34210](https://github.com/sgl-project/sglang/pull/34210)",
+      "source_url": "https://github.com/sgl-project/sglang/releases/tag/v0.5.18"
+    },
+    {
+      "tag": "v0.5.18",
+      "category": "model_modalities",
+      "snippet": "[diffusion] BCG: auto-capture the default warmup resolution instead of hard-requiring --warmup-resolutions (H200 SANA denoise 0.73->0.457 s with a single flag): [34174](https://github.com/sgl-project/sglang/pull/34174)",
+      "source_url": "https://github.com/sgl-project/sglang/releases/tag/v0.5.18"
+    },
+    {
+      "tag": "v0.5.18",
+      "category": "correctness_stability",
+      "snippet": "[diffusion] BCG: auto-capture the default warmup resolution instead of hard-requiring --warmup-resolutions (H200 SANA denoise 0.73->0.457 s with a single flag): [34174](https://github.com/sgl-project/sglang/pull/34174)",
+      "source_url": "https://github.com/sgl-project/sglang/releases/tag/v0.5.18"
+    },
+    {
+      "tag": "v0.5.18",
+      "category": "model_modalities",
+      "snippet": "[diffusion] weight-only FP8: dequantize linear weights once at first use (Ideogram-4 denoise -18.8% H200 / -7.8% H100, bit-exact): [34305](https://github.com/sgl-project/sglang/pull/34305)",
+      "source_url": "https://github.com/sgl-project/sglang/releases/tag/v0.5.18"
+    },
+    {
+      "tag": "v0.5.18",
+      "category": "quantization",
+      "snippet": "[diffusion] weight-only FP8: dequantize linear weights once at first use (Ideogram-4 denoise -18.8% H200 / -7.8% H100, bit-exact): [34305](https://github.com/sgl-project/sglang/pull/34305)",
+      "source_url": "https://github.com/sgl-project/sglang/releases/tag/v0.5.18"
+    },
+    {
+      "tag": "v0.5.18",
+      "category": "parallelism_distributed",
+      "snippet": "[diffusion] Bit-exact data-movement elimination for the Wan causal VAE decoder (H200 LongLive2 704x1280x61f: decode 2.80->2.32 s lossless / 2.12->1.67 s quality=high, e2e -10.7%): [34125](https://github.com/sgl-project/sglang/pull/34125)",
+      "source_url": "https://github.com/sgl-project/sglang/releases/tag/v0.5.18"
+    },
+    {
+      "tag": "v0.5.18",
+      "category": "model_modalities",
+      "snippet": "[diffusion] Bit-exact data-movement elimination for the Wan causal VAE decoder (H200 LongLive2 704x1280x61f: decode 2.80->2.32 s lossless / 2.12->1.67 s quality=high, e2e -10.7%): [34125](https://github.com/sgl-project/sglang/pull/34125)",
+      "source_url": "https://github.com/sgl-project/sglang/releases/tag/v0.5.18"
+    },
+    {
+      "tag": "v0.5.18",
+      "category": "model_modalities",
+      "snippet": "[diffusion] FLUX.1 fused adaLN modulate (bit-exact) + RoPE cache hoist, LN-affine folding behind quality=high (H200 e2e -3.5% lossless / -6.9% high): [34004](https://github.com/sgl-project/sglang/pull/34004)",
+      "source_url": "https://github.com/sgl-project/sglang/releases/tag/v0.5.18"
+    },
+    {
+      "tag": "v0.5.18",
+      "category": "model_modalities",
+      "snippet": "[diffusion] Ideogram-4: fuse Qwen3-style RoPE and SwiGLU silu-mul (denoise -5.1% H100 / -4.7% H200, bit-exact): [34314](https://github.com/sgl-project/sglang/pull/34314)",
+      "source_url": "https://github.com/sgl-project/sglang/releases/tag/v0.5.18"
+    },
+    {
+      "tag": "v0.5.18",
+      "category": "model_modalities",
+      "snippet": "[diffusion] ERNIE-Image: fuse rotate-half RoPE + GELU-mul and hoist rope cos/sin (denoise -16.2% H100 / -12.7% H200, bit-exact): [34306](https://github.com/sgl-project/sglang/pull/34306)",
+      "source_url": "https://github.com/sgl-project/sglang/releases/tag/v0.5.18"
+    },
+    {
+      "tag": "v0.5.18",
+      "category": "model_modalities",
+      "snippet": "[diffusion] Wan2.2-TI2V: fuse per-token adaLN table add into contiguous slices + hoist rope cache (denoise -13.1% H100 / -12.6% H200, bit-exact; eager beats compile): [34584](https://github.com/sgl-project/sglang/pull/34584)",
+      "source_url": "https://github.com/sgl-project/sglang/releases/tag/v0.5.18"
+    },
+    {
+      "tag": "v0.5.18",
+      "category": "model_modalities",
+      "snippet": "[diffusion] Z-Image bit-exact fused qk-norm (H200 Turbo 1024px e2e -6.4%): [33886](https://github.com/sgl-project/sglang/pull/33886)",
+      "source_url": "https://github.com/sgl-project/sglang/releases/tag/v0.5.18"
+    },
+    {
+      "tag": "v0.5.18",
+      "category": "model_modalities",
+      "snippet": "[diffusion] Add --dit-layerwise-residency-policy for strided DiT residency: [34534](https://github.com/sgl-project/sglang/pull/34534)",
+      "source_url": "https://github.com/sgl-project/sglang/releases/tag/v0.5.18"
+    },
+    {
+      "tag": "v0.5.18",
+      "category": "model_modalities",
+      "snippet": "[diffusion] feat: support dynamically cpu offload components: [34391](https://github.com/sgl-project/sglang/pull/34391)",
+      "source_url": "https://github.com/sgl-project/sglang/releases/tag/v0.5.18"
+    },
+    {
+      "tag": "v0.5.18",
+      "category": "hardware_platform",
+      "snippet": "[diffusion] feat: support dynamically cpu offload components: [34391](https://github.com/sgl-project/sglang/pull/34391)",
+      "source_url": "https://github.com/sgl-project/sglang/releases/tag/v0.5.18"
+    },
+    {
+      "tag": "v0.5.18",
+      "category": "model_modalities",
+      "snippet": "[diffusion] feat: gate /health and /healthgenerate on warmup completion and add liveness endpoint: [33787](https://github.com/sgl-project/sglang/pull/33787)",
+      "source_url": "https://github.com/sgl-project/sglang/releases/tag/v0.5.18"
+    },
+    {
+      "tag": "v0.5.18",
+      "category": "model_modalities",
+      "snippet": "[diffusion] feat: support --served-model-name in sglang serve: [34228](https://github.com/sgl-project/sglang/pull/34228)",
+      "source_url": "https://github.com/sgl-project/sglang/releases/tag/v0.5.18"
+    },
+    {
+      "tag": "v0.5.18",
+      "category": "model_modalities",
+      "snippet": "[Diffusion] Add online FP8 support for Krea-2: [34136](https://github.com/sgl-project/sglang/pull/34136)",
+      "source_url": "https://github.com/sgl-project/sglang/releases/tag/v0.5.18"
+    },
+    {
+      "tag": "v0.5.18",
+      "category": "quantization",
+      "snippet": "[Diffusion] Add online FP8 support for Krea-2: [34136](https://github.com/sgl-project/sglang/pull/34136)",
+      "source_url": "https://github.com/sgl-project/sglang/releases/tag/v0.5.18"
+    },
+    {
+      "tag": "v0.5.18",
+      "category": "model_modalities",
+      "snippet": "[diffusion] feat: expose cosmos3 policies through the Action API: [34243](https://github.com/sgl-project/sglang/pull/34243)",
+      "source_url": "https://github.com/sgl-project/sglang/releases/tag/v0.5.18"
+    },
+    {
+      "tag": "v0.5.18",
+      "category": "api_protocol",
+      "snippet": "[diffusion] feat: expose cosmos3 policies through the Action API: [34243](https://github.com/sgl-project/sglang/pull/34243)",
+      "source_url": "https://github.com/sgl-project/sglang/releases/tag/v0.5.18"
+    },
+    {
+      "tag": "v0.5.18",
+      "category": "hardware_platform",
+      "snippet": "[MLX] Support gpt-oss: sliding-window attention, attention sinks, smscale: [30050](https://github.com/sgl-project/sglang/pull/30050)",
+      "source_url": "https://github.com/sgl-project/sglang/releases/tag/v0.5.18"
+    },
+    {
+      "tag": "v0.5.18",
+      "category": "hardware_platform",
+      "snippet": "[MLX] Window-bounded SWA KV storage and in-graph sampling: [34166](https://github.com/sgl-project/sglang/pull/34166)",
+      "source_url": "https://github.com/sgl-project/sglang/releases/tag/v0.5.18"
+    },
+    {
+      "tag": "v0.5.18",
+      "category": "model_modalities",
+      "snippet": "feat(dgx-spark): add inkling-small MoE support for sm121: [33108](https://github.com/sgl-project/sglang/pull/33108)",
+      "source_url": "https://github.com/sgl-project/sglang/releases/tag/v0.5.18"
+    },
+    {
+      "tag": "v0.5.18",
+      "category": "execution_kernels",
+      "snippet": "[misc] Pass FP8 scales in FlashInfer SWA prefill, autotune fp8 on SM120, and tighten isimageunderstandablemodel: [34217](https://github.com/sgl-project/sglang/pull/34217)",
+      "source_url": "https://github.com/sgl-project/sglang/releases/tag/v0.5.18"
+    },
+    {
+      "tag": "v0.5.18",
+      "category": "parallelism_distributed",
+      "snippet": "[misc] Pass FP8 scales in FlashInfer SWA prefill, autotune fp8 on SM120, and tighten isimageunderstandablemodel: [34217](https://github.com/sgl-project/sglang/pull/34217)",
+      "source_url": "https://github.com/sgl-project/sglang/releases/tag/v0.5.18"
+    },
+    {
+      "tag": "v0.5.18",
+      "category": "quantization",
+      "snippet": "[misc] Pass FP8 scales in FlashInfer SWA prefill, autotune fp8 on SM120, and tighten isimageunderstandablemodel: [34217](https://github.com/sgl-project/sglang/pull/34217)",
+      "source_url": "https://github.com/sgl-project/sglang/releases/tag/v0.5.18"
+    },
+    {
+      "tag": "v0.5.18",
+      "category": "scheduling_batching",
+      "snippet": "[AMD] Support prefill context parallel two batch overlap for DeepSeek V4: [33480](https://github.com/sgl-project/sglang/pull/33480)",
+      "source_url": "https://github.com/sgl-project/sglang/releases/tag/v0.5.18"
+    },
+    {
+      "tag": "v0.5.18",
+      "category": "parallelism_distributed",
+      "snippet": "[AMD] Support prefill context parallel two batch overlap for DeepSeek V4: [33480](https://github.com/sgl-project/sglang/pull/33480)",
+      "source_url": "https://github.com/sgl-project/sglang/releases/tag/v0.5.18"
+    },
+    {
+      "tag": "v0.5.18",
+      "category": "model_modalities",
+      "snippet": "[AMD] Support prefill context parallel two batch overlap for DeepSeek V4: [33480](https://github.com/sgl-project/sglang/pull/33480)",
+      "source_url": "https://github.com/sgl-project/sglang/releases/tag/v0.5.18"
+    },
+    {
+      "tag": "v0.5.18",
+      "category": "model_modalities",
+      "snippet": "[AMD] Support DeepSeek V4 DSpark on AMD HIP platform: [30964](https://github.com/sgl-project/sglang/pull/30964)",
+      "source_url": "https://github.com/sgl-project/sglang/releases/tag/v0.5.18"
+    },
+    {
+      "tag": "v0.5.18",
+      "category": "execution_kernels",
+      "snippet": "[AMD] Optimize KIMI-K3 with Triton MLA decode kernel by tuning the stage-1 geometry for gfx950: [34580](https://github.com/sgl-project/sglang/pull/34580)",
+      "source_url": "https://github.com/sgl-project/sglang/releases/tag/v0.5.18"
+    },
+    {
+      "tag": "v0.5.18",
+      "category": "parallelism_distributed",
+      "snippet": "[AMD] Optimize KIMI-K3 with Triton MLA decode kernel by tuning the stage-1 geometry for gfx950: [34580](https://github.com/sgl-project/sglang/pull/34580)",
+      "source_url": "https://github.com/sgl-project/sglang/releases/tag/v0.5.18"
+    },
+    {
+      "tag": "v0.5.18",
+      "category": "execution_kernels",
+      "snippet": "[AMD] Add concatandcastmhakpadkernel to support 12-head and enable K3 aiter prefill kernel: [34837](https://github.com/sgl-project/sglang/pull/34837)",
+      "source_url": "https://github.com/sgl-project/sglang/releases/tag/v0.5.18"
+    },
+    {
+      "tag": "v0.5.18",
+      "category": "parallelism_distributed",
+      "snippet": "[AMD] Add concatandcastmhakpadkernel to support 12-head and enable K3 aiter prefill kernel: [34837](https://github.com/sgl-project/sglang/pull/34837)",
+      "source_url": "https://github.com/sgl-project/sglang/releases/tag/v0.5.18"
+    },
+    {
+      "tag": "v0.5.18",
+      "category": "execution_kernels",
+      "snippet": "[AMD] Add K3 verified mla kernel for DSpark on triton backend: [33981](https://github.com/sgl-project/sglang/pull/33981)",
+      "source_url": "https://github.com/sgl-project/sglang/releases/tag/v0.5.18"
+    },
+    {
+      "tag": "v0.5.18",
+      "category": "execution_kernels",
+      "snippet": "[AMD] Restore K3 MLA verify kernel path blocked by canhandle() guard: [34261](https://github.com/sgl-project/sglang/pull/34261)",
+      "source_url": "https://github.com/sgl-project/sglang/releases/tag/v0.5.18"
+    },
+    {
+      "tag": "v0.5.18",
+      "category": "parallelism_distributed",
+      "snippet": "[AMD] perf: compact Triton extend-attention for ragged prefill (AMD/HIP-only): [29677](https://github.com/sgl-project/sglang/pull/29677)",
+      "source_url": "https://github.com/sgl-project/sglang/releases/tag/v0.5.18"
+    },
+    {
+      "tag": "v0.5.18",
+      "category": "parallelism_distributed",
+      "snippet": "[AMD] Accelerate AITER unified-attention decode with scaled FP8 Q: [31856](https://github.com/sgl-project/sglang/pull/31856)",
+      "source_url": "https://github.com/sgl-project/sglang/releases/tag/v0.5.18"
+    },
+    {
+      "tag": "v0.5.18",
+      "category": "quantization",
+      "snippet": "[AMD] Accelerate AITER unified-attention decode with scaled FP8 Q: [31856](https://github.com/sgl-project/sglang/pull/31856)",
+      "source_url": "https://github.com/sgl-project/sglang/releases/tag/v0.5.18"
+    },
+    {
+      "tag": "v0.5.18",
+      "category": "execution_kernels",
+      "snippet": "[AMD] Run V4 MTP target-verify through the decode kernel: [34597](https://github.com/sgl-project/sglang/pull/34597)",
+      "source_url": "https://github.com/sgl-project/sglang/releases/tag/v0.5.18"
+    },
+    {
+      "tag": "v0.5.18",
+      "category": "speculative_decoding",
+      "snippet": "[AMD] Run V4 MTP target-verify through the decode kernel: [34597](https://github.com/sgl-project/sglang/pull/34597)",
+      "source_url": "https://github.com/sgl-project/sglang/releases/tag/v0.5.18"
+    },
+    {
+      "tag": "v0.5.18",
+      "category": "parallelism_distributed",
+      "snippet": "[AMD] Run V4 MTP target-verify through the decode kernel: [34597](https://github.com/sgl-project/sglang/pull/34597)",
+      "source_url": "https://github.com/sgl-project/sglang/releases/tag/v0.5.18"
+    },
+    {
+      "tag": "v0.5.18",
+      "category": "scheduling_batching",
+      "snippet": "[AMD] Enable draft-extend CUDA graph and reduce bubble for MTP: [29202](https://github.com/sgl-project/sglang/pull/29202)",
+      "source_url": "https://github.com/sgl-project/sglang/releases/tag/v0.5.18"
+    },
+    {
+      "tag": "v0.5.18",
+      "category": "speculative_decoding",
+      "snippet": "[AMD] Enable draft-extend CUDA graph and reduce bubble for MTP: [29202](https://github.com/sgl-project/sglang/pull/29202)",
+      "source_url": "https://github.com/sgl-project/sglang/releases/tag/v0.5.18"
+    },
+    {
+      "tag": "v0.5.18",
+      "category": "hardware_platform",
+      "snippet": "[AMD] Enable draft-extend CUDA graph and reduce bubble for MTP: [29202](https://github.com/sgl-project/sglang/pull/29202)",
+      "source_url": "https://github.com/sgl-project/sglang/releases/tag/v0.5.18"
+    },
+    {
+      "tag": "v0.5.18",
+      "category": "speculative_decoding",
+      "snippet": "[AMD][Spec] Accelerate Qwen3.5 verification with grouped-head shared KV: [34517](https://github.com/sgl-project/sglang/pull/34517)",
+      "source_url": "https://github.com/sgl-project/sglang/releases/tag/v0.5.18"
+    },
+    {
+      "tag": "v0.5.18",
+      "category": "execution_kernels",
+      "snippet": "[AMD][Perf] Fuse GatedDeltaNet QKVZBA split/reshape/cat into a single Triton kernel for Qwen3.5-architecture MoE on HIP: [34421](https://github.com/sgl-project/sglang/pull/34421)",
+      "source_url": "https://github.com/sgl-project/sglang/releases/tag/v0.5.18"
+    },
+    {
+      "tag": "v0.5.18",
+      "category": "model_modalities",
+      "snippet": "[AMD][Perf] Fuse GatedDeltaNet QKVZBA split/reshape/cat into a single Triton kernel for Qwen3.5-architecture MoE on HIP: [34421](https://github.com/sgl-project/sglang/pull/34421)",
+      "source_url": "https://github.com/sgl-project/sglang/releases/tag/v0.5.18"
+    },
+    {
+      "tag": "v0.5.18",
+      "category": "execution_kernels",
+      "snippet": "[AMD] Fuse sharedexpertgate GEMV into the MoE append kernel (HIP/aiter): [28666](https://github.com/sgl-project/sglang/pull/28666)",
+      "source_url": "https://github.com/sgl-project/sglang/releases/tag/v0.5.18"
+    },
+    {
+      "tag": "v0.5.18",
+      "category": "model_modalities",
+      "snippet": "[AMD] Fuse sharedexpertgate GEMV into the MoE append kernel (HIP/aiter): [28666](https://github.com/sgl-project/sglang/pull/28666)",
+      "source_url": "https://github.com/sgl-project/sglang/releases/tag/v0.5.18"
+    },
+    {
+      "tag": "v0.5.18",
+      "category": "quantization",
+      "snippet": "[AMD] [GLM5] fp8 MLA absorbed bmm for GLM-5.2 on gfx950: [30519](https://github.com/sgl-project/sglang/pull/30519)",
+      "source_url": "https://github.com/sgl-project/sglang/releases/tag/v0.5.18"
+    },
+    {
+      "tag": "v0.5.18",
+      "category": "parallelism_distributed",
+      "snippet": "[AMD] [GLM5] Skip DSA decode indexer when kvlen <= indextopk (dense k-only fast path): [31324](https://github.com/sgl-project/sglang/pull/31324)",
+      "source_url": "https://github.com/sgl-project/sglang/releases/tag/v0.5.18"
+    },
+    {
+      "tag": "v0.5.18",
+      "category": "quantization",
+      "snippet": "[AMD][Quantization] Online MXFP4 quantization 4/N - NVFP4 to MXFP4 Online Requantization on AMD GPUs: [29328](https://github.com/sgl-project/sglang/pull/29328)",
+      "source_url": "https://github.com/sgl-project/sglang/releases/tag/v0.5.18"
+    },
+    {
+      "tag": "v0.5.18",
+      "category": "hardware_platform",
+      "snippet": "[AMD] Fix AITER custom reduce-scatter CUDA-graph capture crash under torchmemorysaver: [34203](https://github.com/sgl-project/sglang/pull/34203)",
+      "source_url": "https://github.com/sgl-project/sglang/releases/tag/v0.5.18"
+    },
+    {
+      "tag": "v0.5.18",
+      "category": "correctness_stability",
+      "snippet": "[AMD] Fix AITER custom reduce-scatter CUDA-graph capture crash under torchmemorysaver: [34203](https://github.com/sgl-project/sglang/pull/34203)",
+      "source_url": "https://github.com/sgl-project/sglang/releases/tag/v0.5.18"
+    },
+    {
+      "tag": "v0.5.18",
+      "category": "correctness_stability",
+      "snippet": "[AMD] Fix Triton 3.7 gfx950 extend-attention spills: [34741](https://github.com/sgl-project/sglang/pull/34741)",
+      "source_url": "https://github.com/sgl-project/sglang/releases/tag/v0.5.18"
+    },
+    {
+      "tag": "v0.5.18",
+      "category": "hardware_platform",
+      "snippet": "[AMD] Guard ROCm 7.0 build from using hipMemcpyBatchAsync: [35128](https://github.com/sgl-project/sglang/pull/35128)",
+      "source_url": "https://github.com/sgl-project/sglang/releases/tag/v0.5.18"
+    },
+    {
+      "tag": "v0.5.18",
+      "category": "model_modalities",
+      "snippet": "[NPU] Support DeepSeek-V4 DSpark and refactor DSV4 cache management: [33676](https://github.com/sgl-project/sglang/pull/33676)",
+      "source_url": "https://github.com/sgl-project/sglang/releases/tag/v0.5.18"
+    },
+    {
+      "tag": "v0.5.18",
+      "category": "model_modalities",
+      "snippet": "[NPU] Add mxfp4-w4a8 MOE Quantization Support for NPU: [30318](https://github.com/sgl-project/sglang/pull/30318)",
+      "source_url": "https://github.com/sgl-project/sglang/releases/tag/v0.5.18"
+    },
+    {
+      "tag": "v0.5.18",
+      "category": "quantization",
+      "snippet": "[NPU] Add mxfp4-w4a8 MOE Quantization Support for NPU: [30318](https://github.com/sgl-project/sglang/pull/30318)",
+      "source_url": "https://github.com/sgl-project/sglang/releases/tag/v0.5.18"
+    },
+    {
+      "tag": "v0.5.18",
+      "category": "model_modalities",
+      "snippet": "[NPU] Adding a fast layernorm for diffusion models and fix BSA: [29027](https://github.com/sgl-project/sglang/pull/29027)",
+      "source_url": "https://github.com/sgl-project/sglang/releases/tag/v0.5.18"
+    },
+    {
+      "tag": "v0.5.18",
+      "category": "correctness_stability",
+      "snippet": "[NPU] Adding a fast layernorm for diffusion models and fix BSA: [29027](https://github.com/sgl-project/sglang/pull/29027)",
+      "source_url": "https://github.com/sgl-project/sglang/releases/tag/v0.5.18"
+    },
+    {
+      "tag": "v0.5.18",
+      "category": "parallelism_distributed",
+      "snippet": "[npu] [bugfix] Fix PD\u2011disaggregation error: [33523](https://github.com/sgl-project/sglang/pull/33523)",
+      "source_url": "https://github.com/sgl-project/sglang/releases/tag/v0.5.18"
+    },
+    {
+      "tag": "v0.5.18",
+      "category": "correctness_stability",
+      "snippet": "[npu] [bugfix] Fix PD\u2011disaggregation error: [33523](https://github.com/sgl-project/sglang/pull/33523)",
+      "source_url": "https://github.com/sgl-project/sglang/releases/tag/v0.5.18"
+    },
+    {
+      "tag": "v0.5.18",
+      "category": "kv_cache_memory",
+      "snippet": "[npu] [bugfix] Fix HiCache MHA backup for NPU: [34341](https://github.com/sgl-project/sglang/pull/34341)",
+      "source_url": "https://github.com/sgl-project/sglang/releases/tag/v0.5.18"
+    },
+    {
+      "tag": "v0.5.18",
+      "category": "correctness_stability",
+      "snippet": "[npu] [bugfix] Fix HiCache MHA backup for NPU: [34341](https://github.com/sgl-project/sglang/pull/34341)",
+      "source_url": "https://github.com/sgl-project/sglang/releases/tag/v0.5.18"
+    },
+    {
+      "tag": "v0.5.18",
+      "category": "execution_kernels",
+      "snippet": "[NPU] Modified kernel tag version to 8.10: [34254](https://github.com/sgl-project/sglang/pull/34254)",
+      "source_url": "https://github.com/sgl-project/sglang/releases/tag/v0.5.18"
+    },
+    {
+      "tag": "v0.5.18",
+      "category": "hardware_platform",
+      "snippet": "CPU / Intel / XPU",
+      "source_url": "https://github.com/sgl-project/sglang/releases/tag/v0.5.18"
+    },
+    {
+      "tag": "v0.5.18",
+      "category": "hardware_platform",
+      "snippet": "[CPU] Add support for Gemma4 on Xeon: [22498](https://github.com/sgl-project/sglang/pull/22498)",
+      "source_url": "https://github.com/sgl-project/sglang/releases/tag/v0.5.18"
+    },
+    {
+      "tag": "v0.5.18",
+      "category": "hardware_platform",
+      "snippet": "[CPU][QUANT] add amx cpu support for auto-round: [29593](https://github.com/sgl-project/sglang/pull/29593)",
+      "source_url": "https://github.com/sgl-project/sglang/releases/tag/v0.5.18"
+    },
+    {
+      "tag": "v0.5.18",
+      "category": "hardware_platform",
+      "snippet": "Optimize MiniMax-M2.7 on CPU: [31956](https://github.com/sgl-project/sglang/pull/31956)",
+      "source_url": "https://github.com/sgl-project/sglang/releases/tag/v0.5.18"
+    },
+    {
+      "tag": "v0.5.18",
+      "category": "hardware_platform",
+      "snippet": "[XPU] upgrade sglang xpu backend to PyTorch 2.13: [31751](https://github.com/sgl-project/sglang/pull/31751)",
+      "source_url": "https://github.com/sgl-project/sglang/releases/tag/v0.5.18"
+    },
+    {
+      "tag": "v0.5.18",
+      "category": "execution_kernels",
+      "snippet": "[XPU] xpu kernel release workflow: [33679](https://github.com/sgl-project/sglang/pull/33679)",
+      "source_url": "https://github.com/sgl-project/sglang/releases/tag/v0.5.18"
+    },
+    {
+      "tag": "v0.5.18",
+      "category": "hardware_platform",
+      "snippet": "[XPU] xpu kernel release workflow: [33679](https://github.com/sgl-project/sglang/pull/33679)",
+      "source_url": "https://github.com/sgl-project/sglang/releases/tag/v0.5.18"
+    },
+    {
+      "tag": "v0.5.18",
+      "category": "execution_kernels",
+      "snippet": "[XPU] Enable fused GDN QKV split Triton kernel on XPU: [30144](https://github.com/sgl-project/sglang/pull/30144)",
+      "source_url": "https://github.com/sgl-project/sglang/releases/tag/v0.5.18"
+    },
+    {
+      "tag": "v0.5.18",
+      "category": "model_modalities",
+      "snippet": "[XPU] Enable fused GDN QKV split Triton kernel on XPU: [30144](https://github.com/sgl-project/sglang/pull/30144)",
+      "source_url": "https://github.com/sgl-project/sglang/releases/tag/v0.5.18"
+    },
+    {
+      "tag": "v0.5.18",
+      "category": "hardware_platform",
+      "snippet": "[XPU] Enable fused GDN QKV split Triton kernel on XPU: [30144](https://github.com/sgl-project/sglang/pull/30144)",
+      "source_url": "https://github.com/sgl-project/sglang/releases/tag/v0.5.18"
+    },
+    {
+      "tag": "v0.5.18",
+      "category": "model_modalities",
+      "snippet": "[XPU] Pad MoE expert weight row stride to avoid L3 aliasing: [33905](https://github.com/sgl-project/sglang/pull/33905)",
+      "source_url": "https://github.com/sgl-project/sglang/releases/tag/v0.5.18"
+    },
+    {
+      "tag": "v0.5.18",
+      "category": "hardware_platform",
+      "snippet": "[XPU] Pad MoE expert weight row stride to avoid L3 aliasing: [33905](https://github.com/sgl-project/sglang/pull/33905)",
+      "source_url": "https://github.com/sgl-project/sglang/releases/tag/v0.5.18"
+    },
+    {
+      "tag": "v0.5.18",
+      "category": "execution_kernels",
+      "snippet": "[Intel GPU] DeepSeek V4 8/N: use sgl-kernel implementation of fusedknormropeflashmla on XPU: [28040](https://github.com/sgl-project/sglang/pull/28040)",
+      "source_url": "https://github.com/sgl-project/sglang/releases/tag/v0.5.18"
+    },
+    {
+      "tag": "v0.5.18",
+      "category": "model_modalities",
+      "snippet": "[Intel GPU] DeepSeek V4 8/N: use sgl-kernel implementation of fusedknormropeflashmla on XPU: [28040](https://github.com/sgl-project/sglang/pull/28040)",
+      "source_url": "https://github.com/sgl-project/sglang/releases/tag/v0.5.18"
+    },
+    {
+      "tag": "v0.5.18",
+      "category": "hardware_platform",
+      "snippet": "[Intel GPU] DeepSeek V4 8/N: use sgl-kernel implementation of fusedknormropeflashmla on XPU: [28040](https://github.com/sgl-project/sglang/pull/28040)",
+      "source_url": "https://github.com/sgl-project/sglang/releases/tag/v0.5.18"
+    },
+    {
+      "tag": "v0.5.18",
+      "category": "model_modalities",
+      "snippet": "[Intel GPU] DeepSeek V4 15/N: Add siluandmulclamp support to triton fusedmoe for XPU: [33808](https://github.com/sgl-project/sglang/pull/33808)",
+      "source_url": "https://github.com/sgl-project/sglang/releases/tag/v0.5.18"
+    },
+    {
+      "tag": "v0.5.18",
+      "category": "hardware_platform",
+      "snippet": "[Intel GPU] DeepSeek V4 15/N: Add siluandmulclamp support to triton fusedmoe for XPU: [33808](https://github.com/sgl-project/sglang/pull/33808)",
+      "source_url": "https://github.com/sgl-project/sglang/releases/tag/v0.5.18"
+    },
+    {
+      "tag": "v0.5.18",
+      "category": "hardware_platform",
+      "snippet": "[XPU] Fix NemotronH (hybrid mamba2) launch on --device xpu: [32227](https://github.com/sgl-project/sglang/pull/32227)",
+      "source_url": "https://github.com/sgl-project/sglang/releases/tag/v0.5.18"
+    },
+    {
+      "tag": "v0.5.18",
+      "category": "correctness_stability",
+      "snippet": "[XPU] Fix NemotronH (hybrid mamba2) launch on --device xpu: [32227](https://github.com/sgl-project/sglang/pull/32227)",
+      "source_url": "https://github.com/sgl-project/sglang/releases/tag/v0.5.18"
+    },
+    {
+      "tag": "v0.5.18",
+      "category": "correctness_stability",
+      "snippet": "fix(constrained): reject NUL bytes in grammar specs to stop an xgrammar segfault: [34679](https://github.com/sgl-project/sglang/pull/34679)",
+      "source_url": "https://github.com/sgl-project/sglang/releases/tag/v0.5.18"
+    },
+    {
+      "tag": "v0.5.18",
+      "category": "hardware_platform",
+      "snippet": "[Deps] Upgrade CUDA PyTorch stack to 2.13: [28836](https://github.com/sgl-project/sglang/pull/28836) \u2b50",
+      "source_url": "https://github.com/sgl-project/sglang/releases/tag/v0.5.18"
+    },
+    {
+      "tag": "v0.5.18",
+      "category": "execution_kernels",
+      "snippet": "Bump FlashInfer to 0.6.17 and remove Kimi K3 workarounds: [33997](https://github.com/sgl-project/sglang/pull/33997) \u2b50",
+      "source_url": "https://github.com/sgl-project/sglang/releases/tag/v0.5.18"
+    },
+    {
+      "tag": "v0.5.18",
+      "category": "execution_kernels",
+      "snippet": "chore: bump sgl-kernel version to 0.4.6.post1: [33842](https://github.com/sgl-project/sglang/pull/33842)",
+      "source_url": "https://github.com/sgl-project/sglang/releases/tag/v0.5.18"
+    },
+    {
+      "tag": "v0.5.18",
+      "category": "hardware_platform",
+      "snippet": "[Fix] Pin cuda-tile to 1.6.0rc5 to unblock Python 3.10 x8664 installs: [34321](https://github.com/sgl-project/sglang/pull/34321)",
+      "source_url": "https://github.com/sgl-project/sglang/releases/tag/v0.5.18"
+    },
+    {
+      "tag": "v0.5.18",
+      "category": "correctness_stability",
+      "snippet": "[Fix] Pin cuda-tile to 1.6.0rc5 to unblock Python 3.10 x8664 installs: [34321](https://github.com/sgl-project/sglang/pull/34321)",
+      "source_url": "https://github.com/sgl-project/sglang/releases/tag/v0.5.18"
+    },
+    {
+      "tag": "v0.5.18",
+      "category": "hardware_platform",
+      "snippet": "The CUDA PyTorch stack moves to torch 2.13.0, with triton 3.7.1, torchvision 0.28.0, and torchcodec 0.15.0 (torchaudio stays at 2.11.0); AOT kernels are rebuilt for Torch 2.13 and the XPU backend follows: [28836](https://github.com/sgl-project/sglang/pull/2883",
+      "source_url": "https://github.com/sgl-project/sglang/releases/tag/v0.5.18"
+    },
+    {
+      "tag": "v0.5.18",
+      "category": "execution_kernels",
+      "snippet": "Every compiled-kernel cache moves under SGLANGCACHEDIR, so the first launch after upgrading recompiles once. Copy or symlink the old directories if you pre-warm or volume-mount them (deepgemm and flashinfer are the expensive ones): ~/.triton to {SGLANGCACHEDIR",
+      "source_url": "https://github.com/sgl-project/sglang/releases/tag/v0.5.18"
+    },
+    {
+      "tag": "v0.5.18",
+      "category": "correctness_stability",
+      "snippet": "The torchao integration is removed (--torchao-config had raised ImportError for every accepted value since the torchao pin moved to 0.17.0): [34304](https://github.com/sgl-project/sglang/pull/34304)",
+      "source_url": "https://github.com/sgl-project/sglang/releases/tag/v0.5.18"
+    },
+    {
+      "tag": "v0.5.18",
+      "category": "model_modalities",
+      "snippet": "MoE deferred finalize is on by default on the NVFP4 + flashinfertrtllm path with an unfused, non-TP1 shared expert (the DeepSeek-V3 family); set SGLANGENABLEMOEDEFERREDFINALIZE=False to fall back: [33618](https://github.com/sgl-project/sglang/pull/33618)",
+      "source_url": "https://github.com/sgl-project/sglang/releases/tag/v0.5.18"
+    },
+    {
+      "tag": "v0.5.18",
+      "category": "quantization",
+      "snippet": "MoE deferred finalize is on by default on the NVFP4 + flashinfertrtllm path with an unfused, non-TP1 shared expert (the DeepSeek-V3 family); set SGLANGENABLEMOEDEFERREDFINALIZE=False to fall back: [33618](https://github.com/sgl-project/sglang/pull/33618)",
+      "source_url": "https://github.com/sgl-project/sglang/releases/tag/v0.5.18"
+    },
+    {
+      "tag": "v0.5.18",
+      "category": "correctness_stability",
+      "snippet": "MoE deferred finalize is on by default on the NVFP4 + flashinfertrtllm path with an unfused, non-TP1 shared expert (the DeepSeek-V3 family); set SGLANGENABLEMOEDEFERREDFINALIZE=False to fall back: [33618](https://github.com/sgl-project/sglang/pull/33618)",
+      "source_url": "https://github.com/sgl-project/sglang/releases/tag/v0.5.18"
+    },
+    {
+      "tag": "v0.5.18",
+      "category": "engine_model_runner",
+      "snippet": "Unified-cache out-of-window SWA slot freeing is on by default for the unified radix cache; set SGLANGOPTUNIFIEDCACHEFREEOUTOFWINDOWSLOTS=False to restore the old behavior: [34653](https://github.com/sgl-project/sglang/pull/34653)",
+      "source_url": "https://github.com/sgl-project/sglang/releases/tag/v0.5.18"
+    },
+    {
+      "tag": "v0.5.18",
+      "category": "kv_cache_memory",
+      "snippet": "Unified-cache out-of-window SWA slot freeing is on by default for the unified radix cache; set SGLANGOPTUNIFIEDCACHEFREEOUTOFWINDOWSLOTS=False to restore the old behavior: [34653](https://github.com/sgl-project/sglang/pull/34653)",
+      "source_url": "https://github.com/sgl-project/sglang/releases/tag/v0.5.18"
+    },
+    {
+      "tag": "v0.5.18",
+      "category": "correctness_stability",
+      "snippet": "Unified-cache out-of-window SWA slot freeing is on by default for the unified radix cache; set SGLANGOPTUNIFIEDCACHEFREEOUTOFWINDOWSLOTS=False to restore the old behavior: [34653](https://github.com/sgl-project/sglang/pull/34653)",
+      "source_url": "https://github.com/sgl-project/sglang/releases/tag/v0.5.18"
+    },
+    {
+      "tag": "v0.5.18",
+      "category": "correctness_stability",
+      "snippet": "Remote media downloads are bounded to 64 MiB by default, with redirect validation and opt-in exact-hostname allowlisting for image, video, and audio URLs: [34892](https://github.com/sgl-project/sglang/pull/34892)",
+      "source_url": "https://github.com/sgl-project/sglang/releases/tag/v0.5.18"
+    },
+    {
+      "tag": "v0.5.18",
+      "category": "correctness_stability",
+      "snippet": "The DSV4 fused MHC post+pre path is on by default, including on SM12x: [35214](https://github.com/sgl-project/sglang/pull/35214), [34019](https://github.com/sgl-project/sglang/pull/34019)",
+      "source_url": "https://github.com/sgl-project/sglang/releases/tag/v0.5.18"
+    },
+    {
+      "tag": "v0.5.18",
+      "category": "execution_kernels",
+      "snippet": "torch.compile becomes opt-in for diffusion speed mode: [34173](https://github.com/sgl-project/sglang/pull/34173)",
+      "source_url": "https://github.com/sgl-project/sglang/releases/tag/v0.5.18"
+    },
+    {
+      "tag": "v0.5.18",
+      "category": "model_modalities",
+      "snippet": "torch.compile becomes opt-in for diffusion speed mode: [34173](https://github.com/sgl-project/sglang/pull/34173)",
+      "source_url": "https://github.com/sgl-project/sglang/releases/tag/v0.5.18"
+    },
+    {
+      "tag": "v0.5.18",
+      "category": "correctness_stability",
+      "snippet": "22 unmaintained benchmarks are removed: [34520](https://github.com/sgl-project/sglang/pull/34520)",
+      "source_url": "https://github.com/sgl-project/sglang/releases/tag/v0.5.18"
     }
   ]
 }
