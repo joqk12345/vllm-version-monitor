@@ -62391,6 +62391,30 @@
     },
     {
       "tag": "v0.5.18",
+      "category": "model_modalities",
+      "snippet": "NVFP4 checkpoints run on AMD: --quantization quarkmxfp4 dequantizes ModelOpt and Quark NVFP4 weights and requantizes to MXFP4 at load, never holding a full-precision copy. 97.5-100.2% GSM8K recovery vs the NVFP4 reference across MiniMax-M2.7, GLM-5.1, Kimi-K2.",
+      "source_url": "https://github.com/sgl-project/sglang/releases/tag/v0.5.18"
+    },
+    {
+      "tag": "v0.5.18",
+      "category": "quantization",
+      "snippet": "NVFP4 checkpoints run on AMD: --quantization quarkmxfp4 dequantizes ModelOpt and Quark NVFP4 weights and requantizes to MXFP4 at load, never holding a full-precision copy. 97.5-100.2% GSM8K recovery vs the NVFP4 reference across MiniMax-M2.7, GLM-5.1, Kimi-K2.",
+      "source_url": "https://github.com/sgl-project/sglang/releases/tag/v0.5.18"
+    },
+    {
+      "tag": "v0.5.18",
+      "category": "execution_kernels",
+      "snippet": "Kimi K3 tuned for MI355X: a grouped-head MLA verify kernel replaces the MHA-shaped split-KV path that re-read the shared latent once per head, for 1.37-1.77x throughput and 1.45-2.42x ITL at concurrency 2-32; the AITER MLA prefill kernel now accepts K3's 12-he",
+      "source_url": "https://github.com/sgl-project/sglang/releases/tag/v0.5.18"
+    },
+    {
+      "tag": "v0.5.18",
+      "category": "parallelism_distributed",
+      "snippet": "Kimi K3 tuned for MI355X: a grouped-head MLA verify kernel replaces the MHA-shaped split-KV path that re-read the shared latent once per head, for 1.37-1.77x throughput and 1.45-2.42x ITL at concurrency 2-32; the AITER MLA prefill kernel now accepts K3's 12-he",
+      "source_url": "https://github.com/sgl-project/sglang/releases/tag/v0.5.18"
+    },
+    {
+      "tag": "v0.5.18",
       "category": "execution_kernels",
       "snippet": "One compiled-kernel cache directory: Triton, FlashInfer, Inductor, DeepGEMM, and CUDA driver caches all move under SGLANGCACHEDIR. The first launch after upgrading recompiles once; see Breaking Changes ([32434](https://github.com/sgl-project/sglang/pull/32434)",
       "source_url": "https://github.com/sgl-project/sglang/releases/tag/v0.5.18"
