@@ -1,29 +1,29 @@
 {
   "schema_version": 1,
   "project": "sgl-project/sglang",
-  "cutoff": "2026-08-27",
-  "source_mode": "cache",
-  "latest_stable": "v0.5.18",
+  "cutoff": "2026-09-05",
+  "source_mode": "live",
+  "latest_stable": "v0.5.19",
   "artifacts": [
     {
       "path": "json/sglang_releases_normalized.json",
-      "bytes": 3202305,
-      "sha256": "8034594c3ae8caf086f3ea9dabe3a393f962f68de437372a5afc3572167dc48c"
+      "bytes": 3310302,
+      "sha256": "a123a0daf1be47e8db5314196db1cb2139772e46aa685a17b19af45bb2d3ff2a"
     },
     {
       "path": "json/sglang_milestones.json",
-      "bytes": 3168016,
-      "sha256": "f0126cf91f80b56295a599250bde7d9107c57e664e928f0d958bfa58b23cc15f"
+      "bytes": 3315540,
+      "sha256": "66b235dee3bfdd5972a42f1fff152737e9f848966c9f994ad7d35d0d8b0de05d"
     },
     {
       "path": "pdf/SGLang_Project_Analysis_Version_Feature_Timeline.pdf",
-      "bytes": 28928,
-      "sha256": "8b888ea8c0a9070e3e59007a8a3a9eb76a2df885ff37e6b59d1b32afe6f5748a"
+      "bytes": 29299,
+      "sha256": "3cbef0f2fffbe913a17da3fa891ddd3f65af430a2fe2f3e37531feb0976792a5"
     },
     {
       "path": "pdf/SGLang_Evolution_Brief.pdf",
       "bytes": 4702,
-      "sha256": "476c905bf5851c6cc574cdbdf09377d990739bc29f30cdcfb6eda015d37ab80a"
+      "sha256": "d3f717a6efbc996b3d2322f72963b27b2efa197176ffa4bdeffb744198d1e2c0"
     }
   ]
 }
