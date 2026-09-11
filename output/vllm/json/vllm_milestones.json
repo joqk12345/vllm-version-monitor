@@ -78407,6 +78407,30 @@
     },
     {
       "tag": "v0.29.0",
+      "category": "engine_model_runner",
+      "snippet": ":warning: Model Runner V1 Deprecation",
+      "source_url": "https://github.com/vllm-project/vllm/releases/tag/v0.29.0"
+    },
+    {
+      "tag": "v0.29.0",
+      "category": "engine_model_runner",
+      "snippet": "Now that Model Runner V2 is used by default, we are considering Model Runner V1 deprecated and are targeting v0.32 for its removal. We do not intend to accept any more MRV1-specific improvements or optimizations.",
+      "source_url": "https://github.com/vllm-project/vllm/releases/tag/v0.29.0"
+    },
+    {
+      "tag": "v0.29.0",
+      "category": "correctness_stability",
+      "snippet": "Now that Model Runner V2 is used by default, we are considering Model Runner V1 deprecated and are targeting v0.32 for its removal. We do not intend to accept any more MRV1-specific improvements or optimizations.",
+      "source_url": "https://github.com/vllm-project/vllm/releases/tag/v0.29.0"
+    },
+    {
+      "tag": "v0.29.0",
+      "category": "speculative_decoding",
+      "snippet": "Some [features](https://github.com/vllm-project/vllm/issues/47172) are not yet supported in MRV2 but we are planning for these gaps to be closed within the next 2-3 weeks. These include sequence parallelism, dual-batch overlap, elastic expert parallellism, cus",
+      "source_url": "https://github.com/vllm-project/vllm/releases/tag/v0.29.0"
+    },
+    {
+      "tag": "v0.29.0",
       "category": "hardware_platform",
       "snippet": "| PyPI (CUDA 13.0) | pip install vllm |",
       "source_url": "https://github.com/vllm-project/vllm/releases/tag/v0.29.0"

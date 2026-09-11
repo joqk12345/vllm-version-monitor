@@ -1,29 +1,29 @@
 {
   "schema_version": 1,
   "project": "vllm-project/vllm",
-  "cutoff": "2026-09-10",
+  "cutoff": "2026-09-11",
   "source_mode": "live",
   "latest_stable": "v0.29.0",
   "artifacts": [
     {
       "path": "json/vllm_releases_normalized.json",
-      "bytes": 4763760,
-      "sha256": "822ede9dae9297801aa786c6464c62c629ab4fc3f9087d1b7ea460581242e406"
+      "bytes": 4765132,
+      "sha256": "d63c8a8137d8595a68dff41d95d26de77946f93231125b56a35476d33c6576d9"
     },
     {
       "path": "json/vllm_milestones.json",
-      "bytes": 3970300,
-      "sha256": "c90ba861b18670491d5b129d2c354cc68984d6e21e7500b926a0429bdfefa343"
+      "bytes": 3971740,
+      "sha256": "238ab858b0f9a9f524d781c6179bba7705f7da6f62da5f3c73c43378b2c3a304"
     },
     {
       "path": "pdf/vLLM_Project_Analysis_Version_Feature_Timeline.pdf",
       "bytes": 58981,
-      "sha256": "b696c543610d124a4a7c480a5e3389bc81e2ee499524e5f0d42b8e4830f05869"
+      "sha256": "e00b67297593151370d063bf731922f8fa450da54827314f0926ece4854a77c1"
     },
     {
       "path": "pdf/vLLM_Evolution_Brief.pdf",
-      "bytes": 5090,
-      "sha256": "84f623f95c81c725a106f576552dacb6dd34f8d202789d7c387d6a6ae8b76ebf"
+      "bytes": 5091,
+      "sha256": "d1904c121dbf2d4bf54dc2028cb16b08f68aa359af6c3dd2b2195ba99e3d0aa6"
     }
   ]
 }
