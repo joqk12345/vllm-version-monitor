@@ -71310,6 +71310,24 @@
     },
     {
       "tag": "v0.5.21",
+      "category": "speculative_decoding",
+      "snippet": "GLM-5.3-Flash now runs on AMD MI355X, with FP8 / MXFP4 MoE and MTP speculative decoding ([38546](https://github.com/sgl-project/sglang/pull/38546), [39341](https://github.com/sgl-project/sglang/pull/39341), [39778](https://github.com/sgl-project/sglang/pull/39",
+      "source_url": "https://github.com/sgl-project/sglang/releases/tag/v0.5.21"
+    },
+    {
+      "tag": "v0.5.21",
+      "category": "model_modalities",
+      "snippet": "GLM-5.3-Flash now runs on AMD MI355X, with FP8 / MXFP4 MoE and MTP speculative decoding ([38546](https://github.com/sgl-project/sglang/pull/38546), [39341](https://github.com/sgl-project/sglang/pull/39341), [39778](https://github.com/sgl-project/sglang/pull/39",
+      "source_url": "https://github.com/sgl-project/sglang/releases/tag/v0.5.21"
+    },
+    {
+      "tag": "v0.5.21",
+      "category": "quantization",
+      "snippet": "GLM-5.3-Flash now runs on AMD MI355X, with FP8 / MXFP4 MoE and MTP speculative decoding ([38546](https://github.com/sgl-project/sglang/pull/38546), [39341](https://github.com/sgl-project/sglang/pull/39341), [39778](https://github.com/sgl-project/sglang/pull/39",
+      "source_url": "https://github.com/sgl-project/sglang/releases/tag/v0.5.21"
+    },
+    {
+      "tag": "v0.5.21",
       "category": "api_protocol",
       "snippet": "New Decisions API (/v1/decisions) turns an LLM / VLM into a low-latency classifier and scorer ([docs](https://docs.sglang.io/docs/supported-models/decisionmodels), [41208](https://github.com/sgl-project/sglang/pull/41208)).",
       "source_url": "https://github.com/sgl-project/sglang/releases/tag/v0.5.21"
@@ -71329,19 +71347,19 @@
     {
       "tag": "v0.5.21",
       "category": "hardware_platform",
-      "snippet": "| NVIDIA (CUDA 13) | [lmsysorg/sglang:v0.5.21](https://hub.docker.com/r/lmsysorg/sglang/tags?name=v0.5.21) |",
+      "snippet": "| NVIDIA (CUDA 13) | [docker pull lmsysorg/sglang:v0.5.21](https://hub.docker.com/r/lmsysorg/sglang/tags?name=v0.5.21) |",
       "source_url": "https://github.com/sgl-project/sglang/releases/tag/v0.5.21"
     },
     {
       "tag": "v0.5.21",
       "category": "hardware_platform",
-      "snippet": "| Intel GPU | [lmsysorg/sglang:v0.5.21-xpu](https://hub.docker.com/r/lmsysorg/sglang/tags?name=v0.5.21-xpu) |",
+      "snippet": "| Intel GPU | [docker pull lmsysorg/sglang:v0.5.21-xpu](https://hub.docker.com/r/lmsysorg/sglang/tags?name=v0.5.21-xpu) |",
       "source_url": "https://github.com/sgl-project/sglang/releases/tag/v0.5.21"
     },
     {
       "tag": "v0.5.21",
       "category": "hardware_platform",
-      "snippet": "| Intel CPU | [lmsysorg/sglang:v0.5.21-xeon](https://hub.docker.com/r/lmsysorg/sglang/tags?name=v0.5.21-xeon) |",
+      "snippet": "| Intel CPU | [docker pull lmsysorg/sglang:v0.5.21-xeon](https://hub.docker.com/r/lmsysorg/sglang/tags?name=v0.5.21-xeon) |",
       "source_url": "https://github.com/sgl-project/sglang/releases/tag/v0.5.21"
     },
     {
@@ -73080,6 +73098,24 @@
     },
     {
       "tag": "v0.5.21",
+      "category": "quantization",
+      "snippet": "dsv4.1: RoPE and FP4 packing kernels: [39656](https://github.com/sgl-project/sglang/pull/39656)",
+      "source_url": "https://github.com/sgl-project/sglang/releases/tag/v0.5.21"
+    },
+    {
+      "tag": "v0.5.21",
+      "category": "quantization",
+      "snippet": "dsv4.1: Hopper FP8 matmul kernels and tuning: [39657](https://github.com/sgl-project/sglang/pull/39657)",
+      "source_url": "https://github.com/sgl-project/sglang/releases/tag/v0.5.21"
+    },
+    {
+      "tag": "v0.5.21",
+      "category": "model_modalities",
+      "snippet": "dsv4.1: vision tower and image preprocessing: [39668](https://github.com/sgl-project/sglang/pull/39668)",
+      "source_url": "https://github.com/sgl-project/sglang/releases/tag/v0.5.21"
+    },
+    {
+      "tag": "v0.5.21",
       "category": "execution_kernels",
       "snippet": "[DSv4.1] Score prefill consumer index layers on candidate blocks with DeepGEMM: [40352](https://github.com/sgl-project/sglang/pull/40352)",
       "source_url": "https://github.com/sgl-project/sglang/releases/tag/v0.5.21"
@@ -74438,6 +74474,30 @@
       "tag": "v0.5.21",
       "category": "hardware_platform",
       "snippet": "[AMD] Honor an explicit triton moerunnerbackend for mxfp8 on ROCm: [41377](https://github.com/sgl-project/sglang/pull/41377)",
+      "source_url": "https://github.com/sgl-project/sglang/releases/tag/v0.5.21"
+    },
+    {
+      "tag": "v0.5.21",
+      "category": "quantization",
+      "snippet": "dsv4.1-amd: gfx950 MXFP8 matmul kernels and fp8-grid producers: [41018](https://github.com/sgl-project/sglang/pull/41018)",
+      "source_url": "https://github.com/sgl-project/sglang/releases/tag/v0.5.21"
+    },
+    {
+      "tag": "v0.5.21",
+      "category": "kv_cache_memory",
+      "snippet": "dsv4.1-amd: KV cache layouts, FP4 indexer, compressor and router kernels: [41019](https://github.com/sgl-project/sglang/pull/41019)",
+      "source_url": "https://github.com/sgl-project/sglang/releases/tag/v0.5.21"
+    },
+    {
+      "tag": "v0.5.21",
+      "category": "quantization",
+      "snippet": "dsv4.1-amd: KV cache layouts, FP4 indexer, compressor and router kernels: [41019](https://github.com/sgl-project/sglang/pull/41019)",
+      "source_url": "https://github.com/sgl-project/sglang/releases/tag/v0.5.21"
+    },
+    {
+      "tag": "v0.5.21",
+      "category": "parallelism_distributed",
+      "snippet": "dsv4.1-amd: gfx950 sparse decode attention and sorted top-k: [41020](https://github.com/sgl-project/sglang/pull/41020)",
       "source_url": "https://github.com/sgl-project/sglang/releases/tag/v0.5.21"
     },
     {
