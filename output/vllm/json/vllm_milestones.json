@@ -80606,6 +80606,1230 @@
       "category": "hardware_platform",
       "snippet": "New defaults: FlashInfer CuTeDSL NVFP4 W4A16 over Marlin on SM100/103 (53014), W4A4 NVFP4 over weight-only kernels on SM120/121 (55170), BF16x3 router GEMM on SM100 (55899), DeepEP v2 combine overlap on with VLLMDEEPEPV2COMBINEOVERLAP=0 to disable (52781), AIT",
       "source_url": "https://github.com/vllm-project/vllm/releases/tag/v0.30.0"
+    },
+    {
+      "tag": "v0.31.0",
+      "category": "kv_cache_memory",
+      "snippet": "DeepSeek-V4.1-Flash performance: FlashMLA mega attention with the V4.1 NVFP4 compressed KV cache is now the SM100 default (56935); DeepGEMM sparse MQA logits for the indexer (56254) and Mega-Gate fusing the gate GEMM with expert selection (56266); decoder boun",
+      "source_url": "https://github.com/vllm-project/vllm/releases/tag/v0.31.0"
+    },
+    {
+      "tag": "v0.31.0",
+      "category": "model_modalities",
+      "snippet": "DeepSeek-V4.1-Flash performance: FlashMLA mega attention with the V4.1 NVFP4 compressed KV cache is now the SM100 default (56935); DeepGEMM sparse MQA logits for the indexer (56254) and Mega-Gate fusing the gate GEMM with expert selection (56266); decoder boun",
+      "source_url": "https://github.com/vllm-project/vllm/releases/tag/v0.31.0"
+    },
+    {
+      "tag": "v0.31.0",
+      "category": "quantization",
+      "snippet": "DeepSeek-V4.1-Flash performance: FlashMLA mega attention with the V4.1 NVFP4 compressed KV cache is now the SM100 default (56935); DeepGEMM sparse MQA logits for the indexer (56254) and Mega-Gate fusing the gate GEMM with expert selection (56266); decoder boun",
+      "source_url": "https://github.com/vllm-project/vllm/releases/tag/v0.31.0"
+    },
+    {
+      "tag": "v0.31.0",
+      "category": "hardware_platform",
+      "snippet": "DeepSeek-V4.1-Flash performance: FlashMLA mega attention with the V4.1 NVFP4 compressed KV cache is now the SM100 default (56935); DeepGEMM sparse MQA logits for the indexer (56254) and Mega-Gate fusing the gate GEMM with expert selection (56266); decoder boun",
+      "source_url": "https://github.com/vllm-project/vllm/releases/tag/v0.31.0"
+    },
+    {
+      "tag": "v0.31.0",
+      "category": "correctness_stability",
+      "snippet": "DeepSeek-V4.1-Flash performance: FlashMLA mega attention with the V4.1 NVFP4 compressed KV cache is now the SM100 default (56935); DeepGEMM sparse MQA logits for the indexer (56254) and Mega-Gate fusing the gate GEMM with expert selection (56266); decoder boun",
+      "source_url": "https://github.com/vllm-project/vllm/releases/tag/v0.31.0"
+    },
+    {
+      "tag": "v0.31.0",
+      "category": "engine_model_runner",
+      "snippet": "Fast restart: the new vllm preload CLI launches the weight-cache daemon that keeps post-quantized weights resident in GPU memory across engine restarts (56680), now with data parallelism (57386), MTP draft models (57312), a /health endpoint (58552) and a readi",
+      "source_url": "https://github.com/vllm-project/vllm/releases/tag/v0.31.0"
+    },
+    {
+      "tag": "v0.31.0",
+      "category": "kv_cache_memory",
+      "snippet": "Fast restart: the new vllm preload CLI launches the weight-cache daemon that keeps post-quantized weights resident in GPU memory across engine restarts (56680), now with data parallelism (57386), MTP draft models (57312), a /health endpoint (58552) and a readi",
+      "source_url": "https://github.com/vllm-project/vllm/releases/tag/v0.31.0"
+    },
+    {
+      "tag": "v0.31.0",
+      "category": "engine_model_runner",
+      "snippet": "Model Runner V2 and speculative decoding: draft-model speculative decoding (43091) and custom logits processors (56497) on Model Runner V2; the new LiLiCorr drafter (57934); async scheduling for DFlash (58065) with the context K/V precompute captured in the dr",
+      "source_url": "https://github.com/vllm-project/vllm/releases/tag/v0.31.0"
+    },
+    {
+      "tag": "v0.31.0",
+      "category": "scheduling_batching",
+      "snippet": "Model Runner V2 and speculative decoding: draft-model speculative decoding (43091) and custom logits processors (56497) on Model Runner V2; the new LiLiCorr drafter (57934); async scheduling for DFlash (58065) with the context K/V precompute captured in the dr",
+      "source_url": "https://github.com/vllm-project/vllm/releases/tag/v0.31.0"
+    },
+    {
+      "tag": "v0.31.0",
+      "category": "kv_cache_memory",
+      "snippet": "Model Runner V2 and speculative decoding: draft-model speculative decoding (43091) and custom logits processors (56497) on Model Runner V2; the new LiLiCorr drafter (57934); async scheduling for DFlash (58065) with the context K/V precompute captured in the dr",
+      "source_url": "https://github.com/vllm-project/vllm/releases/tag/v0.31.0"
+    },
+    {
+      "tag": "v0.31.0",
+      "category": "execution_kernels",
+      "snippet": "Model Runner V2 and speculative decoding: draft-model speculative decoding (43091) and custom logits processors (56497) on Model Runner V2; the new LiLiCorr drafter (57934); async scheduling for DFlash (58065) with the context K/V precompute captured in the dr",
+      "source_url": "https://github.com/vllm-project/vllm/releases/tag/v0.31.0"
+    },
+    {
+      "tag": "v0.31.0",
+      "category": "speculative_decoding",
+      "snippet": "Model Runner V2 and speculative decoding: draft-model speculative decoding (43091) and custom logits processors (56497) on Model Runner V2; the new LiLiCorr drafter (57934); async scheduling for DFlash (58065) with the context K/V precompute captured in the dr",
+      "source_url": "https://github.com/vllm-project/vllm/releases/tag/v0.31.0"
+    },
+    {
+      "tag": "v0.31.0",
+      "category": "parallelism_distributed",
+      "snippet": "Model Runner V2 and speculative decoding: draft-model speculative decoding (43091) and custom logits processors (56497) on Model Runner V2; the new LiLiCorr drafter (57934); async scheduling for DFlash (58065) with the context K/V precompute captured in the dr",
+      "source_url": "https://github.com/vllm-project/vllm/releases/tag/v0.31.0"
+    },
+    {
+      "tag": "v0.31.0",
+      "category": "model_modalities",
+      "snippet": "Model Runner V2 and speculative decoding: draft-model speculative decoding (43091) and custom logits processors (56497) on Model Runner V2; the new LiLiCorr drafter (57934); async scheduling for DFlash (58065) with the context K/V precompute captured in the dr",
+      "source_url": "https://github.com/vllm-project/vllm/releases/tag/v0.31.0"
+    },
+    {
+      "tag": "v0.31.0",
+      "category": "hardware_platform",
+      "snippet": "Model Runner V2 and speculative decoding: draft-model speculative decoding (43091) and custom logits processors (56497) on Model Runner V2; the new LiLiCorr drafter (57934); async scheduling for DFlash (58065) with the context K/V precompute captured in the dr",
+      "source_url": "https://github.com/vllm-project/vllm/releases/tag/v0.31.0"
+    },
+    {
+      "tag": "v0.31.0",
+      "category": "parallelism_distributed",
+      "snippet": "Large scale serving: MoonEP balanced EP all2all backend via --all2all-backend moonep (52101), prefill context parallelism with data parallelism (57075), a low-SM multimem reduce-scatter for SM100/SM103 (55072), DeepEPv2 with sequence parallelism (57210) and EP",
+      "source_url": "https://github.com/vllm-project/vllm/releases/tag/v0.31.0"
+    },
+    {
+      "tag": "v0.31.0",
+      "category": "parallelism_distributed",
+      "snippet": "Scheduling controls: --max-num-active-seqs caps RUNNING admission independently of maxnumseqs (56758), --long-prefill-token-threshold now adapts to the number of waiting prefills instead of chunking a lone request (57951, 58459), the waiting queue was reworked",
+      "source_url": "https://github.com/vllm-project/vllm/releases/tag/v0.31.0"
+    },
+    {
+      "tag": "v0.31.0",
+      "category": "kv_cache_memory",
+      "snippet": "HiSparse hardening: MTP verification rows resolved with a union residency kernel (59235), MTP acceptance collapse under FULL graphs fixed (59309), no GPU pages without host backing (59036), a chunked-prefill preemption livelock fixed (59494), KV cache sized fr",
+      "source_url": "https://github.com/vllm-project/vllm/releases/tag/v0.31.0"
+    },
+    {
+      "tag": "v0.31.0",
+      "category": "execution_kernels",
+      "snippet": "HiSparse hardening: MTP verification rows resolved with a union residency kernel (59235), MTP acceptance collapse under FULL graphs fixed (59309), no GPU pages without host backing (59036), a chunked-prefill preemption livelock fixed (59494), KV cache sized fr",
+      "source_url": "https://github.com/vllm-project/vllm/releases/tag/v0.31.0"
+    },
+    {
+      "tag": "v0.31.0",
+      "category": "parallelism_distributed",
+      "snippet": "HiSparse hardening: MTP verification rows resolved with a union residency kernel (59235), MTP acceptance collapse under FULL graphs fixed (59309), no GPU pages without host backing (59036), a chunked-prefill preemption livelock fixed (59494), KV cache sized fr",
+      "source_url": "https://github.com/vllm-project/vllm/releases/tag/v0.31.0"
+    },
+    {
+      "tag": "v0.31.0",
+      "category": "model_modalities",
+      "snippet": "Security: per-request mmprocessorkwargs and mediaiokwargs are rejected unless --trust-request-mm-kwargs is set (58830); prefix-cache extra keys are tagged by source so a LoRA name and a cachesalt can no longer collide (51899), and the LoRA path is part of the ",
+      "source_url": "https://github.com/vllm-project/vllm/releases/tag/v0.31.0"
+    },
+    {
+      "tag": "v0.31.0",
+      "category": "execution_kernels",
+      "snippet": "Breaking changes: per-request multimodal kwargs gated (58830); tokenizermode=\"slow\" removed (58545); --enable-mamba-fine-grained-prefix-cache renamed to --enable-mamba-shared-prefix-checkpoint (57382); online quantization through quantization=\"fp8\" replaced by",
+      "source_url": "https://github.com/vllm-project/vllm/releases/tag/v0.31.0"
+    },
+    {
+      "tag": "v0.31.0",
+      "category": "model_modalities",
+      "snippet": "Breaking changes: per-request multimodal kwargs gated (58830); tokenizermode=\"slow\" removed (58545); --enable-mamba-fine-grained-prefix-cache renamed to --enable-mamba-shared-prefix-checkpoint (57382); online quantization through quantization=\"fp8\" replaced by",
+      "source_url": "https://github.com/vllm-project/vllm/releases/tag/v0.31.0"
+    },
+    {
+      "tag": "v0.31.0",
+      "category": "quantization",
+      "snippet": "Breaking changes: per-request multimodal kwargs gated (58830); tokenizermode=\"slow\" removed (58545); --enable-mamba-fine-grained-prefix-cache renamed to --enable-mamba-shared-prefix-checkpoint (57382); online quantization through quantization=\"fp8\" replaced by",
+      "source_url": "https://github.com/vllm-project/vllm/releases/tag/v0.31.0"
+    },
+    {
+      "tag": "v0.31.0",
+      "category": "hardware_platform",
+      "snippet": "Breaking changes: per-request multimodal kwargs gated (58830); tokenizermode=\"slow\" removed (58545); --enable-mamba-fine-grained-prefix-cache renamed to --enable-mamba-shared-prefix-checkpoint (57382); online quantization through quantization=\"fp8\" replaced by",
+      "source_url": "https://github.com/vllm-project/vllm/releases/tag/v0.31.0"
+    },
+    {
+      "tag": "v0.31.0",
+      "category": "correctness_stability",
+      "snippet": "Breaking changes: per-request multimodal kwargs gated (58830); tokenizermode=\"slow\" removed (58545); --enable-mamba-fine-grained-prefix-cache renamed to --enable-mamba-shared-prefix-checkpoint (57382); online quantization through quantization=\"fp8\" replaced by",
+      "source_url": "https://github.com/vllm-project/vllm/releases/tag/v0.31.0"
+    },
+    {
+      "tag": "v0.31.0",
+      "category": "hardware_platform",
+      "snippet": "| PyPI (CUDA 13.0) | pip install vllm |",
+      "source_url": "https://github.com/vllm-project/vllm/releases/tag/v0.31.0"
+    },
+    {
+      "tag": "v0.31.0",
+      "category": "hardware_platform",
+      "snippet": "| PyPI (CUDA 13.0, uv) | uv pip install vllm --torch-backend=auto |",
+      "source_url": "https://github.com/vllm-project/vllm/releases/tag/v0.31.0"
+    },
+    {
+      "tag": "v0.31.0",
+      "category": "hardware_platform",
+      "snippet": "| ROCm | pip install vllm --extra-index-url https://wheels.vllm.ai/rocm/0.31.0/rocm723 |",
+      "source_url": "https://github.com/vllm-project/vllm/releases/tag/v0.31.0"
+    },
+    {
+      "tag": "v0.31.0",
+      "category": "hardware_platform",
+      "snippet": "| XPU | uv pip install vllm --extra-index-url https://wheels.vllm.ai/0.31.0/xpu --extra-index-url https://download.pytorch.org/whl/xpu --index-strategy unsafe-best-match |",
+      "source_url": "https://github.com/vllm-project/vllm/releases/tag/v0.31.0"
+    },
+    {
+      "tag": "v0.31.0",
+      "category": "observability_operations",
+      "snippet": "Docker Images",
+      "source_url": "https://github.com/vllm-project/vllm/releases/tag/v0.31.0"
+    },
+    {
+      "tag": "v0.31.0",
+      "category": "observability_operations",
+      "snippet": "| Platform | Docker Image |",
+      "source_url": "https://github.com/vllm-project/vllm/releases/tag/v0.31.0"
+    },
+    {
+      "tag": "v0.31.0",
+      "category": "api_protocol",
+      "snippet": "| CUDA 13.0 (Default) | docker pull vllm/vllm-openai:v0.31.0 |",
+      "source_url": "https://github.com/vllm-project/vllm/releases/tag/v0.31.0"
+    },
+    {
+      "tag": "v0.31.0",
+      "category": "hardware_platform",
+      "snippet": "| CUDA 13.0 (Default) | docker pull vllm/vllm-openai:v0.31.0 |",
+      "source_url": "https://github.com/vllm-project/vllm/releases/tag/v0.31.0"
+    },
+    {
+      "tag": "v0.31.0",
+      "category": "observability_operations",
+      "snippet": "| CUDA 13.0 (Default) | docker pull vllm/vllm-openai:v0.31.0 |",
+      "source_url": "https://github.com/vllm-project/vllm/releases/tag/v0.31.0"
+    },
+    {
+      "tag": "v0.31.0",
+      "category": "correctness_stability",
+      "snippet": "| CUDA 13.0 (Default) | docker pull vllm/vllm-openai:v0.31.0 |",
+      "source_url": "https://github.com/vllm-project/vllm/releases/tag/v0.31.0"
+    },
+    {
+      "tag": "v0.31.0",
+      "category": "api_protocol",
+      "snippet": "| CUDA 12.9 | docker pull vllm/vllm-openai:v0.31.0-cu129 |",
+      "source_url": "https://github.com/vllm-project/vllm/releases/tag/v0.31.0"
+    },
+    {
+      "tag": "v0.31.0",
+      "category": "hardware_platform",
+      "snippet": "| CUDA 12.9 | docker pull vllm/vllm-openai:v0.31.0-cu129 |",
+      "source_url": "https://github.com/vllm-project/vllm/releases/tag/v0.31.0"
+    },
+    {
+      "tag": "v0.31.0",
+      "category": "observability_operations",
+      "snippet": "| CUDA 12.9 | docker pull vllm/vllm-openai:v0.31.0-cu129 |",
+      "source_url": "https://github.com/vllm-project/vllm/releases/tag/v0.31.0"
+    },
+    {
+      "tag": "v0.31.0",
+      "category": "api_protocol",
+      "snippet": "| ROCm | docker pull vllm/vllm-openai-rocm:v0.31.0 |",
+      "source_url": "https://github.com/vllm-project/vllm/releases/tag/v0.31.0"
+    },
+    {
+      "tag": "v0.31.0",
+      "category": "hardware_platform",
+      "snippet": "| ROCm | docker pull vllm/vllm-openai-rocm:v0.31.0 |",
+      "source_url": "https://github.com/vllm-project/vllm/releases/tag/v0.31.0"
+    },
+    {
+      "tag": "v0.31.0",
+      "category": "observability_operations",
+      "snippet": "| ROCm | docker pull vllm/vllm-openai-rocm:v0.31.0 |",
+      "source_url": "https://github.com/vllm-project/vllm/releases/tag/v0.31.0"
+    },
+    {
+      "tag": "v0.31.0",
+      "category": "api_protocol",
+      "snippet": "| CPU | docker pull vllm/vllm-openai-cpu:v0.31.0 |",
+      "source_url": "https://github.com/vllm-project/vllm/releases/tag/v0.31.0"
+    },
+    {
+      "tag": "v0.31.0",
+      "category": "hardware_platform",
+      "snippet": "| CPU | docker pull vllm/vllm-openai-cpu:v0.31.0 |",
+      "source_url": "https://github.com/vllm-project/vllm/releases/tag/v0.31.0"
+    },
+    {
+      "tag": "v0.31.0",
+      "category": "observability_operations",
+      "snippet": "| CPU | docker pull vllm/vllm-openai-cpu:v0.31.0 |",
+      "source_url": "https://github.com/vllm-project/vllm/releases/tag/v0.31.0"
+    },
+    {
+      "tag": "v0.31.0",
+      "category": "api_protocol",
+      "snippet": "| XPU | docker pull vllm/vllm-openai-xpu:v0.31.0 |",
+      "source_url": "https://github.com/vllm-project/vllm/releases/tag/v0.31.0"
+    },
+    {
+      "tag": "v0.31.0",
+      "category": "hardware_platform",
+      "snippet": "| XPU | docker pull vllm/vllm-openai-xpu:v0.31.0 |",
+      "source_url": "https://github.com/vllm-project/vllm/releases/tag/v0.31.0"
+    },
+    {
+      "tag": "v0.31.0",
+      "category": "observability_operations",
+      "snippet": "| XPU | docker pull vllm/vllm-openai-xpu:v0.31.0 |",
+      "source_url": "https://github.com/vllm-project/vllm/releases/tag/v0.31.0"
+    },
+    {
+      "tag": "v0.31.0",
+      "category": "hardware_platform",
+      "snippet": "CUDA 12.9 Python wheels for x8664 and arm64",
+      "source_url": "https://github.com/vllm-project/vllm/releases/tag/v0.31.0"
+    },
+    {
+      "tag": "v0.31.0",
+      "category": "hardware_platform",
+      "snippet": "CUDA 13.0 Python wheels for x8664 and arm64",
+      "source_url": "https://github.com/vllm-project/vllm/releases/tag/v0.31.0"
+    },
+    {
+      "tag": "v0.31.0",
+      "category": "hardware_platform",
+      "snippet": "CPU Python wheels for x8664, arm64, and macOS",
+      "source_url": "https://github.com/vllm-project/vllm/releases/tag/v0.31.0"
+    },
+    {
+      "tag": "v0.31.0",
+      "category": "hardware_platform",
+      "snippet": "XPU Python wheel for x8664",
+      "source_url": "https://github.com/vllm-project/vllm/releases/tag/v0.31.0"
+    },
+    {
+      "tag": "v0.31.0",
+      "category": "model_modalities",
+      "snippet": "New model capabilities: DiffusionGemma structured generation mode with bounded single-token choices (57250), MiMo V2 MXFP4 MoE, BF16 MoE router and DFlash drafts (57784), Cohere2MoE auxiliary hidden states for EAGLE3/DFlash drafters (49819), GLM-5.2-MXFP4 on t",
+      "source_url": "https://github.com/vllm-project/vllm/releases/tag/v0.31.0"
+    },
+    {
+      "tag": "v0.31.0",
+      "category": "hardware_platform",
+      "snippet": "New model capabilities: DiffusionGemma structured generation mode with bounded single-token choices (57250), MiMo V2 MXFP4 MoE, BF16 MoE router and DFlash drafts (57784), Cohere2MoE auxiliary hidden states for EAGLE3/DFlash drafters (49819), GLM-5.2-MXFP4 on t",
+      "source_url": "https://github.com/vllm-project/vllm/releases/tag/v0.31.0"
+    },
+    {
+      "tag": "v0.31.0",
+      "category": "kv_cache_memory",
+      "snippet": "DeepSeek-V4.1-Flash: FlashMLA mega attention with the NVFP4 compressed KV cache as the SM100 default (56935), DeepGEMM sparse MQA logits in the indexer (56254), Mega-Gate (56266), fused TP all-reduce + mHC input preparation (57643) with the MoE finalize folded",
+      "source_url": "https://github.com/vllm-project/vllm/releases/tag/v0.31.0"
+    },
+    {
+      "tag": "v0.31.0",
+      "category": "model_modalities",
+      "snippet": "DeepSeek-V4.1-Flash: FlashMLA mega attention with the NVFP4 compressed KV cache as the SM100 default (56935), DeepGEMM sparse MQA logits in the indexer (56254), Mega-Gate (56266), fused TP all-reduce + mHC input preparation (57643) with the MoE finalize folded",
+      "source_url": "https://github.com/vllm-project/vllm/releases/tag/v0.31.0"
+    },
+    {
+      "tag": "v0.31.0",
+      "category": "quantization",
+      "snippet": "DeepSeek-V4.1-Flash: FlashMLA mega attention with the NVFP4 compressed KV cache as the SM100 default (56935), DeepGEMM sparse MQA logits in the indexer (56254), Mega-Gate (56266), fused TP all-reduce + mHC input preparation (57643) with the MoE finalize folded",
+      "source_url": "https://github.com/vllm-project/vllm/releases/tag/v0.31.0"
+    },
+    {
+      "tag": "v0.31.0",
+      "category": "hardware_platform",
+      "snippet": "DeepSeek-V4.1-Flash: FlashMLA mega attention with the NVFP4 compressed KV cache as the SM100 default (56935), DeepGEMM sparse MQA logits in the indexer (56254), Mega-Gate (56266), fused TP all-reduce + mHC input preparation (57643) with the MoE finalize folded",
+      "source_url": "https://github.com/vllm-project/vllm/releases/tag/v0.31.0"
+    },
+    {
+      "tag": "v0.31.0",
+      "category": "correctness_stability",
+      "snippet": "DeepSeek-V4.1-Flash: FlashMLA mega attention with the NVFP4 compressed KV cache as the SM100 default (56935), DeepGEMM sparse MQA logits in the indexer (56254), Mega-Gate (56266), fused TP all-reduce + mHC input preparation (57643) with the MoE finalize folded",
+      "source_url": "https://github.com/vllm-project/vllm/releases/tag/v0.31.0"
+    },
+    {
+      "tag": "v0.31.0",
+      "category": "model_modalities",
+      "snippet": "DeepSeek V4: FlashInfer sparse MLA with fused inverse RoPE + FP8 quant (58621), stacked DSpark context WKV projections (54674), fused MoE expert distribution computed from the EP group (57465), FIM completion via suffix (44229), missing string= in tool calls p",
+      "source_url": "https://github.com/vllm-project/vllm/releases/tag/v0.31.0"
+    },
+    {
+      "tag": "v0.31.0",
+      "category": "quantization",
+      "snippet": "DeepSeek V4: FlashInfer sparse MLA with fused inverse RoPE + FP8 quant (58621), stacked DSpark context WKV projections (54674), fused MoE expert distribution computed from the EP group (57465), FIM completion via suffix (44229), missing string= in tool calls p",
+      "source_url": "https://github.com/vllm-project/vllm/releases/tag/v0.31.0"
+    },
+    {
+      "tag": "v0.31.0",
+      "category": "scheduling_batching",
+      "snippet": "GLM-5.3-Flash: opt-in FlashAttention and FlashMLA sparse backends on SM90 (55385), NoPE sparse MLA on the FlashInfer SM120 backend (55277), cooperative top-k for small decode batches (57327), indexer decode workspace sized by pooled length (3 GiB saved, 57701)",
+      "source_url": "https://github.com/vllm-project/vllm/releases/tag/v0.31.0"
+    },
+    {
+      "tag": "v0.31.0",
+      "category": "execution_kernels",
+      "snippet": "GLM-5.3-Flash: opt-in FlashAttention and FlashMLA sparse backends on SM90 (55385), NoPE sparse MLA on the FlashInfer SM120 backend (55277), cooperative top-k for small decode batches (57327), indexer decode workspace sized by pooled length (3 GiB saved, 57701)",
+      "source_url": "https://github.com/vllm-project/vllm/releases/tag/v0.31.0"
+    },
+    {
+      "tag": "v0.31.0",
+      "category": "speculative_decoding",
+      "snippet": "GLM-5.3-Flash: opt-in FlashAttention and FlashMLA sparse backends on SM90 (55385), NoPE sparse MLA on the FlashInfer SM120 backend (55277), cooperative top-k for small decode batches (57327), indexer decode workspace sized by pooled length (3 GiB saved, 57701)",
+      "source_url": "https://github.com/vllm-project/vllm/releases/tag/v0.31.0"
+    },
+    {
+      "tag": "v0.31.0",
+      "category": "parallelism_distributed",
+      "snippet": "GLM-5.3-Flash: opt-in FlashAttention and FlashMLA sparse backends on SM90 (55385), NoPE sparse MLA on the FlashInfer SM120 backend (55277), cooperative top-k for small decode batches (57327), indexer decode workspace sized by pooled length (3 GiB saved, 57701)",
+      "source_url": "https://github.com/vllm-project/vllm/releases/tag/v0.31.0"
+    },
+    {
+      "tag": "v0.31.0",
+      "category": "kv_cache_memory",
+      "snippet": "Qwen3.8-Flash-Next (Qwen4Exp): FP8 main KV cache on the QSA path (55557), FP8 TP with FlashInfer TRTLLM MoE (55867), SM90 QSA tuning (57273), fused HC down projection + SiLU (58957), lower PLE metadata overhead (58114), QSA indexer workspace fragmentation fixe",
+      "source_url": "https://github.com/vllm-project/vllm/releases/tag/v0.31.0"
+    },
+    {
+      "tag": "v0.31.0",
+      "category": "execution_kernels",
+      "snippet": "Qwen3.8-Flash-Next (Qwen4Exp): FP8 main KV cache on the QSA path (55557), FP8 TP with FlashInfer TRTLLM MoE (55867), SM90 QSA tuning (57273), fused HC down projection + SiLU (58957), lower PLE metadata overhead (58114), QSA indexer workspace fragmentation fixe",
+      "source_url": "https://github.com/vllm-project/vllm/releases/tag/v0.31.0"
+    },
+    {
+      "tag": "v0.31.0",
+      "category": "model_modalities",
+      "snippet": "Qwen3.8-Flash-Next (Qwen4Exp): FP8 main KV cache on the QSA path (55557), FP8 TP with FlashInfer TRTLLM MoE (55867), SM90 QSA tuning (57273), fused HC down projection + SiLU (58957), lower PLE metadata overhead (58114), QSA indexer workspace fragmentation fixe",
+      "source_url": "https://github.com/vllm-project/vllm/releases/tag/v0.31.0"
+    },
+    {
+      "tag": "v0.31.0",
+      "category": "quantization",
+      "snippet": "Qwen3.8-Flash-Next (Qwen4Exp): FP8 main KV cache on the QSA path (55557), FP8 TP with FlashInfer TRTLLM MoE (55867), SM90 QSA tuning (57273), fused HC down projection + SiLU (58957), lower PLE metadata overhead (58114), QSA indexer workspace fragmentation fixe",
+      "source_url": "https://github.com/vllm-project/vllm/releases/tag/v0.31.0"
+    },
+    {
+      "tag": "v0.31.0",
+      "category": "hardware_platform",
+      "snippet": "Qwen3.8-Flash-Next (Qwen4Exp): FP8 main KV cache on the QSA path (55557), FP8 TP with FlashInfer TRTLLM MoE (55867), SM90 QSA tuning (57273), fused HC down projection + SiLU (58957), lower PLE metadata overhead (58114), QSA indexer workspace fragmentation fixe",
+      "source_url": "https://github.com/vllm-project/vllm/releases/tag/v0.31.0"
+    },
+    {
+      "tag": "v0.31.0",
+      "category": "model_modalities",
+      "snippet": "Kimi K3 and MiniMax-M3: Kimi-K3 vision patch embedder as a GEMM (58527), fused KimiViT QK RoPE (up to 29x, 58651), routed expert quantization (57430), reasoning parser (57098) and reasoning token counting (58372) fixes, DSpark context KV pointers refreshed aft",
+      "source_url": "https://github.com/vllm-project/vllm/releases/tag/v0.31.0"
+    },
+    {
+      "tag": "v0.31.0",
+      "category": "quantization",
+      "snippet": "Kimi K3 and MiniMax-M3: Kimi-K3 vision patch embedder as a GEMM (58527), fused KimiViT QK RoPE (up to 29x, 58651), routed expert quantization (57430), reasoning parser (57098) and reasoning token counting (58372) fixes, DSpark context KV pointers refreshed aft",
+      "source_url": "https://github.com/vllm-project/vllm/releases/tag/v0.31.0"
+    },
+    {
+      "tag": "v0.31.0",
+      "category": "hardware_platform",
+      "snippet": "Kimi K3 and MiniMax-M3: Kimi-K3 vision patch embedder as a GEMM (58527), fused KimiViT QK RoPE (up to 29x, 58651), routed expert quantization (57430), reasoning parser (57098) and reasoning token counting (58372) fixes, DSpark context KV pointers refreshed aft",
+      "source_url": "https://github.com/vllm-project/vllm/releases/tag/v0.31.0"
+    },
+    {
+      "tag": "v0.31.0",
+      "category": "execution_kernels",
+      "snippet": "DiffusionGemma: one-pass sampler statistics kernel (58226), diffusionconstrained reads over logprobtokenids (about 25% faster, 58216), fewer logit rows for prefill-only batches (57416), logprobtokenids support (57417), and fixes for concurrent logprobs (57414)",
+      "source_url": "https://github.com/vllm-project/vllm/releases/tag/v0.31.0"
+    },
+    {
+      "tag": "v0.31.0",
+      "category": "parallelism_distributed",
+      "snippet": "DiffusionGemma: one-pass sampler statistics kernel (58226), diffusionconstrained reads over logprobtokenids (about 25% faster, 58216), fewer logit rows for prefill-only batches (57416), logprobtokenids support (57417), and fixes for concurrent logprobs (57414)",
+      "source_url": "https://github.com/vllm-project/vllm/releases/tag/v0.31.0"
+    },
+    {
+      "tag": "v0.31.0",
+      "category": "model_modalities",
+      "snippet": "DiffusionGemma: one-pass sampler statistics kernel (58226), diffusionconstrained reads over logprobtokenids (about 25% faster, 58216), fewer logit rows for prefill-only batches (57416), logprobtokenids support (57417), and fixes for concurrent logprobs (57414)",
+      "source_url": "https://github.com/vllm-project/vllm/releases/tag/v0.31.0"
+    },
+    {
+      "tag": "v0.31.0",
+      "category": "hardware_platform",
+      "snippet": "DiffusionGemma: one-pass sampler statistics kernel (58226), diffusionconstrained reads over logprobtokenids (about 25% faster, 58216), fewer logit rows for prefill-only batches (57416), logprobtokenids support (57417), and fixes for concurrent logprobs (57414)",
+      "source_url": "https://github.com/vllm-project/vllm/releases/tag/v0.31.0"
+    },
+    {
+      "tag": "v0.31.0",
+      "category": "execution_kernels",
+      "snippet": "Multimodal: Triton mminputnorm kernel (56798, 56711), raw pixels kept through the DP-sharded ViT path (56872), Qwen2.5-VL video fps honored for temporal M-RoPE (47736), Whisper and Qwen2-Audio clips longer than 30s (57769, 56912), Mistral3 placeholder grid (53",
+      "source_url": "https://github.com/vllm-project/vllm/releases/tag/v0.31.0"
+    },
+    {
+      "tag": "v0.31.0",
+      "category": "model_modalities",
+      "snippet": "Multimodal: Triton mminputnorm kernel (56798, 56711), raw pixels kept through the DP-sharded ViT path (56872), Qwen2.5-VL video fps honored for temporal M-RoPE (47736), Whisper and Qwen2-Audio clips longer than 30s (57769, 56912), Mistral3 placeholder grid (53",
+      "source_url": "https://github.com/vllm-project/vllm/releases/tag/v0.31.0"
+    },
+    {
+      "tag": "v0.31.0",
+      "category": "quantization",
+      "snippet": "Multimodal: Triton mminputnorm kernel (56798, 56711), raw pixels kept through the DP-sharded ViT path (56872), Qwen2.5-VL video fps honored for temporal M-RoPE (47736), Whisper and Qwen2-Audio clips longer than 30s (57769, 56912), Mistral3 placeholder grid (53",
+      "source_url": "https://github.com/vllm-project/vllm/releases/tag/v0.31.0"
+    },
+    {
+      "tag": "v0.31.0",
+      "category": "correctness_stability",
+      "snippet": "Multimodal: Triton mminputnorm kernel (56798, 56711), raw pixels kept through the DP-sharded ViT path (56872), Qwen2.5-VL video fps honored for temporal M-RoPE (47736), Whisper and Qwen2-Audio clips longer than 30s (57769, 56912), Mistral3 placeholder grid (53",
+      "source_url": "https://github.com/vllm-project/vllm/releases/tag/v0.31.0"
+    },
+    {
+      "tag": "v0.31.0",
+      "category": "engine_model_runner",
+      "snippet": "Model Runner V2: draft-model speculative decoding (43091), custom logits processors (56497) validated at admission (57728), randomized dummy inputs (58411), dummy tokens routed to MoE experts during profiling (57270), FULL decode graphs for one-token prompt ta",
+      "source_url": "https://github.com/vllm-project/vllm/releases/tag/v0.31.0"
+    },
+    {
+      "tag": "v0.31.0",
+      "category": "kv_cache_memory",
+      "snippet": "Model Runner V2: draft-model speculative decoding (43091), custom logits processors (56497) validated at admission (57728), randomized dummy inputs (58411), dummy tokens routed to MoE experts during profiling (57270), FULL decode graphs for one-token prompt ta",
+      "source_url": "https://github.com/vllm-project/vllm/releases/tag/v0.31.0"
+    },
+    {
+      "tag": "v0.31.0",
+      "category": "speculative_decoding",
+      "snippet": "Model Runner V2: draft-model speculative decoding (43091), custom logits processors (56497) validated at admission (57728), randomized dummy inputs (58411), dummy tokens routed to MoE experts during profiling (57270), FULL decode graphs for one-token prompt ta",
+      "source_url": "https://github.com/vllm-project/vllm/releases/tag/v0.31.0"
+    },
+    {
+      "tag": "v0.31.0",
+      "category": "parallelism_distributed",
+      "snippet": "Model Runner V2: draft-model speculative decoding (43091), custom logits processors (56497) validated at admission (57728), randomized dummy inputs (58411), dummy tokens routed to MoE experts during profiling (57270), FULL decode graphs for one-token prompt ta",
+      "source_url": "https://github.com/vllm-project/vllm/releases/tag/v0.31.0"
+    },
+    {
+      "tag": "v0.31.0",
+      "category": "model_modalities",
+      "snippet": "Model Runner V2: draft-model speculative decoding (43091), custom logits processors (56497) validated at admission (57728), randomized dummy inputs (58411), dummy tokens routed to MoE experts during profiling (57270), FULL decode graphs for one-token prompt ta",
+      "source_url": "https://github.com/vllm-project/vllm/releases/tag/v0.31.0"
+    },
+    {
+      "tag": "v0.31.0",
+      "category": "hardware_platform",
+      "snippet": "Model Runner V2: draft-model speculative decoding (43091), custom logits processors (56497) validated at admission (57728), randomized dummy inputs (58411), dummy tokens routed to MoE experts during profiling (57270), FULL decode graphs for one-token prompt ta",
+      "source_url": "https://github.com/vllm-project/vllm/releases/tag/v0.31.0"
+    },
+    {
+      "tag": "v0.31.0",
+      "category": "scheduling_batching",
+      "snippet": "Speculative decoding: LiLiCorr drafter (57934), DFlash async scheduling (58065) and context K/V in the draft CUDA graph (57632), Gemma4 DSpark adaptive verification (57263), Kimi-K3 variable-length adaptive verification (52988), CPU-GPU sync removed for hetero",
+      "source_url": "https://github.com/vllm-project/vllm/releases/tag/v0.31.0"
+    },
+    {
+      "tag": "v0.31.0",
+      "category": "kv_cache_memory",
+      "snippet": "Speculative decoding: LiLiCorr drafter (57934), DFlash async scheduling (58065) and context K/V in the draft CUDA graph (57632), Gemma4 DSpark adaptive verification (57263), Kimi-K3 variable-length adaptive verification (52988), CPU-GPU sync removed for hetero",
+      "source_url": "https://github.com/vllm-project/vllm/releases/tag/v0.31.0"
+    },
+    {
+      "tag": "v0.31.0",
+      "category": "execution_kernels",
+      "snippet": "Speculative decoding: LiLiCorr drafter (57934), DFlash async scheduling (58065) and context K/V in the draft CUDA graph (57632), Gemma4 DSpark adaptive verification (57263), Kimi-K3 variable-length adaptive verification (52988), CPU-GPU sync removed for hetero",
+      "source_url": "https://github.com/vllm-project/vllm/releases/tag/v0.31.0"
+    },
+    {
+      "tag": "v0.31.0",
+      "category": "speculative_decoding",
+      "snippet": "Speculative decoding: LiLiCorr drafter (57934), DFlash async scheduling (58065) and context K/V in the draft CUDA graph (57632), Gemma4 DSpark adaptive verification (57263), Kimi-K3 variable-length adaptive verification (52988), CPU-GPU sync removed for hetero",
+      "source_url": "https://github.com/vllm-project/vllm/releases/tag/v0.31.0"
+    },
+    {
+      "tag": "v0.31.0",
+      "category": "parallelism_distributed",
+      "snippet": "Speculative decoding: LiLiCorr drafter (57934), DFlash async scheduling (58065) and context K/V in the draft CUDA graph (57632), Gemma4 DSpark adaptive verification (57263), Kimi-K3 variable-length adaptive verification (52988), CPU-GPU sync removed for hetero",
+      "source_url": "https://github.com/vllm-project/vllm/releases/tag/v0.31.0"
+    },
+    {
+      "tag": "v0.31.0",
+      "category": "hardware_platform",
+      "snippet": "Speculative decoding: LiLiCorr drafter (57934), DFlash async scheduling (58065) and context K/V in the draft CUDA graph (57632), Gemma4 DSpark adaptive verification (57263), Kimi-K3 variable-length adaptive verification (52988), CPU-GPU sync removed for hetero",
+      "source_url": "https://github.com/vllm-project/vllm/releases/tag/v0.31.0"
+    },
+    {
+      "tag": "v0.31.0",
+      "category": "correctness_stability",
+      "snippet": "Speculative decoding: LiLiCorr drafter (57934), DFlash async scheduling (58065) and context K/V in the draft CUDA graph (57632), Gemma4 DSpark adaptive verification (57263), Kimi-K3 variable-length adaptive verification (52988), CPU-GPU sync removed for hetero",
+      "source_url": "https://github.com/vllm-project/vllm/releases/tag/v0.31.0"
+    },
+    {
+      "tag": "v0.31.0",
+      "category": "scheduling_batching",
+      "snippet": "Scheduler: --max-num-active-seqs (56758), adaptive --long-prefill-token-threshold (57951, 58459), skippedwaiting replaced by a KV-holding waiting queue (58947), atomic admission of n > 1 requests (53936), KV connector + MTP deadlock (57104), a throughput cliff",
+      "source_url": "https://github.com/vllm-project/vllm/releases/tag/v0.31.0"
+    },
+    {
+      "tag": "v0.31.0",
+      "category": "parallelism_distributed",
+      "snippet": "Scheduler: --max-num-active-seqs (56758), adaptive --long-prefill-token-threshold (57951, 58459), skippedwaiting replaced by a KV-holding waiting queue (58947), atomic admission of n > 1 requests (53936), KV connector + MTP deadlock (57104), a throughput cliff",
+      "source_url": "https://github.com/vllm-project/vllm/releases/tag/v0.31.0"
+    },
+    {
+      "tag": "v0.31.0",
+      "category": "kv_cache_memory",
+      "snippet": "Prefix caching and hybrid models: extra keys tagged by source (51899) and LoRA paths hashed (59335), --enable-mamba-shared-prefix-checkpoint (57382), prompt-tail hits with MTP restored (58368), prompt-end checkpoints kept under sparse retention (59146), align-",
+      "source_url": "https://github.com/vllm-project/vllm/releases/tag/v0.31.0"
+    },
+    {
+      "tag": "v0.31.0",
+      "category": "parallelism_distributed",
+      "snippet": "Prefix caching and hybrid models: extra keys tagged by source (51899) and LoRA paths hashed (59335), --enable-mamba-shared-prefix-checkpoint (57382), prompt-tail hits with MTP restored (58368), prompt-end checkpoints kept under sparse retention (59146), align-",
+      "source_url": "https://github.com/vllm-project/vllm/releases/tag/v0.31.0"
+    },
+    {
+      "tag": "v0.31.0",
+      "category": "model_modalities",
+      "snippet": "Prefix caching and hybrid models: extra keys tagged by source (51899) and LoRA paths hashed (59335), --enable-mamba-shared-prefix-checkpoint (57382), prompt-tail hits with MTP restored (58368), prompt-end checkpoints kept under sparse retention (59146), align-",
+      "source_url": "https://github.com/vllm-project/vllm/releases/tag/v0.31.0"
+    },
+    {
+      "tag": "v0.31.0",
+      "category": "hardware_platform",
+      "snippet": "Prefix caching and hybrid models: extra keys tagged by source (51899) and LoRA paths hashed (59335), --enable-mamba-shared-prefix-checkpoint (57382), prompt-tail hits with MTP restored (58368), prompt-end checkpoints kept under sparse retention (59146), align-",
+      "source_url": "https://github.com/vllm-project/vllm/releases/tag/v0.31.0"
+    },
+    {
+      "tag": "v0.31.0",
+      "category": "kv_cache_memory",
+      "snippet": "Startup and memory: parallel Triton warmup compilation (58582), JIT warmup disabled under --enforce-eager (58197) unless fault tolerance is on (58593), DeepGEMM warmup reusing the MoE workspace (57268), allocator fragmentation no longer shrinking the KV cache ",
+      "source_url": "https://github.com/vllm-project/vllm/releases/tag/v0.31.0"
+    },
+    {
+      "tag": "v0.31.0",
+      "category": "parallelism_distributed",
+      "snippet": "Startup and memory: parallel Triton warmup compilation (58582), JIT warmup disabled under --enforce-eager (58197) unless fault tolerance is on (58593), DeepGEMM warmup reusing the MoE workspace (57268), allocator fragmentation no longer shrinking the KV cache ",
+      "source_url": "https://github.com/vllm-project/vllm/releases/tag/v0.31.0"
+    },
+    {
+      "tag": "v0.31.0",
+      "category": "model_modalities",
+      "snippet": "Startup and memory: parallel Triton warmup compilation (58582), JIT warmup disabled under --enforce-eager (58197) unless fault tolerance is on (58593), DeepGEMM warmup reusing the MoE workspace (57268), allocator fragmentation no longer shrinking the KV cache ",
+      "source_url": "https://github.com/vllm-project/vllm/releases/tag/v0.31.0"
+    },
+    {
+      "tag": "v0.31.0",
+      "category": "quantization",
+      "snippet": "Startup and memory: parallel Triton warmup compilation (58582), JIT warmup disabled under --enforce-eager (58197) unless fault tolerance is on (58593), DeepGEMM warmup reusing the MoE workspace (57268), allocator fragmentation no longer shrinking the KV cache ",
+      "source_url": "https://github.com/vllm-project/vllm/releases/tag/v0.31.0"
+    },
+    {
+      "tag": "v0.31.0",
+      "category": "hardware_platform",
+      "snippet": "Startup and memory: parallel Triton warmup compilation (58582), JIT warmup disabled under --enforce-eager (58197) unless fault tolerance is on (58593), DeepGEMM warmup reusing the MoE workspace (57268), allocator fragmentation no longer shrinking the KV cache ",
+      "source_url": "https://github.com/vllm-project/vllm/releases/tag/v0.31.0"
+    },
+    {
+      "tag": "v0.31.0",
+      "category": "execution_kernels",
+      "snippet": "Kernels: sampled filtering for persistent top-k (56346), Murmur3 RNG for Gumbel sampling (51367), register-resident per-token-group 8-bit quant (55330), vectorized per-tensor FP8 abs-max (58194), a Triton kernel dispatcher for platform-specific overrides (4304",
+      "source_url": "https://github.com/vllm-project/vllm/releases/tag/v0.31.0"
+    },
+    {
+      "tag": "v0.31.0",
+      "category": "parallelism_distributed",
+      "snippet": "Kernels: sampled filtering for persistent top-k (56346), Murmur3 RNG for Gumbel sampling (51367), register-resident per-token-group 8-bit quant (55330), vectorized per-tensor FP8 abs-max (58194), a Triton kernel dispatcher for platform-specific overrides (4304",
+      "source_url": "https://github.com/vllm-project/vllm/releases/tag/v0.31.0"
+    },
+    {
+      "tag": "v0.31.0",
+      "category": "model_modalities",
+      "snippet": "Kernels: sampled filtering for persistent top-k (56346), Murmur3 RNG for Gumbel sampling (51367), register-resident per-token-group 8-bit quant (55330), vectorized per-tensor FP8 abs-max (58194), a Triton kernel dispatcher for platform-specific overrides (4304",
+      "source_url": "https://github.com/vllm-project/vllm/releases/tag/v0.31.0"
+    },
+    {
+      "tag": "v0.31.0",
+      "category": "quantization",
+      "snippet": "Kernels: sampled filtering for persistent top-k (56346), Murmur3 RNG for Gumbel sampling (51367), register-resident per-token-group 8-bit quant (55330), vectorized per-tensor FP8 abs-max (58194), a Triton kernel dispatcher for platform-specific overrides (4304",
+      "source_url": "https://github.com/vllm-project/vllm/releases/tag/v0.31.0"
+    },
+    {
+      "tag": "v0.31.0",
+      "category": "execution_kernels",
+      "snippet": "Batch invariance: breakable CUDA graphs without torch.compile by default under VLLMBATCHINVARIANT (57586), sequence parallelism and async TP disabled (56377), and NCCL 2.31 collectives kept enabled (58179).",
+      "source_url": "https://github.com/vllm-project/vllm/releases/tag/v0.31.0"
+    },
+    {
+      "tag": "v0.31.0",
+      "category": "hardware_platform",
+      "snippet": "Batch invariance: breakable CUDA graphs without torch.compile by default under VLLMBATCHINVARIANT (57586), sequence parallelism and async TP disabled (56377), and NCCL 2.31 collectives kept enabled (58179).",
+      "source_url": "https://github.com/vllm-project/vllm/releases/tag/v0.31.0"
+    },
+    {
+      "tag": "v0.31.0",
+      "category": "correctness_stability",
+      "snippet": "Batch invariance: breakable CUDA graphs without torch.compile by default under VLLMBATCHINVARIANT (57586), sequence parallelism and async TP disabled (56377), and NCCL 2.31 collectives kept enabled (58179).",
+      "source_url": "https://github.com/vllm-project/vllm/releases/tag/v0.31.0"
+    },
+    {
+      "tag": "v0.31.0",
+      "category": "kv_cache_memory",
+      "snippet": "Sleep and RL: releasekvcachememory() frees only KV cache memory (44890), --sleep-preserve-parameter-names retains frozen weights across level-2 sleep (57891), NCCL M2N weight transfer (51520), dense DP weight updates by DP index (56950), allocator config kept ",
+      "source_url": "https://github.com/vllm-project/vllm/releases/tag/v0.31.0"
+    },
+    {
+      "tag": "v0.31.0",
+      "category": "engine_model_runner",
+      "snippet": "Fast restart: vllm preload (56680), DP (57386), MTP drafts (57312), readiness wait (58370), /health (58552), ModelOpt MXFP8 pre-processed weights (57316), and initialized-engine snapshots (51360).",
+      "source_url": "https://github.com/vllm-project/vllm/releases/tag/v0.31.0"
+    },
+    {
+      "tag": "v0.31.0",
+      "category": "kv_cache_memory",
+      "snippet": "Logging and observability: LoggingConfig via --logging-config and --log-level (57205), JSON logging fixes (57957, 58747), startup log suppression fixed (51366), unified platform-aware torch profiling (57460), no 0.0% prefix cache hit rate before any query (549",
+      "source_url": "https://github.com/vllm-project/vllm/releases/tag/v0.31.0"
+    },
+    {
+      "tag": "v0.31.0",
+      "category": "api_protocol",
+      "snippet": "Logging and observability: LoggingConfig via --logging-config and --log-level (57205), JSON logging fixes (57957, 58747), startup log suppression fixed (51366), unified platform-aware torch profiling (57460), no 0.0% prefix cache hit rate before any query (549",
+      "source_url": "https://github.com/vllm-project/vllm/releases/tag/v0.31.0"
+    },
+    {
+      "tag": "v0.31.0",
+      "category": "observability_operations",
+      "snippet": "Logging and observability: LoggingConfig via --logging-config and --log-level (57205), JSON logging fixes (57957, 58747), startup log suppression fixed (51366), unified platform-aware torch profiling (57460), no 0.0% prefix cache hit rate before any query (549",
+      "source_url": "https://github.com/vllm-project/vllm/releases/tag/v0.31.0"
+    },
+    {
+      "tag": "v0.31.0",
+      "category": "engine_model_runner",
+      "snippet": "MoE communication: MoonEP backend (52101), DeepEPv2 with sequence parallelism (57210) and EPLB + shared-expert overlap (57236), low-SM multimem reduce-scatter (55072), EPLB load statistics during Elastic EP scaling (58473), SP padded rows skipped in grouped ro",
+      "source_url": "https://github.com/vllm-project/vllm/releases/tag/v0.31.0"
+    },
+    {
+      "tag": "v0.31.0",
+      "category": "parallelism_distributed",
+      "snippet": "MoE communication: MoonEP backend (52101), DeepEPv2 with sequence parallelism (57210) and EPLB + shared-expert overlap (57236), low-SM multimem reduce-scatter (55072), EPLB load statistics during Elastic EP scaling (58473), SP padded rows skipped in grouped ro",
+      "source_url": "https://github.com/vllm-project/vllm/releases/tag/v0.31.0"
+    },
+    {
+      "tag": "v0.31.0",
+      "category": "model_modalities",
+      "snippet": "MoE communication: MoonEP backend (52101), DeepEPv2 with sequence parallelism (57210) and EPLB + shared-expert overlap (57236), low-SM multimem reduce-scatter (55072), EPLB load statistics during Elastic EP scaling (58473), SP padded rows skipped in grouped ro",
+      "source_url": "https://github.com/vllm-project/vllm/releases/tag/v0.31.0"
+    },
+    {
+      "tag": "v0.31.0",
+      "category": "hardware_platform",
+      "snippet": "Context parallelism: PCP with DP, EP and MTP (57075), a DCP target with non-DCP DSpark/DFlash drafts (56723), DCP sequence lengths without a CPU-GPU sync (58169), and NIXL DCP pulls across MLA cache regions (57389).",
+      "source_url": "https://github.com/vllm-project/vllm/releases/tag/v0.31.0"
+    },
+    {
+      "tag": "v0.31.0",
+      "category": "kv_cache_memory",
+      "snippet": "KV connectors: NIXL pipeline-parallel push prefill for attention-HMA (50494) and packed MLA layouts (50499), transport-failure metrics split from KV expiry (55854), dead peer state released without waiting for TTL (50047), expired leases reaped behind a heartb",
+      "source_url": "https://github.com/vllm-project/vllm/releases/tag/v0.31.0"
+    },
+    {
+      "tag": "v0.31.0",
+      "category": "parallelism_distributed",
+      "snippet": "KV connectors: NIXL pipeline-parallel push prefill for attention-HMA (50494) and packed MLA layouts (50499), transport-failure metrics split from KV expiry (55854), dead peer state released without waiting for TTL (50047), expired leases reaped behind a heartb",
+      "source_url": "https://github.com/vllm-project/vllm/releases/tag/v0.31.0"
+    },
+    {
+      "tag": "v0.31.0",
+      "category": "model_modalities",
+      "snippet": "KV connectors: NIXL pipeline-parallel push prefill for attention-HMA (50494) and packed MLA layouts (50499), transport-failure metrics split from KV expiry (55854), dead peer state released without waiting for TTL (50047), expired leases reaped behind a heartb",
+      "source_url": "https://github.com/vllm-project/vllm/releases/tag/v0.31.0"
+    },
+    {
+      "tag": "v0.31.0",
+      "category": "quantization",
+      "snippet": "KV connectors: NIXL pipeline-parallel push prefill for attention-HMA (50494) and packed MLA layouts (50499), transport-failure metrics split from KV expiry (55854), dead peer state released without waiting for TTL (50047), expired leases reaped behind a heartb",
+      "source_url": "https://github.com/vllm-project/vllm/releases/tag/v0.31.0"
+    },
+    {
+      "tag": "v0.31.0",
+      "category": "observability_operations",
+      "snippet": "KV connectors: NIXL pipeline-parallel push prefill for attention-HMA (50494) and packed MLA layouts (50499), transport-failure metrics split from KV expiry (55854), dead peer state released without waiting for TTL (50047), expired leases reaped behind a heartb",
+      "source_url": "https://github.com/vllm-project/vllm/releases/tag/v0.31.0"
+    },
+    {
+      "tag": "v0.31.0",
+      "category": "kv_cache_memory",
+      "snippet": "KV offloading: per-request maxloadtokens (55885), back-pressure detection (50045), SimpleCPUOffloadConnector Prometheus metrics (57251), non-prefix-cacheable (56810) and scratch (57145) groups skipped, replicated layouts for multi-group MLA (57652), regions of",
+      "source_url": "https://github.com/vllm-project/vllm/releases/tag/v0.31.0"
+    },
+    {
+      "tag": "v0.31.0",
+      "category": "hardware_platform",
+      "snippet": "KV offloading: per-request maxloadtokens (55885), back-pressure detection (50045), SimpleCPUOffloadConnector Prometheus metrics (57251), non-prefix-cacheable (56810) and scratch (57145) groups skipped, replicated layouts for multi-group MLA (57652), regions of",
+      "source_url": "https://github.com/vllm-project/vllm/releases/tag/v0.31.0"
+    },
+    {
+      "tag": "v0.31.0",
+      "category": "observability_operations",
+      "snippet": "KV offloading: per-request maxloadtokens (55885), back-pressure detection (50045), SimpleCPUOffloadConnector Prometheus metrics (57251), non-prefix-cacheable (56810) and scratch (57145) groups skipped, replicated layouts for multi-group MLA (57652), regions of",
+      "source_url": "https://github.com/vllm-project/vllm/releases/tag/v0.31.0"
+    },
+    {
+      "tag": "v0.31.0",
+      "category": "kv_cache_memory",
+      "snippet": "HiSparse: union residency kernel for MTP rows (59235), MTP acceptance under FULL graphs (59309), host-backed allocation (59036), preemption livelock (59494), KV cache sizing (59450), host prefix publication (59007), GPU prefix adoption (59282), and residency m",
+      "source_url": "https://github.com/vllm-project/vllm/releases/tag/v0.31.0"
+    },
+    {
+      "tag": "v0.31.0",
+      "category": "execution_kernels",
+      "snippet": "HiSparse: union residency kernel for MTP rows (59235), MTP acceptance under FULL graphs (59309), host-backed allocation (59036), preemption livelock (59494), KV cache sizing (59450), host prefix publication (59007), GPU prefix adoption (59282), and residency m",
+      "source_url": "https://github.com/vllm-project/vllm/releases/tag/v0.31.0"
+    },
+    {
+      "tag": "v0.31.0",
+      "category": "observability_operations",
+      "snippet": "HiSparse: union residency kernel for MTP rows (59235), MTP acceptance under FULL graphs (59309), host-backed allocation (59036), preemption livelock (59494), KV cache sizing (59450), host prefix publication (59007), GPU prefix adoption (59282), and residency m",
+      "source_url": "https://github.com/vllm-project/vllm/releases/tag/v0.31.0"
+    },
+    {
+      "tag": "v0.31.0",
+      "category": "model_modalities",
+      "snippet": "Encoder disaggregation (EPD): dynamic EPD proxy with launcher-managed registration (54176), image requests batched per encoder (57095), cross-encoder caching through Mooncake (56242), metadata-only audio inputs (57887), language-model shards skipped for --mm-e",
+      "source_url": "https://github.com/vllm-project/vllm/releases/tag/v0.31.0"
+    },
+    {
+      "tag": "v0.31.0",
+      "category": "observability_operations",
+      "snippet": "Encoder disaggregation (EPD): dynamic EPD proxy with launcher-managed registration (54176), image requests batched per encoder (57095), cross-encoder caching through Mooncake (56242), metadata-only audio inputs (57887), language-model shards skipped for --mm-e",
+      "source_url": "https://github.com/vllm-project/vllm/releases/tag/v0.31.0"
+    },
+    {
+      "tag": "v0.31.0",
+      "category": "hardware_platform",
+      "snippet": "NVIDIA: FlashInfer 0.7.0.post1 (58069, 59323), DeepGEMM pin bump with SM120 fixes (57218), Rubin CUDA 13.4 nightly images (55953), and QuTLASS builds with PyTorch 2.13 (58173).",
+      "source_url": "https://github.com/vllm-project/vllm/releases/tag/v0.31.0"
+    },
+    {
+      "tag": "v0.31.0",
+      "category": "kv_cache_memory",
+      "snippet": "AMD ROCm: AITER v0.1.23 (56885, 58867), torch 2.13 and Triton 3.8 (50605, 58006), tritonkernels 3.8 MXFP4 MoE for gpt-oss and DeepSeek-V4 (55934), a ROCR host segfault fixed (57328); DeepSeek-V4/V4.1 HCA dual-stream (56853) and layer-aware CSA2 overlap (57407)",
+      "source_url": "https://github.com/vllm-project/vllm/releases/tag/v0.31.0"
+    },
+    {
+      "tag": "v0.31.0",
+      "category": "execution_kernels",
+      "snippet": "AMD ROCm: AITER v0.1.23 (56885, 58867), torch 2.13 and Triton 3.8 (50605, 58006), tritonkernels 3.8 MXFP4 MoE for gpt-oss and DeepSeek-V4 (55934), a ROCR host segfault fixed (57328); DeepSeek-V4/V4.1 HCA dual-stream (56853) and layer-aware CSA2 overlap (57407)",
+      "source_url": "https://github.com/vllm-project/vllm/releases/tag/v0.31.0"
+    },
+    {
+      "tag": "v0.31.0",
+      "category": "speculative_decoding",
+      "snippet": "AMD ROCm: AITER v0.1.23 (56885, 58867), torch 2.13 and Triton 3.8 (50605, 58006), tritonkernels 3.8 MXFP4 MoE for gpt-oss and DeepSeek-V4 (55934), a ROCR host segfault fixed (57328); DeepSeek-V4/V4.1 HCA dual-stream (56853) and layer-aware CSA2 overlap (57407)",
+      "source_url": "https://github.com/vllm-project/vllm/releases/tag/v0.31.0"
+    },
+    {
+      "tag": "v0.31.0",
+      "category": "parallelism_distributed",
+      "snippet": "AMD ROCm: AITER v0.1.23 (56885, 58867), torch 2.13 and Triton 3.8 (50605, 58006), tritonkernels 3.8 MXFP4 MoE for gpt-oss and DeepSeek-V4 (55934), a ROCR host segfault fixed (57328); DeepSeek-V4/V4.1 HCA dual-stream (56853) and layer-aware CSA2 overlap (57407)",
+      "source_url": "https://github.com/vllm-project/vllm/releases/tag/v0.31.0"
+    },
+    {
+      "tag": "v0.31.0",
+      "category": "model_modalities",
+      "snippet": "AMD ROCm: AITER v0.1.23 (56885, 58867), torch 2.13 and Triton 3.8 (50605, 58006), tritonkernels 3.8 MXFP4 MoE for gpt-oss and DeepSeek-V4 (55934), a ROCR host segfault fixed (57328); DeepSeek-V4/V4.1 HCA dual-stream (56853) and layer-aware CSA2 overlap (57407)",
+      "source_url": "https://github.com/vllm-project/vllm/releases/tag/v0.31.0"
+    },
+    {
+      "tag": "v0.31.0",
+      "category": "quantization",
+      "snippet": "AMD ROCm: AITER v0.1.23 (56885, 58867), torch 2.13 and Triton 3.8 (50605, 58006), tritonkernels 3.8 MXFP4 MoE for gpt-oss and DeepSeek-V4 (55934), a ROCR host segfault fixed (57328); DeepSeek-V4/V4.1 HCA dual-stream (56853) and layer-aware CSA2 overlap (57407)",
+      "source_url": "https://github.com/vllm-project/vllm/releases/tag/v0.31.0"
+    },
+    {
+      "tag": "v0.31.0",
+      "category": "hardware_platform",
+      "snippet": "AMD ROCm: AITER v0.1.23 (56885, 58867), torch 2.13 and Triton 3.8 (50605, 58006), tritonkernels 3.8 MXFP4 MoE for gpt-oss and DeepSeek-V4 (55934), a ROCR host segfault fixed (57328); DeepSeek-V4/V4.1 HCA dual-stream (56853) and layer-aware CSA2 overlap (57407)",
+      "source_url": "https://github.com/vllm-project/vllm/releases/tag/v0.31.0"
+    },
+    {
+      "tag": "v0.31.0",
+      "category": "correctness_stability",
+      "snippet": "AMD ROCm: AITER v0.1.23 (56885, 58867), torch 2.13 and Triton 3.8 (50605, 58006), tritonkernels 3.8 MXFP4 MoE for gpt-oss and DeepSeek-V4 (55934), a ROCR host segfault fixed (57328); DeepSeek-V4/V4.1 HCA dual-stream (56853) and layer-aware CSA2 overlap (57407)",
+      "source_url": "https://github.com/vllm-project/vllm/releases/tag/v0.31.0"
+    },
+    {
+      "tag": "v0.31.0",
+      "category": "engine_model_runner",
+      "snippet": "Intel XPU: PyTorch 2.14 (56013), XPU graphs on by default (51600), EPLB (44987), int8 W8A8 MoE on Triton (53162), batch invariance (55881), SYCL rotary embedding (55721), fused QK RMSNorm + RoPE + gate (decode region 55% faster, 56096), Model Runner V2 sampler",
+      "source_url": "https://github.com/vllm-project/vllm/releases/tag/v0.31.0"
+    },
+    {
+      "tag": "v0.31.0",
+      "category": "parallelism_distributed",
+      "snippet": "Intel XPU: PyTorch 2.14 (56013), XPU graphs on by default (51600), EPLB (44987), int8 W8A8 MoE on Triton (53162), batch invariance (55881), SYCL rotary embedding (55721), fused QK RMSNorm + RoPE + gate (decode region 55% faster, 56096), Model Runner V2 sampler",
+      "source_url": "https://github.com/vllm-project/vllm/releases/tag/v0.31.0"
+    },
+    {
+      "tag": "v0.31.0",
+      "category": "model_modalities",
+      "snippet": "Intel XPU: PyTorch 2.14 (56013), XPU graphs on by default (51600), EPLB (44987), int8 W8A8 MoE on Triton (53162), batch invariance (55881), SYCL rotary embedding (55721), fused QK RMSNorm + RoPE + gate (decode region 55% faster, 56096), Model Runner V2 sampler",
+      "source_url": "https://github.com/vllm-project/vllm/releases/tag/v0.31.0"
+    },
+    {
+      "tag": "v0.31.0",
+      "category": "quantization",
+      "snippet": "Intel XPU: PyTorch 2.14 (56013), XPU graphs on by default (51600), EPLB (44987), int8 W8A8 MoE on Triton (53162), batch invariance (55881), SYCL rotary embedding (55721), fused QK RMSNorm + RoPE + gate (decode region 55% faster, 56096), Model Runner V2 sampler",
+      "source_url": "https://github.com/vllm-project/vllm/releases/tag/v0.31.0"
+    },
+    {
+      "tag": "v0.31.0",
+      "category": "hardware_platform",
+      "snippet": "Intel XPU: PyTorch 2.14 (56013), XPU graphs on by default (51600), EPLB (44987), int8 W8A8 MoE on Triton (53162), batch invariance (55881), SYCL rotary embedding (55721), fused QK RMSNorm + RoPE + gate (decode region 55% faster, 56096), Model Runner V2 sampler",
+      "source_url": "https://github.com/vllm-project/vllm/releases/tag/v0.31.0"
+    },
+    {
+      "tag": "v0.31.0",
+      "category": "correctness_stability",
+      "snippet": "Intel XPU: PyTorch 2.14 (56013), XPU graphs on by default (51600), EPLB (44987), int8 W8A8 MoE on Triton (53162), batch invariance (55881), SYCL rotary embedding (55721), fused QK RMSNorm + RoPE + gate (decode region 55% faster, 56096), Model Runner V2 sampler",
+      "source_url": "https://github.com/vllm-project/vllm/releases/tag/v0.31.0"
+    },
+    {
+      "tag": "v0.31.0",
+      "category": "kv_cache_memory",
+      "snippet": "CPU: FP8 W8A8 linear and MoE for Intel Diamond Rapids (49942), Arm paged attention up to 25% faster (56045), Zen DA8W4 int4 for dense and MoE layers (54024), zentorch SDPA for encoder attention (54508) and MLA prefill (54967), FP32 attention sinks (56252), W8A",
+      "source_url": "https://github.com/vllm-project/vllm/releases/tag/v0.31.0"
+    },
+    {
+      "tag": "v0.31.0",
+      "category": "parallelism_distributed",
+      "snippet": "CPU: FP8 W8A8 linear and MoE for Intel Diamond Rapids (49942), Arm paged attention up to 25% faster (56045), Zen DA8W4 int4 for dense and MoE layers (54024), zentorch SDPA for encoder attention (54508) and MLA prefill (54967), FP32 attention sinks (56252), W8A",
+      "source_url": "https://github.com/vllm-project/vllm/releases/tag/v0.31.0"
+    },
+    {
+      "tag": "v0.31.0",
+      "category": "model_modalities",
+      "snippet": "CPU: FP8 W8A8 linear and MoE for Intel Diamond Rapids (49942), Arm paged attention up to 25% faster (56045), Zen DA8W4 int4 for dense and MoE layers (54024), zentorch SDPA for encoder attention (54508) and MLA prefill (54967), FP32 attention sinks (56252), W8A",
+      "source_url": "https://github.com/vllm-project/vllm/releases/tag/v0.31.0"
+    },
+    {
+      "tag": "v0.31.0",
+      "category": "quantization",
+      "snippet": "CPU: FP8 W8A8 linear and MoE for Intel Diamond Rapids (49942), Arm paged attention up to 25% faster (56045), Zen DA8W4 int4 for dense and MoE layers (54024), zentorch SDPA for encoder attention (54508) and MLA prefill (54967), FP32 attention sinks (56252), W8A",
+      "source_url": "https://github.com/vllm-project/vllm/releases/tag/v0.31.0"
+    },
+    {
+      "tag": "v0.31.0",
+      "category": "hardware_platform",
+      "snippet": "CPU: FP8 W8A8 linear and MoE for Intel Diamond Rapids (49942), Arm paged attention up to 25% faster (56045), Zen DA8W4 int4 for dense and MoE layers (54024), zentorch SDPA for encoder attention (54508) and MLA prefill (54967), FP32 attention sinks (56252), W8A",
+      "source_url": "https://github.com/vllm-project/vllm/releases/tag/v0.31.0"
+    },
+    {
+      "tag": "v0.31.0",
+      "category": "quantization",
+      "snippet": "Quantization",
+      "source_url": "https://github.com/vllm-project/vllm/releases/tag/v0.31.0"
+    },
+    {
+      "tag": "v0.31.0",
+      "category": "model_modalities",
+      "snippet": "Humming: Hadamard transforms and NVFP4/MXFP4/MXFP8 online quantization (56685), asymmetric wNaM through compressed-tensors (46528), humming-kernels 0.1.16 (58054), and Humming in the W4A8 (INT4xFP8) MoE oracle (58427).",
+      "source_url": "https://github.com/vllm-project/vllm/releases/tag/v0.31.0"
+    },
+    {
+      "tag": "v0.31.0",
+      "category": "quantization",
+      "snippet": "Humming: Hadamard transforms and NVFP4/MXFP4/MXFP8 online quantization (56685), asymmetric wNaM through compressed-tensors (46528), humming-kernels 0.1.16 (58054), and Humming in the W4A8 (INT4xFP8) MoE oracle (58427).",
+      "source_url": "https://github.com/vllm-project/vllm/releases/tag/v0.31.0"
+    },
+    {
+      "tag": "v0.31.0",
+      "category": "model_modalities",
+      "snippet": "New capabilities: native Quark W4A16 INT4/UINT4 exports (48606), opt-in load-time MXFP4 dequantization (50814), explicit per-token NVFP4 MoE backends (57176), and a canonical N-first layout for compressed-tensors WNA16 MoE (52798).",
+      "source_url": "https://github.com/vllm-project/vllm/releases/tag/v0.31.0"
+    },
+    {
+      "tag": "v0.31.0",
+      "category": "quantization",
+      "snippet": "New capabilities: native Quark W4A16 INT4/UINT4 exports (48606), opt-in load-time MXFP4 dequantization (50814), explicit per-token NVFP4 MoE backends (57176), and a canonical N-first layout for compressed-tensors WNA16 MoE (52798).",
+      "source_url": "https://github.com/vllm-project/vllm/releases/tag/v0.31.0"
+    },
+    {
+      "tag": "v0.31.0",
+      "category": "quantization",
+      "snippet": "Fixes: MXFP8 on layers below mmmxfp8 shape limits (54223), online NVFP4 scales on reload (57954), LM head linear metadata (58444), and the fused SiLU-mul block-quant path skipped under a SwiGLU clamp (57984).",
+      "source_url": "https://github.com/vllm-project/vllm/releases/tag/v0.31.0"
+    },
+    {
+      "tag": "v0.31.0",
+      "category": "api_protocol",
+      "snippet": "API & Frontend",
+      "source_url": "https://github.com/vllm-project/vllm/releases/tag/v0.31.0"
+    },
+    {
+      "tag": "v0.31.0",
+      "category": "speculative_decoding",
+      "snippet": "New options and endpoints: --tool-strict-level (56268), responseformat with toolchoice=auto (56086), DeepSeek-V4 FIM completions (44229), releasekvcachememory() and POST /releasekvcachememory (44890), fixed-token prefill scoring via promptlogprobtokenids (5433",
+      "source_url": "https://github.com/vllm-project/vllm/releases/tag/v0.31.0"
+    },
+    {
+      "tag": "v0.31.0",
+      "category": "parallelism_distributed",
+      "snippet": "New options and endpoints: --tool-strict-level (56268), responseformat with toolchoice=auto (56086), DeepSeek-V4 FIM completions (44229), releasekvcachememory() and POST /releasekvcachememory (44890), fixed-token prefill scoring via promptlogprobtokenids (5433",
+      "source_url": "https://github.com/vllm-project/vllm/releases/tag/v0.31.0"
+    },
+    {
+      "tag": "v0.31.0",
+      "category": "model_modalities",
+      "snippet": "New options and endpoints: --tool-strict-level (56268), responseformat with toolchoice=auto (56086), DeepSeek-V4 FIM completions (44229), releasekvcachememory() and POST /releasekvcachememory (44890), fixed-token prefill scoring via promptlogprobtokenids (5433",
+      "source_url": "https://github.com/vllm-project/vllm/releases/tag/v0.31.0"
+    },
+    {
+      "tag": "v0.31.0",
+      "category": "api_protocol",
+      "snippet": "New options and endpoints: --tool-strict-level (56268), responseformat with toolchoice=auto (56086), DeepSeek-V4 FIM completions (44229), releasekvcachememory() and POST /releasekvcachememory (44890), fixed-token prefill scoring via promptlogprobtokenids (5433",
+      "source_url": "https://github.com/vllm-project/vllm/releases/tag/v0.31.0"
+    },
+    {
+      "tag": "v0.31.0",
+      "category": "observability_operations",
+      "snippet": "New options and endpoints: --tool-strict-level (56268), responseformat with toolchoice=auto (56086), DeepSeek-V4 FIM completions (44229), releasekvcachememory() and POST /releasekvcachememory (44890), fixed-token prefill scoring via promptlogprobtokenids (5433",
+      "source_url": "https://github.com/vllm-project/vllm/releases/tag/v0.31.0"
+    },
+    {
+      "tag": "v0.31.0",
+      "category": "engine_model_runner",
+      "snippet": "Structured output and parsers: native Lark grammars in the xgrammar backend (58321), XGrammar 0.2.7 (57272), Granite migrated to the streaming Parser Engine (49648), and fixes for reasoning boundaries (56635), xgrammar choices with control characters (48115), ",
+      "source_url": "https://github.com/vllm-project/vllm/releases/tag/v0.31.0"
+    },
+    {
+      "tag": "v0.31.0",
+      "category": "api_protocol",
+      "snippet": "Structured output and parsers: native Lark grammars in the xgrammar backend (58321), XGrammar 0.2.7 (57272), Granite migrated to the streaming Parser Engine (49648), and fixes for reasoning boundaries (56635), xgrammar choices with control characters (48115), ",
+      "source_url": "https://github.com/vllm-project/vllm/releases/tag/v0.31.0"
+    },
+    {
+      "tag": "v0.31.0",
+      "category": "model_modalities",
+      "snippet": "OpenAI, Anthropic and Harmony compatibility: reasoning token counts for Harmony, DeepSeek-V3 and Step3 (58626) and per Responses tool round (58927), Harmony maxoutputtokens in the tool loop (58551), batched chat completions using the adjusted requests (58929, ",
+      "source_url": "https://github.com/vllm-project/vllm/releases/tag/v0.31.0"
+    },
+    {
+      "tag": "v0.31.0",
+      "category": "api_protocol",
+      "snippet": "OpenAI, Anthropic and Harmony compatibility: reasoning token counts for Harmony, DeepSeek-V3 and Step3 (58626) and per Responses tool round (58927), Harmony maxoutputtokens in the tool loop (58551), batched chat completions using the adjusted requests (58929, ",
+      "source_url": "https://github.com/vllm-project/vllm/releases/tag/v0.31.0"
+    },
+    {
+      "tag": "v0.31.0",
+      "category": "correctness_stability",
+      "snippet": "OpenAI, Anthropic and Harmony compatibility: reasoning token counts for Harmony, DeepSeek-V3 and Step3 (58626) and per Responses tool round (58927), Harmony maxoutputtokens in the tool loop (58551), batched chat completions using the adjusted requests (58929, ",
+      "source_url": "https://github.com/vllm-project/vllm/releases/tag/v0.31.0"
+    },
+    {
+      "tag": "v0.31.0",
+      "category": "engine_model_runner",
+      "snippet": "Rust frontend: --hf-overrides (56931), --sse-keep-alive-interval (58306), custom chat roles (58311), MiMo V2.5 parsers (57933), normalized reasoning controls (56998), parser-owned output grammars (55269, 57340), sampling masks over gRPC (56777), local DP size ",
+      "source_url": "https://github.com/vllm-project/vllm/releases/tag/v0.31.0"
+    },
+    {
+      "tag": "v0.31.0",
+      "category": "model_modalities",
+      "snippet": "Rust frontend: --hf-overrides (56931), --sse-keep-alive-interval (58306), custom chat roles (58311), MiMo V2.5 parsers (57933), normalized reasoning controls (56998), parser-owned output grammars (55269, 57340), sampling masks over gRPC (56777), local DP size ",
+      "source_url": "https://github.com/vllm-project/vllm/releases/tag/v0.31.0"
+    },
+    {
+      "tag": "v0.31.0",
+      "category": "api_protocol",
+      "snippet": "Rust frontend: --hf-overrides (56931), --sse-keep-alive-interval (58306), custom chat roles (58311), MiMo V2.5 parsers (57933), normalized reasoning controls (56998), parser-owned output grammars (55269, 57340), sampling masks over gRPC (56777), local DP size ",
+      "source_url": "https://github.com/vllm-project/vllm/releases/tag/v0.31.0"
+    },
+    {
+      "tag": "v0.31.0",
+      "category": "hardware_platform",
+      "snippet": "Rust frontend: --hf-overrides (56931), --sse-keep-alive-interval (58306), custom chat roles (58311), MiMo V2.5 parsers (57933), normalized reasoning controls (56998), parser-owned output grammars (55269, 57340), sampling masks over gRPC (56777), local DP size ",
+      "source_url": "https://github.com/vllm-project/vllm/releases/tag/v0.31.0"
+    },
+    {
+      "tag": "v0.31.0",
+      "category": "api_protocol",
+      "snippet": "Benchmarks: an openai-responses backend for vllm bench serve (54628) and modelid in latency/throughput JSON (58112).",
+      "source_url": "https://github.com/vllm-project/vllm/releases/tag/v0.31.0"
+    },
+    {
+      "tag": "v0.31.0",
+      "category": "correctness_stability",
+      "snippet": "Per-request mmprocessorkwargs and mediaiokwargs are rejected by default; trusted deployments opt in with --trust-request-mm-kwargs (58830).",
+      "source_url": "https://github.com/vllm-project/vllm/releases/tag/v0.31.0"
+    },
+    {
+      "tag": "v0.31.0",
+      "category": "model_modalities",
+      "snippet": "Prefix-cache block hashes tag extra keys by source (51899) and include the LoRA path (59335); multimodal hash input is framed (54283) and incremental block hashing covers every overlapping feature (51694).",
+      "source_url": "https://github.com/vllm-project/vllm/releases/tag/v0.31.0"
+    },
+    {
+      "tag": "v0.31.0",
+      "category": "model_modalities",
+      "snippet": "Fresh multimodal payloads take precedence over a stale receiver cache (57833), and encoder-cache hits with mismatched embedding counts are rejected (57696).",
+      "source_url": "https://github.com/vllm-project/vllm/releases/tag/v0.31.0"
+    },
+    {
+      "tag": "v0.31.0",
+      "category": "engine_model_runner",
+      "snippet": "mintokens above the filled maxtokens default is rejected instead of wedging the engine (57731); message sanitization filters upper-case memory addresses (58832); LoRA adapters named after a served model are rejected (59286).",
+      "source_url": "https://github.com/vllm-project/vllm/releases/tag/v0.31.0"
+    },
+    {
+      "tag": "v0.31.0",
+      "category": "kv_cache_memory",
+      "snippet": "mintokens above the filled maxtokens default is rejected instead of wedging the engine (57731); message sanitization filters upper-case memory addresses (58832); LoRA adapters named after a served model are rejected (59286).",
+      "source_url": "https://github.com/vllm-project/vllm/releases/tag/v0.31.0"
+    },
+    {
+      "tag": "v0.31.0",
+      "category": "correctness_stability",
+      "snippet": "mintokens above the filled maxtokens default is rejected instead of wedging the engine (57731); message sanitization filters upper-case memory addresses (58832); LoRA adapters named after a served model are rejected (59286).",
+      "source_url": "https://github.com/vllm-project/vllm/releases/tag/v0.31.0"
+    },
+    {
+      "tag": "v0.31.0",
+      "category": "api_protocol",
+      "snippet": "FlashInfer 0.7.0.post1 (58069, 59323), Transformers 5.17.0 (56108) with an upper bound in requirements (59614), XGrammar 0.2.7 (57272), oss-harmony replacing openai-harmony (55128), DeepGEMM fork pin bump (57218), FlashKDA bump (58846), and humming-kernels 0.1",
+      "source_url": "https://github.com/vllm-project/vllm/releases/tag/v0.31.0"
+    },
+    {
+      "tag": "v0.31.0",
+      "category": "hardware_platform",
+      "snippet": "CUDA 12 images use LMCache 0.4.4 and CuPy CUDA 12 (57945); a separately tagged zstd Docker Hub image (-x8664-zstd) is published (55608); Rubin CUDA 13.4 nightly images (55953).",
+      "source_url": "https://github.com/vllm-project/vllm/releases/tag/v0.31.0"
+    },
+    {
+      "tag": "v0.31.0",
+      "category": "observability_operations",
+      "snippet": "CUDA 12 images use LMCache 0.4.4 and CuPy CUDA 12 (57945); a separately tagged zstd Docker Hub image (-x8664-zstd) is published (55608); Rubin CUDA 13.4 nightly images (55953).",
+      "source_url": "https://github.com/vllm-project/vllm/releases/tag/v0.31.0"
+    },
+    {
+      "tag": "v0.31.0",
+      "category": "hardware_platform",
+      "snippet": "ROCm: AITER v0.1.23 (58867), torch 2.13, Triton 3.8 (50605, 58006), patched ROCR (57328), LMCache OpenTelemetry pins (59056).",
+      "source_url": "https://github.com/vllm-project/vllm/releases/tag/v0.31.0"
+    },
+    {
+      "tag": "v0.31.0",
+      "category": "hardware_platform",
+      "snippet": "XPU: PyTorch 2.14 (56013). CPU: wheels built on Ubuntu 22.04 (58515), pre-built Triton CPU (58140).",
+      "source_url": "https://github.com/vllm-project/vllm/releases/tag/v0.31.0"
+    },
+    {
+      "tag": "v0.31.0",
+      "category": "correctness_stability",
+      "snippet": "tokenizermode=\"slow\" was removed; it already behaved like \"hf\" under Transformers v5 (58545).",
+      "source_url": "https://github.com/vllm-project/vllm/releases/tag/v0.31.0"
+    },
+    {
+      "tag": "v0.31.0",
+      "category": "model_modalities",
+      "snippet": "--enable-mamba-fine-grained-prefix-cache was renamed to --enable-mamba-shared-prefix-checkpoint (57382).",
+      "source_url": "https://github.com/vllm-project/vllm/releases/tag/v0.31.0"
+    },
+    {
+      "tag": "v0.31.0",
+      "category": "api_protocol",
+      "snippet": "Online quantization through quantization=\"fp8\" now redirects to the fp8pertensor online shorthand (53585); Quark-specific silent online MXFP4 quantization was removed in favor of the online quantization API (51800).",
+      "source_url": "https://github.com/vllm-project/vllm/releases/tag/v0.31.0"
+    },
+    {
+      "tag": "v0.31.0",
+      "category": "quantization",
+      "snippet": "Online quantization through quantization=\"fp8\" now redirects to the fp8pertensor online shorthand (53585); Quark-specific silent online MXFP4 quantization was removed in favor of the online quantization API (51800).",
+      "source_url": "https://github.com/vllm-project/vllm/releases/tag/v0.31.0"
+    },
+    {
+      "tag": "v0.31.0",
+      "category": "correctness_stability",
+      "snippet": "Online quantization through quantization=\"fp8\" now redirects to the fp8pertensor online shorthand (53585); Quark-specific silent online MXFP4 quantization was removed in favor of the online quantization API (51800).",
+      "source_url": "https://github.com/vllm-project/vllm/releases/tag/v0.31.0"
+    },
+    {
+      "tag": "v0.31.0",
+      "category": "quantization",
+      "snippet": "The AllSpark INT8 W8A16 GEMM backend was removed (58001). The returnassistanttokensmask option of /render and the assistanttokensmask response field were removed (57520).",
+      "source_url": "https://github.com/vllm-project/vllm/releases/tag/v0.31.0"
+    },
+    {
+      "tag": "v0.31.0",
+      "category": "correctness_stability",
+      "snippet": "The AllSpark INT8 W8A16 GEMM backend was removed (58001). The returnassistanttokensmask option of /render and the assistanttokensmask response field were removed (57520).",
+      "source_url": "https://github.com/vllm-project/vllm/releases/tag/v0.31.0"
+    },
+    {
+      "tag": "v0.31.0",
+      "category": "hardware_platform",
+      "snippet": "VLLMPLECPUOFFLOAD was removed; use --engram-config (57937). VLLMXPUENABLEXPUGRAPH was removed and XPU graphs are on by default (51600).",
+      "source_url": "https://github.com/vllm-project/vllm/releases/tag/v0.31.0"
+    },
+    {
+      "tag": "v0.31.0",
+      "category": "correctness_stability",
+      "snippet": "VLLMPLECPUOFFLOAD was removed; use --engram-config (57937). VLLMXPUENABLEXPUGRAPH was removed and XPU graphs are on by default (51600).",
+      "source_url": "https://github.com/vllm-project/vllm/releases/tag/v0.31.0"
+    },
+    {
+      "tag": "v0.31.0",
+      "category": "correctness_stability",
+      "snippet": "The comma-separated form of --collect-detailed-traces was removed; use the list syntax (55702).",
+      "source_url": "https://github.com/vllm-project/vllm/releases/tag/v0.31.0"
+    },
+    {
+      "tag": "v0.31.0",
+      "category": "execution_kernels",
+      "snippet": "New defaults: --enforce-eager also disables JIT kernel warmup unless fault tolerance is enabled (58197, 58593); VLLMBATCHINVARIANT=1 uses breakable CUDA graphs without torch.compile (57586) and disables sequence parallelism and async TP (56377); DeepSeek-V4.1 ",
+      "source_url": "https://github.com/vllm-project/vllm/releases/tag/v0.31.0"
+    },
+    {
+      "tag": "v0.31.0",
+      "category": "model_modalities",
+      "snippet": "New defaults: --enforce-eager also disables JIT kernel warmup unless fault tolerance is enabled (58197, 58593); VLLMBATCHINVARIANT=1 uses breakable CUDA graphs without torch.compile (57586) and disables sequence parallelism and async TP (56377); DeepSeek-V4.1 ",
+      "source_url": "https://github.com/vllm-project/vllm/releases/tag/v0.31.0"
+    },
+    {
+      "tag": "v0.31.0",
+      "category": "hardware_platform",
+      "snippet": "New defaults: --enforce-eager also disables JIT kernel warmup unless fault tolerance is enabled (58197, 58593); VLLMBATCHINVARIANT=1 uses breakable CUDA graphs without torch.compile (57586) and disables sequence parallelism and async TP (56377); DeepSeek-V4.1 ",
+      "source_url": "https://github.com/vllm-project/vllm/releases/tag/v0.31.0"
+    },
+    {
+      "tag": "v0.31.0",
+      "category": "correctness_stability",
+      "snippet": "New defaults: --enforce-eager also disables JIT kernel warmup unless fault tolerance is enabled (58197, 58593); VLLMBATCHINVARIANT=1 uses breakable CUDA graphs without torch.compile (57586) and disables sequence parallelism and async TP (56377); DeepSeek-V4.1 ",
+      "source_url": "https://github.com/vllm-project/vllm/releases/tag/v0.31.0"
+    },
+    {
+      "tag": "v0.31.0",
+      "category": "engine_model_runner",
+      "snippet": "Model Runner V1 + PP > 1 + async scheduling + structured output is now rejected at startup (56250); jsonobject is rejected at validation with the outlines backend (57743).",
+      "source_url": "https://github.com/vllm-project/vllm/releases/tag/v0.31.0"
+    },
+    {
+      "tag": "v0.31.0",
+      "category": "scheduling_batching",
+      "snippet": "Model Runner V1 + PP > 1 + async scheduling + structured output is now rejected at startup (56250); jsonobject is rejected at validation with the outlines backend (57743).",
+      "source_url": "https://github.com/vllm-project/vllm/releases/tag/v0.31.0"
+    },
+    {
+      "tag": "v0.31.0",
+      "category": "api_protocol",
+      "snippet": "Model Runner V1 + PP > 1 + async scheduling + structured output is now rejected at startup (56250); jsonobject is rejected at validation with the outlines backend (57743).",
+      "source_url": "https://github.com/vllm-project/vllm/releases/tag/v0.31.0"
     }
   ]
 }
