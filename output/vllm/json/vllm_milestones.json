@@ -83702,6 +83702,1560 @@
       "category": "hardware_platform",
       "snippet": "New defaults: GLM-5.3-Flash FP8 KV cache (61228); lookahead block hashes for EAGLE/MTP prefix caching (61589); Cohere2MoE dual stream (62101); FA4 sparse MLA decode at 16 or fewer query heads per rank on Blackwell (55866); ROCm: AITER FP8/FP4 BMM for MLA off (",
       "source_url": "https://github.com/vllm-project/vllm/releases/tag/v0.33.0rc3"
+    },
+    {
+      "tag": "v0.34.0",
+      "category": "kv_cache_memory",
+      "snippet": "Extensible KV cache is on by default: vLLM sizes the KV cache from memory actually free after warmup, so most models get a bigger cache and more throughput.",
+      "source_url": "https://github.com/vllm-project/vllm/releases/tag/v0.34.0"
+    },
+    {
+      "tag": "v0.34.0",
+      "category": "correctness_stability",
+      "snippet": "Extensible KV cache is on by default: vLLM sizes the KV cache from memory actually free after warmup, so most models get a bigger cache and more throughput.",
+      "source_url": "https://github.com/vllm-project/vllm/releases/tag/v0.34.0"
+    },
+    {
+      "tag": "v0.34.0",
+      "category": "engine_model_runner",
+      "snippet": "Model Runner V1 is gone. Model Runner V2 is now the only GPU runner.",
+      "source_url": "https://github.com/vllm-project/vllm/releases/tag/v0.34.0"
+    },
+    {
+      "tag": "v0.34.0",
+      "category": "parallelism_distributed",
+      "snippet": "Big speedups on Blackwell and MI355X: up to 1.95\u00d7 decode (Step5 on GB200), 1.6\u00d7 throughput (GLM-5.3-Flash), 1.24\u20131.40\u00d7 faster long-prompt TTFT (GLM-5.3).",
+      "source_url": "https://github.com/vllm-project/vllm/releases/tag/v0.34.0"
+    },
+    {
+      "tag": "v0.34.0",
+      "category": "hardware_platform",
+      "snippet": "Big speedups on Blackwell and MI355X: up to 1.95\u00d7 decode (Step5 on GB200), 1.6\u00d7 throughput (GLM-5.3-Flash), 1.24\u20131.40\u00d7 faster long-prompt TTFT (GLM-5.3).",
+      "source_url": "https://github.com/vllm-project/vllm/releases/tag/v0.34.0"
+    },
+    {
+      "tag": "v0.34.0",
+      "category": "hardware_platform",
+      "snippet": "Upgrade check: default block size is now 64, ROCm 7.2 images are gone, and huggingfacehub >= 2.0.0 is required. See [Before you upgrade](before-you-upgrade).",
+      "source_url": "https://github.com/vllm-project/vllm/releases/tag/v0.34.0"
+    },
+    {
+      "tag": "v0.34.0",
+      "category": "correctness_stability",
+      "snippet": "Upgrade check: default block size is now 64, ROCm 7.2 images are gone, and huggingfacehub >= 2.0.0 is required. See [Before you upgrade](before-you-upgrade).",
+      "source_url": "https://github.com/vllm-project/vllm/releases/tag/v0.34.0"
+    },
+    {
+      "tag": "v0.34.0",
+      "category": "engine_model_runner",
+      "snippet": "| Model Runner V1 removed | Remove VLLMUSEV2MODELRUNNER=0; it now fails at startup. Port V1 logits processors to vllm.v1.worker.gpu.sample.logitsprocessor. | 63373 |",
+      "source_url": "https://github.com/vllm-project/vllm/releases/tag/v0.34.0"
+    },
+    {
+      "tag": "v0.34.0",
+      "category": "correctness_stability",
+      "snippet": "| Model Runner V1 removed | Remove VLLMUSEV2MODELRUNNER=0; it now fails at startup. Port V1 logits processors to vllm.v1.worker.gpu.sample.logitsprocessor. | 63373 |",
+      "source_url": "https://github.com/vllm-project/vllm/releases/tag/v0.34.0"
+    },
+    {
+      "tag": "v0.34.0",
+      "category": "hardware_platform",
+      "snippet": "| Default --block-size is 64 (was 16) | Pass --block-size 16 to keep the old behavior. ROCm paged attention still uses 16. | 63231 |",
+      "source_url": "https://github.com/vllm-project/vllm/releases/tag/v0.34.0"
+    },
+    {
+      "tag": "v0.34.0",
+      "category": "correctness_stability",
+      "snippet": "| Default --block-size is 64 (was 16) | Pass --block-size 16 to keep the old behavior. ROCm paged attention still uses 16. | 63231 |",
+      "source_url": "https://github.com/vllm-project/vllm/releases/tag/v0.34.0"
+    },
+    {
+      "tag": "v0.34.0",
+      "category": "kv_cache_memory",
+      "snippet": "| Extensible KV cache on by default; gpumemoryutilization defaults to 1.0 | To keep the old sizing, pass --gpu-memory-utilization 0.9 or --no-enable-extensible-kv-cache. | 56492 |",
+      "source_url": "https://github.com/vllm-project/vllm/releases/tag/v0.34.0"
+    },
+    {
+      "tag": "v0.34.0",
+      "category": "correctness_stability",
+      "snippet": "| Extensible KV cache on by default; gpumemoryutilization defaults to 1.0 | To keep the old sizing, pass --gpu-memory-utilization 0.9 or --no-enable-extensible-kv-cache. | 56492 |",
+      "source_url": "https://github.com/vllm-project/vllm/releases/tag/v0.34.0"
+    },
+    {
+      "tag": "v0.34.0",
+      "category": "hardware_platform",
+      "snippet": "| ROCm 7.2 artifacts dropped | Use the ROCm 10.0 wheels and images. -rocm72 is no longer published. | 61939 |",
+      "source_url": "https://github.com/vllm-project/vllm/releases/tag/v0.34.0"
+    },
+    {
+      "tag": "v0.34.0",
+      "category": "correctness_stability",
+      "snippet": "| QuTLASS / fpquant removed | fpquant checkpoints no longer load. | 65230 |",
+      "source_url": "https://github.com/vllm-project/vllm/releases/tag/v0.34.0"
+    },
+    {
+      "tag": "v0.34.0",
+      "category": "quantization",
+      "snippet": "| Marlin W4A8 removed | Use --quantization humming with VLLMHUMMINGINPUTQUANTCONFIG instead of VLLMMARLININPUTDTYPE. | 65542 |",
+      "source_url": "https://github.com/vllm-project/vllm/releases/tag/v0.34.0"
+    },
+    {
+      "tag": "v0.34.0",
+      "category": "correctness_stability",
+      "snippet": "| Marlin W4A8 removed | Use --quantization humming with VLLMHUMMINGINPUTQUANTCONFIG instead of VLLMMARLININPUTDTYPE. | 65542 |",
+      "source_url": "https://github.com/vllm-project/vllm/releases/tag/v0.34.0"
+    },
+    {
+      "tag": "v0.34.0",
+      "category": "correctness_stability",
+      "snippet": "| Keye-VL and Keye-VL-1.5 removed | \u2014 | 64287 |",
+      "source_url": "https://github.com/vllm-project/vllm/releases/tag/v0.34.0"
+    },
+    {
+      "tag": "v0.34.0",
+      "category": "quantization",
+      "snippet": "| Mistral Large 4 | 1T total / 52B active, FP8 and NVFP4. Runs on NVIDIA Blackwell/Hopper and AMD MI350. | 64534 |",
+      "source_url": "https://github.com/vllm-project/vllm/releases/tag/v0.34.0"
+    },
+    {
+      "tag": "v0.34.0",
+      "category": "hardware_platform",
+      "snippet": "| Mistral Large 4 | 1T total / 52B active, FP8 and NVFP4. Runs on NVIDIA Blackwell/Hopper and AMD MI350. | 64534 |",
+      "source_url": "https://github.com/vllm-project/vllm/releases/tag/v0.34.0"
+    },
+    {
+      "tag": "v0.34.0",
+      "category": "quantization",
+      "snippet": "| MiniMax-M3.1-Flash | Blackwell NVFP4 and ROCm kernels, DSpark draft | 64111 |",
+      "source_url": "https://github.com/vllm-project/vllm/releases/tag/v0.34.0"
+    },
+    {
+      "tag": "v0.34.0",
+      "category": "hardware_platform",
+      "snippet": "| MiniMax-M3.1-Flash | Blackwell NVFP4 and ROCm kernels, DSpark draft | 64111 |",
+      "source_url": "https://github.com/vllm-project/vllm/releases/tag/v0.34.0"
+    },
+    {
+      "tag": "v0.34.0",
+      "category": "model_modalities",
+      "snippet": "| NVIDIA Nemotron-3.5-Transcribe | 30B-A4B speech model: audio chat and /v1/audio/transcriptions | 64282 |",
+      "source_url": "https://github.com/vllm-project/vllm/releases/tag/v0.34.0"
+    },
+    {
+      "tag": "v0.34.0",
+      "category": "quantization",
+      "snippet": "| Ricursive Ripple-65B Preview | BF16 and NVFP4, ripple reasoning and tool parsers | 65745 |",
+      "source_url": "https://github.com/vllm-project/vllm/releases/tag/v0.34.0"
+    },
+    {
+      "tag": "v0.34.0",
+      "category": "model_modalities",
+      "snippet": "| Liquid AI LFM3, LFM3-VL, LFM3-Audio | | 65826, 65827, 65828 |",
+      "source_url": "https://github.com/vllm-project/vllm/releases/tag/v0.34.0"
+    },
+    {
+      "tag": "v0.34.0",
+      "category": "kv_cache_memory",
+      "snippet": "Extensible KV cache, on by default",
+      "source_url": "https://github.com/vllm-project/vllm/releases/tag/v0.34.0"
+    },
+    {
+      "tag": "v0.34.0",
+      "category": "correctness_stability",
+      "snippet": "Extensible KV cache, on by default",
+      "source_url": "https://github.com/vllm-project/vllm/releases/tag/v0.34.0"
+    },
+    {
+      "tag": "v0.34.0",
+      "category": "kv_cache_memory",
+      "snippet": "On CUDA and ROCm, the KV cache is sized from memory actually free after CUDA graph capture and warmup, not from an estimate (56492).",
+      "source_url": "https://github.com/vllm-project/vllm/releases/tag/v0.34.0"
+    },
+    {
+      "tag": "v0.34.0",
+      "category": "execution_kernels",
+      "snippet": "On CUDA and ROCm, the KV cache is sized from memory actually free after CUDA graph capture and warmup, not from an estimate (56492).",
+      "source_url": "https://github.com/vllm-project/vllm/releases/tag/v0.34.0"
+    },
+    {
+      "tag": "v0.34.0",
+      "category": "hardware_platform",
+      "snippet": "On CUDA and ROCm, the KV cache is sized from memory actually free after CUDA graph capture and warmup, not from an estimate (56492).",
+      "source_url": "https://github.com/vllm-project/vllm/releases/tag/v0.34.0"
+    },
+    {
+      "tag": "v0.34.0",
+      "category": "kv_cache_memory",
+      "snippet": "Trade-off: per-token decode latency can rise on some models (TPOT +6\u201318% on some H200 models at concurrency 128). Opt out with --gpu-memory-utilization 0.9 or --no-enable-extensible-kv-cache.",
+      "source_url": "https://github.com/vllm-project/vllm/releases/tag/v0.34.0"
+    },
+    {
+      "tag": "v0.34.0",
+      "category": "parallelism_distributed",
+      "snippet": "Trade-off: per-token decode latency can rise on some models (TPOT +6\u201318% on some H200 models at concurrency 128). Opt out with --gpu-memory-utilization 0.9 or --no-enable-extensible-kv-cache.",
+      "source_url": "https://github.com/vllm-project/vllm/releases/tag/v0.34.0"
+    },
+    {
+      "tag": "v0.34.0",
+      "category": "engine_model_runner",
+      "snippet": "Model Runner V2 only",
+      "source_url": "https://github.com/vllm-project/vllm/releases/tag/v0.34.0"
+    },
+    {
+      "tag": "v0.34.0",
+      "category": "engine_model_runner",
+      "snippet": "Model Runner V1 is removed (63373).",
+      "source_url": "https://github.com/vllm-project/vllm/releases/tag/v0.34.0"
+    },
+    {
+      "tag": "v0.34.0",
+      "category": "correctness_stability",
+      "snippet": "Model Runner V1 is removed (63373).",
+      "source_url": "https://github.com/vllm-project/vllm/releases/tag/v0.34.0"
+    },
+    {
+      "tag": "v0.34.0",
+      "category": "speculative_decoding",
+      "snippet": "Dual-batch overlap now runs on MRV2, including with speculative decoding and DCP (61464).",
+      "source_url": "https://github.com/vllm-project/vllm/releases/tag/v0.34.0"
+    },
+    {
+      "tag": "v0.34.0",
+      "category": "speculative_decoding",
+      "snippet": "Speculative decoding",
+      "source_url": "https://github.com/vllm-project/vllm/releases/tag/v0.34.0"
+    },
+    {
+      "tag": "v0.34.0",
+      "category": "api_protocol",
+      "snippet": "Custom speculators: declarative configs plus a registerspeculativemethod plugin API (63205).",
+      "source_url": "https://github.com/vllm-project/vllm/releases/tag/v0.34.0"
+    },
+    {
+      "tag": "v0.34.0",
+      "category": "hardware_platform",
+      "snippet": "CUDA graphs for MRV2 draft-model speculators (60989).",
+      "source_url": "https://github.com/vllm-project/vllm/releases/tag/v0.34.0"
+    },
+    {
+      "tag": "v0.34.0",
+      "category": "kv_cache_memory",
+      "snippet": "Draft KV cache matches the target's dtype, so an FP8 target gets an FP8 draft cache (65198).",
+      "source_url": "https://github.com/vllm-project/vllm/releases/tag/v0.34.0"
+    },
+    {
+      "tag": "v0.34.0",
+      "category": "quantization",
+      "snippet": "Draft KV cache matches the target's dtype, so an FP8 target gets an FP8 draft cache (65198).",
+      "source_url": "https://github.com/vllm-project/vllm/releases/tag/v0.34.0"
+    },
+    {
+      "tag": "v0.34.0",
+      "category": "parallelism_distributed",
+      "snippet": "| Step5 NVFP4 MoE on TRTLLM-Gen | 4\u00d7GB200 | up to 1.95\u00d7 decode | 65152 |",
+      "source_url": "https://github.com/vllm-project/vllm/releases/tag/v0.34.0"
+    },
+    {
+      "tag": "v0.34.0",
+      "category": "model_modalities",
+      "snippet": "| Step5 NVFP4 MoE on TRTLLM-Gen | 4\u00d7GB200 | up to 1.95\u00d7 decode | 65152 |",
+      "source_url": "https://github.com/vllm-project/vllm/releases/tag/v0.34.0"
+    },
+    {
+      "tag": "v0.34.0",
+      "category": "quantization",
+      "snippet": "| Step5 NVFP4 MoE on TRTLLM-Gen | 4\u00d7GB200 | up to 1.95\u00d7 decode | 65152 |",
+      "source_url": "https://github.com/vllm-project/vllm/releases/tag/v0.34.0"
+    },
+    {
+      "tag": "v0.34.0",
+      "category": "quantization",
+      "snippet": "| GLM-5.3-Flash DeepGEMM FP8 MegaMoE | NVIDIA | 1.6\u00d7 output throughput vs DEP4 | 60895 |",
+      "source_url": "https://github.com/vllm-project/vllm/releases/tag/v0.34.0"
+    },
+    {
+      "tag": "v0.34.0",
+      "category": "parallelism_distributed",
+      "snippet": "| Muse Spark Open specialized decode (opt-in) | GB300 | 1.5\u00d7 single-stream decode | 64077 |",
+      "source_url": "https://github.com/vllm-project/vllm/releases/tag/v0.34.0"
+    },
+    {
+      "tag": "v0.34.0",
+      "category": "parallelism_distributed",
+      "snippet": "| Token-sharded sparse-MLA prefill under TP (default) | GB200 | GLM-5.3 TTFT 1.24\u20131.40\u00d7 faster at 32K\u2013128K | 63956 |",
+      "source_url": "https://github.com/vllm-project/vllm/releases/tag/v0.34.0"
+    },
+    {
+      "tag": "v0.34.0",
+      "category": "correctness_stability",
+      "snippet": "| Token-sharded sparse-MLA prefill under TP (default) | GB200 | GLM-5.3 TTFT 1.24\u20131.40\u00d7 faster at 32K\u2013128K | 63956 |",
+      "source_url": "https://github.com/vllm-project/vllm/releases/tag/v0.34.0"
+    },
+    {
+      "tag": "v0.34.0",
+      "category": "parallelism_distributed",
+      "snippet": "| KV-balanced MLA decode for Kimi-K3 (opt-in) | GB300 | 1.34\u20131.59\u00d7 decode attention | 63638 |",
+      "source_url": "https://github.com/vllm-project/vllm/releases/tag/v0.34.0"
+    },
+    {
+      "tag": "v0.34.0",
+      "category": "execution_kernels",
+      "snippet": "| Qwen3.5 on breakable CUDA graphs (no torch.compile) | NVIDIA | 3.0\u20138.8% lower decode ITL | 51012 |",
+      "source_url": "https://github.com/vllm-project/vllm/releases/tag/v0.34.0"
+    },
+    {
+      "tag": "v0.34.0",
+      "category": "parallelism_distributed",
+      "snippet": "| Qwen3.5 on breakable CUDA graphs (no torch.compile) | NVIDIA | 3.0\u20138.8% lower decode ITL | 51012 |",
+      "source_url": "https://github.com/vllm-project/vllm/releases/tag/v0.34.0"
+    },
+    {
+      "tag": "v0.34.0",
+      "category": "hardware_platform",
+      "snippet": "| Qwen3.5 on breakable CUDA graphs (no torch.compile) | NVIDIA | 3.0\u20138.8% lower decode ITL | 51012 |",
+      "source_url": "https://github.com/vllm-project/vllm/releases/tag/v0.34.0"
+    },
+    {
+      "tag": "v0.34.0",
+      "category": "parallelism_distributed",
+      "snippet": "| FlyDSL decode monokernel, Muse Spark Open DSpark | 8\u00d7MI355X | +35\u201357% interactivity at conc. 1\u20138 | 63440 |",
+      "source_url": "https://github.com/vllm-project/vllm/releases/tag/v0.34.0"
+    },
+    {
+      "tag": "v0.34.0",
+      "category": "hardware_platform",
+      "snippet": "Release images and wheels are ROCm 10.0 only (61939).",
+      "source_url": "https://github.com/vllm-project/vllm/releases/tag/v0.34.0"
+    },
+    {
+      "tag": "v0.34.0",
+      "category": "parallelism_distributed",
+      "snippet": "Kimi-K3 specialized decode on MI355X, opt-in (61435).",
+      "source_url": "https://github.com/vllm-project/vllm/releases/tag/v0.34.0"
+    },
+    {
+      "tag": "v0.34.0",
+      "category": "correctness_stability",
+      "snippet": "TRITONATTN is the default attention backend on RDNA3 and RDNA4 (60418).",
+      "source_url": "https://github.com/vllm-project/vllm/releases/tag/v0.34.0"
+    },
+    {
+      "tag": "v0.34.0",
+      "category": "hardware_platform",
+      "snippet": "Checkpoint/restore (CRIU + cuda-checkpoint) through /checkpoint/prepare, /checkpoint/status and /checkpoint/restore, in both the Python and Rust frontends (62570).",
+      "source_url": "https://github.com/vllm-project/vllm/releases/tag/v0.34.0"
+    },
+    {
+      "tag": "v0.34.0",
+      "category": "correctness_stability",
+      "snippet": "Fault-tolerant DP+EP scale-down: dead ranks are removed and their experts redistributed without a restart (46370).",
+      "source_url": "https://github.com/vllm-project/vllm/releases/tag/v0.34.0"
+    },
+    {
+      "tag": "v0.34.0",
+      "category": "correctness_stability",
+      "snippet": "Best-effort NUMA binding on by default (61258).",
+      "source_url": "https://github.com/vllm-project/vllm/releases/tag/v0.34.0"
+    },
+    {
+      "tag": "v0.34.0",
+      "category": "api_protocol",
+      "snippet": "Rust frontend: stateless Responses API (63902) and n > 1 (65625).",
+      "source_url": "https://github.com/vllm-project/vllm/releases/tag/v0.34.0"
+    },
+    {
+      "tag": "v0.34.0",
+      "category": "hardware_platform",
+      "snippet": "| CUDA 13.0 (PyPI) | pip install vllm |",
+      "source_url": "https://github.com/vllm-project/vllm/releases/tag/v0.34.0"
+    },
+    {
+      "tag": "v0.34.0",
+      "category": "hardware_platform",
+      "snippet": "| CUDA 13.0 (uv) | uv pip install vllm --torch-backend=auto |",
+      "source_url": "https://github.com/vllm-project/vllm/releases/tag/v0.34.0"
+    },
+    {
+      "tag": "v0.34.0",
+      "category": "hardware_platform",
+      "snippet": "| ROCm 10.0 | pip install vllm --extra-index-url https://wheels.vllm.ai/rocm/0.34.0/rocm100 |",
+      "source_url": "https://github.com/vllm-project/vllm/releases/tag/v0.34.0"
+    },
+    {
+      "tag": "v0.34.0",
+      "category": "hardware_platform",
+      "snippet": "| XPU | uv pip install vllm --extra-index-url https://wheels.vllm.ai/0.34.0/xpu --extra-index-url https://download.pytorch.org/whl/xpu --index-strategy unsafe-best-match |",
+      "source_url": "https://github.com/vllm-project/vllm/releases/tag/v0.34.0"
+    },
+    {
+      "tag": "v0.34.0",
+      "category": "hardware_platform",
+      "snippet": "<!-- TODO(reviewer): confirm the XPU install line still resolves now that vllmxpukernels==0.1.17 comes from https://vllm-project.github.io/vllm-xpu-kernels/whl (64633, 60609); the release index may need that extra index too. -->",
+      "source_url": "https://github.com/vllm-project/vllm/releases/tag/v0.34.0"
+    },
+    {
+      "tag": "v0.34.0",
+      "category": "observability_operations",
+      "snippet": "Docker images",
+      "source_url": "https://github.com/vllm-project/vllm/releases/tag/v0.34.0"
+    },
+    {
+      "tag": "v0.34.0",
+      "category": "api_protocol",
+      "snippet": "| CUDA 13.0 (default) | vllm/vllm-openai:v0.34.0 | vllm/vllm:v0.34.0 |",
+      "source_url": "https://github.com/vllm-project/vllm/releases/tag/v0.34.0"
+    },
+    {
+      "tag": "v0.34.0",
+      "category": "hardware_platform",
+      "snippet": "| CUDA 13.0 (default) | vllm/vllm-openai:v0.34.0 | vllm/vllm:v0.34.0 |",
+      "source_url": "https://github.com/vllm-project/vllm/releases/tag/v0.34.0"
+    },
+    {
+      "tag": "v0.34.0",
+      "category": "correctness_stability",
+      "snippet": "| CUDA 13.0 (default) | vllm/vllm-openai:v0.34.0 | vllm/vllm:v0.34.0 |",
+      "source_url": "https://github.com/vllm-project/vllm/releases/tag/v0.34.0"
+    },
+    {
+      "tag": "v0.34.0",
+      "category": "api_protocol",
+      "snippet": "| CUDA 13.0 + DeepEP over AWS EFA | vllm/vllm-openai:v0.34.0-efa | vllm/vllm:v0.34.0-efa |",
+      "source_url": "https://github.com/vllm-project/vllm/releases/tag/v0.34.0"
+    },
+    {
+      "tag": "v0.34.0",
+      "category": "hardware_platform",
+      "snippet": "| CUDA 13.0 + DeepEP over AWS EFA | vllm/vllm-openai:v0.34.0-efa | vllm/vllm:v0.34.0-efa |",
+      "source_url": "https://github.com/vllm-project/vllm/releases/tag/v0.34.0"
+    },
+    {
+      "tag": "v0.34.0",
+      "category": "api_protocol",
+      "snippet": "| ROCm 10.0 | vllm/vllm-openai-rocm:v0.34.0 | vllm/vllm:v0.34.0-rocm |",
+      "source_url": "https://github.com/vllm-project/vllm/releases/tag/v0.34.0"
+    },
+    {
+      "tag": "v0.34.0",
+      "category": "hardware_platform",
+      "snippet": "| ROCm 10.0 | vllm/vllm-openai-rocm:v0.34.0 | vllm/vllm:v0.34.0-rocm |",
+      "source_url": "https://github.com/vllm-project/vllm/releases/tag/v0.34.0"
+    },
+    {
+      "tag": "v0.34.0",
+      "category": "api_protocol",
+      "snippet": "| CPU | vllm/vllm-openai-cpu:v0.34.0 | vllm/vllm:v0.34.0-cpu |",
+      "source_url": "https://github.com/vllm-project/vllm/releases/tag/v0.34.0"
+    },
+    {
+      "tag": "v0.34.0",
+      "category": "hardware_platform",
+      "snippet": "| CPU | vllm/vllm-openai-cpu:v0.34.0 | vllm/vllm:v0.34.0-cpu |",
+      "source_url": "https://github.com/vllm-project/vllm/releases/tag/v0.34.0"
+    },
+    {
+      "tag": "v0.34.0",
+      "category": "api_protocol",
+      "snippet": "| XPU | vllm/vllm-openai-xpu:v0.34.0 | vllm/vllm:v0.34.0-xpu |",
+      "source_url": "https://github.com/vllm-project/vllm/releases/tag/v0.34.0"
+    },
+    {
+      "tag": "v0.34.0",
+      "category": "hardware_platform",
+      "snippet": "| XPU | vllm/vllm-openai-xpu:v0.34.0 | vllm/vllm:v0.34.0-xpu |",
+      "source_url": "https://github.com/vllm-project/vllm/releases/tag/v0.34.0"
+    },
+    {
+      "tag": "v0.34.0",
+      "category": "hardware_platform",
+      "snippet": "latest tags work the same way (e.g. vllm/vllm:latest-rocm). The default CUDA image now includes the AWS EFA userspace (libfabric, aws-ofi-nccl). The -efa image adds DeepEP built for EFA and routes NCCL over EFA by default (65576).",
+      "source_url": "https://github.com/vllm-project/vllm/releases/tag/v0.34.0"
+    },
+    {
+      "tag": "v0.34.0",
+      "category": "correctness_stability",
+      "snippet": "latest tags work the same way (e.g. vllm/vllm:latest-rocm). The default CUDA image now includes the AWS EFA userspace (libfabric, aws-ofi-nccl). The -efa image adds DeepEP built for EFA and routes NCCL over EFA by default (65576).",
+      "source_url": "https://github.com/vllm-project/vllm/releases/tag/v0.34.0"
+    },
+    {
+      "tag": "v0.34.0",
+      "category": "hardware_platform",
+      "snippet": "The Assets section below has the source tarball and the CUDA 13.0 (x8664, arm64), CPU (x8664, arm64, macOS) and XPU (x8664) wheels.",
+      "source_url": "https://github.com/vllm-project/vllm/releases/tag/v0.34.0"
+    },
+    {
+      "tag": "v0.34.0",
+      "category": "parallelism_distributed",
+      "snippet": "MiniMax-M3.1-Flash (64111), plus P/D across different prefill and decode TP (64475).",
+      "source_url": "https://github.com/vllm-project/vllm/releases/tag/v0.34.0"
+    },
+    {
+      "tag": "v0.34.0",
+      "category": "model_modalities",
+      "snippet": "DeepSeek-V4 / V4.1",
+      "source_url": "https://github.com/vllm-project/vllm/releases/tag/v0.34.0"
+    },
+    {
+      "tag": "v0.34.0",
+      "category": "parallelism_distributed",
+      "snippet": "Prefill gathers compressed KV once per KV-source group: 38 \u2192 4 gathers per step (59131).",
+      "source_url": "https://github.com/vllm-project/vllm/releases/tag/v0.34.0"
+    },
+    {
+      "tag": "v0.34.0",
+      "category": "kv_cache_memory",
+      "snippet": "Decoder replay graphs share the model graph pool: prefill graph memory 15.52 \u2192 9.88 GiB per rank on GB200 (63155).",
+      "source_url": "https://github.com/vllm-project/vllm/releases/tag/v0.34.0"
+    },
+    {
+      "tag": "v0.34.0",
+      "category": "parallelism_distributed",
+      "snippet": "Decoder replay graphs share the model graph pool: prefill graph memory 15.52 \u2192 9.88 GiB per rank on GB200 (63155).",
+      "source_url": "https://github.com/vllm-project/vllm/releases/tag/v0.34.0"
+    },
+    {
+      "tag": "v0.34.0",
+      "category": "parallelism_distributed",
+      "snippet": "fusedinvropefp8quant 3.5\u00d7 faster, prefill 6% faster (63540).",
+      "source_url": "https://github.com/vllm-project/vllm/releases/tag/v0.34.0"
+    },
+    {
+      "tag": "v0.34.0",
+      "category": "kv_cache_memory",
+      "snippet": "DSpark/MTP memory savings of about 512 MiB per GPU (63996).",
+      "source_url": "https://github.com/vllm-project/vllm/releases/tag/v0.34.0"
+    },
+    {
+      "tag": "v0.34.0",
+      "category": "quantization",
+      "snippet": "DeepGEMM sparse MQA logits on the FP8 indexer cache (62011).",
+      "source_url": "https://github.com/vllm-project/vllm/releases/tag/v0.34.0"
+    },
+    {
+      "tag": "v0.34.0",
+      "category": "model_modalities",
+      "snippet": "Packed multi-image vision encoding, 1.6\u20132.6\u00d7 (65030).",
+      "source_url": "https://github.com/vllm-project/vllm/releases/tag/v0.34.0"
+    },
+    {
+      "tag": "v0.34.0",
+      "category": "kv_cache_memory",
+      "snippet": "Fixes: sparse prefill in FULL CUDA graphs (59986), prefill memory budgeting (63047), MTP embedding under PP (65816), DeepSeek-V3.2 PP (59961).",
+      "source_url": "https://github.com/vllm-project/vllm/releases/tag/v0.34.0"
+    },
+    {
+      "tag": "v0.34.0",
+      "category": "parallelism_distributed",
+      "snippet": "Fixes: sparse prefill in FULL CUDA graphs (59986), prefill memory budgeting (63047), MTP embedding under PP (65816), DeepSeek-V3.2 PP (59961).",
+      "source_url": "https://github.com/vllm-project/vllm/releases/tag/v0.34.0"
+    },
+    {
+      "tag": "v0.34.0",
+      "category": "model_modalities",
+      "snippet": "Fixes: sparse prefill in FULL CUDA graphs (59986), prefill memory budgeting (63047), MTP embedding under PP (65816), DeepSeek-V3.2 PP (59961).",
+      "source_url": "https://github.com/vllm-project/vllm/releases/tag/v0.34.0"
+    },
+    {
+      "tag": "v0.34.0",
+      "category": "hardware_platform",
+      "snippet": "Fixes: sparse prefill in FULL CUDA graphs (59986), prefill memory budgeting (63047), MTP embedding under PP (65816), DeepSeek-V3.2 PP (59961).",
+      "source_url": "https://github.com/vllm-project/vllm/releases/tag/v0.34.0"
+    },
+    {
+      "tag": "v0.34.0",
+      "category": "quantization",
+      "snippet": "GLM-5.3-Flash: DeepGEMM FP8 MegaMoE (60895), adaptive verification (60229), row-strided QKV into FlashKDA (61614).",
+      "source_url": "https://github.com/vllm-project/vllm/releases/tag/v0.34.0"
+    },
+    {
+      "tag": "v0.34.0",
+      "category": "model_modalities",
+      "snippet": "GLM-5.3 FP8 MoE sorted-A TMA on H200, 6.0\u20137.6% E2E throughput (64760).",
+      "source_url": "https://github.com/vllm-project/vllm/releases/tag/v0.34.0"
+    },
+    {
+      "tag": "v0.34.0",
+      "category": "quantization",
+      "snippet": "GLM-5.3 FP8 MoE sorted-A TMA on H200, 6.0\u20137.6% E2E throughput (64760).",
+      "source_url": "https://github.com/vllm-project/vllm/releases/tag/v0.34.0"
+    },
+    {
+      "tag": "v0.34.0",
+      "category": "kv_cache_memory",
+      "snippet": "FP8 KV cache for DSpark and DFlash drafts (63841, 64612, 65553).",
+      "source_url": "https://github.com/vllm-project/vllm/releases/tag/v0.34.0"
+    },
+    {
+      "tag": "v0.34.0",
+      "category": "quantization",
+      "snippet": "FP8 KV cache for DSpark and DFlash drafts (63841, 64612, 65553).",
+      "source_url": "https://github.com/vllm-project/vllm/releases/tag/v0.34.0"
+    },
+    {
+      "tag": "v0.34.0",
+      "category": "correctness_stability",
+      "snippet": "Fused KDA convs fix stale weights after RL refit (60991).",
+      "source_url": "https://github.com/vllm-project/vllm/releases/tag/v0.34.0"
+    },
+    {
+      "tag": "v0.34.0",
+      "category": "parallelism_distributed",
+      "snippet": "Opt-in Muse Spark Open specialized decode on GB300 (64077).",
+      "source_url": "https://github.com/vllm-project/vllm/releases/tag/v0.34.0"
+    },
+    {
+      "tag": "v0.34.0",
+      "category": "kv_cache_memory",
+      "snippet": "One RoPE cache shared across layers: 11.5 GiB per GPU saved, 14.5% more KV cache on 8\u00d7B200 (65206).",
+      "source_url": "https://github.com/vllm-project/vllm/releases/tag/v0.34.0"
+    },
+    {
+      "tag": "v0.34.0",
+      "category": "quantization",
+      "snippet": "GEMM and communication+norm fusions (65438, 64638); hybrid DeepGEMM MegaMoE / TRT-LLM for NVFP4 (64525).",
+      "source_url": "https://github.com/vllm-project/vllm/releases/tag/v0.34.0"
+    },
+    {
+      "tag": "v0.34.0",
+      "category": "execution_kernels",
+      "snippet": "CUDA routing kernel (64553), MegaMoE JIT warmup (63920), DSpark draft loading fix (65125).",
+      "source_url": "https://github.com/vllm-project/vllm/releases/tag/v0.34.0"
+    },
+    {
+      "tag": "v0.34.0",
+      "category": "hardware_platform",
+      "snippet": "CUDA routing kernel (64553), MegaMoE JIT warmup (63920), DSpark draft loading fix (65125).",
+      "source_url": "https://github.com/vllm-project/vllm/releases/tag/v0.34.0"
+    },
+    {
+      "tag": "v0.34.0",
+      "category": "correctness_stability",
+      "snippet": "CUDA routing kernel (64553), MegaMoE JIT warmup (63920), DSpark draft loading fix (65125).",
+      "source_url": "https://github.com/vllm-project/vllm/releases/tag/v0.34.0"
+    },
+    {
+      "tag": "v0.34.0",
+      "category": "parallelism_distributed",
+      "snippet": "Triton query-tiled sparse prefill on Hopper (57420); SM90 split-K indexer (64037).",
+      "source_url": "https://github.com/vllm-project/vllm/releases/tag/v0.34.0"
+    },
+    {
+      "tag": "v0.34.0",
+      "category": "parallelism_distributed",
+      "snippet": "No host sync in prefill metadata (65883); NVFP4 MegaMoE warmup (66227); fmhasm100 indexer updates (66228).",
+      "source_url": "https://github.com/vllm-project/vllm/releases/tag/v0.34.0"
+    },
+    {
+      "tag": "v0.34.0",
+      "category": "quantization",
+      "snippet": "No host sync in prefill metadata (65883); NVFP4 MegaMoE warmup (66227); fmhasm100 indexer updates (66228).",
+      "source_url": "https://github.com/vllm-project/vllm/releases/tag/v0.34.0"
+    },
+    {
+      "tag": "v0.34.0",
+      "category": "parallelism_distributed",
+      "snippet": "Fixes: M3.1 prefill workspace (64856), sequence parallelism (65496), encoder CUDA graphs (65226).",
+      "source_url": "https://github.com/vllm-project/vllm/releases/tag/v0.34.0"
+    },
+    {
+      "tag": "v0.34.0",
+      "category": "hardware_platform",
+      "snippet": "Fixes: M3.1 prefill workspace (64856), sequence parallelism (65496), encoder CUDA graphs (65226).",
+      "source_url": "https://github.com/vllm-project/vllm/releases/tag/v0.34.0"
+    },
+    {
+      "tag": "v0.34.0",
+      "category": "hardware_platform",
+      "snippet": "Opt-in --attention-backend KIMIK3KVBALANCEDMLA for agentic workloads on Blackwell (63638).",
+      "source_url": "https://github.com/vllm-project/vllm/releases/tag/v0.34.0"
+    },
+    {
+      "tag": "v0.34.0",
+      "category": "quantization",
+      "snippet": "FlashInfer fused FP8 chunked-context K/V pack (61527).",
+      "source_url": "https://github.com/vllm-project/vllm/releases/tag/v0.34.0"
+    },
+    {
+      "tag": "v0.34.0",
+      "category": "parallelism_distributed",
+      "snippet": "Fixes: KDA prefill OOM (63989), NaNs via FlashKDA/FlashMLA pins (64759), sleep mode (64583, 66273).",
+      "source_url": "https://github.com/vllm-project/vllm/releases/tag/v0.34.0"
+    },
+    {
+      "tag": "v0.34.0",
+      "category": "execution_kernels",
+      "snippet": "Qwen3.5: breakable CUDA graphs instead of torch.compile (51012); fused norm/gate + quant (64509) and AR + norm + quant (64723); GDN inproj overlap (64425, 64999).",
+      "source_url": "https://github.com/vllm-project/vllm/releases/tag/v0.34.0"
+    },
+    {
+      "tag": "v0.34.0",
+      "category": "hardware_platform",
+      "snippet": "Qwen3.5: breakable CUDA graphs instead of torch.compile (51012); fused norm/gate + quant (64509) and AR + norm + quant (64723); GDN inproj overlap (64425, 64999).",
+      "source_url": "https://github.com/vllm-project/vllm/releases/tag/v0.34.0"
+    },
+    {
+      "tag": "v0.34.0",
+      "category": "parallelism_distributed",
+      "snippet": "GDN prefill state gather/scatter fused for Qwen3-Next/Qwen3.5 and Kimi KDA, 1.16\u20131.50\u00d7 (66064).",
+      "source_url": "https://github.com/vllm-project/vllm/releases/tag/v0.34.0"
+    },
+    {
+      "tag": "v0.34.0",
+      "category": "model_modalities",
+      "snippet": "Gemma 4: multimodal encoder DP (60314), PP (65989), FA4 FP8 MMA on SM90 (60372).",
+      "source_url": "https://github.com/vllm-project/vllm/releases/tag/v0.34.0"
+    },
+    {
+      "tag": "v0.34.0",
+      "category": "quantization",
+      "snippet": "Gemma 4: multimodal encoder DP (60314), PP (65989), FA4 FP8 MMA on SM90 (60372).",
+      "source_url": "https://github.com/vllm-project/vllm/releases/tag/v0.34.0"
+    },
+    {
+      "tag": "v0.34.0",
+      "category": "kv_cache_memory",
+      "snippet": "Moved to the Transformers modeling backend: OLMoE (63384), Gemma v1 and StableLM (66393), Aria (59767; temporarily about 11% less KV cache and 25% lower image throughput).",
+      "source_url": "https://github.com/vllm-project/vllm/releases/tag/v0.34.0"
+    },
+    {
+      "tag": "v0.34.0",
+      "category": "hardware_platform",
+      "snippet": "Encoder CUDA graphs for Pixtral/Mistral3 (56277), shared capture buffers (65084), one replay per batch up to encodercudagraphmaxtokenbudget (65227).",
+      "source_url": "https://github.com/vllm-project/vllm/releases/tag/v0.34.0"
+    },
+    {
+      "tag": "v0.34.0",
+      "category": "engine_model_runner",
+      "snippet": "<summary><b>Engine core</b></summary>",
+      "source_url": "https://github.com/vllm-project/vllm/releases/tag/v0.34.0"
+    },
+    {
+      "tag": "v0.34.0",
+      "category": "kv_cache_memory",
+      "snippet": "Extensible KV cache",
+      "source_url": "https://github.com/vllm-project/vllm/releases/tag/v0.34.0"
+    },
+    {
+      "tag": "v0.34.0",
+      "category": "hardware_platform",
+      "snippet": "On by default on CUDA and ROCm (56492).",
+      "source_url": "https://github.com/vllm-project/vllm/releases/tag/v0.34.0"
+    },
+    {
+      "tag": "v0.34.0",
+      "category": "correctness_stability",
+      "snippet": "On by default on CUDA and ROCm (56492).",
+      "source_url": "https://github.com/vllm-project/vllm/releases/tag/v0.34.0"
+    },
+    {
+      "tag": "v0.34.0",
+      "category": "quantization",
+      "snippet": "Headroom for measured allocator fragmentation, validated on Qwen3.5-397B-A17B-FP8 at TP8+EP on 8\u00d7H200 (67296).",
+      "source_url": "https://github.com/vllm-project/vllm/releases/tag/v0.34.0"
+    },
+    {
+      "tag": "v0.34.0",
+      "category": "kv_cache_memory",
+      "snippet": "Startup warning when an explicit gpumemoryutilization withholds memory from it (66704); docs on when to set it (67071).",
+      "source_url": "https://github.com/vllm-project/vllm/releases/tag/v0.34.0"
+    },
+    {
+      "tag": "v0.34.0",
+      "category": "engine_model_runner",
+      "snippet": "Model Runner V2",
+      "source_url": "https://github.com/vllm-project/vllm/releases/tag/v0.34.0"
+    },
+    {
+      "tag": "v0.34.0",
+      "category": "parallelism_distributed",
+      "snippet": "The only runner after MRV1's removal (63373); DBO with spec decode and DCP (61464).",
+      "source_url": "https://github.com/vllm-project/vllm/releases/tag/v0.34.0"
+    },
+    {
+      "tag": "v0.34.0",
+      "category": "execution_kernels",
+      "snippet": "Separate prefill (token) and decode (request) CUDA graph capture sizes (63406).",
+      "source_url": "https://github.com/vllm-project/vllm/releases/tag/v0.34.0"
+    },
+    {
+      "tag": "v0.34.0",
+      "category": "parallelism_distributed",
+      "snippet": "Separate prefill (token) and decode (request) CUDA graph capture sizes (63406).",
+      "source_url": "https://github.com/vllm-project/vllm/releases/tag/v0.34.0"
+    },
+    {
+      "tag": "v0.34.0",
+      "category": "hardware_platform",
+      "snippet": "Separate prefill (token) and decode (request) CUDA graph capture sizes (63406).",
+      "source_url": "https://github.com/vllm-project/vllm/releases/tag/v0.34.0"
+    },
+    {
+      "tag": "v0.34.0",
+      "category": "parallelism_distributed",
+      "snippet": "Staged writes copied straight into UVA (63633); idle sampler writes skipped, about 10\u201311% faster small-batch decode (62748).",
+      "source_url": "https://github.com/vllm-project/vllm/releases/tag/v0.34.0"
+    },
+    {
+      "tag": "v0.34.0",
+      "category": "kv_cache_memory",
+      "snippet": "Sampler warmed up after graph capture to stop memory growth under load (62560).",
+      "source_url": "https://github.com/vllm-project/vllm/releases/tag/v0.34.0"
+    },
+    {
+      "tag": "v0.34.0",
+      "category": "kv_cache_memory",
+      "snippet": "Lower peak memory for chunked prompt logprobs (64841, 64914); Triton ReplaySSM (65033).",
+      "source_url": "https://github.com/vllm-project/vllm/releases/tag/v0.34.0"
+    },
+    {
+      "tag": "v0.34.0",
+      "category": "parallelism_distributed",
+      "snippet": "NVIDIA Confidential Computing decode fixes (59981).",
+      "source_url": "https://github.com/vllm-project/vllm/releases/tag/v0.34.0"
+    },
+    {
+      "tag": "v0.34.0",
+      "category": "speculative_decoding",
+      "snippet": "Speculative decoding",
+      "source_url": "https://github.com/vllm-project/vllm/releases/tag/v0.34.0"
+    },
+    {
+      "tag": "v0.34.0",
+      "category": "hardware_platform",
+      "snippet": "Suffix decoding (60339) and custom speculators (63205) on MRV2; draft-model CUDA graphs (60989).",
+      "source_url": "https://github.com/vllm-project/vllm/releases/tag/v0.34.0"
+    },
+    {
+      "tag": "v0.34.0",
+      "category": "execution_kernels",
+      "snippet": "XPress with adaptive verification (65175); adaptive verification draft budgets on a Triton kernel (63421).",
+      "source_url": "https://github.com/vllm-project/vllm/releases/tag/v0.34.0"
+    },
+    {
+      "tag": "v0.34.0",
+      "category": "kv_cache_memory",
+      "snippet": "Draft KV cache dtype aligned with the target (65198).",
+      "source_url": "https://github.com/vllm-project/vllm/releases/tag/v0.34.0"
+    },
+    {
+      "tag": "v0.34.0",
+      "category": "execution_kernels",
+      "snippet": "Trace replay with ngram/EAGLE3/MTP, 1.47\u20132.03\u00d7 (63275); 3\u00d7 faster resample kernel (65100).",
+      "source_url": "https://github.com/vllm-project/vllm/releases/tag/v0.34.0"
+    },
+    {
+      "tag": "v0.34.0",
+      "category": "parallelism_distributed",
+      "snippet": "Fixes: DFlash acceptance of 0 with FULL CUDA graphs (64059), a resample race (66048), acceptance-estimator cancellation (65229), standalone draft prefill under FULL graphs (65804), grammar-invalid drafts (61557).",
+      "source_url": "https://github.com/vllm-project/vllm/releases/tag/v0.34.0"
+    },
+    {
+      "tag": "v0.34.0",
+      "category": "hardware_platform",
+      "snippet": "Fixes: DFlash acceptance of 0 with FULL CUDA graphs (64059), a resample race (66048), acceptance-estimator cancellation (65229), standalone draft prefill under FULL graphs (65804), grammar-invalid drafts (61557).",
+      "source_url": "https://github.com/vllm-project/vllm/releases/tag/v0.34.0"
+    },
+    {
+      "tag": "v0.34.0",
+      "category": "engine_model_runner",
+      "snippet": "Scheduler and engine overhead",
+      "source_url": "https://github.com/vllm-project/vllm/releases/tag/v0.34.0"
+    },
+    {
+      "tag": "v0.34.0",
+      "category": "scheduling_batching",
+      "snippet": "Scheduler and engine overhead",
+      "source_url": "https://github.com/vllm-project/vllm/releases/tag/v0.34.0"
+    },
+    {
+      "tag": "v0.34.0",
+      "category": "hardware_platform",
+      "snippet": "Prompt token ids kept as int32 buffers: 40\u00d7 less per-request CPU on a 128K prompt (62702).",
+      "source_url": "https://github.com/vllm-project/vllm/releases/tag/v0.34.0"
+    },
+    {
+      "tag": "v0.34.0",
+      "category": "hardware_platform",
+      "snippet": "Per-request id lists kept out of the cyclic GC (65300); 45\u201350% less KV block allocation CPU (65831).",
+      "source_url": "https://github.com/vllm-project/vllm/releases/tag/v0.34.0"
+    },
+    {
+      "tag": "v0.34.0",
+      "category": "model_modalities",
+      "snippet": "A multimodal item is no longer split by a prefix hit (65271).",
+      "source_url": "https://github.com/vllm-project/vllm/releases/tag/v0.34.0"
+    },
+    {
+      "tag": "v0.34.0",
+      "category": "api_protocol",
+      "snippet": "No openai/fastapi imports in EngineCore and workers (65423, 65589).",
+      "source_url": "https://github.com/vllm-project/vllm/releases/tag/v0.34.0"
+    },
+    {
+      "tag": "v0.34.0",
+      "category": "kv_cache_memory",
+      "snippet": "CUDA graph memory profile skipped when its estimate is disabled (64622).",
+      "source_url": "https://github.com/vllm-project/vllm/releases/tag/v0.34.0"
+    },
+    {
+      "tag": "v0.34.0",
+      "category": "execution_kernels",
+      "snippet": "CUDA graph memory profile skipped when its estimate is disabled (64622).",
+      "source_url": "https://github.com/vllm-project/vllm/releases/tag/v0.34.0"
+    },
+    {
+      "tag": "v0.34.0",
+      "category": "hardware_platform",
+      "snippet": "CUDA graph memory profile skipped when its estimate is disabled (64622).",
+      "source_url": "https://github.com/vllm-project/vllm/releases/tag/v0.34.0"
+    },
+    {
+      "tag": "v0.34.0",
+      "category": "correctness_stability",
+      "snippet": "Device-neutral compile cache via VLLMCOMPILEONONERANK, on by default (63247); all graph-affecting config fields hashed into compile cache keys (65652).",
+      "source_url": "https://github.com/vllm-project/vllm/releases/tag/v0.34.0"
+    },
+    {
+      "tag": "v0.34.0",
+      "category": "quantization",
+      "snippet": "BasevLLMParameter's Python torchfunction dropped: GLM-5.2-FP8 TTFT \u22126.1% on GB300 (63785).",
+      "source_url": "https://github.com/vllm-project/vllm/releases/tag/v0.34.0"
+    },
+    {
+      "tag": "v0.34.0",
+      "category": "hardware_platform",
+      "snippet": "Process checkpoint/restore over HTTP (62570); opt-in multi-worker CUDA checkpoint sleep (64186).",
+      "source_url": "https://github.com/vllm-project/vllm/releases/tag/v0.34.0"
+    },
+    {
+      "tag": "v0.34.0",
+      "category": "correctness_stability",
+      "snippet": "Best-effort NUMA binding by default; --no-numa-bind to disable (61258).",
+      "source_url": "https://github.com/vllm-project/vllm/releases/tag/v0.34.0"
+    },
+    {
+      "tag": "v0.34.0",
+      "category": "kv_cache_memory",
+      "snippet": "Sleep mode with exact-size pinned backups, up to about 578 GiB less host memory per node on Mistral Large 4 TP8 (64630); level 2 discards only parameters (66010, 66165, 59994).",
+      "source_url": "https://github.com/vllm-project/vllm/releases/tag/v0.34.0"
+    },
+    {
+      "tag": "v0.34.0",
+      "category": "quantization",
+      "snippet": "Fast Start weight-cache restarts for online FP8/MXFP8, ModelOpt CUTLASS FP8/NVFP4/block-FP8 and AWQ/GPTQ Marlin (63672, 63754, 64119, 64182), with pluggable shared warmup-cache stores (65168).",
+      "source_url": "https://github.com/vllm-project/vllm/releases/tag/v0.34.0"
+    },
+    {
+      "tag": "v0.34.0",
+      "category": "model_modalities",
+      "snippet": "MoE-LoRA shrink/expand kernels up to 64 tokens (64653); embedding LoRA scaled by embedscale (62470).",
+      "source_url": "https://github.com/vllm-project/vllm/releases/tag/v0.34.0"
+    },
+    {
+      "tag": "v0.34.0",
+      "category": "parallelism_distributed",
+      "snippet": "Fixes: reloads with requests in flight (64616), KV-sharing fast prefill (61162), SEQCLS heads (63286), fused MoE expand rounding (63894), Mamba-1 (64681).",
+      "source_url": "https://github.com/vllm-project/vllm/releases/tag/v0.34.0"
+    },
+    {
+      "tag": "v0.34.0",
+      "category": "model_modalities",
+      "snippet": "Fixes: reloads with requests in flight (64616), KV-sharing fast prefill (61162), SEQCLS heads (63286), fused MoE expand rounding (63894), Mamba-1 (64681).",
+      "source_url": "https://github.com/vllm-project/vllm/releases/tag/v0.34.0"
+    },
+    {
+      "tag": "v0.34.0",
+      "category": "quantization",
+      "snippet": "Batch invariance: LFM2 ShortConv (62367), FlashInfer FP8 bmm and W4A16 NVFP4 (62192), GPTQ (60479), FA sliding window (65627), aten::mm outdtype overloads (60047).",
+      "source_url": "https://github.com/vllm-project/vllm/releases/tag/v0.34.0"
+    },
+    {
+      "tag": "v0.34.0",
+      "category": "model_modalities",
+      "snippet": "--enable-ep-weight-filter with EPLB: DeepSeek-R1 NVFP4 DEP8 reads 105 GiB per rank instead of 385 GiB (64187).",
+      "source_url": "https://github.com/vllm-project/vllm/releases/tag/v0.34.0"
+    },
+    {
+      "tag": "v0.34.0",
+      "category": "quantization",
+      "snippet": "--enable-ep-weight-filter with EPLB: DeepSeek-R1 NVFP4 DEP8 reads 105 GiB per rank instead of 385 GiB (64187).",
+      "source_url": "https://github.com/vllm-project/vllm/releases/tag/v0.34.0"
+    },
+    {
+      "tag": "v0.34.0",
+      "category": "parallelism_distributed",
+      "snippet": "Token-sharded sparse-MLA prefill under TP (63956); DCP on the FlashMLA sparse bf16 KV path (61609).",
+      "source_url": "https://github.com/vllm-project/vllm/releases/tag/v0.34.0"
+    },
+    {
+      "tag": "v0.34.0",
+      "category": "parallelism_distributed",
+      "snippet": "MLA decode up-projected before the A2A merge with --dcp-comm-backend a2a (64994); faster DCP sparse-indexer top-k (65178, 64129).",
+      "source_url": "https://github.com/vllm-project/vllm/releases/tag/v0.34.0"
+    },
+    {
+      "tag": "v0.34.0",
+      "category": "kv_cache_memory",
+      "snippet": "Cross-layer KV cache sharing for MLA layers (64095).",
+      "source_url": "https://github.com/vllm-project/vllm/releases/tag/v0.34.0"
+    },
+    {
+      "tag": "v0.34.0",
+      "category": "parallelism_distributed",
+      "snippet": "Fixes: PP rank derivation under PCP (65539), FlashInfer MLA DCP decode (59392).",
+      "source_url": "https://github.com/vllm-project/vllm/releases/tag/v0.34.0"
+    },
+    {
+      "tag": "v0.34.0",
+      "category": "kv_cache_memory",
+      "snippet": "NIXL: push mode via transfermode (64230); ucxbackendparams (rocmipc on MI355X: 3.4 \u2192 483.7 Gbps, 62905); 38% fewer hybrid SSM transfer bytes (62317); block pairing across different P/D block sizes (59746), with mismatched push handshakes rejected (59747); same",
+      "source_url": "https://github.com/vllm-project/vllm/releases/tag/v0.34.0"
+    },
+    {
+      "tag": "v0.34.0",
+      "category": "kv_cache_memory",
+      "snippet": "Out-of-tree and LMCache MP connectors with the extensible KV cache (66605, 66674).",
+      "source_url": "https://github.com/vllm-project/vllm/releases/tag/v0.34.0"
+    },
+    {
+      "tag": "v0.34.0",
+      "category": "kv_cache_memory",
+      "snippet": "Uses the extensible KV cache by default: 16% more GPU+host KV capacity (65214).",
+      "source_url": "https://github.com/vllm-project/vllm/releases/tag/v0.34.0"
+    },
+    {
+      "tag": "v0.34.0",
+      "category": "correctness_stability",
+      "snippet": "Uses the extensible KV cache by default: 16% more GPU+host KV capacity (65214).",
+      "source_url": "https://github.com/vllm-project/vllm/releases/tag/v0.34.0"
+    },
+    {
+      "tag": "v0.34.0",
+      "category": "speculative_decoding",
+      "snippet": "Fused slot invalidation, up to 1.8% lower TPOT on GLM-5.3-NVFP4 (60103); fewer hash probes (61263); speculative-group prefetch (63801).",
+      "source_url": "https://github.com/vllm-project/vllm/releases/tag/v0.34.0"
+    },
+    {
+      "tag": "v0.34.0",
+      "category": "quantization",
+      "snippet": "Fused slot invalidation, up to 1.8% lower TPOT on GLM-5.3-NVFP4 (60103); fewer hash probes (61263); speculative-group prefetch (63801).",
+      "source_url": "https://github.com/vllm-project/vllm/releases/tag/v0.34.0"
+    },
+    {
+      "tag": "v0.34.0",
+      "category": "scheduling_batching",
+      "snippet": "Platform backend for hardware plugins (62592); scheduler deadlock fix (62979).",
+      "source_url": "https://github.com/vllm-project/vllm/releases/tag/v0.34.0"
+    },
+    {
+      "tag": "v0.34.0",
+      "category": "correctness_stability",
+      "snippet": "Platform backend for hardware plugins (62592); scheduler deadlock fix (62979).",
+      "source_url": "https://github.com/vllm-project/vllm/releases/tag/v0.34.0"
+    },
+    {
+      "tag": "v0.34.0",
+      "category": "model_modalities",
+      "snippet": "Metadata-only image and video inputs for GLM-5.3-Flash and DeepSeek-V4.1 (64071, 62802).",
+      "source_url": "https://github.com/vllm-project/vllm/releases/tag/v0.34.0"
+    },
+    {
+      "tag": "v0.34.0",
+      "category": "hardware_platform",
+      "snippet": "Cross-node MNNVL groups kept off CUDA IPC all-reduce (55835).",
+      "source_url": "https://github.com/vllm-project/vllm/releases/tag/v0.34.0"
+    },
+    {
+      "tag": "v0.34.0",
+      "category": "model_modalities",
+      "snippet": "Step5 NVFP4 TRTLLM-Gen MoE (65152).",
+      "source_url": "https://github.com/vllm-project/vllm/releases/tag/v0.34.0"
+    },
+    {
+      "tag": "v0.34.0",
+      "category": "quantization",
+      "snippet": "Step5 NVFP4 TRTLLM-Gen MoE (65152).",
+      "source_url": "https://github.com/vllm-project/vllm/releases/tag/v0.34.0"
+    },
+    {
+      "tag": "v0.34.0",
+      "category": "parallelism_distributed",
+      "snippet": "DeepSeek-V4.1: latencyspecialized decode extended, 5.9\u201317% faster decode step on GB300 (63921); swap-AB CuTe DSL decode attention for TP2/TP4, 1.4\u20132.15\u00d7 (62633); opt-in fused DSpark Markov sampling, 1.6\u20133.9\u00d7 (64442).",
+      "source_url": "https://github.com/vllm-project/vllm/releases/tag/v0.34.0"
+    },
+    {
+      "tag": "v0.34.0",
+      "category": "model_modalities",
+      "snippet": "DeepSeek-V4.1: latencyspecialized decode extended, 5.9\u201317% faster decode step on GB300 (63921); swap-AB CuTe DSL decode attention for TP2/TP4, 1.4\u20132.15\u00d7 (62633); opt-in fused DSpark Markov sampling, 1.6\u20133.9\u00d7 (64442).",
+      "source_url": "https://github.com/vllm-project/vllm/releases/tag/v0.34.0"
+    },
+    {
+      "tag": "v0.34.0",
+      "category": "parallelism_distributed",
+      "snippet": "Sparse-indexer top-k reads BF16 logits directly (62172, 64138); single-launch fused prefill top-k (60618).",
+      "source_url": "https://github.com/vllm-project/vllm/releases/tag/v0.34.0"
+    },
+    {
+      "tag": "v0.34.0",
+      "category": "model_modalities",
+      "snippet": "GLM-5.3 TMA MoE projections on H200 and SM100 (63820, 65746); SM90 native small-head sparse FlashMLA, +10% on GLM-5.3-Flash TP4 (64510).",
+      "source_url": "https://github.com/vllm-project/vllm/releases/tag/v0.34.0"
+    },
+    {
+      "tag": "v0.34.0",
+      "category": "parallelism_distributed",
+      "snippet": "CuTe DSL BF16x3 router GEMM for fp32 routers on Hopper (61903); fused GDN MTP decode for DSpark K=8, +18% on B300 (65874).",
+      "source_url": "https://github.com/vllm-project/vllm/releases/tag/v0.34.0"
+    },
+    {
+      "tag": "v0.34.0",
+      "category": "model_modalities",
+      "snippet": "Rubin locality-domain NVFP4 MoE (61685); Jetson Thor (SM110) fixes (62133, 65050, 62275).",
+      "source_url": "https://github.com/vllm-project/vllm/releases/tag/v0.34.0"
+    },
+    {
+      "tag": "v0.34.0",
+      "category": "quantization",
+      "snippet": "Rubin locality-domain NVFP4 MoE (61685); Jetson Thor (SM110) fixes (62133, 65050, 62275).",
+      "source_url": "https://github.com/vllm-project/vllm/releases/tag/v0.34.0"
+    },
+    {
+      "tag": "v0.34.0",
+      "category": "hardware_platform",
+      "snippet": "ROCm 10.0 only (61939); AITER v0.1.28.post1 (63774, 65937); MoRI EPv2 (61361).",
+      "source_url": "https://github.com/vllm-project/vllm/releases/tag/v0.34.0"
+    },
+    {
+      "tag": "v0.34.0",
+      "category": "parallelism_distributed",
+      "snippet": "MonoKernel decode for Muse Spark Open DSpark verify (63440), DeepSeek-V4.1-Flash at TP8 (64101) and the MiniMax-M3.1 DSpark drafter, +10% P90 interactivity (65386).",
+      "source_url": "https://github.com/vllm-project/vllm/releases/tag/v0.34.0"
+    },
+    {
+      "tag": "v0.34.0",
+      "category": "model_modalities",
+      "snippet": "MonoKernel decode for Muse Spark Open DSpark verify (63440), DeepSeek-V4.1-Flash at TP8 (64101) and the MiniMax-M3.1 DSpark drafter, +10% P90 interactivity (65386).",
+      "source_url": "https://github.com/vllm-project/vllm/releases/tag/v0.34.0"
+    },
+    {
+      "tag": "v0.34.0",
+      "category": "parallelism_distributed",
+      "snippet": "Kimi-K3 specialized decode (61435), AITER-tuned prefill GEMMs: mean TTFT 5.35 \u2192 4.05 s (63730), opt-in FlyDSL FP8 MLA prefill (59124).",
+      "source_url": "https://github.com/vllm-project/vllm/releases/tag/v0.34.0"
+    },
+    {
+      "tag": "v0.34.0",
+      "category": "quantization",
+      "snippet": "Kimi-K3 specialized decode (61435), AITER-tuned prefill GEMMs: mean TTFT 5.35 \u2192 4.05 s (63730), opt-in FlyDSL FP8 MLA prefill (59124).",
+      "source_url": "https://github.com/vllm-project/vllm/releases/tag/v0.34.0"
+    },
+    {
+      "tag": "v0.34.0",
+      "category": "model_modalities",
+      "snippet": "DeepSeek-V4-Pro P/D over MoRIIO (48989); Step-5-Preview (61837) and Reflection Beam 1.0 (62057) on ROCm.",
+      "source_url": "https://github.com/vllm-project/vllm/releases/tag/v0.34.0"
+    },
+    {
+      "tag": "v0.34.0",
+      "category": "hardware_platform",
+      "snippet": "DeepSeek-V4-Pro P/D over MoRIIO (48989); Step-5-Preview (61837) and Reflection Beam 1.0 (62057) on ROCm.",
+      "source_url": "https://github.com/vllm-project/vllm/releases/tag/v0.34.0"
+    },
+    {
+      "tag": "v0.34.0",
+      "category": "parallelism_distributed",
+      "snippet": "RDNA: TRITONATTN by default (60418), AITER Triton kernels on RDNA3 (52970), HIP GDN prefill backend for gfx1151 (56307), opt-in W4A16 dense prefill cache: TTFT \u221222 to \u221226% on Strix Halo (60710).",
+      "source_url": "https://github.com/vllm-project/vllm/releases/tag/v0.34.0"
+    },
+    {
+      "tag": "v0.34.0",
+      "category": "correctness_stability",
+      "snippet": "RDNA: TRITONATTN by default (60418), AITER Triton kernels on RDNA3 (52970), HIP GDN prefill backend for gfx1151 (56307), opt-in W4A16 dense prefill cache: TTFT \u221222 to \u221226% on Strix Halo (60710).",
+      "source_url": "https://github.com/vllm-project/vllm/releases/tag/v0.34.0"
+    },
+    {
+      "tag": "v0.34.0",
+      "category": "kv_cache_memory",
+      "snippet": "Fixes: Kimi-K2.6 int4 prefill regression on Triton 3.8 (62565), MI355 extensible KV cache OOMs (65418).",
+      "source_url": "https://github.com/vllm-project/vllm/releases/tag/v0.34.0"
+    },
+    {
+      "tag": "v0.34.0",
+      "category": "parallelism_distributed",
+      "snippet": "Fixes: Kimi-K2.6 int4 prefill regression on Triton 3.8 (62565), MI355 extensible KV cache OOMs (65418).",
+      "source_url": "https://github.com/vllm-project/vllm/releases/tag/v0.34.0"
+    },
+    {
+      "tag": "v0.34.0",
+      "category": "quantization",
+      "snippet": "Fixes: Kimi-K2.6 int4 prefill regression on Triton 3.8 (62565), MI355 extensible KV cache OOMs (65418).",
+      "source_url": "https://github.com/vllm-project/vllm/releases/tag/v0.34.0"
+    },
+    {
+      "tag": "v0.34.0",
+      "category": "correctness_stability",
+      "snippet": "Fixes: Kimi-K2.6 int4 prefill regression on Triton 3.8 (62565), MI355 extensible KV cache OOMs (65418).",
+      "source_url": "https://github.com/vllm-project/vllm/releases/tag/v0.34.0"
+    },
+    {
+      "tag": "v0.34.0",
+      "category": "model_modalities",
+      "snippet": "PyTorch 2.15 (63977) and vllmxpukernels 0.1.17 with new MoE/MLA interfaces (60609).",
+      "source_url": "https://github.com/vllm-project/vllm/releases/tag/v0.34.0"
+    },
+    {
+      "tag": "v0.34.0",
+      "category": "execution_kernels",
+      "snippet": "Per-token dynamic FP8 activations (61362); faster batched Triton MoE (51605); MRoPE kernel (59938); GDN metadata reuse (64479); DeepSeek-V4 adaptive verification (62309).",
+      "source_url": "https://github.com/vllm-project/vllm/releases/tag/v0.34.0"
+    },
+    {
+      "tag": "v0.34.0",
+      "category": "model_modalities",
+      "snippet": "Per-token dynamic FP8 activations (61362); faster batched Triton MoE (51605); MRoPE kernel (59938); GDN metadata reuse (64479); DeepSeek-V4 adaptive verification (62309).",
+      "source_url": "https://github.com/vllm-project/vllm/releases/tag/v0.34.0"
+    },
+    {
+      "tag": "v0.34.0",
+      "category": "quantization",
+      "snippet": "Per-token dynamic FP8 activations (61362); faster batched Triton MoE (51605); MRoPE kernel (59938); GDN metadata reuse (64479); DeepSeek-V4 adaptive verification (62309).",
+      "source_url": "https://github.com/vllm-project/vllm/releases/tag/v0.34.0"
+    },
+    {
+      "tag": "v0.34.0",
+      "category": "hardware_platform",
+      "snippet": "MRV2 on CPU backends without Triton: Arm, IBM Z, PowerPC, RISC-V (61995).",
+      "source_url": "https://github.com/vllm-project/vllm/releases/tag/v0.34.0"
+    },
+    {
+      "tag": "v0.34.0",
+      "category": "model_modalities",
+      "snippet": "zentorch 2.14.0.2 (65669) and Laguna MoE on Zen (63711).",
+      "source_url": "https://github.com/vllm-project/vllm/releases/tag/v0.34.0"
+    },
+    {
+      "tag": "v0.34.0",
+      "category": "parallelism_distributed",
+      "snippet": "Faster GDN spec-decode updates (64829); Gemma 4 MoE gelutanh (61593); bidirectional encoder-only attention (63738).",
+      "source_url": "https://github.com/vllm-project/vllm/releases/tag/v0.34.0"
+    },
+    {
+      "tag": "v0.34.0",
+      "category": "model_modalities",
+      "snippet": "Faster GDN spec-decode updates (64829); Gemma 4 MoE gelutanh (61593); bidirectional encoder-only attention (63738).",
+      "source_url": "https://github.com/vllm-project/vllm/releases/tag/v0.34.0"
+    },
+    {
+      "tag": "v0.34.0",
+      "category": "correctness_stability",
+      "snippet": "Other: out-of-tree layer overrides via vllm.modelexecutor.hwagnostic.resolve (60218); shared routed-expert row restorers (64689); Ascend Triton fix (64013).",
+      "source_url": "https://github.com/vllm-project/vllm/releases/tag/v0.34.0"
+    },
+    {
+      "tag": "v0.34.0",
+      "category": "quantization",
+      "snippet": "<summary><b>Quantization</b></summary>",
+      "source_url": "https://github.com/vllm-project/vllm/releases/tag/v0.34.0"
+    },
+    {
+      "tag": "v0.34.0",
+      "category": "model_modalities",
+      "snippet": "New --quantization lutbmoe: about 3.14-bit MoE experts with MXFP8 activations, native on Rubin (62759).",
+      "source_url": "https://github.com/vllm-project/vllm/releases/tag/v0.34.0"
+    },
+    {
+      "tag": "v0.34.0",
+      "category": "quantization",
+      "snippet": "New --quantization lutbmoe: about 3.14-bit MoE experts with MXFP8 activations, native on Rubin (62759).",
+      "source_url": "https://github.com/vllm-project/vllm/releases/tag/v0.34.0"
+    },
+    {
+      "tag": "v0.34.0",
+      "category": "model_modalities",
+      "snippet": "w4afp8 checkpoints on the W4A8 FP8 MoE path (64410).",
+      "source_url": "https://github.com/vllm-project/vllm/releases/tag/v0.34.0"
+    },
+    {
+      "tag": "v0.34.0",
+      "category": "quantization",
+      "snippet": "w4afp8 checkpoints on the W4A8 FP8 MoE path (64410).",
+      "source_url": "https://github.com/vllm-project/vllm/releases/tag/v0.34.0"
+    },
+    {
+      "tag": "v0.34.0",
+      "category": "quantization",
+      "snippet": "CSF-compressed NVFP4 block scales in ModelOpt (64312); activation quant overrides for online MXFP4 (51808).",
+      "source_url": "https://github.com/vllm-project/vllm/releases/tag/v0.34.0"
+    },
+    {
+      "tag": "v0.34.0",
+      "category": "model_modalities",
+      "snippet": "DeepSeek-V4.1 MXFP8 linears on cuBLASLt (64815); 3\u00d7 faster MXFP4 activation quant (63101); faster FP8 quant on SM100+ (61641).",
+      "source_url": "https://github.com/vllm-project/vllm/releases/tag/v0.34.0"
+    },
+    {
+      "tag": "v0.34.0",
+      "category": "quantization",
+      "snippet": "DeepSeek-V4.1 MXFP8 linears on cuBLASLt (64815); 3\u00d7 faster MXFP4 activation quant (63101); faster FP8 quant on SM100+ (61641).",
+      "source_url": "https://github.com/vllm-project/vllm/releases/tag/v0.34.0"
+    },
+    {
+      "tag": "v0.34.0",
+      "category": "quantization",
+      "snippet": "QuIP NVFP4 on Humming (65230).",
+      "source_url": "https://github.com/vllm-project/vllm/releases/tag/v0.34.0"
+    },
+    {
+      "tag": "v0.34.0",
+      "category": "quantization",
+      "snippet": "Fixes: NVFP4 NaN logits (63382, 61755), Humming FP8 (60163, 56606), hadacore (63514).",
+      "source_url": "https://github.com/vllm-project/vllm/releases/tag/v0.34.0"
+    },
+    {
+      "tag": "v0.34.0",
+      "category": "api_protocol",
+      "snippet": "<summary><b>API and frontend</b></summary>",
+      "source_url": "https://github.com/vllm-project/vllm/releases/tag/v0.34.0"
+    },
+    {
+      "tag": "v0.34.0",
+      "category": "api_protocol",
+      "snippet": "Anthropic Messages API: mintokens (65459) and thinking.type=betweentools (65954).",
+      "source_url": "https://github.com/vllm-project/vllm/releases/tag/v0.34.0"
+    },
+    {
+      "tag": "v0.34.0",
+      "category": "model_modalities",
+      "snippet": "Incremental streaming for Kimi K3 (62203), toolchoice=\"required\" (60882), DeepSeek V4/V3.2 (58780), GLM-4.7 (64535), Qwen3 (64675).",
+      "source_url": "https://github.com/vllm-project/vllm/releases/tag/v0.34.0"
+    },
+    {
+      "tag": "v0.34.0",
+      "category": "model_modalities",
+      "snippet": "Fixes: DeepSeek V4.1 (62517, 64971, 62729, 62647), GLM-4.7 (64615), Step3 (65274), FunctionGemma (63992), union/enum string parameters (64518).",
+      "source_url": "https://github.com/vllm-project/vllm/releases/tag/v0.34.0"
+    },
+    {
+      "tag": "v0.34.0",
+      "category": "api_protocol",
+      "snippet": "Multi-template processors use the default template (63606); an empty tools array is accepted like OpenAI (65547).",
+      "source_url": "https://github.com/vllm-project/vllm/releases/tag/v0.34.0"
+    },
+    {
+      "tag": "v0.34.0",
+      "category": "correctness_stability",
+      "snippet": "Multi-template processors use the default template (63606); an empty tools array is accepted like OpenAI (65547).",
+      "source_url": "https://github.com/vllm-project/vllm/releases/tag/v0.34.0"
+    },
+    {
+      "tag": "v0.34.0",
+      "category": "api_protocol",
+      "snippet": "Rust frontend",
+      "source_url": "https://github.com/vllm-project/vllm/releases/tag/v0.34.0"
+    },
+    {
+      "tag": "v0.34.0",
+      "category": "api_protocol",
+      "snippet": "Stateless Responses API (63902) with namespace tools (65853); n > 1 (65625); --skip-tokenizer-init (64697).",
+      "source_url": "https://github.com/vllm-project/vllm/releases/tag/v0.34.0"
+    },
+    {
+      "tag": "v0.34.0",
+      "category": "engine_model_runner",
+      "snippet": "Prompt block hashing off the engine's GIL (63842); --reasoning-effort-map (62312).",
+      "source_url": "https://github.com/vllm-project/vllm/releases/tag/v0.34.0"
+    },
+    {
+      "tag": "v0.34.0",
+      "category": "model_modalities",
+      "snippet": "FunAudioChat audio bounded to the profiled duration (57411).",
+      "source_url": "https://github.com/vllm-project/vllm/releases/tag/v0.34.0"
+    },
+    {
+      "tag": "v0.34.0",
+      "category": "engine_model_runner",
+      "snippet": "NIXL 1.5.2 (64579, 64585); mooncake-transfer-engine 0.3.14 (65576); Run:ai Model Streamer 0.17.1 (63174); fastokens >= 0.3.5 for VLLMUSEFASTOKENS (65679).",
+      "source_url": "https://github.com/vllm-project/vllm/releases/tag/v0.34.0"
+    },
+    {
+      "tag": "v0.34.0",
+      "category": "hardware_platform",
+      "snippet": "ROCm: AITER v0.1.27 \u2192 v0.1.28.post1 (63774, 65937). XPU: PyTorch 2.15 (63977), triton-xpu 3.9.0 (65047), vllmxpukernels 0.1.17 (60609). CPU: zentorch 2.14.0.2 (65669).",
+      "source_url": "https://github.com/vllm-project/vllm/releases/tag/v0.34.0"
+    },
+    {
+      "tag": "v0.34.0",
+      "category": "hardware_platform",
+      "snippet": "x8664 CUDA wheel about 82 MB (about 25%) smaller, kernels unchanged (65518).",
+      "source_url": "https://github.com/vllm-project/vllm/releases/tag/v0.34.0"
+    },
+    {
+      "tag": "v0.34.0",
+      "category": "api_protocol",
+      "snippet": "Default CUDA image installs the AWS EFA userspace; the -efa image now only adds DeepEP for EFA (65576); nightly EFA images as vllm/vllm-openai:efa-nightly (64028).",
+      "source_url": "https://github.com/vllm-project/vllm/releases/tag/v0.34.0"
+    },
+    {
+      "tag": "v0.34.0",
+      "category": "hardware_platform",
+      "snippet": "Default CUDA image installs the AWS EFA userspace; the -efa image now only adds DeepEP for EFA (65576); nightly EFA images as vllm/vllm-openai:efa-nightly (64028).",
+      "source_url": "https://github.com/vllm-project/vllm/releases/tag/v0.34.0"
+    },
+    {
+      "tag": "v0.34.0",
+      "category": "correctness_stability",
+      "snippet": "Default CUDA image installs the AWS EFA userspace; the -efa image now only adds DeepEP for EFA (65576); nightly EFA images as vllm/vllm-openai:efa-nightly (64028).",
+      "source_url": "https://github.com/vllm-project/vllm/releases/tag/v0.34.0"
+    },
+    {
+      "tag": "v0.34.0",
+      "category": "hardware_platform",
+      "snippet": "One ROCm build and release pipeline, ROCm 10.0 only (61939).",
+      "source_url": "https://github.com/vllm-project/vllm/releases/tag/v0.34.0"
+    },
+    {
+      "tag": "v0.34.0",
+      "category": "execution_kernels",
+      "snippet": "Source builds fetch tritonkernels from a tarball (65162) and ship tuned kernel configs in the wheel (64063).",
+      "source_url": "https://github.com/vllm-project/vllm/releases/tag/v0.34.0"
+    },
+    {
+      "tag": "v0.34.0",
+      "category": "hardware_platform",
+      "snippet": "CUDA x.yf arches no longer fall back to a lower minor (66016).",
+      "source_url": "https://github.com/vllm-project/vllm/releases/tag/v0.34.0"
+    },
+    {
+      "tag": "v0.34.0",
+      "category": "engine_model_runner",
+      "snippet": "Model Runner V1 removed (63373).",
+      "source_url": "https://github.com/vllm-project/vllm/releases/tag/v0.34.0"
+    },
+    {
+      "tag": "v0.34.0",
+      "category": "correctness_stability",
+      "snippet": "Model Runner V1 removed (63373).",
+      "source_url": "https://github.com/vllm-project/vllm/releases/tag/v0.34.0"
+    },
+    {
+      "tag": "v0.34.0",
+      "category": "speculative_decoding",
+      "snippet": "Dropped with it: the V1 logits-processor API (vllm.v1.worker.gpu.sample.logitsprocessor is the only interface), the customclass speculative method, useheterogeneousvocab, disablepaddeddrafterbatch, paralleldrafting outside DFlash/DSpark, PP with externallaunch",
+      "source_url": "https://github.com/vllm-project/vllm/releases/tag/v0.34.0"
+    },
+    {
+      "tag": "v0.34.0",
+      "category": "api_protocol",
+      "snippet": "Dropped with it: the V1 logits-processor API (vllm.v1.worker.gpu.sample.logitsprocessor is the only interface), the customclass speculative method, useheterogeneousvocab, disablepaddeddrafterbatch, paralleldrafting outside DFlash/DSpark, PP with externallaunch",
+      "source_url": "https://github.com/vllm-project/vllm/releases/tag/v0.34.0"
+    },
+    {
+      "tag": "v0.34.0",
+      "category": "correctness_stability",
+      "snippet": "Deprecated: paralleldrafting, capturetorchprofiler, enablelayerwisenvtxtracing.",
+      "source_url": "https://github.com/vllm-project/vllm/releases/tag/v0.34.0"
+    },
+    {
+      "tag": "v0.34.0",
+      "category": "hardware_platform",
+      "snippet": "Default --block-size is 64 instead of 16 (63231). Backends with a preferred block size still override it (ROCm paged attention keeps 16), and an explicit --block-size still wins.",
+      "source_url": "https://github.com/vllm-project/vllm/releases/tag/v0.34.0"
+    },
+    {
+      "tag": "v0.34.0",
+      "category": "correctness_stability",
+      "snippet": "Default --block-size is 64 instead of 16 (63231). Backends with a preferred block size still override it (ROCm paged attention keeps 16), and an explicit --block-size still wins.",
+      "source_url": "https://github.com/vllm-project/vllm/releases/tag/v0.34.0"
+    },
+    {
+      "tag": "v0.34.0",
+      "category": "kv_cache_memory",
+      "snippet": "gpumemoryutilization defaults to 1.0 when unset with the extensible KV cache on (56492). An explicit value in (0.8, 1.0) that withholds 1 GiB or more logs a warning (66704).",
+      "source_url": "https://github.com/vllm-project/vllm/releases/tag/v0.34.0"
+    },
+    {
+      "tag": "v0.34.0",
+      "category": "hardware_platform",
+      "snippet": "ROCm 7.2 wheels and -rocm72 images are no longer published (61939).",
+      "source_url": "https://github.com/vllm-project/vllm/releases/tag/v0.34.0"
+    },
+    {
+      "tag": "v0.34.0",
+      "category": "quantization",
+      "snippet": "Marlin INT8/FP8-activation (W4A8) paths and VLLMMARLININPUTDTYPE; use --quantization humming with VLLMHUMMINGINPUTQUANTCONFIG (65542).",
+      "source_url": "https://github.com/vllm-project/vllm/releases/tag/v0.34.0"
+    },
+    {
+      "tag": "v0.34.0",
+      "category": "hardware_platform",
+      "snippet": "Dependencies: huggingfacehub >= 2.0.0 (64779); mistral-common >= 1.13.0 (64169); XPU requires vllmxpukernels 0.1.17 (60609).",
+      "source_url": "https://github.com/vllm-project/vllm/releases/tag/v0.34.0"
+    },
+    {
+      "tag": "v0.34.0",
+      "category": "api_protocol",
+      "snippet": "API behavior:",
+      "source_url": "https://github.com/vllm-project/vllm/releases/tag/v0.34.0"
+    },
+    {
+      "tag": "v0.34.0",
+      "category": "model_modalities",
+      "snippet": "AITER fused shared experts with MiniMax M3 and DeepSeek V4 need VLLMROCMUSEAITER=1 (61457).",
+      "source_url": "https://github.com/vllm-project/vllm/releases/tag/v0.34.0"
+    },
+    {
+      "tag": "v0.34.0",
+      "category": "model_modalities",
+      "snippet": "Still deprecated: --mamba-cache-mode has no effect; its removal was postponed (64838).",
+      "source_url": "https://github.com/vllm-project/vllm/releases/tag/v0.34.0"
+    },
+    {
+      "tag": "v0.34.0",
+      "category": "correctness_stability",
+      "snippet": "Still deprecated: --mamba-cache-mode has no effect; its removal was postponed (64838).",
+      "source_url": "https://github.com/vllm-project/vllm/releases/tag/v0.34.0"
+    },
+    {
+      "tag": "v0.34.0",
+      "category": "kv_cache_memory",
+      "snippet": "Extensible KV cache (56492); block size 64 (63231); best-effort NUMA binding (61258).",
+      "source_url": "https://github.com/vllm-project/vllm/releases/tag/v0.34.0"
+    },
+    {
+      "tag": "v0.34.0",
+      "category": "parallelism_distributed",
+      "snippet": "Token-sharded sparse-MLA prefill at 1024 or more prefill tokens (63956); MLA decode up-projection before the A2A merge (64994).",
+      "source_url": "https://github.com/vllm-project/vllm/releases/tag/v0.34.0"
+    },
+    {
+      "tag": "v0.34.0",
+      "category": "kv_cache_memory",
+      "snippet": "HiSparse on the extensible KV cache (65214); encoder CUDA graphs up to encodercudagraphmaxtokenbudget=5120, eager above (65227).",
+      "source_url": "https://github.com/vllm-project/vllm/releases/tag/v0.34.0"
+    },
+    {
+      "tag": "v0.34.0",
+      "category": "hardware_platform",
+      "snippet": "HiSparse on the extensible KV cache (65214); encoder CUDA graphs up to encodercudagraphmaxtokenbudget=5120, eager above (65227).",
+      "source_url": "https://github.com/vllm-project/vllm/releases/tag/v0.34.0"
+    },
+    {
+      "tag": "v0.34.0",
+      "category": "model_modalities",
+      "snippet": "TRITONATTN on RDNA3/RDNA4 (60418); MRV2 on non-Triton CPUs (61995); float32 Mamba SSM cache for Nemotron Omni (63218); Zipf routing in vllm bench forward (64167).",
+      "source_url": "https://github.com/vllm-project/vllm/releases/tag/v0.34.0"
+    },
+    {
+      "tag": "v0.34.0",
+      "category": "model_modalities",
+      "snippet": "<!-- TODO(reviewer): --mamba-cache-mode and --ir-op-priority still exist in v0.34.0 with warnings that say \"will be removed in v0.34.0\", and the LM Format Enforcer backend is still deprecated rather than opt-in as v0.33.0 announced (64838, 63371, 63423). Shoul",
+      "source_url": "https://github.com/vllm-project/vllm/releases/tag/v0.34.0"
+    },
+    {
+      "tag": "v0.34.0",
+      "category": "correctness_stability",
+      "snippet": "<!-- TODO(reviewer): --mamba-cache-mode and --ir-op-priority still exist in v0.34.0 with warnings that say \"will be removed in v0.34.0\", and the LM Format Enforcer backend is still deprecated rather than opt-in as v0.33.0 announced (64838, 63371, 63423). Shoul",
+      "source_url": "https://github.com/vllm-project/vllm/releases/tag/v0.34.0"
     }
   ]
 }
