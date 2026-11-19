@@ -83706,13 +83706,13 @@
     {
       "tag": "v0.34.0",
       "category": "kv_cache_memory",
-      "snippet": "Extensible KV cache is on by default: vLLM sizes the KV cache from memory actually free after warmup, so most models get a bigger cache and more throughput.",
+      "snippet": "Extensible KV cache is on by default: vLLM sizes the KV cache from memory actually free after warmup, so most models get a bigger cache and more throughput - in most cases you should now remove gpumemoryutilization from your configs.",
       "source_url": "https://github.com/vllm-project/vllm/releases/tag/v0.34.0"
     },
     {
       "tag": "v0.34.0",
       "category": "correctness_stability",
-      "snippet": "Extensible KV cache is on by default: vLLM sizes the KV cache from memory actually free after warmup, so most models get a bigger cache and more throughput.",
+      "snippet": "Extensible KV cache is on by default: vLLM sizes the KV cache from memory actually free after warmup, so most models get a bigger cache and more throughput - in most cases you should now remove gpumemoryutilization from your configs.",
       "source_url": "https://github.com/vllm-project/vllm/releases/tag/v0.34.0"
     },
     {
@@ -83772,13 +83772,13 @@
     {
       "tag": "v0.34.0",
       "category": "kv_cache_memory",
-      "snippet": "| Extensible KV cache on by default; gpumemoryutilization defaults to 1.0 | To keep the old sizing, pass --gpu-memory-utilization 0.9 or --no-enable-extensible-kv-cache. | 56492 |",
+      "snippet": "| Extensible KV cache on by default; gpumemoryutilization defaults to 1.0 | In most cases it's now best to not set gpumemoryutilization. This should provide maximum kv cache capacity while avoiding runtime OOMs. Use it to share a GPU with other processes or wh",
       "source_url": "https://github.com/vllm-project/vllm/releases/tag/v0.34.0"
     },
     {
       "tag": "v0.34.0",
       "category": "correctness_stability",
-      "snippet": "| Extensible KV cache on by default; gpumemoryutilization defaults to 1.0 | To keep the old sizing, pass --gpu-memory-utilization 0.9 or --no-enable-extensible-kv-cache. | 56492 |",
+      "snippet": "| Extensible KV cache on by default; gpumemoryutilization defaults to 1.0 | In most cases it's now best to not set gpumemoryutilization. This should provide maximum kv cache capacity while avoiding runtime OOMs. Use it to share a GPU with other processes or wh",
       "source_url": "https://github.com/vllm-project/vllm/releases/tag/v0.34.0"
     },
     {

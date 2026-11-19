@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "project": "sgl-project/sglang",
-  "cutoff": "2026-11-17",
+  "cutoff": "2026-11-19",
   "source_mode": "cache",
   "latest_stable": "v0.5.23",
   "artifacts": [
@@ -17,13 +17,13 @@
     },
     {
       "path": "pdf/SGLang_Project_Analysis_Version_Feature_Timeline.pdf",
-      "bytes": 31420,
-      "sha256": "de9c4bf683b9bc4e1fb42e9cb3670ef8b961120017b5faa081fa0260cbb184d0"
+      "bytes": 31421,
+      "sha256": "3daf69ca96d7d00e8692284891a898ccb5caeb8b568919aa7f21b7aeec1fa651"
     },
     {
       "path": "pdf/SGLang_Evolution_Brief.pdf",
       "bytes": 4705,
-      "sha256": "ba845090b0be52aa909c5c7717e3a2b7658ea27d4cf87acf0c6e7b9d143075aa"
+      "sha256": "11988d7331043bc8b045f9549f7a107cdd7baf0579ba9d33e87c8036c4b7099f"
     }
   ]
 }
